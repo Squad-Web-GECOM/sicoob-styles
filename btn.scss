@@ -1,0 +1,104 @@
+
+
+/* BOTÕES */
+
+.btn- {
+
+    &primary {
+      border-color: $turq;
+      background-color: $turq;
+      color: $branco;
+      transition: .5s all ease-in-out;
+  
+      &:not(:disabled):not(.disabled).active,
+      &:not(:disabled):not(.disabled):active,
+      .show>&.dropdown-toggle,
+      &:hover {
+        background-color: $turq-500;
+        border-color: $turq-500;
+      }
+  
+      &:focus-visible {
+        outline: $verdec auto 0px;
+      }
+  
+      &.focus,
+      &:focus,
+      &:not(:disabled):not(.disabled).active:focus,
+      &:not(:disabled):not(.disabled):active:focus,
+      .show>&.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0rem $verdec;
+      }
+    }
+  
+    &secondary {
+      border-color: $turq !important;
+      background-color: $turq !important;
+      color: $verdee !important;
+      font-weight: bold;
+      padding: .3rem 1rem;
+      transition: .5s all ease-in-out;
+  
+      &:not(:disabled):not(.disabled).active,
+      &:not(:disabled):not(.disabled):active,
+      .show>&.dropdown-toggle,
+      &:hover {
+        background-color: $turq !important;
+      }
+  
+      &:focus-visible {
+        outline: $verdee auto 1px !important;
+      }
+  
+      &.focus,
+      &:focus,
+      &:not(:disabled):not(.disabled).active:focus,
+      &:not(:disabled):not(.disabled):active:focus,
+      .show>&.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.1rem $verdee !important;
+      }
+    }
+  
+    &click {
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        transform: translateX(2px) translateY(2px);
+      }
+  
+      &:active {
+        transform: translateX(4px) translateY(4px);
+      }
+    }
+  
+    &click-shadow {
+      box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        transform: translateX(2px) translateY(2px);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+  
+      &:active {
+        transform: translateX(4px) translateY(4px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+  
+    &click-img {
+      box-shadow: none !important;
+      transition: all 0.3s ease-in-out;
+      filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.2));
+  
+      &:hover {
+        transform: translateX(2px) translateY(2px);
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+      }
+  
+      &:active {
+        transform: translateX(4px) translateY(4px);
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.2));
+      }
+    }
+  }

@@ -1,0 +1,732 @@
+
+/* COR DAS FONTES */
+.c {
+
+  &-turq {
+    color: $turq !important;
+
+    &-200 {
+      color: $turq-200 !important;
+    }
+
+    &-300 {
+      color: $turq-300 !important;
+    }
+
+    &-500 {
+      color: $turq-500 !important;
+    }
+
+    &-600 {
+      color: $turq-600 !important;
+    }
+  }
+
+  &-verdee {
+    color: $verdee !important;
+
+    &-200 {
+      color: $verdee-200 !important;
+    }
+
+    &-300 {
+      color: $verdee-300 !important;
+    }
+
+    &-500 {
+      color: $verdee-500 !important;
+    }
+
+    &-600 {
+      color: $verdee-600 !important;
+    }
+  }
+
+  &-verdem {
+    color: $verdem !important;
+
+    &-200 {
+      color: $verdem-200 !important;
+    }
+
+    &-300 {
+      color: $verdem-300 !important;
+    }
+
+    &-500 {
+      color: $verdem-500 !important;
+    }
+
+    &-600 {
+      color: $verdem-600 !important;
+    }
+  }
+
+  &-verdec {
+    color: $verdec !important;
+
+    &-200 {
+      color: $verdec-200 !important;
+    }
+
+    &-300 {
+      color: $verdec-300 !important;
+    }
+
+    &-500 {
+      color: $verdec-500 !important;
+    }
+
+    &-600 {
+      color: $verdec-600 !important;
+    }
+  }
+
+  &-roxo {
+    color: $roxo !important;
+
+    &-200 {
+      color: $roxo-200 !important;
+    }
+
+    &-300 {
+      color: $roxo-300 !important;
+    }
+
+    &-500 {
+      color: $roxo-500 !important;
+    }
+
+    &-600 {
+      color: $roxo-600 !important;
+    }
+  }
+
+  &-cinza {
+    &-200 {
+      color: $cinza-200 !important;
+    }
+
+    &-300 {
+      color: $cinza-300 !important;
+    }
+
+    &-400 {
+      color: $cinza-400 !important;
+    }
+
+    &-500 {
+      color: $cinza-500 !important;
+    }
+
+    &-600 {
+      color: $cinza-600 !important;
+    }
+  }
+
+  &-branco {
+    color: $branco !important;
+  }
+
+  &-preto {
+    color: $preto !important;
+  }
+}
+
+/* COR DOS FUNDOS */
+.bg {
+
+  &-turq {
+    background-color: $turq !important;
+
+    &-200 {
+      background-color: $turq-200 !important;
+    }
+
+    &-300 {
+      background-color: $turq-300 !important;
+    }
+
+    &-500 {
+      background-color: $turq-500 !important;
+    }
+
+    &-600 {
+      background-color: $turq-600 !important;
+    }
+  }
+
+  &-verdee {
+    background-color: $verdee !important;
+
+    &-200 {
+      background-color: $verdee-200 !important;
+    }
+
+    &-300 {
+      background-color: $verdee-300 !important;
+    }
+
+    &-500 {
+      background-color: $verdee-500 !important;
+    }
+
+    &-600 {
+      background-color: $verdee-600 !important;
+    }
+  }
+
+  &-verdem {
+    background-color: $verdem !important;
+
+    &-200 {
+      background-color: $verdem-200 !important;
+    }
+
+    &-300 {
+      background-color: $verdem-300 !important;
+    }
+
+    &-500 {
+      background-color: $verdem-500 !important;
+    }
+
+    &-600 {
+      background-color: $verdem-600 !important;
+    }
+  }
+
+  &-verdec {
+    background-color: $verdec !important;
+
+    &-200 {
+      background-color: $verdec-200 !important;
+    }
+
+    &-300 {
+      background-color: $verdec-300 !important;
+    }
+
+    &-500 {
+      background-color: $verdec-500 !important;
+    }
+
+    &-600 {
+      background-color: $verdec-600 !important;
+    }
+  }
+
+  &-roxo {
+    background-color: $roxo !important;
+
+    &-200 {
+      background-color: $roxo-200 !important;
+    }
+
+    &-300 {
+      background-color: $roxo-300 !important;
+    }
+
+    &-500 {
+      background-color: $roxo-500 !important;
+    }
+
+    &-600 {
+      background-color: $roxo-600 !important;
+    }
+  }
+
+  &-cinza {
+    &-200 {
+      background-color: $cinza-200 !important;
+    }
+
+    &-300 {
+      background-color: $cinza-300 !important;
+    }
+
+    &-400 {
+      background-color: $cinza-400 !important;
+    }
+
+    &-500 {
+      background-color: $cinza-500 !important;
+    }
+
+    &-600 {
+      background-color: $cinza-600 !important;
+    }
+  }
+
+  &-branco {
+    background-color: $branco !important;
+  }
+
+  &-preto {
+    background-color: $preto !important;
+  }
+}
+
+/* COR, PESO E RADIUS DA BORDA */
+.border {
+  &-turq {
+    border-color: $turq !important;
+
+    &-200 {
+      border-color: $turq-200 !important;
+    }
+
+    &-300 {
+      border-color: $turq-300 !important;
+    }
+
+    &-500 {
+      border-color: $turq-500 !important;
+    }
+
+    &-600 {
+      border-color: $turq-600 !important;
+    }
+  }
+
+  &-verdee {
+    border-color: $verdee !important;
+
+    &-200 {
+      border-color: $verdee-200 !important;
+    }
+
+    &-300 {
+      border-color: $verdee-300 !important;
+    }
+
+    &-500 {
+      border-color: $verdee-500 !important;
+    }
+
+    &-600 {
+      border-color: $verdee-600 !important;
+    }
+  }
+
+  &-verdem {
+    border-color: $verdem !important;
+
+    &-200 {
+      border-color: $verdem-200 !important;
+    }
+
+    &-300 {
+      border-color: $verdem-300 !important;
+    }
+
+    &-500 {
+      border-color: $verdem-500 !important;
+    }
+
+    &-600 {
+      border-color: $verdem-600 !important;
+    }
+  }
+
+  &-verdec {
+    border-color: $verdec !important;
+
+    &-200 {
+      border-color: $verdec-200 !important;
+    }
+
+    &-300 {
+      border-color: $verdec-300 !important;
+    }
+
+    &-500 {
+      border-color: $verdec-500 !important;
+    }
+
+    &-600 {
+      border-color: $verdec-600 !important;
+    }
+  }
+
+  &-roxo {
+    border-color: $roxo !important;
+
+    &-200 {
+      border-color: $roxo-200 !important;
+    }
+
+    &-300 {
+      border-color: $roxo-300 !important;
+    }
+
+    &-500 {
+      border-color: $roxo-500 !important;
+    }
+
+    &-600 {
+      border-color: $roxo-600 !important;
+    }
+  }
+
+  &-cinza {
+    &-200 {
+      border-color: $cinza-200 !important;
+    }
+
+    &-300 {
+      border-color: $cinza-300 !important;
+    }
+
+    &-400 {
+      border-color: $cinza-400 !important;
+    }
+
+    &-500 {
+      border-color: $cinza-500 !important;
+    }
+
+    &-600 {
+      border-color: $cinza-600 !important;
+    }
+  }
+
+  &-branco {
+    border-color: $branco !important;
+  }
+
+  &-preto {
+    border-color: $preto !important;
+  }
+
+  &-1 {
+    border-style: solid !important;
+    border-width: 1px !important;
+  }
+
+  &-2 {
+    border-style: solid !important;
+    border-width: 2px !important;
+  }
+
+  &-3 {
+    border-style: solid !important;
+    border-width: 3px !important;
+  }
+
+  &-4 {
+    border-style: solid !important;
+    border-width: 4px !important;
+  }
+
+  &-5 {
+    border-style: solid !important;
+    border-width: 5px !important;
+  }
+
+  &-radius {
+    &-05 {
+      border-radius: .5rem !important;
+    }
+
+    &-075 {
+      border-radius: .75rem !important;
+    }
+
+    &-1 {
+      border-radius: 1rem !important;
+    }
+
+    &-15 {
+      border-radius: 1.5rem !important;
+    }
+
+    &-2 {
+      border-radius: 2rem !important;
+    }
+
+    &-25 {
+      border-radius: 2.5rem !important;
+    }
+
+    &-round {
+      border-radius: 100rem !important;
+    }
+  }
+
+}
+
+/* PESO DAS FONTES */
+.fw {
+
+  &-100 {
+    font-weight: 100 !important;
+  }
+
+  &-200 {
+    font-weight: 200 !important;
+  }
+
+  &-300 {
+    font-weight: 300 !important;
+  }
+
+  &-400 {
+    font-weight: 400 !important;
+  }
+
+  &-500 {
+    font-weight: 500 !important;
+  }
+
+  &-600 {
+    font-weight: 600 !important;
+  }
+
+  &-700 {
+    font-weight: 700 !important;
+  }
+
+  &-800 {
+    font-weight: 800 !important;
+  }
+
+  &-900 {
+    font-weight: 900 !important;
+  }
+}
+
+/* PESO DAS FONTES */
+.fs {
+  &-08 {
+    font-size: .8rem !important;
+  }
+
+  &-100 {
+    font-size: 1rem !important;
+  }
+
+  &-125 {
+    font-size: 1.25rem !important;
+  }
+
+  &-150 {
+    font-size: 1.5rem !important;
+  }
+
+  &-175 {
+    font-size: 1.75rem !important;
+  }
+
+  &-200 {
+    font-size: 2rem !important;
+  }
+
+  &-225 {
+    font-size: 2.25rem !important;
+  }
+
+  &-250 {
+    font-size: 2.5rem !important;
+  }
+
+  &-275 {
+    font-size: 2.75rem !important;
+  }
+
+  &-300 {
+    font-size: 3rem !important;
+  }
+
+  &-400 {
+    font-size: 4rem !important;
+  }
+
+  &-500 {
+    font-size: 5rem !important;
+  }
+}
+
+/* ALINHAMENTO */
+.center {
+
+  &-s {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  &-v {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  &-h {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
+/* FILL */
+
+.fill {
+  &-turq {
+    fill: $turq !important;
+
+    &-200 {
+      fill: $turq-200 !important;
+    }
+
+    &-300 {
+      fill: $turq-300 !important;
+    }
+
+    &-500 {
+      fill: $turq-500 !important;
+    }
+
+    &-600 {
+      fill: $turq-600 !important;
+    }
+  }
+
+  &-verdee {
+    fill: $verdee !important;
+
+    &-200 {
+      fill: $verdee-200 !important;
+    }
+
+    &-300 {
+      fill: $verdee-300 !important;
+    }
+
+    &-500 {
+      fill: $verdee-500 !important;
+    }
+
+    &-600 {
+      fill: $verdee-600 !important;
+    }
+  }
+
+  &-verdem {
+    fill: $verdem !important;
+
+    &-200 {
+      fill: $verdem-200 !important;
+    }
+
+    &-300 {
+      fill: $verdem-300 !important;
+    }
+
+    &-500 {
+      fill: $verdem-500 !important;
+    }
+
+    &-600 {
+      fill: $verdem-600 !important;
+    }
+  }
+
+  &-verdec {
+    fill: $verdec !important;
+
+    &-200 {
+      fill: $verdec-200 !important;
+    }
+
+    &-300 {
+      fill: $verdec-300 !important;
+    }
+
+    &-500 {
+      fill: $verdec-500 !important;
+    }
+
+    &-600 {
+      fill: $verdec-600 !important;
+    }
+  }
+
+  &-roxo {
+    fill: $roxo !important;
+
+    &-200 {
+      fill: $roxo-200 !important;
+    }
+
+    &-300 {
+      fill: $roxo-300 !important;
+    }
+
+    &-500 {
+      fill: $roxo-500 !important;
+    }
+
+    &-600 {
+      fill: $roxo-600 !important;
+    }
+  }
+
+  &-cinza {
+    &-200 {
+      fill: $cinza-200 !important;
+    }
+
+    &-300 {
+      fill: $cinza-300 !important;
+    }
+
+    &-400 {
+      fill: $cinza-400 !important;
+    }
+
+    &-500 {
+      fill: $cinza-500 !important;
+    }
+
+    &-600 {
+      fill: $cinza-600 !important;
+    }
+  }
+
+  &-branco {
+    fill: $branco !important;
+  }
+
+  &-preto {
+    fill: $preto !important;
+  }
+}
+
+/* WIDTH */
+.w {
+
+  &-fit-content {
+    width: fit-content;
+  }
+
+  &-sm-100 {
+    @media (max-width:576px) {
+      width: 100%;
+    }
+  }
+}
+
+/* HEIGTH */
+.h {
+  &-fit-content {
+    height: fit-content;
+  }
+
+  &-100 {
+    height: 100%;
+  }
+
+  &-100-v {
+    height: 100vh;
+  }
+
+}

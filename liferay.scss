@@ -1,0 +1,94 @@
+
+// AJUSTES LP LIFERAY
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+body #content,
+#content,
+.portlet-column {
+  padding: 0 !important;
+}
+
+.portlet-column-content.empty {
+  padding: 0 !important;
+}
+
+h,
+.h {
+  &1 {
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: $turq;
+  }
+
+  &2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $turq;
+  }
+
+  &3 {
+    font-size: 2.1875rem;
+    font-weight: bold;
+    color: $turq;
+  }
+
+  &4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: $turq;
+  }
+
+  &5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $turq;
+  }
+
+  &6 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: $turq;
+  }
+}
+
+.whatsapp.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  -webkit-animation: all 1s ease-in-out;
+  animation: all 1s ease-in-out;
+
+  img {
+    width: 70px;
+    height: auto;
+  }
+
+  &:hover {
+    transform: scale(0.95, 0.95);
+  }
+
+  .btn:focus {
+    transform: scale(0.9, 0.9);
+    box-shadow: none !important;
+  }
+}
+
+
+@media (max-width: 550px) {
+  footer .col-xs-6 {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+footer .content {
+  padding-top: 4.0625rem !important;
+}
+
+.fa-youtube-play:before {
+  content: "\f167";
+}

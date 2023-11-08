@@ -1,0 +1,88 @@
+
+:root {
+  --turq-200: #00E0CA;
+  --turq-300: ##00CCB8;
+  --turq: #00ae9d;
+  --turq-500: #00A091;
+  --turq-600: #009285;
+
+  --verdee-200: #005566;
+  --verdee-300: #004452;
+  --verdee: #003641;
+  --verdee-500: #002A33;
+  --verdee-600: #001E24;
+
+  --verdem-200: #92D421;
+  --verdem-300: #86C21E;
+  --verdem: #7DB61C;
+  --verdem-500: #73A81A;
+  --verdem-600: #679617;
+
+  --verdec-200: #EAF500;
+  --verdec-300: #D7E000;
+  --verdec: #C9D200;
+  --verdec-500: #B9C200;
+  --verdec-600: #A6AD00;
+
+  --roxo-200: #5956B3;
+  --roxo-300: #4E4CA9;
+  --roxo: #49479D;
+  --roxo-500: #41408C;
+  --roxo-600: #3B397E;
+
+  --branco: #FFFFFF;
+  --cinza-200: #F2F2F2;
+  --cinza-300: #E9E9E9;
+  --cinza-400: #D1D1D1;
+  --cinza-500: #B4B4B4;
+  --cinza-600: #9d9d9d;
+  --cinza-700: #6e6e6e;
+  --cinza-800: #5E5E5E;
+  --cinza-900: #333;
+  --preto: #000;
+
+  --transparente: rgba(0, 0, 0, 0);
+
+}
+
+$turq-200:var(--turq-200);
+$turq-300:var(--turq-300);
+$turq:var(--turq);
+$turq-500:var(--turq-500);
+$turq-600:var(--turq-600);
+
+$verdee-200:var(--verdee-200);
+$verdee-300:var(--verdee-300);
+$verdee:var(--verdee);
+$verdee-500:var(--verdee-500);
+$verdee-600:var(--verdee-600);
+
+$verdem-200:var(--verdem-200);
+$verdem-300:var(--verdem-300);
+$verdem:var(--verdem);
+$verdem-500:var(--verdem-500);
+$verdem-600:var(--verdem-600);
+
+$verdec-200:var(--verdec-200);
+$verdec-300:var(--verdec-300);
+$verdec:var(--verdec);
+$verdec-500:var(--verdec-500);
+$verdec-600:var(--verdec-600);
+
+$roxo-200:var(--roxo-200);
+$roxo-300:var(--roxo-300);
+$roxo:var(--roxo);
+$roxo-500:var(--roxo-500);
+$roxo-600:var(--roxo-600);
+
+$branco:var(--branco);
+$cinza-200:var(--cinza-200);
+$cinza-300:var(--cinza-300);
+$cinza-400:var(--cinza-400);
+$cinza-500:var(--cinza-500);
+$cinza-600:var(--cinza-600);
+$cinza-700:var(--cinza-700);
+$cinza-800:var(--cinza-800);
+$cinza-900:var(--cinza-900);
+$preto:var(--preto);
+$transparente:var(--transparente);

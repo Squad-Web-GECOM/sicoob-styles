@@ -8,7 +8,7 @@
     gap: 20px;
 
     * {
-        transition: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
+        transition: var(--transition-1);
     }
 
     .cartao {
@@ -23,9 +23,6 @@
             flex: 0 0 50% !important;
         }
 
-
-        
-
         &:hover {
             border-color: var(--turq);
         }
@@ -37,10 +34,9 @@
             gap: 0.5rem;
 
             svg{
-                fill: var(--turq);
+                fill: inherit;
             }
         }
-
 
         .flex-container {
             display: flex;
@@ -72,7 +68,6 @@
                 filter: brightness(10) saturate(0%) contrast(200%);
             }
         }
-
 
         .infos {
             flex: 0 0 70% !important;

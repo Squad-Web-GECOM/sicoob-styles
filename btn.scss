@@ -1,14 +1,18 @@
-
+@import 'colors.scss';
 
 /* BOTÕES */
 
 .btn {
+  outline: 0px!important;
+  transition: var(--transition-1);
 
     &-primary {
       border-color: $turq;
       background-color: $turq;
       color: $branco;
-      transition: .5s all ease-in-out;
+      fill: $branco;
+      font-weight: bold;
+      
   
       &:not(:disabled):not(.disabled).active,
       &:not(:disabled):not(.disabled):active,
@@ -19,7 +23,7 @@
       }
   
       &:focus-visible {
-        outline: $verdec auto 0px;
+        outline: 0px!important;
       }
   
       &.focus,
@@ -27,27 +31,29 @@
       &:not(:disabled):not(.disabled).active:focus,
       &:not(:disabled):not(.disabled):active:focus,
       .show>&.dropdown-toggle:focus {
-        box-shadow: 0 0 0 0rem $verdec;
+        box-shadow: 0!important;
       }
     }
   
     &-secondary {
       border-color: $turq !important;
-      background-color: $turq !important;
-      color: $verdee !important;
+      background-color: $transparente !important;
+      color: $turq !important;
+      fill: $turq !important;
       font-weight: bold;
       padding: .3rem 1rem;
-      transition: .5s all ease-in-out;
   
       &:not(:disabled):not(.disabled).active,
       &:not(:disabled):not(.disabled):active,
       .show>&.dropdown-toggle,
       &:hover {
         background-color: $turq !important;
+        color: $branco !important;
+        fill: $branco !important;
       }
   
       &:focus-visible {
-        outline: $verdee auto 1px !important;
+        outline: 0px!important;
       }
   
       &.focus,
@@ -55,7 +61,7 @@
       &:not(:disabled):not(.disabled).active:focus,
       &:not(:disabled):not(.disabled):active:focus,
       .show>&.dropdown-toggle:focus {
-        box-shadow: 0 0 0 0.1rem $verdee !important;
+        box-shadow: 0!important;
       }
     }
   
@@ -102,5 +108,6 @@
         }
       }
     }
+
   
   }

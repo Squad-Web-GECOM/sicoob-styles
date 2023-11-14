@@ -1,59 +1,5 @@
-:root {
-  --turq-200: #00E0CA;
-  --turq-300: ##00CCB8;
-  --turq: #00ae9d;
-  --turq-500: #00A091;
-  --turq-600: #009285;
-
-  --verdee-200: #005566;
-  --verdee-300: #004452;
-  --verdee: #003641;
-  --verdee-500: #002A33;
-  --verdee-600: #001E24;
-
-  --verdem-200: #92D421;
-  --verdem-300: #86C21E;
-  --verdem: #7DB61C;
-  --verdem-500: #73A81A;
-  --verdem-600: #679617;
-
-  --verdec-200: #EAF500;
-  --verdec-300: #D7E000;
-  --verdec: #C9D200;
-  --verdec-500: #B9C200;
-  --verdec-600: #A6AD00;
-
-  --roxo-200: #5956B3;
-  --roxo-300: #4E4CA9;
-  --roxo: #49479D;
-  --roxo-500: #41408C;
-  --roxo-600: #3B397E;
-
-  --branco: #FFFFFF;
-  --cinza-200: #F2F2F2;
-  --cinza-300: #E9E9E9;
-  --cinza-400: #D1D1D1;
-  --cinza-500: #B4B4B4;
-  --cinza-600: #9d9d9d;
-  --cinza-700: #6e6e6e;
-  --cinza-800: #5E5E5E;
-  --cinza-900: #333;
-  --preto: #000;
-
-  --transparente: rgba(0, 0, 0, 0);
-
-  --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
-  --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
-
-}
-
-
+@import 'root.scss';
 @import 'colors.scss';
-@import 'utilities.scss';
-@import 'btn.scss';
-@import 'card.scss';
-@import 'accordion.scss';
-@import 'tabs.scss';
 
 /* 
 --------------------------------
@@ -84,52 +30,13 @@ body {
 }
 
 
-.nowrap {
-  white-space: nowrap;
-}
 
-.pacifico {
-  font-family: 'Pacifico', cursive;
-}
-
-
-.bg-mais {
-  --plus-size: 24px;
-  position: absolute;
-  //top: calc(-1*var(--plus-size) * 1);
-  //bottom: calc(-1*var(--plus-size) * 1);
-  //left: calc(-1*var(--plus-size) * 1);
-  //right: calc(-1*var(--plus-size) * 1);
-  //height: calc(var(--plus-size) * 1);
-  //width: calc(var(--plus-size) * 1);
-  background-size: var(--plus-size) var(--plus-size);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23000000" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-
-  &.turq {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2300ae9d" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-  &.verdee {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23003641" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-  &.verdem {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%237DB61C" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-  &.verdec {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23C9D200" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-  &.roxo {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2349479D" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-  &.branco {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23FFFFFF" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-  }
-
-
-}
 
 @import 'liferay.scss';
+
+
+@import 'utilities.scss';
+@import 'btn.scss';
+@import 'card.scss';
+@import 'accordion.scss';
+@import 'tabs.scss';

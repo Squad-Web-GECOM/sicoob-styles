@@ -40,6 +40,122 @@
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
 }
 
+/* 
+--------------------------------
+Accordions
+https://www.sicoob.com.br/web/sicoobcentralscrs/desenrola-brasil
+https://www.sicoob.com.br/web/relacaocooperados/governanca-corporativa
+
+https://www.cssportal.com/css-cubic-bezier-generator/
+--------------------------------
+*/
+/* 
+--------------------------------
+GERAIS
+--------------------------------
+*/
+html {
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  font-family: "Asap", sans-serif;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+body #content,
+#content,
+.portlet-column {
+  padding: 0 !important;
+}
+
+.portlet-column-content.empty {
+  padding: 0 !important;
+}
+
+h1,
+.h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h2,
+.h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h3,
+.h3 {
+  font-size: 2.1875rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h4,
+.h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h5,
+.h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h6,
+.h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+
+.whatsapp.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  animation: all 1s ease-in-out;
+}
+.whatsapp.wpp img {
+  width: 70px;
+  height: auto;
+}
+.whatsapp.wpp:hover {
+  transform: scale(0.95, 0.95);
+}
+.whatsapp.wpp .btn:focus {
+  transform: scale(0.9, 0.9);
+  box-shadow: none !important;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1248px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer .col-xs-6 {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+footer .content {
+  padding-top: 4.0625rem !important;
+}
+
+.fa-youtube-play:before {
+  content: "\f167";
+}
+
 /* COR DAS FONTES */
 .c-turq {
   color: var(--turq) !important;
@@ -578,15 +694,49 @@
   height: 100vh;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.bg-mais {
+  --plus-size: 24px;
+  position: absolute;
+  background-size: var(--plus-size) var(--plus-size);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23000000" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.turq {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2300ae9d" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.verdee {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23003641" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.verdem {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%237DB61C" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.verdec {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23C9D200" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.roxo {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2349479D" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+.bg-mais.branco {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23FFFFFF" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
+}
+
 /* BOTÕES */
 .btn {
   outline: 0px !important;
-  transition: 0.5s all ease-in-out;
+  transition: var(--transition-1);
 }
 .btn-primary {
   border-color: var(--turq);
   background-color: var(--turq);
   color: var(--branco);
+  fill: var(--branco);
   font-weight: bold;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
@@ -603,12 +753,14 @@
   border-color: var(--turq) !important;
   background-color: var(--transparente) !important;
   color: var(--turq) !important;
+  fill: var(--turq) !important;
   font-weight: bold;
   padding: 0.3rem 1rem;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
   background-color: var(--turq) !important;
   color: var(--branco) !important;
+  fill: var(--branco) !important;
 }
 .btn-secondary:focus-visible {
   outline: 0px !important;
@@ -661,7 +813,7 @@
   gap: 20px;
 }
 .comp_cards * {
-  transition: all 0.5s cubic-bezier(0.6, -0.1, 0.4, 1.1);
+  transition: var(--transition-1);
 }
 .comp_cards .cartao {
   border: solid 1px var(--cinza-500);
@@ -686,7 +838,7 @@
   gap: 0.5rem;
 }
 .comp_cards .cartao .btn svg {
-  fill: var(--turq);
+  fill: inherit;
 }
 .comp_cards .cartao .flex-container {
   display: flex;
@@ -729,146 +881,4 @@
 .comp_cards .cartao .infos h2,
 .comp_cards .cartao .infos p {
   margin-bottom: 0px !important;
-}
-
-/* 
---------------------------------
-Accordions
-https://www.sicoob.com.br/web/sicoobcentralscrs/desenrola-brasil
-https://www.sicoob.com.br/web/relacaocooperados/governanca-corporativa
-
-https://www.cssportal.com/css-cubic-bezier-generator/
---------------------------------
-*/
-/* 
---------------------------------
-GERAIS
---------------------------------
-*/
-html {
-  width: 100vw;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100vw;
-  font-family: "Asap", sans-serif;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.pacifico {
-  font-family: "Pacifico", cursive;
-}
-
-.bg-mais {
-  --plus-size: 24px;
-  position: absolute;
-  background-size: var(--plus-size) var(--plus-size);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23000000" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.turq {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2300ae9d" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.verdee {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23003641" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.verdem {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%237DB61C" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.verdec {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23C9D200" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.roxo {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%2349479D" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-.bg-mais.branco {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><g><path fill="%23FFFFFF" d="m4.4,9c-.5,0-.7-.2-.7-.4v-3.3H.4c-.3,0-.4-.3-.4-.7v-.2c0-.4.1-.6.4-.6h3.3V.4c0-.3.2-.4.7-.4h.2c.4,0,.7.1.7.4v3.3h3.3c.2.1.4.3.4.7v.1c0,.5-.2.8-.5.8h-3.2v3.3c0,.2-.3.4-.7.4h-.2Z"/></g></svg>');
-}
-
-.row {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-body #content,
-#content,
-.portlet-column {
-  padding: 0 !important;
-}
-
-.portlet-column-content.empty {
-  padding: 0 !important;
-}
-
-h1,
-.h1 {
-  font-size: 3.125rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-h2,
-.h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-h3,
-.h3 {
-  font-size: 2.1875rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-h4,
-.h4 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-h5,
-.h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-h6,
-.h6 {
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: var(--turq);
-}
-
-.whatsapp.wpp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-  animation: all 1s ease-in-out;
-}
-.whatsapp.wpp img {
-  width: 70px;
-  height: auto;
-}
-.whatsapp.wpp:hover {
-  transform: scale(0.95, 0.95);
-}
-.whatsapp.wpp .btn:focus {
-  transform: scale(0.9, 0.9);
-  box-shadow: none !important;
-}
-
-@media (max-width: 550px) {
-  footer .col-xs-6 {
-    max-width: 100%;
-    padding-bottom: 30px;
-  }
-}
-footer .content {
-  padding-top: 4.0625rem !important;
-}
-
-.fa-youtube-play:before {
-  content: "\f167";
 }/*# sourceMappingURL=sicoob-styles.css.map */

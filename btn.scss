@@ -7,8 +7,8 @@
   transition: var(--transition-1);
 
     &-primary {
-      border-color: $turq;
-      background-color: $turq;
+      border-color: $cor-perfil;
+      background-color: $cor-perfil;
       color: $branco;
       fill: $branco;
       font-weight: bold;
@@ -18,8 +18,8 @@
       &:not(:disabled):not(.disabled):active,
       .show>&.dropdown-toggle,
       &:hover {
-        background-color: $turq-500;
-        border-color: $turq-500;
+        background-color: $cor-perfil-500;
+        border-color: $cor-perfil-500;
       }
   
       &:focus-visible {
@@ -36,10 +36,10 @@
     }
   
     &-secondary {
-      border-color: $turq !important;
+      border-color: $cor-perfil !important;
       background-color: $transparente !important;
-      color: $turq !important;
-      fill: $turq !important;
+      color: $cor-perfil !important;
+      fill: $cor-perfil !important;
       font-weight: bold;
       padding: .3rem 1rem;
   
@@ -47,7 +47,7 @@
       &:not(:disabled):not(.disabled):active,
       .show>&.dropdown-toggle,
       &:hover {
-        background-color: $turq !important;
+        background-color: $cor-perfil !important;
         color: $branco !important;
         fill: $branco !important;
       }

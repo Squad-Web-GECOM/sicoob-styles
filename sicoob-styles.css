@@ -38,6 +38,10 @@
   --transparente: rgba(0, 0, 0, 0);
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
+  --box-shadow-1: 0 2px 8px rgba(0,0,0,0.1);
+  --box-shadow-2: 0 8px 16px rgba(0,0,0,0.1);
+  --box-shadow-3: 0 16px 32px rgba(0,0,0,0.1);
+  --box-shadow-4: 0 24px 48px rgba(0,0,0,0.1);
 }
 
 /* 
@@ -694,6 +698,20 @@ footer .content {
   height: 100vh;
 }
 
+/* BOX SHADOW */
+.box-shadow-1 {
+  box-shadow: var(--box-shadow-1);
+}
+.box-shadow-2 {
+  box-shadow: var(--box-shadow-2);
+}
+.box-shadow-3 {
+  box-shadow: var(--box-shadow-3);
+}
+.box-shadow-4 {
+  box-shadow: var(--box-shadow-4);
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -822,6 +840,7 @@ footer .content {
   max-width: 100%;
   flex: 0 0 30% !important;
   min-width: 312px;
+  box-shadow: var(--box-shadow-1);
 }
 @media (max-width: 992px) {
   .comp_cards .cartao {
@@ -830,6 +849,8 @@ footer .content {
 }
 .comp_cards .cartao:hover {
   border-color: var(--turq);
+  box-shadow: var(--box-shadow-1);
+  transform: translateY(-2px);
 }
 .comp_cards .cartao .btn {
   display: flex;

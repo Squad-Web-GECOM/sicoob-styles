@@ -34,7 +34,38 @@
   --cinza-800: #5E5E5E;
   --cinza-900: #333;
   --preto: #000;
+  --cor-perfil-200: var(--turq-200);
+  --cor-perfil-300: var(--turq-300);
+  --cor-perfil: var(--turq);
+  --cor-perfil-500: var(--turq-500);
+  --cor-perfil-600: var(--turq-600);
   --transparente: rgba(0, 0, 0, 0);
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
+  --box-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.1);
+  --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.1);
+}
+
+body.para-voce {
+  --cor-perfil-200: var(--turq-200);
+  --cor-perfil-300: var(--turq-300);
+  --cor-perfil: var(--turq);
+  --cor-perfil-500: var(--turq-500);
+  --cor-perfil-600: var(--turq-600);
+}
+body.para-empresa {
+  --cor-perfil-200: var(--verdee-200);
+  --cor-perfil-300: var(--verdee-300);
+  --cor-perfil: var(--verdee);
+  --cor-perfil-500: var(--verdee-500);
+  --cor-perfil-600: var(--verdee-600);
+}
+body.para-agronegocio {
+  --cor-perfil-200: var(--verdem-200);
+  --cor-perfil-300: var(--verdem-300);
+  --cor-perfil: var(--verdem);
+  --cor-perfil-500: var(--verdem-500);
+  --cor-perfil-600: var(--verdem-600);
 }/*# sourceMappingURL=root.css.map */

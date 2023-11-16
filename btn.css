@@ -5,15 +5,15 @@
   transition: var(--transition-1);
 }
 .btn-primary {
-  border-color: var(--turq);
-  background-color: var(--turq);
+  border-color: var(--cor-perfil);
+  background-color: var(--cor-perfil);
   color: var(--branco);
   fill: var(--branco);
   font-weight: bold;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  background-color: var(--turq-500);
-  border-color: var(--turq-500);
+  background-color: var(--cor-perfil-500);
+  border-color: var(--cor-perfil-500);
 }
 .btn-primary:focus-visible {
   outline: 0px !important;
@@ -22,15 +22,15 @@
   box-shadow: 0 !important;
 }
 .btn-secondary {
-  border-color: var(--turq) !important;
+  border-color: var(--cor-perfil) !important;
   background-color: var(--transparente) !important;
-  color: var(--turq) !important;
-  fill: var(--turq) !important;
+  color: var(--cor-perfil) !important;
+  fill: var(--cor-perfil) !important;
   font-weight: bold;
   padding: 0.3rem 1rem;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
-  background-color: var(--turq) !important;
+  background-color: var(--cor-perfil) !important;
   color: var(--branco) !important;
   fill: var(--branco) !important;
 }

@@ -18,13 +18,18 @@
         max-width: 100%;
         flex: 0 0 30% !important;
         min-width: 312px;
+        box-shadow: var(--box-shadow-1);
 
         @media (max-width:992px) {
             flex: 0 0 50% !important;
         }
 
         &:hover {
-            border-color: var(--turq);
+            border-color: var(--cor-perfil);
+            box-shadow: var(--box-shadow-2);
+            transform: translateY(-2px);
+
+            
         }
 
         .btn {
@@ -34,7 +39,12 @@
             gap: 0.5rem;
 
             svg{
-                fill: inherit;
+                fill: var(--cor-perfil);
+            }
+            &:hover{
+                svg{
+                    fill: var(--branco);
+                } 
             }
         }
 
@@ -73,7 +83,7 @@
             flex: 0 0 70% !important;
 
             h2 {
-                color: var(--turq) !important;
+                color: var(--cor-perfil) !important;
                 font-weight: 700;
                 font-size: 35px !important;
                 line-height: 35px !important;

@@ -550,6 +550,14 @@
   box-shadow: var(--box-shadow-4);
 }
 
+/* TRANSITION */
+.transition-1 {
+  transition: var(--transition-1);
+}
+.transition-2 {
+  transition: var(--box-shadow-2);
+}
+
 .nowrap {
   white-space: nowrap;
 }

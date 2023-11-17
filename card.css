@@ -1,5 +1,4 @@
-.comp_cards {
-  padding: 100px 0px;
+.acland-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,11 +6,11 @@
   justify-content: center;
   gap: 20px;
 }
-.comp_cards * {
-  transition: var(--transition-1);
+.acland-cards * {
+  transition: var(--transition-2);
 }
-.comp_cards .cartao {
-  border: solid 1px var(--cinza-500);
+.acland .card {
+  border: solid 1px var(--cinza-400);
   padding: 1.5rem 2rem !important;
   border-radius: 0.5rem !important;
   max-width: 100%;
@@ -20,28 +19,29 @@
   box-shadow: var(--box-shadow-1);
 }
 @media (max-width: 992px) {
-  .comp_cards .cartao {
+  .acland .card {
     flex: 0 0 50% !important;
   }
 }
-.comp_cards .cartao:hover {
+.acland .card:hover {
   border-color: var(--cor-perfil);
   box-shadow: var(--box-shadow-2);
   transform: translateY(-2px);
 }
-.comp_cards .cartao .btn {
+.acland .card .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.comp_cards .cartao .btn svg {
+.acland .card .btn svg {
   fill: var(--cor-perfil);
+  transition: none;
 }
-.comp_cards .cartao .btn:hover svg {
+.acland .card .btn:hover svg {
   fill: var(--branco);
 }
-.comp_cards .cartao .flex-container {
+.acland .card-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,7 +52,7 @@
   flex-wrap: nowrap;
   width: 80%;
 }
-.comp_cards .cartao .logo-container {
+.acland .card-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,22 +64,22 @@
   flex: 0 0 75px !important;
   margin-inline: auto !important;
 }
-.comp_cards .cartao .logo-container svg,
-.comp_cards .cartao .logo-container img {
-  width: 80%;
+.acland .card-logo svg,
+.acland .card-logo img {
+  max-width: 80%;
+  max-height: 80%;
   filter: brightness(10) saturate(0%) contrast(200%);
 }
-.comp_cards .cartao .infos {
+.acland .card-info {
   flex: 0 0 70% !important;
 }
-.comp_cards .cartao .infos h2 {
+.acland .card-title {
   color: var(--cor-perfil) !important;
   font-weight: 700;
   font-size: 35px !important;
   line-height: 35px !important;
   margin-bottom: 0 !important;
 }
-.comp_cards .cartao .infos h2,
-.comp_cards .cartao .infos p {
+.acland .card-title, .acland .card-text {
   margin-bottom: 0px !important;
 }/*# sourceMappingURL=card.css.map */

@@ -2,7 +2,7 @@
 /* BOTÕES */
 .btn {
   outline: 0px !important;
-  transition: var(--transition-1);
+  transition: var(--transition-2);
 }
 .btn-primary {
   border-color: var(--cor-perfil);
@@ -41,7 +41,7 @@
   box-shadow: 0 !important;
 }
 .btn-click {
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition-2);
 }
 .btn-click:hover {
   transform: translateX(2px) translateY(2px);
@@ -50,27 +50,27 @@
   transform: translateX(4px) translateY(4px);
 }
 .btn-click-shadow {
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-2);
 }
 .btn-click-shadow:hover {
   transform: translateX(2px) translateY(2px);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .btn-click-shadow:active {
   transform: translateX(4px) translateY(4px);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 .btn-click-img {
   box-shadow: none !important;
   transition: all 0.3s ease-in-out;
-  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.1));
 }
 .btn-click-img:hover {
   transform: translateX(2px) translateY(2px);
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 .btn-click-img:active {
   transform: translateX(4px) translateY(4px);
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }/*# sourceMappingURL=btn.css.map */

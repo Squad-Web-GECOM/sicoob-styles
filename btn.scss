@@ -4,7 +4,7 @@
 
 .btn {
   outline: 0px!important;
-  transition: var(--transition-1);
+  transition: var(--transition-2);
 
     &-primary {
       border-color: $cor-perfil;
@@ -66,7 +66,7 @@
     }
   
     &-click {
-      transition: all 0.3s ease-in-out;
+      transition: var(--transition-2);
   
       &:hover {
         transform: translateX(2px) translateY(2px);
@@ -78,33 +78,33 @@
 
 
       &-shadow {
-        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+        transition: var(--transition-2);
     
         &:hover {
           transform: translateX(2px) translateY(2px);
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
     
         &:active {
           transform: translateX(4px) translateY(4px);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
         }
       }
     
       &-img {
         box-shadow: none !important;
         transition: all 0.3s ease-in-out;
-        filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.1));
     
         &:hover {
           transform: translateX(2px) translateY(2px);
-          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
         }
     
         &:active {
           transform: translateX(4px) translateY(4px);
-          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
         }
       }
     }

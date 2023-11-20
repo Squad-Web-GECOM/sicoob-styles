@@ -39,6 +39,12 @@
   --cor-perfil: var(--turq);
   --cor-perfil-500: var(--turq-500);
   --cor-perfil-600: var(--turq-600);
+  --size-0:0rem;
+  --size-1:0.25rem;
+  --size-2:0.5rem;
+  --size-3:1rem;
+  --size-4:1.5rem;
+  --size-5:3rem;
   --transparente: rgba(0, 0, 0, 0);
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);

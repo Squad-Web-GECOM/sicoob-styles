@@ -732,6 +732,28 @@
 
 }
 
+/* GAP */
+.gap{
+  &-0{
+    gap: var(--size-0)!important;
+  }
+  &-1{
+    gap: var(--size-1)!important;
+  }
+  &-2{
+    gap: var(--size-2)!important;
+  }
+  &-3{
+    gap: var(--size-3)!important;
+  }
+  &-4{
+    gap: var(--size-4)!important;
+  }
+  &-5{
+    gap: var(--size-5)!important;
+  }
+}
+
 /* BOX SHADOW */
 .box-shadow{
   &-1{

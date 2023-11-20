@@ -362,7 +362,39 @@
   font-weight: 900 !important;
 }
 
-/* PESO DAS FONTES */
+/* TAMANHO DAS FONTES */
+.fs-1 {
+  font-size: var(--font-size-1) !important;
+  line-height: calc(0.5rem + var(--font-size-1));
+}
+.fs-2 {
+  font-size: var(--font-size-2) !important;
+  line-height: calc(0.5rem + var(--font-size-2));
+}
+.fs-3 {
+  font-size: var(--font-size-3) !important;
+  line-height: calc(0.5rem + var(--font-size-3));
+}
+.fs-4 {
+  font-size: var(--font-size-4) !important;
+  line-height: calc(0.5rem + var(--font-size-4));
+}
+.fs-5 {
+  font-size: var(--font-size-5) !important;
+  line-height: calc(0.5rem + var(--font-size-5));
+}
+.fs-6 {
+  font-size: var(--font-size-6) !important;
+  line-height: calc(0.5rem + var(--font-size-6));
+}
+.fs-base {
+  font-size: var(--font-size-base) !important;
+  line-height: calc(0.3rem + var(--font-size-base));
+}
+.fs-small {
+  font-size: var(--font-size-small) !important;
+  line-height: calc(0.3rem + var(--font-size-small));
+}
 .fs-08 {
   font-size: 0.8rem !important;
 }
@@ -576,6 +608,23 @@
 }
 .transition-2 {
   transition: var(--box-shadow-2);
+}
+
+/* OPACITY */
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-025 {
+  opacity: 0.25;
+}
+.opacity-05 {
+  opacity: 0.5;
+}
+.opacity-075 {
+  opacity: 0.75;
+}
+.opacity-1 {
+  opacity: 1;
 }
 
 .nowrap {

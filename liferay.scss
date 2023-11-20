@@ -55,6 +55,46 @@ h,
   }
 }
 
+.acland{
+  h, .h {
+    &1 {
+      //font-size: 3.125rem!important;
+      font-size: var(--font-size-1)!important;
+      line-height: calc(.3rem + var(--font-size-1));
+    }
+  
+    &2 {
+      //font-size: 2.5rem!important;
+      font-size: var(--font-size-2)!important;
+      line-height: calc(.3rem + var(--font-size-2));
+    }
+  
+    &3 {
+      //font-size: 2.1875rem!important;
+      font-size: var(--font-size-3)!important;
+      line-height: calc(.3rem + var(--font-size-3));
+    }
+  
+    &4 {
+      //font-size: 1.75rem!important;
+      font-size: var(--font-size-4)!important;
+      line-height: calc(.3rem + var(--font-size-4));
+    }
+  
+    &5 {
+      //font-size: 1.5rem!important;
+      font-size: var(--font-size-5)!important;
+      line-height: calc(.3rem + var(--font-size-5));
+    }
+  
+    &6 {
+      //font-size: 1rem!important;
+      font-size: var(--font-size-6)!important;
+      line-height: calc(.3rem + var(--font-size-6));
+    }
+  }
+}
+
 .whatsapp.wpp {
   position: fixed;
   bottom: 20px;

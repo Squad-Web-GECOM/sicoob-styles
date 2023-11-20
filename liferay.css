@@ -74,6 +74,14 @@ h6,
   font-size: var(--font-size-6) !important;
   line-height: calc(0.3rem + var(--font-size-6));
 }
+.acland p {
+  font-size: var(--font-size-base) !important;
+  line-height: calc(0.3rem + var(--font-size-base));
+}
+.acland .small {
+  font-size: var(--font-size-small) !important;
+  line-height: calc(0.3rem + var(--font-size-small));
+}
 
 .whatsapp.wpp {
   position: fixed;

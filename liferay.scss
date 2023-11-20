@@ -93,6 +93,16 @@ h,
       line-height: calc(.3rem + var(--font-size-6));
     }
   }
+  p {
+    //font-size: 1rem!important;
+    font-size: var(--font-size-base) !important;
+    line-height: calc(.3rem + var(--font-size-base));
+  }
+  .small{
+    //font-size: .875rem!important;
+    font-size: var(--font-size-small) !important;
+    line-height: calc(.3rem + var(--font-size-small));
+  }
 }
 
 .whatsapp.wpp {

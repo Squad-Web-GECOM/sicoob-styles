@@ -174,35 +174,35 @@ h6,
 
 .acland h1, .acland .h1 {
   font-size: var(--font-size-1) !important;
-  line-height: calc(0.3rem + var(--font-size-1));
+  line-height: var(--font-size-1);
 }
 .acland h2, .acland .h2 {
   font-size: var(--font-size-2) !important;
-  line-height: calc(0.3rem + var(--font-size-2));
+  line-height: var(--font-size-2);
 }
 .acland h3, .acland .h3 {
   font-size: var(--font-size-3) !important;
-  line-height: calc(0.3rem + var(--font-size-3));
+  line-height: var(--font-size-3);
 }
 .acland h4, .acland .h4 {
   font-size: var(--font-size-4) !important;
-  line-height: calc(0.3rem + var(--font-size-4));
+  line-height: var(--font-size-4);
 }
 .acland h5, .acland .h5 {
   font-size: var(--font-size-5) !important;
-  line-height: calc(0.3rem + var(--font-size-5));
+  line-height: var(--font-size-5);
 }
 .acland h6, .acland .h6 {
   font-size: var(--font-size-6) !important;
-  line-height: calc(0.3rem + var(--font-size-6));
+  line-height: var(--font-size-6);
 }
 .acland p {
   font-size: var(--font-size-base) !important;
-  line-height: calc(0.3rem + var(--font-size-base));
+  line-height: var(--font-size-base);
 }
 .acland .small {
   font-size: var(--font-size-small) !important;
-  line-height: calc(0.3rem + var(--font-size-small));
+  line-height: var(--font-size-small);
 }
 
 .whatsapp.wpp {

@@ -26,7 +26,7 @@ html {
 
 body {
   width: 100vw;
-  font-family: 'Asap', sans-serif;
+  font-family: 'Sicoob sans', 'Asap', sans-serif;
 }
 
 
@@ -37,6 +37,7 @@ body {
 
 @import 'utilities.scss';
 @import 'btn.scss';
+@import 'acland.scss';
 @import 'card.scss';
 @import 'accordion.scss';
 @import 'tabs.scss';

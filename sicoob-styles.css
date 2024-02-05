@@ -117,7 +117,7 @@ html {
 
 body {
   width: 100vw;
-  font-family: "Asap", sans-serif;
+  font-family: "Sicoob sans", "Asap", sans-serif;
 }
 
 .row {
@@ -170,39 +170,6 @@ h6,
   font-size: 1.125rem;
   font-weight: bold;
   color: var(--turq);
-}
-
-.acland h1, .acland .h1 {
-  font-size: var(--font-size-1) !important;
-  line-height: var(--font-size-1);
-}
-.acland h2, .acland .h2 {
-  font-size: var(--font-size-2) !important;
-  line-height: var(--font-size-2);
-}
-.acland h3, .acland .h3 {
-  font-size: var(--font-size-3) !important;
-  line-height: var(--font-size-3);
-}
-.acland h4, .acland .h4 {
-  font-size: var(--font-size-4) !important;
-  line-height: var(--font-size-4);
-}
-.acland h5, .acland .h5 {
-  font-size: var(--font-size-5) !important;
-  line-height: var(--font-size-5);
-}
-.acland h6, .acland .h6 {
-  font-size: var(--font-size-6) !important;
-  line-height: var(--font-size-6);
-}
-.acland p {
-  font-size: var(--font-size-base) !important;
-  line-height: var(--font-size-base);
-}
-.acland .small {
-  font-size: var(--font-size-small) !important;
-  line-height: var(--font-size-small);
 }
 
 .whatsapp.wpp {
@@ -987,6 +954,39 @@ footer .content {
 .btn-click-img:active {
   transform: translateX(4px) translateY(4px);
   filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+
+.acland h1, .acland .h1 {
+  font-size: var(--font-size-1) !important;
+  line-height: var(--font-size-1);
+}
+.acland h2, .acland .h2 {
+  font-size: var(--font-size-2) !important;
+  line-height: var(--font-size-2);
+}
+.acland h3, .acland .h3 {
+  font-size: var(--font-size-3) !important;
+  line-height: var(--font-size-3);
+}
+.acland h4, .acland .h4 {
+  font-size: var(--font-size-4) !important;
+  line-height: var(--font-size-4);
+}
+.acland h5, .acland .h5 {
+  font-size: var(--font-size-5) !important;
+  line-height: var(--font-size-5);
+}
+.acland h6, .acland .h6 {
+  font-size: var(--font-size-6) !important;
+  line-height: var(--font-size-6);
+}
+.acland p {
+  font-size: var(--font-size-base) !important;
+  line-height: var(--font-size-base);
+}
+.acland .small {
+  font-size: var(--font-size-small) !important;
+  line-height: var(--font-size-small);
 }
 
 .acland-cards {

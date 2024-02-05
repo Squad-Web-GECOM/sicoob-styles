@@ -40,6 +40,9 @@
   --cinza-900: #333;
   --preto: #000;
 
+  --gradient-turq: radial-gradient(at 0% 100%, hsla(174, 100%, 43%, 1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(175, 100%, 40%, 1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(174, 100%, 43%, 1) 0px, transparent 50%);
+  --gradient-verdee: radial-gradient(at 0% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 80% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 0% 0%, hsla(190,79%,19%,1) 0px, transparent 50%);
+
   --cor-perfil-200: var(--turq-200);
   --cor-perfil-300: var(--turq-300);
   --cor-perfil: var(--turq);

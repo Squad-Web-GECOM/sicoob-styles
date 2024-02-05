@@ -1,4 +1,19 @@
 /* COR DAS FONTES */
+.c-perfil {
+  color: var(--cor-perfil) !important;
+}
+.c-perfil-200 {
+  color: var(--cor-perfil-200) !important;
+}
+.c-perfil-300 {
+  color: var(--cor-perfil-300) !important;
+}
+.c-perfil-500 {
+  color: var(--cor-perfil-500) !important;
+}
+.c-perfil-600 {
+  color: var(--cor-perfil-600) !important;
+}
 .c-turq {
   color: var(--turq) !important;
 }
@@ -97,6 +112,21 @@
 }
 
 /* COR DOS FUNDOS */
+.bg-perfil {
+  background-color: var(--cor-perfil) !important;
+}
+.bg-perfil-200 {
+  background-color: var(--cor-perfil-200) !important;
+}
+.bg-perfil-300 {
+  background-color: var(--cor-perfil-300) !important;
+}
+.bg-perfil-500 {
+  background-color: var(--cor-perfil-500) !important;
+}
+.bg-perfil-600 {
+  background-color: var(--cor-perfil-600) !important;
+}
 .bg-turq {
   background-color: var(--turq) !important;
 }
@@ -193,8 +223,26 @@
 .bg-preto {
   background-color: var(--preto) !important;
 }
-
+.bg-gradient-turq {
+  background-color: var(--turq);
+  background-image: radial-gradient(at 0% 100%, hsl(174, 100%, 43%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(175, 100%, 40%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(174, 100%, 43%) 0px, transparent 50%) !important;
+}
 /* COR, PESO E RADIUS DA BORDA */
+.border-perfil {
+  border-color: var(--cor-perfil) !important;
+}
+.border-perfil-200 {
+  border-color: var(--cor-perfil-200) !important;
+}
+.border-perfil-300 {
+  border-color: var(--cor-perfil-300) !important;
+}
+.border-perfil-500 {
+  border-color: var(--cor-perfil-500) !important;
+}
+.border-perfil-600 {
+  border-color: var(--cor-perfil-600) !important;
+}
 .border-turq {
   border-color: var(--turq) !important;
 }
@@ -454,6 +502,21 @@
 }
 
 /* FILL */
+.fill-perfil {
+  fill: var(--cor-perfil) !important;
+}
+.fill-perfil-200 {
+  fill: var(--cor-perfil-200) !important;
+}
+.fill-perfil-300 {
+  fill: var(--cor-perfil-300) !important;
+}
+.fill-perfil-500 {
+  fill: var(--cor-perfil-500) !important;
+}
+.fill-perfil-600 {
+  fill: var(--cor-perfil-600) !important;
+}
 .fill-turq {
   fill: var(--turq) !important;
 }

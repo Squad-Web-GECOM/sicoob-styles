@@ -78,6 +78,9 @@
   /* font-size 6: 37.01px → 53.75px */
   --font-size-1: clamp(2.31rem, 1.95rem + 1.82vw, 3.36rem);
 
+  --font-sans: 'Sicoob sans', 'Asap', sans-serif;
+  --font-script: 'Sicoob script', 'Pacifico', cursive;
+
   --transparente: rgba(0, 0, 0, 0);
 
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);

@@ -27,17 +27,17 @@ html {
 body {
   width: 100vw;
   font-family: 'Sicoob sans', 'Asap', sans-serif;
-  font-family: var(--font-sans);
+  font-family: var(--font-sans)!important;
 }
 
-.escrita, .script, .cursive, .cursiva{
-  font-family: var(--font-script);
+.escrita, .script, .cursive, .cursiva, .pacifico{
+  font-family: var(--font-script)!important;
 }
 
 
 
 @import 'liferay.scss';
-@import 'fonte-sicoob.scss'
+@import 'fonte-sicoob.scss';
 
 @import 'utilities.scss';
 @import 'btn.scss';

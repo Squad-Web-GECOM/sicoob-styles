@@ -12,7 +12,7 @@
         border: 0 !important;
         background: $cor-perfil !important;
         border-radius: 0.5rem !important;
-        padding: 0.75rem 1.25rem !important;
+        padding: 0!important;
         transition: var(--transition-1);
 
         &:hover {
@@ -21,15 +21,14 @@
       }
 
       .btn {
-        font-size: var(--font-size-6);
+        font-size: var(--font-size-base);
         width: 100%;
         color: $branco;
         text-decoration: none !important;
         outline: 0 !important;
         box-shadow: none !important;
         position: relative;
-        padding-inline: 0 1rem !important;
-        padding-block: 0.25rem !important;
+        padding: 1rem 2.25rem 1rem 1.25rem !important;
 
         &:after,
         &:before {
@@ -39,7 +38,7 @@
           background-repeat: no-repeat;
           background-size: cover;
           position: absolute;
-          right: 0;
+          right: 1rem;
           top: 50%;
           translate: 0 -50%;
           width: var(--minus-size);

@@ -9,36 +9,39 @@
 .acland-cards * {
   transition: var(--transition-2);
 }
-.acland .card {
+.acland .card-link {
   border: solid 1px var(--cinza-400);
   padding: 1.5rem 2rem !important;
   border-radius: 0.5rem !important;
   max-width: 100%;
   flex: 0 0 30% !important;
+  flex-direction: column;
   min-width: 312px;
   box-shadow: var(--box-shadow-1);
 }
 @media (max-width: 992px) {
-  .acland .card {
+  .acland .card-link {
     flex: 0 0 50% !important;
   }
 }
-.acland .card:hover {
+.acland .card-link:hover {
   border-color: var(--cor-perfil);
   box-shadow: var(--box-shadow-2);
   transform: translateY(-2px);
+  text-decoration: none !important;
+  color: inherit;
 }
-.acland .card .btn {
+.acland .card-link .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.acland .card .btn svg {
+.acland .card-link .btn svg {
   fill: var(--cor-perfil);
   transition: none;
 }
-.acland .card .btn:hover svg {
+.acland .card-link .btn:hover svg {
   fill: var(--branco);
 }
 .acland .card-container {

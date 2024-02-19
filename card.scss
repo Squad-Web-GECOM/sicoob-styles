@@ -14,41 +14,48 @@
     }
 
     .card {
-        border: solid 1px var(--cinza-400);
-        padding: 1.5rem 2rem !important;
-        border-radius: 0.5rem !important;
-        max-width: 100%;
-        flex: 0 0 30% !important;
-        min-width: 312px;
-        box-shadow: var(--box-shadow-1);
 
-        @media (max-width:992px) {
-            flex: 0 0 50% !important;
-        }
-
-        &:hover {
-            border-color: var(--cor-perfil);
-            box-shadow: var(--box-shadow-2);
-            transform: translateY(-2px);
-        }
-
-        .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-
-            svg {
-                fill: var(--cor-perfil);
-                transition: none;
+        &-link{
+            border: solid 1px var(--cinza-400);
+            padding: 1.5rem 2rem !important;
+            border-radius: 0.5rem !important;
+            max-width: 100%;
+            flex: 0 0 30% !important;
+            flex-direction: column;
+            min-width: 312px;
+            box-shadow: var(--box-shadow-1);
+    
+            @media (max-width:992px) {
+                flex: 0 0 50% !important;
+            }
+    
+            &:hover {
+                border-color: var(--cor-perfil);
+                box-shadow: var(--box-shadow-2);
+                transform: translateY(-2px);
+                text-decoration: none!important;
+                color: inherit;
             }
 
-            &:hover {
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+    
                 svg {
-                    fill: var(--branco);
+                    fill: var(--cor-perfil);
+                    transition: none;
+                }
+    
+                &:hover {
+                    svg {
+                        fill: var(--branco);
+                    }
                 }
             }
         }
+
 
         &-container {
             display: flex;

@@ -7,15 +7,16 @@
   --btn-base-hover: var(--cor-perfil-500);
   --btn-text: var(--branco);
 
+  
   outline: 0px !important;
   transition: var(--transition-2);
 
   &-primary {
 
-    border-color: var(--btn-base);
-    background-color: var(--btn-base);
-    color: var(--btn-text);
-    fill: var(--btn-text);
+    border-color: var(--btn-base)!important;
+    background-color: var(--btn-base)!important;
+    color: var(--btn-text)!important;
+    fill: var(--btn-text)!important;
     font-weight: bold;
 
 
@@ -23,8 +24,8 @@
     &:not(:disabled):not(.disabled):active,
     .show>&.dropdown-toggle,
     &:hover {
-      background-color: var(--btn-base-hover);
-      border-color: var(--btn-base-hover);
+      background-color: var(--btn-base-hover)!important;
+      border-color: var(--btn-base-hover)!important;
     }
 
     &:focus-visible {
@@ -172,5 +173,6 @@
   .btn {
     padding: .6em 1.2em !important;
     border-radius: .25em !important;
+    font-size: var(--font-size-base);
   }
 }

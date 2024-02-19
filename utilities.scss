@@ -308,10 +308,21 @@
   &-gradient {
     &-turq {
       background-color: $turq;
-      background-image: radial-gradient(at 0% 100%, hsla(174, 100%, 43%, 1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(175, 100%, 40%, 1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(174, 100%, 43%, 1) 0px, transparent 50%) !important;
+      background-image: $gradient-turq;
+      &-line{
+        background-color: $turq;
+        background-image: $gradient-turq-line;
+      }
     }
 
-    &-verdee {}
+    &-verdee {
+      background-color: $verdee;
+      background-image: $gradient-verdee;
+      &-line{
+        background-color: $verdee;
+        background-image: $gradient-verdee-line;
+      }
+    }
   }
 }
 

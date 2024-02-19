@@ -8,15 +8,15 @@
   transition: var(--transition-2);
 }
 .btn-primary {
-  border-color: var(--btn-base);
-  background-color: var(--btn-base);
-  color: var(--btn-text);
-  fill: var(--btn-text);
+  border-color: var(--btn-base) !important;
+  background-color: var(--btn-base) !important;
+  color: var(--btn-text) !important;
+  fill: var(--btn-text) !important;
   font-weight: bold;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  background-color: var(--btn-base-hover);
-  border-color: var(--btn-base-hover);
+  background-color: var(--btn-base-hover) !important;
+  border-color: var(--btn-base-hover) !important;
 }
 .btn-primary:focus-visible {
   outline: 0px !important;
@@ -127,4 +127,5 @@
 .acland .btn {
   padding: 0.6em 1.2em !important;
   border-radius: 0.25em !important;
+  font-size: var(--font-size-base);
 }/*# sourceMappingURL=btn.css.map */

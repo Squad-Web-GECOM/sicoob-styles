@@ -1,3 +1,4 @@
+@import 'fonte-sicoob.scss';
 @import 'root.scss';
 @import 'colors.scss';
 
@@ -26,22 +27,24 @@ html {
 
 body {
   width: 100vw;
-  font-family: 'Sicoob sans', 'Asap', sans-serif;
   font-family: var(--font-sans)!important;
+  color: var(--verdee);
 }
 
 .escrita, .script, .cursive, .cursiva, .pacifico{
   font-family: var(--font-script)!important;
+  font-weight: 700;
 }
 
 
-
 @import 'liferay.scss';
-@import 'fonte-sicoob.scss';
 
-@import 'utilities.scss';
-@import 'btn.scss';
+
 @import 'acland.scss';
+
+@import 'btn.scss';
 @import 'card.scss';
 @import 'accordion.scss';
 @import 'tabs.scss';
+
+@import 'utilities.scss';

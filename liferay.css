@@ -9,7 +9,7 @@ body #content,
   padding: 0 !important;
 }
 
-.portlet-column-content.empty {
+.acland .portlet-column-content.empty {
   padding: 0 !important;
 }
 
@@ -50,6 +50,16 @@ h6,
   color: var(--turq);
 }
 
+a {
+  color: var(--turq);
+}
+a:hover {
+  color: var(--turq-600);
+}
+a:focus {
+  box-shadow: none !important;
+}
+
 .whatsapp.wpp {
   position: fixed;
   bottom: 20px;
@@ -82,8 +92,11 @@ h6,
   }
 }
 
+footer {
+  padding-top: 4.0625rem;
+}
 footer .content {
-  padding-top: 4.0625rem !important;
+  padding: 0 0 6.25rem 0;
 }
 
 .fa-youtube-play:before {

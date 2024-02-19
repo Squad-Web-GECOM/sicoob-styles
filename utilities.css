@@ -225,8 +225,21 @@
 }
 .bg-gradient-turq {
   background-color: var(--turq);
-  background-image: radial-gradient(at 0% 100%, hsl(174, 100%, 43%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(175, 100%, 40%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(174, 100%, 43%) 0px, transparent 50%) !important;
+  background-image: var(--gradient-turq);
 }
+.bg-gradient-turq-line {
+  background-color: var(--turq);
+  background-image: var(--gradient-turq-line);
+}
+.bg-gradient-verdee {
+  background-color: var(--verdee);
+  background-image: var(--gradient-verdee);
+}
+.bg-gradient-verdee-line {
+  background-color: var(--verdee);
+  background-image: var(--gradient-verdee-line);
+}
+
 /* COR, PESO E RADIUS DA BORDA */
 .border-perfil {
   border-color: var(--cor-perfil) !important;

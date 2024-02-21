@@ -36,7 +36,9 @@
   translate: 0 -50%;
   width: var(--minus-size);
   height: var(--minus-size);
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.3s ease-in-out;
 }
 .acland .accordion .card .btn.collapsed:after {

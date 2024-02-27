@@ -1,3 +1,5 @@
+@import "../essencial/colors.scss";
+
 .acland {
 
     &-cards {
@@ -16,7 +18,7 @@
     .card {
 
         &-link{
-            border: solid 1px var(--cinza-400);
+            border: solid 1px $cinza-400;
             padding: 1.5rem 2rem !important;
             border-radius: 0.5rem !important;
             max-width: 100%;
@@ -30,7 +32,7 @@
             }
     
             &:hover {
-                border-color: var(--cor-perfil);
+                border-color: $cor-perfil;
                 box-shadow: var(--box-shadow-2);
                 transform: translateY(-2px);
                 text-decoration: none!important;
@@ -44,13 +46,13 @@
                 gap: 0.5rem;
     
                 svg {
-                    fill: var(--cor-perfil);
+                    fill: $cor-perfil;
                     transition: none;
                 }
     
                 &:hover {
                     svg {
-                        fill: var(--branco);
+                        fill: $branco;
                     }
                 }
             }
@@ -73,7 +75,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: var(--verdee);
+            background: $verdee;
             padding: .75rem;
             border-radius: 8px;
             width: 75px;
@@ -95,7 +97,7 @@
         }
 
         &-title {
-            color: var(--cor-perfil) !important;
+            color: $cor-perfil !important;
             font-weight: 700;
             font-size: 35px !important;
             line-height: 35px !important;

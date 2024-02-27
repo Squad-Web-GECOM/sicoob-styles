@@ -1,6 +1,7 @@
-@import 'fonte-sicoob.scss';
-@import 'root.scss';
-@import 'colors.scss';
+@import 'essencial/fonte-sicoob.scss';
+@import 'essencial/root.scss';
+
+@import 'essencial/utilities.scss';
 
 /* 
 --------------------------------
@@ -26,14 +27,11 @@ body {
 }
 
 
-@import 'liferay.scss';
+@import 'ajustes/liferay.scss';
+@import 'ajustes/acland.scss';
 
 
-@import 'acland.scss';
-
-@import 'btn.scss';
-@import 'card.scss';
-@import 'accordion.scss';
-@import 'tabs.scss';
-
-@import 'utilities.scss';
+@import 'elementos/btn.scss';
+@import 'elementos/card.scss';
+@import 'elementos/accordion.scss';
+@import 'elementos/tabs.scss';

@@ -375,6 +375,21 @@
 .border-radius-0 {
   border-radius: 0rem !important;
 }
+.border-radius-1 {
+  border-radius: var(--size-1) !important;
+}
+.border-radius-2 {
+  border-radius: var(--size-2) !important;
+}
+.border-radius-3 {
+  border-radius: var(--size-3) !important;
+}
+.border-radius-4 {
+  border-radius: var(--size-4) !important;
+}
+.border-radius-4 {
+  border-radius: var(--size-5) !important;
+}
 .border-radius-025 {
   border-radius: 0.25rem !important;
 }
@@ -384,13 +399,13 @@
 .border-radius-075 {
   border-radius: 0.75rem !important;
 }
-.border-radius-1 {
+.border-radius-10 {
   border-radius: 1rem !important;
 }
 .border-radius-15 {
   border-radius: 1.5rem !important;
 }
-.border-radius-2 {
+.border-radius-20 {
   border-radius: 2rem !important;
 }
 .border-radius-25 {
@@ -711,10 +726,6 @@
 
 .nowrap {
   white-space: nowrap;
-}
-
-.pacifico {
-  font-family: "Pacifico", cursive;
 }
 
 .bg-mais {

@@ -508,6 +508,26 @@
       border-radius: 0rem !important;
     }
 
+    &-1 {
+      border-radius: var(--size-1) !important;
+    }
+
+    &-2 {
+      border-radius: var(--size-2) !important;
+    }
+
+    &-3 {
+      border-radius: var(--size-3) !important;
+    }
+
+    &-4 {
+      border-radius: var(--size-4) !important;
+    }
+
+    &-4 {
+      border-radius: var(--size-5) !important;
+    }
+
     &-025 {
       border-radius: .25rem !important;
     }
@@ -520,7 +540,7 @@
       border-radius: .75rem !important;
     }
 
-    &-1 {
+    &-10 {
       border-radius: 1rem !important;
     }
 
@@ -528,7 +548,7 @@
       border-radius: 1.5rem !important;
     }
 
-    &-2 {
+    &-20 {
       border-radius: 2rem !important;
     }
 
@@ -702,6 +722,7 @@
     justify-content: center !important;
   }
 }
+
 
 /* FILL */
 
@@ -970,11 +991,6 @@
 .nowrap {
   white-space: nowrap;
 }
-
-.pacifico {
-  font-family: 'Pacifico', cursive;
-}
-
 
 .bg-mais {
   --plus-size: 24px;

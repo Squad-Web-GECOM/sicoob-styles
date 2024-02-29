@@ -29,10 +29,10 @@
   font-size: var(--font-size-6) !important;
 }
 .acland p {
-  color: var(--verdee);
+  color: var(--cor-apoio);
   font-size: var(--font-size-base) !important;
 }
 .acland .small {
-  color: var(--verdee);
+  color: var(--cor-apoio);
   font-size: var(--font-size-small) !important;
 }/*# sourceMappingURL=acland.css.map */

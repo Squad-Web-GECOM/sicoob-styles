@@ -1,9 +1,11 @@
+.acland.accordion .card,
 .acland .accordion .card {
   margin-bottom: 1rem !important;
   background: transparent;
-  border-radius: 0.5rem !important;
-  border: 0px !important;
+  border-radius: var(--size-2) !important;
+  border: var(--size-0) !important;
 }
+.acland.accordion .card .card-header,
 .acland .accordion .card .card-header {
   border: 0 !important;
   background: var(--cor-perfil) !important;
@@ -11,20 +13,24 @@
   padding: 0 !important;
   transition: var(--transition-1);
 }
+.acland.accordion .card .card-header:hover,
 .acland .accordion .card .card-header:hover {
   background: var(--cor-perfil-500) !important;
 }
+.acland.accordion .card .btn,
 .acland .accordion .card .btn {
   font-size: var(--font-size-base);
   width: 100%;
   color: var(--branco);
   text-decoration: none !important;
-  outline: 0 !important;
+  outline: var(--size-0) !important;
   box-shadow: none !important;
   position: relative;
   padding: 1rem 2.25rem 1rem 1.25rem !important;
 }
-.acland .accordion .card .btn:after, .acland .accordion .card .btn:before {
+.acland.accordion .card .btn:after, .acland.accordion .card .btn:before,
+.acland .accordion .card .btn:after,
+.acland .accordion .card .btn:before {
   --minus-size: 16px;
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='white'/%3E%3C/svg%3E");
@@ -41,33 +47,36 @@
   align-items: center;
   transition: 0.3s ease-in-out;
 }
+.acland.accordion .card .btn.collapsed:after,
 .acland .accordion .card .btn.collapsed:after {
   rotate: -90deg;
 }
+.acland.accordion .card .btn.collapsed:before,
 .acland .accordion .card .btn.collapsed:before {
   rotate: -180deg;
 }
+.acland.accordion .card p,
 .acland .accordion .card p {
-  color: var(--verdee);
+  color: var(--cor-apoio);
 }
-.acland.accordion-line .accordion .card,
-.acland .accordion-line .accordion .card {
+.acland.accordion-line .card,
+.acland .accordion-line .card {
   border: 2px solid var(--cor-perfil) !important;
 }
-.acland.accordion-line .accordion .card .card-header,
-.acland .accordion-line .accordion .card .card-header {
+.acland.accordion-line .card .card-header,
+.acland .accordion-line .card .card-header {
   background: transparent !important;
 }
-.acland.accordion-line .accordion .card .card-header:hover,
-.acland .accordion-line .accordion .card .card-header:hover {
+.acland.accordion-line .card .card-header:hover,
+.acland .accordion-line .card .card-header:hover {
   background: transparent !important;
 }
-.acland.accordion-line .accordion .card .btn,
-.acland .accordion-line .accordion .card .btn {
+.acland.accordion-line .card .btn,
+.acland .accordion-line .card .btn {
   color: var(--verdee) !important;
 }
-.acland.accordion-line .accordion .card .btn:after, .acland.accordion-line .accordion .card .btn:before,
-.acland .accordion-line .accordion .card .btn:after,
-.acland .accordion-line .accordion .card .btn:before {
+.acland.accordion-line .card .btn:after, .acland.accordion-line .card .btn:before,
+.acland .accordion-line .card .btn:after,
+.acland .accordion-line .card .btn:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
 }/*# sourceMappingURL=accordion.css.map */

@@ -35,6 +35,7 @@
   --cinza-800: #5E5E5E;
   --cinza-900: #333;
   --preto: #000;
+  --transparente: rgba(0, 0, 0, 0);
   --gradient-turq: radial-gradient(at 0% 100%, var(--turq-200) 0px, transparent 50%), radial-gradient(at 80% 100%, var(--turq-300) 0px, transparent 50%), radial-gradient(at 0% 0%, var(--turq-200) 0px, transparent 50%);
   --gradient-turq-line: linear-gradient(to right, var(--turq), var(--turq-600));
   --gradient-verdee: radial-gradient(at 0% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 80% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 0% 0%, hsla(190,79%,19%,1) 0px, transparent 50%);
@@ -49,6 +50,11 @@
   --cor-apoio: var(--verdee);
   --cor-apoio-500: var(--verdee-500);
   --cor-apoio-600: var(--verdee-600);
+  --cor-base-200: var(--cinza-200);
+  --cor-base-300: var(--cinza-300);
+  --cor-base: var(--branco);
+  --cor-base-500: var(--cinza-500);
+  --cor-base-600: var(--cinza-600);
   --size-0:0rem;
   --size-1:0.25rem;
   --size-2:0.5rem;
@@ -76,7 +82,6 @@
   --font-size-1: clamp(2.31rem, 1.95rem + 1.82vw, 3.36rem);
   --font-sans: "Sicoob sans", "Asap", sans-serif;
   --font-script: "Sicoob script", "Pacifico", cursive;
-  --transparente: rgba(0, 0, 0, 0);
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --box-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -85,24 +90,83 @@
   --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.1);
 }
 
-body.para-voce {
+body, body.para-voce, body .para-voce, body .tema-turq {
   --cor-perfil-200: var(--turq-200);
   --cor-perfil-300: var(--turq-300);
   --cor-perfil: var(--turq);
   --cor-perfil-500: var(--turq-500);
   --cor-perfil-600: var(--turq-600);
+  --cor-apoio-200: var(--verdee-200);
+  --cor-apoio-300: var(--verdee-300);
+  --cor-apoio: var(--verdee);
+  --cor-apoio-500: var(--verdee-500);
+  --cor-apoio-600: var(--verdee-600);
+  --cor-destaque-200: var(--verdec-200);
+  --cor-destaque-300: var(--verdec-300);
+  --cor-destaque: var(--verdec);
+  --cor-destaque-500: var(--verdec-500);
+  --cor-destaque-600: var(--verdec-600);
+  --cor-base-200: var(--cinza-200);
+  --cor-base-300: var(--cinza-300);
+  --cor-base: var(--branco);
+  --cor-base-500: var(--cinza-500);
+  --cor-base-600: var(--cinza-600);
 }
-body.para-empresa {
+body.para-empresa, body .para-empresa, body .tema-verdee {
   --cor-perfil-200: var(--verdee-200);
   --cor-perfil-300: var(--verdee-300);
   --cor-perfil: var(--verdee);
   --cor-perfil-500: var(--verdee-500);
   --cor-perfil-600: var(--verdee-600);
+  --cor-destaque-200: var(--turq-200);
+  --cor-destaque-300: var(--turq-300);
+  --cor-destaque: var(--turq);
+  --cor-destaque-500: var(--turq-500);
+  --cor-destaque-600: var(--turq-600);
 }
-body.para-agronegocio {
+body.para-agronegocio, body .para-agronegocio, body .tema-verdem {
   --cor-perfil-200: var(--verdem-200);
   --cor-perfil-300: var(--verdem-300);
   --cor-perfil: var(--verdem);
   --cor-perfil-500: var(--verdem-500);
   --cor-perfil-600: var(--verdem-600);
+  --cor-destaque-200: var(--turq-200);
+  --cor-destaque-300: var(--turq-300);
+  --cor-destaque: var(--turq);
+  --cor-destaque-500: var(--turq-500);
+  --cor-destaque-600: var(--turq-600);
+}
+body .tema-verdec {
+  --cor-perfil-200: var(--verdec-200);
+  --cor-perfil-300: var(--verdec-300);
+  --cor-perfil: var(--verdec);
+  --cor-perfil-500: var(--verdec-500);
+  --cor-perfil-600: var(--verdec-600);
+  --cor-destaque-200: var(--turq-200);
+  --cor-destaque-300: var(--turq-300);
+  --cor-destaque: var(--turq);
+  --cor-destaque-500: var(--turq-500);
+  --cor-destaque-600: var(--turq-600);
+}
+body .tema-dark {
+  --cor-perfil-200: var(--turq-200);
+  --cor-perfil-300: var(--turq-300);
+  --cor-perfil: var(--turq);
+  --cor-perfil-500: var(--turq-500);
+  --cor-perfil-600: var(--turq-600);
+  --cor-apoio-200: var(--cinza-200);
+  --cor-apoio-300: var(--cinza-300);
+  --cor-apoio: var(--branco);
+  --cor-apoio-500: var(--cinza-500);
+  --cor-apoio-600: var(--cinza-600);
+  --cor-destaque-200: var(--verdec-200);
+  --cor-destaque-300: var(--verdec-300);
+  --cor-destaque: var(--verdec);
+  --cor-destaque-500: var(--verdec-500);
+  --cor-destaque-600: var(--verdec-600);
+  --cor-base-200: var(--verdee-200);
+  --cor-base-300: var(--verdee-300);
+  --cor-base: var(--verdee);
+  --cor-base-500: var(--verdee-500);
+  --cor-base-600: var(--verdee-600);
 }/*# sourceMappingURL=root.css.map */

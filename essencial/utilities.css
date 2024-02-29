@@ -14,6 +14,51 @@
 .c-perfil-600 {
   color: var(--cor-perfil-600) !important;
 }
+.c-apoio {
+  color: var(--cor-apoio) !important;
+}
+.c-apoio-200 {
+  color: var(--cor-apoio-200) !important;
+}
+.c-apoio-300 {
+  color: var(--cor-apoio-300) !important;
+}
+.c-apoio-500 {
+  color: var(--cor-apoio-500) !important;
+}
+.c-apoio-600 {
+  color: var(--cor-apoio-600) !important;
+}
+.c-destaque {
+  color: var(--cor-destaque) !important;
+}
+.c-destaque-200 {
+  color: var(--cor-destaque-200) !important;
+}
+.c-destaque-300 {
+  color: var(--cor-destaque-300) !important;
+}
+.c-destaque-500 {
+  color: var(--cor-destaque-500) !important;
+}
+.c-destaque-600 {
+  color: var(--cor-destaque-600) !important;
+}
+.c-base {
+  color: var(--cor-base) !important;
+}
+.c-base-200 {
+  color: var(--cor-base-200) !important;
+}
+.c-base-300 {
+  color: var(--cor-base-300) !important;
+}
+.c-base-500 {
+  color: var(--cor-base-500) !important;
+}
+.c-base-600 {
+  color: var(--cor-base-600) !important;
+}
 .c-turq {
   color: var(--turq) !important;
 }
@@ -126,6 +171,51 @@
 }
 .bg-perfil-600 {
   background-color: var(--cor-perfil-600) !important;
+}
+.bg-apoio {
+  background-color: var(--cor-apoio) !important;
+}
+.bg-apoio-200 {
+  background-color: var(--cor-apoio-200) !important;
+}
+.bg-apoio-300 {
+  background-color: var(--cor-apoio-300) !important;
+}
+.bg-apoio-500 {
+  background-color: var(--cor-apoio-500) !important;
+}
+.bg-apoio-600 {
+  background-color: var(--cor-apoio-600) !important;
+}
+.bg-destaque {
+  background-color: var(--cor-destaque) !important;
+}
+.bg-destaque-200 {
+  background-color: var(--cor-destaque-200) !important;
+}
+.bg-destaque-300 {
+  background-color: var(--cor-destaque-300) !important;
+}
+.bg-destaque-500 {
+  background-color: var(--cor-destaque-500) !important;
+}
+.bg-destaque-600 {
+  background-color: var(--cor-destaque-600) !important;
+}
+.bg-base {
+  background-color: var(--cor-base) !important;
+}
+.bg-base-200 {
+  background-color: var(--cor-base-200) !important;
+}
+.bg-base-300 {
+  background-color: var(--cor-base-300) !important;
+}
+.bg-base-500 {
+  background-color: var(--cor-base-500) !important;
+}
+.bg-base-600 {
+  background-color: var(--cor-base-600) !important;
 }
 .bg-turq {
   background-color: var(--turq) !important;
@@ -255,6 +345,51 @@
 }
 .border-perfil-600 {
   border-color: var(--cor-perfil-600) !important;
+}
+.border-apoio {
+  border-color: var(--cor-apoio) !important;
+}
+.border-apoio-200 {
+  border-color: var(--cor-apoio-200) !important;
+}
+.border-apoio-300 {
+  border-color: var(--cor-apoio-300) !important;
+}
+.border-apoio-500 {
+  border-color: var(--cor-apoio-500) !important;
+}
+.border-apoio-600 {
+  border-color: var(--cor-apoio-600) !important;
+}
+.border-destaque {
+  border-color: var(--cor-destaque) !important;
+}
+.border-destaque-200 {
+  border-color: var(--cor-destaque-200) !important;
+}
+.border-destaque-300 {
+  border-color: var(--cor-destaque-300) !important;
+}
+.border-destaque-500 {
+  border-color: var(--cor-destaque-500) !important;
+}
+.border-destaque-600 {
+  border-color: var(--cor-destaque-600) !important;
+}
+.border-base {
+  border-color: var(--cor-base) !important;
+}
+.border-base-200 {
+  border-color: var(--cor-base-200) !important;
+}
+.border-base-300 {
+  border-color: var(--cor-base-300) !important;
+}
+.border-base-500 {
+  border-color: var(--cor-base-500) !important;
+}
+.border-base-600 {
+  border-color: var(--cor-base-600) !important;
 }
 .border-turq {
   border-color: var(--turq) !important;
@@ -554,6 +689,51 @@
 }
 .fill-perfil-600 {
   fill: var(--cor-perfil-600) !important;
+}
+.fill-apoio {
+  fill: var(--cor-apoio) !important;
+}
+.fill-apoio-200 {
+  fill: var(--cor-apoio-200) !important;
+}
+.fill-apoio-300 {
+  fill: var(--cor-apoio-300) !important;
+}
+.fill-apoio-500 {
+  fill: var(--cor-apoio-500) !important;
+}
+.fill-apoio-600 {
+  fill: var(--cor-apoio-600) !important;
+}
+.fill-destaque {
+  fill: var(--cor-destaque) !important;
+}
+.fill-destaque-200 {
+  fill: var(--cor-destaque-200) !important;
+}
+.fill-destaque-300 {
+  fill: var(--cor-destaque-300) !important;
+}
+.fill-destaque-500 {
+  fill: var(--cor-destaque-500) !important;
+}
+.fill-destaque-600 {
+  fill: var(--cor-destaque-600) !important;
+}
+.fill-base {
+  fill: var(--cor-base) !important;
+}
+.fill-base-200 {
+  fill: var(--cor-base-200) !important;
+}
+.fill-base-300 {
+  fill: var(--cor-base-300) !important;
+}
+.fill-base-500 {
+  fill: var(--cor-base-500) !important;
+}
+.fill-base-600 {
+  fill: var(--cor-base-600) !important;
 }
 .fill-turq {
   fill: var(--turq) !important;

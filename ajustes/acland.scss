@@ -1,4 +1,4 @@
-@import "../essencial/colors.scss";
+@import "../essencial/variaveis.scss";
 .acland {
 
     h,
@@ -47,14 +47,14 @@
     }
 
     p {
-        color: $verdee;
+        color: $cor-apoio;
         //font-size: 1rem!important;
         font-size: var(--font-size-base) !important;
         //line-height: var(--font-size-base);
     }
 
     .small {
-        color: $verdee;
+        color: $cor-apoio;
         //font-size: .875rem!important;
         font-size: var(--font-size-small) !important;
         //line-height: var(--font-size-small);

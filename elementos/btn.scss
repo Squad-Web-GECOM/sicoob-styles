@@ -1,15 +1,15 @@
-@import "../essencial/colors.scss";
+@import "../essencial/variaveis.scss";
 
 /* BOTÕES */
 
 .btn {
-  --btn-base: $cor-perfil;
-  --btn-base-hover: $cor-perfil-500;
-  --btn-text: $branco;
+  --btn-base: var(--cor-perfil);
+  --btn-base-hover: var(--cor-perfil-500);
+  --btn-text: var(--cor-base);
 
   
-  outline: 0px !important;
-  transition: var(--transition-2);
+  outline: $size-0 !important;
+  transition: $transition-2;
 
   &-primary {
 
@@ -76,7 +76,6 @@
   }
 
   &-click {
-    transition: var(--transition-2);
 
     &:hover {
       transform: translateX(2px) translateY(2px);
@@ -89,7 +88,6 @@
 
     &-shadow {
       box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
-      transition: var(--transition-2);
 
       &:hover {
         transform: translateX(2px) translateY(2px);
@@ -104,7 +102,6 @@
 
     &-img {
       box-shadow: none !important;
-      transition: all 0.3s ease-in-out;
       filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.1));
 
       &:hover {
@@ -120,50 +117,79 @@
   }
 
   &-base {
+
+    &-perfil {
+      --btn-base: var(--cor-perfil);
+      --btn-base-hover: var(--cor-perfil-500);
+    }
+    &-apoio {
+      --btn-base: var(--corapoio);
+      --btn-base-hover: var(--cor-apoio-500);
+    }
+    &-base {
+      --btn-base: var(--cor-base);
+      --btn-base-hover: var(--cor-base-500);
+    }
+
     &-verdee {
-      --btn-base: $verdee;
-      --btn-base-hover: $verdee-500;
+      --btn-base: var(--verdee);
+      --btn-base-hover: var(--verdee-500);
+    }
+    &-verdee {
+      --btn-base: var(--verdee);
+      --btn-base-hover: var(--verdee-500);
     }
     &-verdem {
-      --btn-base: $verdem;
-      --btn-base-hover: $verdem-500;
+      --btn-base: var(--verdem);
+      --btn-base-hover: var(--verdem-500);
     }
     &-verdec {
-      --btn-base: $verdec;
-      --btn-base-hover: $verdec-500;
+      --btn-base: var(--verdec);
+      --btn-base-hover: var(--verdec-500);
     }
     &-roxo {
-      --btn-base: $roxo;
-      --btn-base-hover: $roxo-500;
+      --btn-base: var(--roxo);
+      --btn-base-hover: var(--roxo-500);
     }
     &-preto {
-      --btn-base: $preto;
-      --btn-base-hover: $preto-500;
+      --btn-base: var(--preto);
+      --btn-base-hover: var(--preto-500);
     }
     &-branco {
-      --btn-base: $branco;
-      --btn-base-hover: $branco-500;
+      --btn-base: var(--branco);
+      --btn-base-hover: var(--branco-500);
     }
   }
 
   &-text {
+
+    &-perfil {
+      --btn-text: var(--cor-perfil);
+    }
+    &-apoio {
+      --btn-text: var(--cor-apoio);
+    }
+    &-base {
+      --btn-text: var(--cor-base);
+    }
+
     &-verdee {
-      --btn-text: $verdee;
+      --btn-text: var(--verdee);
     }
     &-verdem {
-      --btn-text: $verdem;
+      --btn-text: var(--verdem);
     }
     &-verdec {
-      --btn-text: $verdec;
+      --btn-text: var(--verdec);
     }
     &-roxo {
-      --btn-text: $roxo;
+      --btn-text: var(--roxo);
     }
     &-preto {
-      --btn-text: $preto;
+      --btn-text: var(--preto);
     }
     &-branco {
-      --btn-text: $branco;
+      --btn-text: var(--branco);
     }
   }
   
@@ -171,8 +197,8 @@
 
 .acland {
   .btn {
-    padding: .6em 1.2em !important;
-    border-radius: .25em !important;
+    padding: 0.25em 0.75em !important;
+    border-radius: $size-2 !important;
     font-size: var(--font-size-base);
   }
 }

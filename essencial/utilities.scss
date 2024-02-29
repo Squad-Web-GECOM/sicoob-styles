@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import 'variaveis.scss';
 
 /* COR DAS FONTES */
 .c {
@@ -21,6 +21,67 @@
       color: $cor-perfil-600 !important;
     }
   }
+
+  &-apoio {
+    color: $cor-apoio!important;
+
+    &-200 {
+      color: $cor-apoio-200 !important;
+    }
+
+    &-300 {
+      color: $cor-apoio-300 !important;
+    }
+
+    &-500 {
+      color: $cor-apoio-500 !important;
+    }
+
+    &-600 {
+      color: $cor-apoio-600 !important;
+    }
+  }
+
+  &-destaque {
+    color: $cor-destaque!important;
+
+    &-200 {
+      color: $cor-destaque-200 !important;
+    }
+
+    &-300 {
+      color: $cor-destaque-300 !important;
+    }
+
+    &-500 {
+      color: $cor-destaque-500 !important;
+    }
+
+    &-600 {
+      color: $cor-destaque-600 !important;
+    }
+  }
+
+  &-base {
+    color: $cor-base!important;
+
+    &-200 {
+      color: $cor-base-200 !important;
+    }
+
+    &-300 {
+      color: $cor-base-300 !important;
+    }
+
+    &-500 {
+      color: $cor-base-500 !important;
+    }
+
+    &-600 {
+      color: $cor-base-600 !important;
+    }
+  }
+
 
   &-turq {
     color: $turq !important;
@@ -174,6 +235,67 @@
       background-color: $cor-perfil-600 !important;
     }
   }
+
+  &-apoio {
+    background-color: $cor-apoio!important;
+
+    &-200 {
+      background-color: $cor-apoio-200 !important;
+    }
+
+    &-300 {
+      background-color: $cor-apoio-300 !important;
+    }
+
+    &-500 {
+      background-color: $cor-apoio-500 !important;
+    }
+
+    &-600 {
+      background-color: $cor-apoio-600 !important;
+    }
+  }
+
+  &-destaque {
+    background-color: $cor-destaque!important;
+
+    &-200 {
+      background-color: $cor-destaque-200 !important;
+    }
+
+    &-300 {
+      background-color: $cor-destaque-300 !important;
+    }
+
+    &-500 {
+      background-color: $cor-destaque-500 !important;
+    }
+
+    &-600 {
+      background-color: $cor-destaque-600 !important;
+    }
+  }
+
+  &-base {
+    background-color: $cor-base!important;
+
+    &-200 {
+      background-color: $cor-base-200 !important;
+    }
+
+    &-300 {
+      background-color: $cor-base-300 !important;
+    }
+
+    &-500 {
+      background-color: $cor-base-500 !important;
+    }
+
+    &-600 {
+      background-color: $cor-base-600 !important;
+    }
+  }
+
 
   &-turq {
     background-color: $turq !important;
@@ -347,6 +469,67 @@
       border-color: $cor-perfil-600 !important;
     }
   }
+
+  &-apoio {
+    border-color: $cor-apoio!important;
+
+    &-200 {
+      border-color: $cor-apoio-200 !important;
+    }
+
+    &-300 {
+      border-color: $cor-apoio-300 !important;
+    }
+
+    &-500 {
+      border-color: $cor-apoio-500 !important;
+    }
+
+    &-600 {
+      border-color: $cor-apoio-600 !important;
+    }
+  }
+
+  &-destaque {
+    border-color: $cor-destaque!important;
+
+    &-200 {
+      border-color: $cor-destaque-200 !important;
+    }
+
+    &-300 {
+      border-color: $cor-destaque-300 !important;
+    }
+
+    &-500 {
+      border-color: $cor-destaque-500 !important;
+    }
+
+    &-600 {
+      border-color: $cor-destaque-600 !important;
+    }
+  }
+
+  &-base {
+    border-color: $cor-base!important;
+
+    &-200 {
+      border-color: $cor-base-200 !important;
+    }
+
+    &-300 {
+      border-color: $cor-base-300 !important;
+    }
+
+    &-500 {
+      border-color: $cor-base-500 !important;
+    }
+
+    &-600 {
+      border-color: $cor-base-600 !important;
+    }
+  }
+  
 
   &-turq {
     border-color: $turq !important;
@@ -760,6 +943,66 @@
 
     &-600 {
       fill: $cor-perfil-600 !important;
+    }
+  }
+
+  &-apoio {
+    fill: $cor-apoio!important;
+
+    &-200 {
+      fill: $cor-apoio-200 !important;
+    }
+
+    &-300 {
+      fill: $cor-apoio-300 !important;
+    }
+
+    &-500 {
+      fill: $cor-apoio-500 !important;
+    }
+
+    &-600 {
+      fill: $cor-apoio-600 !important;
+    }
+  }
+
+  &-destaque {
+    fill: $cor-destaque!important;
+
+    &-200 {
+      fill: $cor-destaque-200 !important;
+    }
+
+    &-300 {
+      fill: $cor-destaque-300 !important;
+    }
+
+    &-500 {
+      fill: $cor-destaque-500 !important;
+    }
+
+    &-600 {
+      fill: $cor-destaque-600 !important;
+    }
+  }
+
+  &-base {
+    fill: $cor-base!important;
+
+    &-200 {
+      fill: $cor-base-200 !important;
+    }
+
+    &-300 {
+      fill: $cor-base-300 !important;
+    }
+
+    &-500 {
+      fill: $cor-base-500 !important;
+    }
+
+    &-600 {
+      fill: $cor-base-600 !important;
     }
   }
 

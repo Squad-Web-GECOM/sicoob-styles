@@ -1,19 +1,20 @@
-@import "../essencial/colors.scss";
+@import "../essencial/variaveis.scss";
 
 .acland {
+  &.accordion,
   .accordion {
     .card {
       margin-bottom: 1rem !important;
       background: transparent;
-      border-radius: 0.5rem !important;
-      border: 0px !important;
+      border-radius: $size-2 !important;
+      border: $size-0 !important;
 
       .card-header {
         border: 0 !important;
         background: $cor-perfil !important;
         border-radius: 0.5rem !important;
         padding: 0!important;
-        transition: var(--transition-1);
+        transition: $transition-1;
 
         &:hover {
           background: $cor-perfil-500 !important;
@@ -21,11 +22,11 @@
       }
 
       .btn {
-        font-size: var(--font-size-base);
+        font-size: $font-size-base;
         width: 100%;
         color: $branco;
         text-decoration: none !important;
-        outline: 0 !important;
+        outline: $size-0 !important;
         box-shadow: none !important;
         position: relative;
         padding: 1rem 2.25rem 1rem 1.25rem !important;
@@ -60,30 +61,28 @@
       }
 
       p {
-        color: $verdee;
+        color: $cor-apoio;
       }
     }
   }
   &.accordion-line,
   .accordion-line {
-    .accordion {
-      .card {
-        border: 2px solid $cor-perfil !important;
+    .card {
+      border: 2px solid $cor-perfil !important;
 
-        .card-header {
+      .card-header {
+        background: transparent !important;
+
+        &:hover {
           background: transparent !important;
-
-          &:hover {
-            background: transparent !important;
-          }
         }
+      }
 
-        .btn {
-          color: $verdee !important;
+      .btn {
+        color: $verdee !important;
 
-          &:after, &:before {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
-          }
+        &:after, &:before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
         }
       }
     }

@@ -1176,6 +1176,43 @@ body #content,
   padding: 0 !important;
 }
 
+h1,
+.h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h2,
+.h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h3,
+.h3 {
+  font-size: 2.1875rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h4,
+.h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h5,
+.h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+h6,
+.h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--turq);
+}
+
 a {
   color: var(--turq);
 }
@@ -1203,6 +1240,30 @@ a:focus {
 .whatsapp.wpp .btn:focus {
   transform: scale(0.9, 0.9);
   box-shadow: none !important;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1248px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer .col-xs-6 {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+footer {
+  padding-top: 4.0625rem;
+}
+footer .content {
+  padding: 0 0 6.25rem 0;
+}
+
+.fa-youtube-play:before {
+  content: "\f167";
 }
 
 .acland h1,
@@ -1572,4 +1633,4 @@ a:focus {
   border-radius: var(--size-3);
   padding: var(--size-4);
   margin-bottom: var(--size-3);
-}/*# sourceMappingURL=sicoob-styles.css.map */
+}/*# sourceMappingURL=sicoob-style.css.map */

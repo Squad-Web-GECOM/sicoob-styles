@@ -1,0 +1,12 @@
+@import "../essencial/variaveis.scss";
+
+.acland{
+
+  .box{
+    border: 1px solid $cor-perfil;
+    border-radius: $size-3;
+    padding: $size-4;
+    margin-bottom: $size-3;
+  }
+
+}

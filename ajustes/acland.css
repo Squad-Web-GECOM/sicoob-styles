@@ -1,31 +1,37 @@
 .acland h1,
 .acland .h1 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-1) !important;
 }
 .acland h2,
 .acland .h2 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-2) !important;
 }
 .acland h3,
 .acland .h3 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-3) !important;
 }
 .acland h4,
 .acland .h4 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-4) !important;
 }
 .acland h5,
 .acland .h5 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-5) !important;
 }
 .acland h6,
 .acland .h6 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-6) !important;
 }
 .acland p {

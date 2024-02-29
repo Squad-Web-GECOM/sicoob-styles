@@ -13,11 +13,36 @@ body #content,
   padding: 0 !important;
 }
 
+h1,
+.h1 {
+  color: var(--cor-perfil);
+}
+h2,
+.h2 {
+  color: var(--cor-perfil);
+}
+h3,
+.h3 {
+  color: var(--cor-perfil);
+}
+h4,
+.h4 {
+  color: var(--cor-perfil);
+}
+h5,
+.h5 {
+  color: var(--cor-perfil);
+}
+h6,
+.h6 {
+  color: var(--cor-perfil);
+}
+
 a {
-  color: var(--turq);
+  color: var(--cor-perfil);
 }
 a:hover {
-  color: var(--turq-600);
+  color: var(--cor-perfil-600);
 }
 a:focus {
   box-shadow: none !important;

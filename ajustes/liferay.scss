@@ -18,10 +18,37 @@ body #content,
   }
 }
 
+h,
+.h {
+  &1 {
+    color: $cor-perfil;
+  }
+
+  &2 {
+    color: $cor-perfil;
+  }
+
+  &3 {
+    color: $cor-perfil;
+  }
+
+  &4 {
+    color: $cor-perfil;
+  }
+
+  &5 {
+    color: $cor-perfil;
+  }
+
+  &6 {
+    color: $cor-perfil;
+  }
+}
+
 a{
-  color: var(--turq);
+  color: $cor-perfil;
   &:hover{
-    color: var(--turq-600);
+    color: $cor-perfil-600;
   }
   &:focus{
     box-shadow: none!important;

@@ -173,6 +173,9 @@
       --btn-text: var(--cor-base);
     }
 
+    &-turq {
+      --btn-text: var(--turq);
+    }
     &-verdee {
       --btn-text: var(--verdee);
     }
@@ -188,16 +191,14 @@
     &-preto {
       --btn-text: var(--preto);
     }
-    &-branco {
-      --btn-text: var(--branco);
-    }
+
   }
   
 }
 
 .acland {
   .btn {
-    padding: 0.25em 0.75em !important;
+    padding: 0.375em 1em !important;
     border-radius: $size-2 !important;
     font-size: var(--font-size-base);
   }

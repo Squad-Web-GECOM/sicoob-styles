@@ -1176,11 +1176,36 @@ body #content,
   padding: 0 !important;
 }
 
+h1,
+.h1 {
+  color: var(--cor-perfil);
+}
+h2,
+.h2 {
+  color: var(--cor-perfil);
+}
+h3,
+.h3 {
+  color: var(--cor-perfil);
+}
+h4,
+.h4 {
+  color: var(--cor-perfil);
+}
+h5,
+.h5 {
+  color: var(--cor-perfil);
+}
+h6,
+.h6 {
+  color: var(--cor-perfil);
+}
+
 a {
-  color: var(--turq);
+  color: var(--cor-perfil);
 }
 a:hover {
-  color: var(--turq-600);
+  color: var(--cor-perfil-600);
 }
 a:focus {
   box-shadow: none !important;
@@ -1208,31 +1233,37 @@ a:focus {
 .acland h1,
 .acland .h1 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-1) !important;
 }
 .acland h2,
 .acland .h2 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-2) !important;
 }
 .acland h3,
 .acland .h3 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-3) !important;
 }
 .acland h4,
 .acland .h4 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-4) !important;
 }
 .acland h5,
 .acland .h5 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-5) !important;
 }
 .acland h6,
 .acland .h6 {
   color: var(--cor-perfil);
+  font-weight: bold;
   font-size: var(--font-size-6) !important;
 }
 .acland p {
@@ -1370,6 +1401,9 @@ a:focus {
 .btn-text-base {
   --btn-text: var(--cor-base);
 }
+.btn-text-turq {
+  --btn-text: var(--turq);
+}
 .btn-text-verdee {
   --btn-text: var(--verdee);
 }
@@ -1385,12 +1419,9 @@ a:focus {
 .btn-text-preto {
   --btn-text: var(--preto);
 }
-.btn-text-branco {
-  --btn-text: var(--branco);
-}
 
 .acland .btn {
-  padding: 0.25em 0.75em !important;
+  padding: 0.375em 1em !important;
   border-radius: var(--size-2) !important;
   font-size: var(--font-size-base);
 }

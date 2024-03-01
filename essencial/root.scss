@@ -180,28 +180,28 @@ body {
   }
 
   .tema-dark{
-    --cor-perfil-200: var(--turq-200);
-    --cor-perfil-300: var(--turq-300);
+    --cor-perfil-200: var(--turq-600);
+    --cor-perfil-300: var(--turq-500);
     --cor-perfil: var(--turq);
-    --cor-perfil-500: var(--turq-500);
-    --cor-perfil-600: var(--turq-600);
+    --cor-perfil-500: var(--turq-300);
+    --cor-perfil-600: var(--turq-200);
 
-    --cor-apoio-200: var(--cinza-200);
-    --cor-apoio-300: var(--cinza-300);
+    --cor-apoio-200: var(--cinza-600);
+    --cor-apoio-300: var(--cinza-500);
     --cor-apoio: var(--branco);
-    --cor-apoio-500: var(--cinza-500);
-    --cor-apoio-600: var(--cinza-600);
+    --cor-apoio-500: var(--cinza-300);
+    --cor-apoio-600: var(--cinza-200);
 
-    --cor-destaque-200: var(--verdec-200);
-    --cor-destaque-300: var(--verdec-300);
+    --cor-destaque-200: var(--verdec-600);
+    --cor-destaque-300: var(--verdec-500);
     --cor-destaque: var(--verdec);
-    --cor-destaque-500: var(--verdec-500);
-    --cor-destaque-600: var(--verdec-600);
+    --cor-destaque-500: var(--verdec-300);
+    --cor-destaque-600: var(--verdec-200);
   
-    --cor-base-200: var(--verdee-200);
-    --cor-base-300: var(--verdee-300);
+    --cor-base-200: var(--verdee-600);
+    --cor-base-300: var(--verdee-500);
     --cor-base: var(--verdee);
-    --cor-base-500: var(--verdee-500);
-    --cor-base-600: var(--verdee-600);
+    --cor-base-500: var(--verdee-300);
+    --cor-base-600: var(--verdee-200);
   }
 }

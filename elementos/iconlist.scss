@@ -1,0 +1,32 @@
+@import "../essencial/variaveis.scss";
+
+.iconlist {
+  --iconlist-size: var(--size-5);
+  &-item{
+    display: flex;
+    place-items: center;
+    margin-bottom: $size-4;
+    &:nth-last-child(1){
+      margin-bottom: $size-0;
+    }
+  }
+
+  &-icon {
+    
+    flex: 0 0 var(--iconlist-size);
+    display: flex;
+    margin-right: $size-3;
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+
+  &-text {
+    * {
+      margin: 0px !important;
+    }
+  }
+}

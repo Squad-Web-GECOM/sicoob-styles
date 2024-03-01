@@ -1,0 +1,24 @@
+.iconlist {
+  --iconlist-size: var(--size-5);
+}
+.iconlist-item {
+  display: flex;
+  place-items: center;
+  margin-bottom: var(--size-4);
+}
+.iconlist-item:nth-last-child(1) {
+  margin-bottom: var(--size-0);
+}
+.iconlist-icon {
+  flex: 0 0 var(--iconlist-size);
+  display: flex;
+  margin-right: var(--size-3);
+}
+.iconlist-icon svg {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.iconlist-text * {
+  margin: 0px !important;
+}/*# sourceMappingURL=iconlist.css.map */

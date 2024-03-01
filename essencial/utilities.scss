@@ -1256,6 +1256,12 @@
   }
 }
 
+.text{
+  &-balance{
+    text-wrap: balance;
+  }
+}
+
 .nowrap {
   white-space: nowrap;
 }

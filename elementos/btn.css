@@ -124,7 +124,7 @@
 }
 .btn-bg-branco {
   --btn-bg: var(--branco);
-  --btn-bg-hover: var(--branco-300);
+  --btn-bg-hover: var(--cinza-300);
 }
 .btn-bg-h-perfil {
   --btn-bg-hover: var(--cor-perfil-500);

@@ -1,20 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Sicoob sans";
-  src: url("SicoobSansVariable.woff2") format("woff2-variations");
-  font-display: swap;
-  font-weight: 100 1000;
-  font-stretch: 75% 150%;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Sicoob script";
-  src: url("SicoobScriptVariable.woff2") format("woff2-variations");
-  font-display: swap;
-  font-weight: 100 1000;
-  font-stretch: 75% 150%;
-  font-style: normal;
-}
+@import 'fonte-sicoob.css';
 :root {
   --turq-200: #00E0CA;
   --turq-300: #00CCB8;
@@ -338,6 +323,15 @@ body .tema-dark {
 .c-cinza-600 {
   color: var(--cinza-600) !important;
 }
+.c-cinza-700 {
+  color: var(--cinza-700) !important;
+}
+.c-cinza-800 {
+  color: var(--cinza-800) !important;
+}
+.c-cinza-900 {
+  color: var(--cinza-900) !important;
+}
 .c-branco {
   color: var(--branco) !important;
 }
@@ -495,6 +489,15 @@ body .tema-dark {
 }
 .bg-cinza-600 {
   background-color: var(--cinza-600) !important;
+}
+.bg-cinza-700 {
+  background-color: var(--cinza-700) !important;
+}
+.bg-cinza-800 {
+  background-color: var(--cinza-800) !important;
+}
+.bg-cinza-900 {
+  background-color: var(--cinza-900) !important;
 }
 .bg-branco {
   background-color: var(--branco) !important;
@@ -669,6 +672,15 @@ body .tema-dark {
 }
 .border-cinza-600 {
   border-color: var(--cinza-600) !important;
+}
+.border-cinza-700 {
+  border-color: var(--cinza-700) !important;
+}
+.border-cinza-800 {
+  border-color: var(--cinza-800) !important;
+}
+.border-cinza-900 {
+  border-color: var(--cinza-900) !important;
 }
 .border-branco {
   border-color: var(--branco) !important;
@@ -1014,6 +1026,15 @@ body .tema-dark {
 .fill-cinza-600 {
   fill: var(--cinza-600) !important;
 }
+.fill-cinza-700 {
+  fill: var(--cinza-700) !important;
+}
+.fill-cinza-800 {
+  fill: var(--cinza-800) !important;
+}
+.fill-cinza-900 {
+  fill: var(--cinza-900) !important;
+}
 .fill-branco {
   fill: var(--branco) !important;
 }
@@ -1112,6 +1133,9 @@ body .tema-dark {
 
 .text-balance {
   text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
 }
 
 .nowrap {
@@ -1440,7 +1464,7 @@ footer .content {
 }
 .btn-bg-branco {
   --btn-bg: var(--branco);
-  --btn-bg-hover: var(--branco-300);
+  --btn-bg-hover: var(--cinza-300);
 }
 .btn-bg-h-perfil {
   --btn-bg-hover: var(--cor-perfil-500);
@@ -1722,10 +1746,18 @@ footer .content {
 }
 
 .acland .box {
-  border: 1px solid var(--cor-perfil);
-  border-radius: var(--size-3);
+  border-radius: var(--size-2);
   padding: var(--size-4);
   margin-bottom: var(--size-3);
+  border: 1px solid var(--cor-perfil);
+  background: var(--transparente);
+}
+.acland .box-bg {
+  border-radius: var(--size-2);
+  padding: var(--size-4);
+  margin-bottom: var(--size-3);
+  background: var(--cor-base);
+  border: 1px solid var(--cor-base);
 }
 
 .iconlist {
@@ -1741,12 +1773,11 @@ footer .content {
 }
 .iconlist-icon {
   flex: 0 0 var(--iconlist-size);
-  display: flex;
   margin-right: var(--size-3);
 }
 .iconlist-icon svg {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  max-height: var(--iconlist-size);
   margin: auto;
 }
 .iconlist-text * {

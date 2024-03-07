@@ -1,8 +1,6 @@
 @import 'fonte-sicoob.css';
 @import 'essencial/root.scss';
 
-@import 'essencial/utilities.scss';
-
 /* 
 --------------------------------
 GERAIS
@@ -36,3 +34,5 @@ body {
 @import 'elementos/tabs.scss';
 @import 'elementos/box.scss';
 @import 'elementos/iconlist.scss';
+
+@import 'essencial/utilities.scss';

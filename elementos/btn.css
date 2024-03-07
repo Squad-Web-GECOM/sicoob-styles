@@ -228,7 +228,7 @@
 }
 
 .acland .btn {
-  padding: 0.375em 1em !important;
+  padding: 0.375em 1em;
   border-radius: var(--size-2) !important;
   font-size: var(--font-size-base);
 }/*# sourceMappingURL=btn.css.map */

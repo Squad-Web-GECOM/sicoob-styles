@@ -44,7 +44,7 @@
 
   --gradient-turq: radial-gradient(at 0% 100%, var(--turq-200) 0px, transparent 50%), radial-gradient(at 80% 100%, var(--turq-300) 0px, transparent 50%), radial-gradient(at 0% 0%, var(--turq-200) 0px, transparent 50%);
   --gradient-turq-line: linear-gradient(to right, var(--turq), var(--turq-600));
-  --gradient-verdee: radial-gradient(at 0% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 80% 100%, hsla(190,79%,19%,1) 0px, transparent 50%),radial-gradient(at 0% 0%, hsla(190,79%,19%,1) 0px, transparent 50%);
+  --gradient-verdee: radial-gradient(at 0% 100%, hsla(190, 79%, 19%, 1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(190, 79%, 19%, 1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(190, 79%, 19%, 1) 0px, transparent 50%);
   --gradient-verdee-line: linear-gradient(to right, var(--verdee), var(--verdee-600));
 
 
@@ -60,18 +60,24 @@
   --cor-apoio-500: var(--verdee-500);
   --cor-apoio-600: var(--verdee-600);
 
+  --cor-destaque-200: var(--verdec-200);
+  --cor-destaque-300: var(--verdec-300);
+  --cor-destaque: var(--verdec);
+  --cor-destaque-500: var(--verdec-500);
+  --cor-destaque-600: var(--verdec-600);
+
   --cor-base-200: var(--cinza-200);
   --cor-base-300: var(--cinza-300);
   --cor-base: var(--branco);
   --cor-base-500: var(--cinza-500);
   --cor-base-600: var(--cinza-600);
 
-  --size-0:0rem;
-  --size-1:0.25rem;
-  --size-2:0.5rem;
-  --size-3:1rem;
-  --size-4:1.5rem;
-  --size-5:3rem;
+  --size-0: 0rem;
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.5rem;
+  --size-5: 3rem;
 
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.15,1240,18,1.2,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -98,7 +104,7 @@
   --font-sans: 'Sicoob sans', 'Asap', sans-serif;
   --font-script: 'Sicoob script', 'Pacifico', cursive;
 
-  
+
 
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
@@ -111,7 +117,11 @@
 }
 
 body {
-  &, &.para-voce, .para-voce, .tema-turq {
+
+  &,
+  &.para-voce,
+  .para-voce,
+  .tema-turq {
     --cor-perfil-200: var(--turq-200);
     --cor-perfil-300: var(--turq-300);
     --cor-perfil: var(--turq);
@@ -129,7 +139,7 @@ body {
     --cor-destaque: var(--verdec);
     --cor-destaque-500: var(--verdec-500);
     --cor-destaque-600: var(--verdec-600);
-  
+
     --cor-base-200: var(--cinza-200);
     --cor-base-300: var(--cinza-300);
     --cor-base: var(--branco);
@@ -137,7 +147,9 @@ body {
     --cor-base-600: var(--cinza-600);
   }
 
-  &.para-empresa, .para-empresa, .tema-verdee {
+  &.para-empresa,
+  .para-empresa,
+  .tema-verdee {
     --cor-perfil-200: var(--verdee-200);
     --cor-perfil-300: var(--verdee-300);
     --cor-perfil: var(--verdee);
@@ -151,7 +163,9 @@ body {
     --cor-destaque-600: var(--turq-600);
   }
 
-  &.para-agronegocio, .para-agronegocio, .tema-verdem {
+  &.para-agronegocio,
+  .para-agronegocio,
+  .tema-verdem {
     --cor-perfil-200: var(--verdem-200);
     --cor-perfil-300: var(--verdem-300);
     --cor-perfil: var(--verdem);
@@ -179,7 +193,7 @@ body {
     --cor-destaque-600: var(--turq-600);
   }
 
-  .tema-dark{
+  .tema-dark {
     --cor-perfil-200: var(--turq-600);
     --cor-perfil-300: var(--turq-500);
     --cor-perfil: var(--turq);
@@ -197,7 +211,7 @@ body {
     --cor-destaque: var(--verdec);
     --cor-destaque-500: var(--verdec-300);
     --cor-destaque-600: var(--verdec-200);
-  
+
     --cor-base-200: var(--verdee-600);
     --cor-base-300: var(--verdee-500);
     --cor-base: var(--verdee);

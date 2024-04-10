@@ -865,9 +865,9 @@
       font-size: var(--font-size-6) !important;
     }
   
-    &-base {
+    &-base, &-bs {
       //font-size: 1rem!important;
-      font-size: var(--font-size-base) !important;
+      font-size: var(--font-size-bs) !important;
     }
   
     &-small, &-sm {

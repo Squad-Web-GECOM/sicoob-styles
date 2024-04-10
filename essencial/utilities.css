@@ -638,8 +638,8 @@
 .acland .fs-6, * .fs-6 {
   font-size: var(--font-size-6) !important;
 }
-.acland .fs-base, * .fs-base {
-  font-size: var(--font-size-base) !important;
+.acland .fs-base, .acland .fs-bs, * .fs-base, * .fs-bs {
+  font-size: var(--font-size-bs) !important;
 }
 .acland .fs-small, .acland .fs-sm, * .fs-small, * .fs-sm {
   font-size: var(--font-size-small) !important;

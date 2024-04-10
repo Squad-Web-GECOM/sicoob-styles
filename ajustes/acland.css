@@ -36,9 +36,9 @@
 }
 .acland p {
   color: var(--cor-apoio);
-  font-size: var(--font-size-base) !important;
+  font-size: var(--font-size-bs) !important;
 }
 .acland .small {
   color: var(--cor-apoio);
-  font-size: var(--font-size-small) !important;
+  font-size: var(--font-size-sm) !important;
 }/*# sourceMappingURL=acland.css.map */

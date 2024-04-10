@@ -38,7 +38,6 @@
   color: var(--btn-text) !important;
   fill: var(--btn-text) !important;
   font-weight: bold;
-  padding: 0.3rem 1rem;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
   background-color: var(--btn-bg) !important;
@@ -229,6 +228,6 @@
 
 .acland .btn {
   padding: 0.375em 1em;
-  border-radius: var(--size-2) !important;
+  border-radius: var(--size-2);
   font-size: var(--font-size-base);
 }/*# sourceMappingURL=btn.css.map */

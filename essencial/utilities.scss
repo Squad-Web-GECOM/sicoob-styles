@@ -1,6 +1,6 @@
 @import 'variaveis.scss';
 
-
+.acland, *{
   /* COR DAS FONTES */
   .c {
     &-perfil {
@@ -837,13 +837,11 @@
     &-1 {
       //font-size: 3.125rem!important;
       font-size: var(--font-size-1) !important;
-      line-height: calc(.5rem + var(--font-size-1));
     }
   
     &-2 {
       //font-size: 2.5rem!important;
       font-size: var(--font-size-2) !important;
-      line-height: calc(.5rem + var(--font-size-2));
     }
   
     &-3 {
@@ -855,31 +853,41 @@
     &-4 {
       //font-size: 1.75rem!important;
       font-size: var(--font-size-4) !important;
-      line-height: calc(.5rem + var(--font-size-4));
     }
   
     &-5 {
       //font-size: 1.5rem!important;
       font-size: var(--font-size-5) !important;
-      line-height: calc(.5rem + var(--font-size-5));
     }
   
     &-6 {
       //font-size: 1rem!important;
       font-size: var(--font-size-6) !important;
-      line-height: calc(.5rem + var(--font-size-6));
     }
   
     &-base {
       //font-size: 1rem!important;
       font-size: var(--font-size-base) !important;
-      line-height: calc(.3rem + var(--font-size-base));
     }
   
-    &-small {
+    &-small, &-sm {
       //font-size: .875rem!important;
       font-size: var(--font-size-small) !important;
-      line-height: calc(.3rem + var(--font-size-small));
+    }
+
+    &-xs {
+      //font-size: .875rem!important;
+      font-size: var(--font-size-minor) !important;
+    }
+
+    &-lg {
+      //font-size: .875rem!important;
+      font-size: var(--font-size-lg) !important;
+    }
+
+    &-xl {
+      //font-size: .875rem!important;
+      font-size: var(--font-size-xl) !important;
     }
   
     &-08 {
@@ -1251,6 +1259,58 @@
     &-5 {
       gap: var(--size-5) !important;
     }
+
+    &-row{
+      &-0 {
+        row-gap: var(--size-0) !important;
+      }
+    
+      &-1 {
+        row-gap: var(--size-1) !important;
+      }
+    
+      &-2 {
+        row-gap: var(--size-2) !important;
+      }
+    
+      &-3 {
+        row-gap: var(--size-3) !important;
+      }
+    
+      &-4 {
+        row-gap: var(--size-4) !important;
+      }
+    
+      &-5 {
+        row-gap: var(--size-5) !important;
+      }
+    }
+    
+    &-col{
+      &-0 {
+        column-gap: var(--size-0) !important;
+      }
+    
+      &-1 {
+        column-gap: var(--size-1) !important;
+      }
+    
+      &-2 {
+        column-gap: var(--size-2) !important;
+      }
+    
+      &-3 {
+        column-gap: var(--size-3) !important;
+      }
+    
+      &-4 {
+        column-gap: var(--size-4) !important;
+      }
+    
+      &-5 {
+        column-gap: var(--size-5) !important;
+      }
+    }
   }
   
   /* BOX SHADOW */
@@ -1357,4 +1417,5 @@
   }
 
 
+}
 }

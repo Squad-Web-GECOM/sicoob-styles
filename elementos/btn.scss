@@ -56,7 +56,6 @@
     color: var(--btn-text) !important;
     fill: var(--btn-text) !important;
     font-weight: bold;
-    padding: .3rem 1rem;
 
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled):active,
@@ -289,7 +288,7 @@
 .acland {
   .btn {
     padding: 0.375em 1em;
-    border-radius: $size-2 !important;
+    border-radius: $size-2;
     font-size: var(--font-size-base);
   }
 }

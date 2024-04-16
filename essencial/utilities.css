@@ -627,7 +627,6 @@
 }
 .acland .fs-3, * .fs-3 {
   font-size: var(--font-size-3) !important;
-  line-height: calc(0.5rem + var(--font-size-3));
 }
 .acland .fs-4, * .fs-4 {
   font-size: var(--font-size-4) !important;
@@ -688,6 +687,290 @@
 }
 .acland .fs-500, * .fs-500 {
   font-size: 5rem !important;
+}
+@media (max-width: 567px) {
+  .acland .fs-sm-1, * .fs-sm-1 {
+    font-size: var(--font-size-1) !important;
+  }
+  .acland .fs-sm-2, * .fs-sm-2 {
+    font-size: var(--font-size-2) !important;
+  }
+  .acland .fs-sm-3, * .fs-sm-3 {
+    font-size: var(--font-size-3) !important;
+  }
+  .acland .fs-sm-4, * .fs-sm-4 {
+    font-size: var(--font-size-4) !important;
+  }
+  .acland .fs-sm-5, * .fs-sm-5 {
+    font-size: var(--font-size-5) !important;
+  }
+  .acland .fs-sm-6, * .fs-sm-6 {
+    font-size: var(--font-size-6) !important;
+  }
+  .acland .fs-sm-base, .acland .fs-sm-bs, * .fs-sm-base, * .fs-sm-bs {
+    font-size: var(--font-size-bs) !important;
+  }
+  .acland .fs-sm-small, .acland .fs-sm-sm, * .fs-sm-small, * .fs-sm-sm {
+    font-size: var(--font-size-small) !important;
+  }
+  .acland .fs-sm-xs, * .fs-sm-xs {
+    font-size: var(--font-size-minor) !important;
+  }
+  .acland .fs-sm-lg, * .fs-sm-lg {
+    font-size: var(--font-size-lg) !important;
+  }
+  .acland .fs-sm-xl, * .fs-sm-xl {
+    font-size: var(--font-size-xl) !important;
+  }
+  .acland .fs-sm-08, * .fs-sm-08 {
+    font-size: 0.8rem !important;
+  }
+  .acland .fs-sm-100, * .fs-sm-100 {
+    font-size: 1rem !important;
+  }
+  .acland .fs-sm-125, * .fs-sm-125 {
+    font-size: 1.25rem !important;
+  }
+  .acland .fs-sm-150, * .fs-sm-150 {
+    font-size: 1.5rem !important;
+  }
+  .acland .fs-sm-175, * .fs-sm-175 {
+    font-size: 1.75rem !important;
+  }
+  .acland .fs-sm-200, * .fs-sm-200 {
+    font-size: 2rem !important;
+  }
+  .acland .fs-sm-225, * .fs-sm-225 {
+    font-size: 2.25rem !important;
+  }
+  .acland .fs-sm-250, * .fs-sm-250 {
+    font-size: 2.5rem !important;
+  }
+  .acland .fs-sm-275, * .fs-sm-275 {
+    font-size: 2.75rem !important;
+  }
+  .acland .fs-sm-300, * .fs-sm-300 {
+    font-size: 3rem !important;
+  }
+  .acland .fs-sm-400, * .fs-sm-400 {
+    font-size: 4rem !important;
+  }
+  .acland .fs-sm-500, * .fs-sm-500 {
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .acland .fs-md-1, * .fs-md-1 {
+    font-size: var(--font-size-1) !important;
+  }
+  .acland .fs-md-2, * .fs-md-2 {
+    font-size: var(--font-size-2) !important;
+  }
+  .acland .fs-md-3, * .fs-md-3 {
+    font-size: var(--font-size-3) !important;
+  }
+  .acland .fs-md-4, * .fs-md-4 {
+    font-size: var(--font-size-4) !important;
+  }
+  .acland .fs-md-5, * .fs-md-5 {
+    font-size: var(--font-size-5) !important;
+  }
+  .acland .fs-md-6, * .fs-md-6 {
+    font-size: var(--font-size-6) !important;
+  }
+  .acland .fs-md-base, .acland .fs-md-bs, * .fs-md-base, * .fs-md-bs {
+    font-size: var(--font-size-bs) !important;
+  }
+  .acland .fs-md-small, .acland .fs-md-sm, * .fs-md-small, * .fs-md-sm {
+    font-size: var(--font-size-small) !important;
+  }
+  .acland .fs-md-xs, * .fs-md-xs {
+    font-size: var(--font-size-minor) !important;
+  }
+  .acland .fs-md-lg, * .fs-md-lg {
+    font-size: var(--font-size-lg) !important;
+  }
+  .acland .fs-md-xl, * .fs-md-xl {
+    font-size: var(--font-size-xl) !important;
+  }
+  .acland .fs-md-08, * .fs-md-08 {
+    font-size: 0.8rem !important;
+  }
+  .acland .fs-md-100, * .fs-md-100 {
+    font-size: 1rem !important;
+  }
+  .acland .fs-md-125, * .fs-md-125 {
+    font-size: 1.25rem !important;
+  }
+  .acland .fs-md-150, * .fs-md-150 {
+    font-size: 1.5rem !important;
+  }
+  .acland .fs-md-175, * .fs-md-175 {
+    font-size: 1.75rem !important;
+  }
+  .acland .fs-md-200, * .fs-md-200 {
+    font-size: 2rem !important;
+  }
+  .acland .fs-md-225, * .fs-md-225 {
+    font-size: 2.25rem !important;
+  }
+  .acland .fs-md-250, * .fs-md-250 {
+    font-size: 2.5rem !important;
+  }
+  .acland .fs-md-275, * .fs-md-275 {
+    font-size: 2.75rem !important;
+  }
+  .acland .fs-md-300, * .fs-md-300 {
+    font-size: 3rem !important;
+  }
+  .acland .fs-md-400, * .fs-md-400 {
+    font-size: 4rem !important;
+  }
+  .acland .fs-md-500, * .fs-md-500 {
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .acland .fs-lg-1, * .fs-lg-1 {
+    font-size: var(--font-size-1) !important;
+  }
+  .acland .fs-lg-2, * .fs-lg-2 {
+    font-size: var(--font-size-2) !important;
+  }
+  .acland .fs-lg-3, * .fs-lg-3 {
+    font-size: var(--font-size-3) !important;
+  }
+  .acland .fs-lg-4, * .fs-lg-4 {
+    font-size: var(--font-size-4) !important;
+  }
+  .acland .fs-lg-5, * .fs-lg-5 {
+    font-size: var(--font-size-5) !important;
+  }
+  .acland .fs-lg-6, * .fs-lg-6 {
+    font-size: var(--font-size-6) !important;
+  }
+  .acland .fs-lg-base, .acland .fs-lg-bs, * .fs-lg-base, * .fs-lg-bs {
+    font-size: var(--font-size-bs) !important;
+  }
+  .acland .fs-lg-small, .acland .fs-lg-sm, * .fs-lg-small, * .fs-lg-sm {
+    font-size: var(--font-size-small) !important;
+  }
+  .acland .fs-lg-xs, * .fs-lg-xs {
+    font-size: var(--font-size-minor) !important;
+  }
+  .acland .fs-lg-lg, * .fs-lg-lg {
+    font-size: var(--font-size-lg) !important;
+  }
+  .acland .fs-lg-xl, * .fs-lg-xl {
+    font-size: var(--font-size-xl) !important;
+  }
+  .acland .fs-lg-08, * .fs-lg-08 {
+    font-size: 0.8rem !important;
+  }
+  .acland .fs-lg-100, * .fs-lg-100 {
+    font-size: 1rem !important;
+  }
+  .acland .fs-lg-125, * .fs-lg-125 {
+    font-size: 1.25rem !important;
+  }
+  .acland .fs-lg-150, * .fs-lg-150 {
+    font-size: 1.5rem !important;
+  }
+  .acland .fs-lg-175, * .fs-lg-175 {
+    font-size: 1.75rem !important;
+  }
+  .acland .fs-lg-200, * .fs-lg-200 {
+    font-size: 2rem !important;
+  }
+  .acland .fs-lg-225, * .fs-lg-225 {
+    font-size: 2.25rem !important;
+  }
+  .acland .fs-lg-250, * .fs-lg-250 {
+    font-size: 2.5rem !important;
+  }
+  .acland .fs-lg-275, * .fs-lg-275 {
+    font-size: 2.75rem !important;
+  }
+  .acland .fs-lg-300, * .fs-lg-300 {
+    font-size: 3rem !important;
+  }
+  .acland .fs-lg-400, * .fs-lg-400 {
+    font-size: 4rem !important;
+  }
+  .acland .fs-lg-500, * .fs-lg-500 {
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 1200px) {
+  .acland .fs-xl-1, * .fs-xl-1 {
+    font-size: var(--font-size-1) !important;
+  }
+  .acland .fs-xl-2, * .fs-xl-2 {
+    font-size: var(--font-size-2) !important;
+  }
+  .acland .fs-xl-3, * .fs-xl-3 {
+    font-size: var(--font-size-3) !important;
+  }
+  .acland .fs-xl-4, * .fs-xl-4 {
+    font-size: var(--font-size-4) !important;
+  }
+  .acland .fs-xl-5, * .fs-xl-5 {
+    font-size: var(--font-size-5) !important;
+  }
+  .acland .fs-xl-6, * .fs-xl-6 {
+    font-size: var(--font-size-6) !important;
+  }
+  .acland .fs-xl-base, .acland .fs-xl-bs, * .fs-xl-base, * .fs-xl-bs {
+    font-size: var(--font-size-bs) !important;
+  }
+  .acland .fs-xl-small, .acland .fs-xl-sm, * .fs-xl-small, * .fs-xl-sm {
+    font-size: var(--font-size-small) !important;
+  }
+  .acland .fs-xl-xs, * .fs-xl-xs {
+    font-size: var(--font-size-minor) !important;
+  }
+  .acland .fs-xl-lg, * .fs-xl-lg {
+    font-size: var(--font-size-lg) !important;
+  }
+  .acland .fs-xl-xl, * .fs-xl-xl {
+    font-size: var(--font-size-xl) !important;
+  }
+  .acland .fs-xl-08, * .fs-xl-08 {
+    font-size: 0.8rem !important;
+  }
+  .acland .fs-xl-100, * .fs-xl-100 {
+    font-size: 1rem !important;
+  }
+  .acland .fs-xl-125, * .fs-xl-125 {
+    font-size: 1.25rem !important;
+  }
+  .acland .fs-xl-150, * .fs-xl-150 {
+    font-size: 1.5rem !important;
+  }
+  .acland .fs-xl-175, * .fs-xl-175 {
+    font-size: 1.75rem !important;
+  }
+  .acland .fs-xl-200, * .fs-xl-200 {
+    font-size: 2rem !important;
+  }
+  .acland .fs-xl-225, * .fs-xl-225 {
+    font-size: 2.25rem !important;
+  }
+  .acland .fs-xl-250, * .fs-xl-250 {
+    font-size: 2.5rem !important;
+  }
+  .acland .fs-xl-275, * .fs-xl-275 {
+    font-size: 2.75rem !important;
+  }
+  .acland .fs-xl-300, * .fs-xl-300 {
+    font-size: 3rem !important;
+  }
+  .acland .fs-xl-400, * .fs-xl-400 {
+    font-size: 4rem !important;
+  }
+  .acland .fs-xl-500, * .fs-xl-500 {
+    font-size: 5rem !important;
+  }
 }
 .acland .center-s, * .center-s {
   display: flex !important;
@@ -870,6 +1153,9 @@
 .acland .fill-preto, * .fill-preto {
   fill: var(--preto) !important;
 }
+.acland .w, * .w {
+  /* viewport */
+}
 .acland .w-fit-content, * .w-fit-content {
   width: -moz-fit-content;
   width: fit-content;
@@ -878,6 +1164,9 @@
   .acland .w-sm-100, * .w-sm-100 {
     width: 100%;
   }
+}
+.acland .wv-100, * .wv-100 {
+  width: 100vw;
 }
 .acland .h, * .h {
   /* viewport */

@@ -1,5 +1,19 @@
 @charset "UTF-8";
-@import 'fonte/fonte-sicoob.css';
+@font-face {
+  font-family: "Sicoob sans";
+  src: url("https://www.sicoob.com.br/documents/20128/190187180/SicoobSansVariable.woff2") format("woff2-variations"), url("https://www.sicoob.com.br/documents/20128/190187180/SicoobSansVariable.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 1000;
+  font-stretch: 80% 100%;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sicoob script";
+  src: url("https://www.sicoob.com.br/documents/20128/190187180/SicoobScriptVariable.woff2") format("woff2-variations"), url("https://www.sicoob.com.br/documents/20128/190187180/SicoobScriptVariable.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 1000;
+  font-style: normal;
+}
 :root {
   --turq-200: #00E0CA;
   --turq-300: #00CCB8;
@@ -46,16 +60,16 @@
   --gradient-turq-line: linear-gradient(to right, var(--turq), var(--turq-600));
   --gradient-verdee: radial-gradient(at 0% 100%, var(--verdee-300) 0px, transparent 50%), radial-gradient(at 80% 100%, var(--verdee-500) 0px, transparent 50%), radial-gradient(at 0% 0%, var(--verdee-300) 0px, transparent 50%);
   --gradient-verdee-line: linear-gradient(to right, var(--verdee), var(--verdee-600));
-  --color-brand-main: #00ae9d;
-  --color-brand-opposite: #49479d;
-  --color-brand-complementary: #7db61c;
-  --color-brand-supplementary: #c9d200;
-  --color-brand-dusky: #003641;
-  --color-denotative-success-darkest: #415e16;
-  --color-denotative-success-action: #4f7714;
-  --color-denotative-success-default: #7db61c;
-  --color-denotative-success-active: #daf5a1;
-  --color-denotative-success-lightest: #f8fde8;
+  --color-brand-main: var(--persian-green-600);
+  --color-brand-opposite: var(--victoria-700);
+  --color-brand-complementary: var(--lima-500);
+  --color-brand-supplementary: var(--rio-grande-600);
+  --color-brand-dusky: var(--cyprus-800);
+  --color-denotative-success-darkest: var(--lima-800);
+  --color-denotative-success-action: var(--lima-700);
+  --color-denotative-success-default: var(--lima-500);
+  --color-denotative-success-active: var(--lima-200);
+  --color-denotative-success-lightest: var(--lima-100);
   --color-denotative-info-darkest: #065786;
   --color-denotative-info-action: #0166a3;
   --color-denotative-info-default: #0090e0;
@@ -296,6 +310,8 @@
   --box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.1);
   --box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.1);
   --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.1);
+  --box-shadow-xs: 0 2px 4px rgba(128, 128, 128, 0.2);
+  --box-shadow-sm: 0 2px 8px rgba(128, 128, 128, 0.2);
 }
 
 body, body.para-voce,
@@ -555,6 +571,104 @@ footer .content {
 .acland .small {
   color: var(--cor-apoio);
   font-size: var(--font-size-sm) !important;
+}
+
+.acland.accordion .card,
+.acland .accordion .card {
+  margin-bottom: 1rem !important;
+  background: transparent;
+  border-radius: var(--size-2) !important;
+  border: var(--size-0) !important;
+}
+.acland.accordion .card .card-header,
+.acland .accordion .card .card-header {
+  border: 0 !important;
+  background: var(--cor-perfil) !important;
+  border-radius: 0.5rem !important;
+  padding: 0 !important;
+  transition: var(--transition-1);
+}
+.acland.accordion .card .card-header:hover,
+.acland .accordion .card .card-header:hover {
+  background: var(--cor-perfil-500) !important;
+}
+.acland.accordion .card .btn,
+.acland .accordion .card .btn {
+  font-size: var(--font-size-base);
+  width: 100%;
+  color: var(--branco);
+  text-decoration: none !important;
+  outline: var(--size-0) !important;
+  box-shadow: none !important;
+  position: relative;
+  padding: 1rem 2.25rem 1rem 1.25rem !important;
+}
+.acland.accordion .card .btn:after, .acland.accordion .card .btn:before,
+.acland .accordion .card .btn:after,
+.acland .accordion .card .btn:before {
+  --minus-size: 16px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  translate: 0 -50%;
+  width: var(--minus-size);
+  height: var(--minus-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.acland.accordion .card .btn.collapsed:after,
+.acland .accordion .card .btn.collapsed:after {
+  rotate: -90deg;
+}
+.acland.accordion .card .btn.collapsed:before,
+.acland .accordion .card .btn.collapsed:before {
+  rotate: -180deg;
+}
+.acland.accordion .card p,
+.acland .accordion .card p {
+  color: var(--cor-apoio);
+}
+.acland.accordion-line .card,
+.acland .accordion-line .card {
+  border: 2px solid var(--cor-perfil) !important;
+}
+.acland.accordion-line .card .card-header,
+.acland .accordion-line .card .card-header {
+  background: transparent !important;
+}
+.acland.accordion-line .card .card-header:hover,
+.acland .accordion-line .card .card-header:hover {
+  background: transparent !important;
+}
+.acland.accordion-line .card .btn,
+.acland .accordion-line .card .btn {
+  color: var(--verdee) !important;
+}
+.acland.accordion-line .card .btn:after, .acland.accordion-line .card .btn:before,
+.acland .accordion-line .card .btn:after,
+.acland .accordion-line .card .btn:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
+}
+
+.acland .box {
+  border-radius: var(--size-2);
+  padding: var(--size-4);
+  margin-bottom: var(--size-3);
+  border: 1px solid var(--cor-perfil);
+  background: var(--transparente);
+}
+.acland .box-bg {
+  border-radius: var(--size-2);
+  padding: var(--size-4);
+  margin-bottom: var(--size-3);
+  background: var(--cor-base);
+  border: 1px solid var(--cor-base);
 }
 
 /* BOTÕES */
@@ -877,104 +991,6 @@ footer .content {
 }
 .acland .card-title, .acland .card-text {
   margin-bottom: 0px !important;
-}
-
-.acland.accordion .card,
-.acland .accordion .card {
-  margin-bottom: 1rem !important;
-  background: transparent;
-  border-radius: var(--size-2) !important;
-  border: var(--size-0) !important;
-}
-.acland.accordion .card .card-header,
-.acland .accordion .card .card-header {
-  border: 0 !important;
-  background: var(--cor-perfil) !important;
-  border-radius: 0.5rem !important;
-  padding: 0 !important;
-  transition: var(--transition-1);
-}
-.acland.accordion .card .card-header:hover,
-.acland .accordion .card .card-header:hover {
-  background: var(--cor-perfil-500) !important;
-}
-.acland.accordion .card .btn,
-.acland .accordion .card .btn {
-  font-size: var(--font-size-base);
-  width: 100%;
-  color: var(--branco);
-  text-decoration: none !important;
-  outline: var(--size-0) !important;
-  box-shadow: none !important;
-  position: relative;
-  padding: 1rem 2.25rem 1rem 1.25rem !important;
-}
-.acland.accordion .card .btn:after, .acland.accordion .card .btn:before,
-.acland .accordion .card .btn:after,
-.acland .accordion .card .btn:before {
-  --minus-size: 16px;
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  translate: 0 -50%;
-  width: var(--minus-size);
-  height: var(--minus-size);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
-.acland.accordion .card .btn.collapsed:after,
-.acland .accordion .card .btn.collapsed:after {
-  rotate: -90deg;
-}
-.acland.accordion .card .btn.collapsed:before,
-.acland .accordion .card .btn.collapsed:before {
-  rotate: -180deg;
-}
-.acland.accordion .card p,
-.acland .accordion .card p {
-  color: var(--cor-apoio);
-}
-.acland.accordion-line .card,
-.acland .accordion-line .card {
-  border: 2px solid var(--cor-perfil) !important;
-}
-.acland.accordion-line .card .card-header,
-.acland .accordion-line .card .card-header {
-  background: transparent !important;
-}
-.acland.accordion-line .card .card-header:hover,
-.acland .accordion-line .card .card-header:hover {
-  background: transparent !important;
-}
-.acland.accordion-line .card .btn,
-.acland .accordion-line .card .btn {
-  color: var(--verdee) !important;
-}
-.acland.accordion-line .card .btn:after, .acland.accordion-line .card .btn:before,
-.acland .accordion-line .card .btn:after,
-.acland .accordion-line .card .btn:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
-}
-
-.acland .box {
-  border-radius: var(--size-2);
-  padding: var(--size-4);
-  margin-bottom: var(--size-3);
-  border: 1px solid var(--cor-perfil);
-  background: var(--transparente);
-}
-.acland .box-bg {
-  border-radius: var(--size-2);
-  padding: var(--size-4);
-  margin-bottom: var(--size-3);
-  background: var(--cor-base);
-  border: 1px solid var(--cor-base);
 }
 
 .iconlist {

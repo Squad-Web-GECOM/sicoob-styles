@@ -1,4 +1,4 @@
-@import 'fonte/fonte-sicoob.css';
+@import 'fonte/fonte-sicoob.scss';
 @import 'essencial/root.scss';
 
 /* 
@@ -27,11 +27,11 @@ body {
 @import 'ajustes/liferay-lp.scss';
 @import 'ajustes/acland.scss';
 
+@import 'elementos/accordion.scss';
+@import 'elementos/box.scss';
 @import 'elementos/btn.scss';
 @import 'elementos/card.scss';
-@import 'elementos/accordion.scss';
-@import 'elementos/tabs.scss';
-@import 'elementos/box.scss';
 @import 'elementos/iconlist.scss';
+@import 'elementos/tabs.scss';
 
 @import 'essencial/utilities.scss';

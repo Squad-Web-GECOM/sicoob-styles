@@ -4,6 +4,7 @@
   /* COR, PESO E RADIUS DA BORDA */
   /* PESO DAS FONTES */
   /* TAMANHO DAS FONTES */
+  /* ALTURA DA LINHA - LINE HEIGHT */
   /* ALINHAMENTO */
   /* FILL */
   /* WIDTH */
@@ -971,6 +972,18 @@
   .acland .fs-xl-500, * .fs-xl-500 {
     font-size: 5rem !important;
   }
+}
+.acland .lh-1, * .lh-1 {
+  line-height: 100% !important;
+}
+.acland .lh-2, * .lh-2 {
+  line-height: 120% !important;
+}
+.acland .lh-3, * .lh-3 {
+  line-height: 150% !important;
+}
+.acland .lh-4, * .lh-4 {
+  line-height: 200% !important;
 }
 .acland .center-s, * .center-s {
   display: flex !important;

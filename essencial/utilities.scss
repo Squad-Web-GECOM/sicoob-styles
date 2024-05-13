@@ -1318,6 +1318,25 @@
       }
     }
   }
+
+  /* ALTURA DA LINHA - LINE HEIGHT */
+
+  .lh{
+
+    &-1{
+      line-height: 100%!important;
+    }
+    &-2{
+      line-height: 120%!important;
+    }
+    &-3{
+      line-height: 150%!important;
+    }
+    &-4{
+      line-height: 200%!important;
+    }
+
+  }
   
   /* ALINHAMENTO */
   .center {

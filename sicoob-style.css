@@ -2207,195 +2207,99 @@ footer .content {
 * .fs-500 {
   font-size: 5rem !important;
 }
-@media (max-width: 567px) {
-  .acland .fs-sm-1,
-  * .fs-sm-1 {
+@media (max-width: 1200px) {
+  .acland .fs-xl-1,
+  * .fs-xl-1 {
     font-size: var(--font-size-1) !important;
   }
-  .acland .fs-sm-2,
-  * .fs-sm-2 {
+  .acland .fs-xl-2,
+  * .fs-xl-2 {
     font-size: var(--font-size-2) !important;
   }
-  .acland .fs-sm-3,
-  * .fs-sm-3 {
+  .acland .fs-xl-3,
+  * .fs-xl-3 {
     font-size: var(--font-size-3) !important;
   }
-  .acland .fs-sm-4,
-  * .fs-sm-4 {
+  .acland .fs-xl-4,
+  * .fs-xl-4 {
     font-size: var(--font-size-4) !important;
   }
-  .acland .fs-sm-5,
-  * .fs-sm-5 {
+  .acland .fs-xl-5,
+  * .fs-xl-5 {
     font-size: var(--font-size-5) !important;
   }
-  .acland .fs-sm-6,
-  * .fs-sm-6 {
+  .acland .fs-xl-6,
+  * .fs-xl-6 {
     font-size: var(--font-size-6) !important;
   }
-  .acland .fs-sm-base, .acland .fs-sm-bs,
-  * .fs-sm-base,
-  * .fs-sm-bs {
+  .acland .fs-xl-base, .acland .fs-xl-bs,
+  * .fs-xl-base,
+  * .fs-xl-bs {
     font-size: var(--font-size-bs) !important;
   }
-  .acland .fs-sm-small, .acland .fs-sm-sm,
-  * .fs-sm-small,
-  * .fs-sm-sm {
+  .acland .fs-xl-small, .acland .fs-xl-sm,
+  * .fs-xl-small,
+  * .fs-xl-sm {
     font-size: var(--font-size-small) !important;
   }
-  .acland .fs-sm-xs,
-  * .fs-sm-xs {
+  .acland .fs-xl-xs,
+  * .fs-xl-xs {
     font-size: var(--font-size-minor) !important;
   }
-  .acland .fs-sm-lg,
-  * .fs-sm-lg {
+  .acland .fs-xl-lg,
+  * .fs-xl-lg {
     font-size: var(--font-size-lg) !important;
   }
-  .acland .fs-sm-xl,
-  * .fs-sm-xl {
+  .acland .fs-xl-xl,
+  * .fs-xl-xl {
     font-size: var(--font-size-xl) !important;
   }
-  .acland .fs-sm-08,
-  * .fs-sm-08 {
+  .acland .fs-xl-08,
+  * .fs-xl-08 {
     font-size: 0.8rem !important;
   }
-  .acland .fs-sm-100,
-  * .fs-sm-100 {
+  .acland .fs-xl-100,
+  * .fs-xl-100 {
     font-size: 1rem !important;
   }
-  .acland .fs-sm-125,
-  * .fs-sm-125 {
+  .acland .fs-xl-125,
+  * .fs-xl-125 {
     font-size: 1.25rem !important;
   }
-  .acland .fs-sm-150,
-  * .fs-sm-150 {
+  .acland .fs-xl-150,
+  * .fs-xl-150 {
     font-size: 1.5rem !important;
   }
-  .acland .fs-sm-175,
-  * .fs-sm-175 {
+  .acland .fs-xl-175,
+  * .fs-xl-175 {
     font-size: 1.75rem !important;
   }
-  .acland .fs-sm-200,
-  * .fs-sm-200 {
+  .acland .fs-xl-200,
+  * .fs-xl-200 {
     font-size: 2rem !important;
   }
-  .acland .fs-sm-225,
-  * .fs-sm-225 {
+  .acland .fs-xl-225,
+  * .fs-xl-225 {
     font-size: 2.25rem !important;
   }
-  .acland .fs-sm-250,
-  * .fs-sm-250 {
+  .acland .fs-xl-250,
+  * .fs-xl-250 {
     font-size: 2.5rem !important;
   }
-  .acland .fs-sm-275,
-  * .fs-sm-275 {
+  .acland .fs-xl-275,
+  * .fs-xl-275 {
     font-size: 2.75rem !important;
   }
-  .acland .fs-sm-300,
-  * .fs-sm-300 {
+  .acland .fs-xl-300,
+  * .fs-xl-300 {
     font-size: 3rem !important;
   }
-  .acland .fs-sm-400,
-  * .fs-sm-400 {
+  .acland .fs-xl-400,
+  * .fs-xl-400 {
     font-size: 4rem !important;
   }
-  .acland .fs-sm-500,
-  * .fs-sm-500 {
-    font-size: 5rem !important;
-  }
-}
-@media (max-width: 767px) {
-  .acland .fs-md-1,
-  * .fs-md-1 {
-    font-size: var(--font-size-1) !important;
-  }
-  .acland .fs-md-2,
-  * .fs-md-2 {
-    font-size: var(--font-size-2) !important;
-  }
-  .acland .fs-md-3,
-  * .fs-md-3 {
-    font-size: var(--font-size-3) !important;
-  }
-  .acland .fs-md-4,
-  * .fs-md-4 {
-    font-size: var(--font-size-4) !important;
-  }
-  .acland .fs-md-5,
-  * .fs-md-5 {
-    font-size: var(--font-size-5) !important;
-  }
-  .acland .fs-md-6,
-  * .fs-md-6 {
-    font-size: var(--font-size-6) !important;
-  }
-  .acland .fs-md-base, .acland .fs-md-bs,
-  * .fs-md-base,
-  * .fs-md-bs {
-    font-size: var(--font-size-bs) !important;
-  }
-  .acland .fs-md-small, .acland .fs-md-sm,
-  * .fs-md-small,
-  * .fs-md-sm {
-    font-size: var(--font-size-small) !important;
-  }
-  .acland .fs-md-xs,
-  * .fs-md-xs {
-    font-size: var(--font-size-minor) !important;
-  }
-  .acland .fs-md-lg,
-  * .fs-md-lg {
-    font-size: var(--font-size-lg) !important;
-  }
-  .acland .fs-md-xl,
-  * .fs-md-xl {
-    font-size: var(--font-size-xl) !important;
-  }
-  .acland .fs-md-08,
-  * .fs-md-08 {
-    font-size: 0.8rem !important;
-  }
-  .acland .fs-md-100,
-  * .fs-md-100 {
-    font-size: 1rem !important;
-  }
-  .acland .fs-md-125,
-  * .fs-md-125 {
-    font-size: 1.25rem !important;
-  }
-  .acland .fs-md-150,
-  * .fs-md-150 {
-    font-size: 1.5rem !important;
-  }
-  .acland .fs-md-175,
-  * .fs-md-175 {
-    font-size: 1.75rem !important;
-  }
-  .acland .fs-md-200,
-  * .fs-md-200 {
-    font-size: 2rem !important;
-  }
-  .acland .fs-md-225,
-  * .fs-md-225 {
-    font-size: 2.25rem !important;
-  }
-  .acland .fs-md-250,
-  * .fs-md-250 {
-    font-size: 2.5rem !important;
-  }
-  .acland .fs-md-275,
-  * .fs-md-275 {
-    font-size: 2.75rem !important;
-  }
-  .acland .fs-md-300,
-  * .fs-md-300 {
-    font-size: 3rem !important;
-  }
-  .acland .fs-md-400,
-  * .fs-md-400 {
-    font-size: 4rem !important;
-  }
-  .acland .fs-md-500,
-  * .fs-md-500 {
+  .acland .fs-xl-500,
+  * .fs-xl-500 {
     font-size: 5rem !important;
   }
 }
@@ -2495,99 +2399,195 @@ footer .content {
     font-size: 5rem !important;
   }
 }
-@media (max-width: 1200px) {
-  .acland .fs-xl-1,
-  * .fs-xl-1 {
+@media (max-width: 767px) {
+  .acland .fs-md-1,
+  * .fs-md-1 {
     font-size: var(--font-size-1) !important;
   }
-  .acland .fs-xl-2,
-  * .fs-xl-2 {
+  .acland .fs-md-2,
+  * .fs-md-2 {
     font-size: var(--font-size-2) !important;
   }
-  .acland .fs-xl-3,
-  * .fs-xl-3 {
+  .acland .fs-md-3,
+  * .fs-md-3 {
     font-size: var(--font-size-3) !important;
   }
-  .acland .fs-xl-4,
-  * .fs-xl-4 {
+  .acland .fs-md-4,
+  * .fs-md-4 {
     font-size: var(--font-size-4) !important;
   }
-  .acland .fs-xl-5,
-  * .fs-xl-5 {
+  .acland .fs-md-5,
+  * .fs-md-5 {
     font-size: var(--font-size-5) !important;
   }
-  .acland .fs-xl-6,
-  * .fs-xl-6 {
+  .acland .fs-md-6,
+  * .fs-md-6 {
     font-size: var(--font-size-6) !important;
   }
-  .acland .fs-xl-base, .acland .fs-xl-bs,
-  * .fs-xl-base,
-  * .fs-xl-bs {
+  .acland .fs-md-base, .acland .fs-md-bs,
+  * .fs-md-base,
+  * .fs-md-bs {
     font-size: var(--font-size-bs) !important;
   }
-  .acland .fs-xl-small, .acland .fs-xl-sm,
-  * .fs-xl-small,
-  * .fs-xl-sm {
+  .acland .fs-md-small, .acland .fs-md-sm,
+  * .fs-md-small,
+  * .fs-md-sm {
     font-size: var(--font-size-small) !important;
   }
-  .acland .fs-xl-xs,
-  * .fs-xl-xs {
+  .acland .fs-md-xs,
+  * .fs-md-xs {
     font-size: var(--font-size-minor) !important;
   }
-  .acland .fs-xl-lg,
-  * .fs-xl-lg {
+  .acland .fs-md-lg,
+  * .fs-md-lg {
     font-size: var(--font-size-lg) !important;
   }
-  .acland .fs-xl-xl,
-  * .fs-xl-xl {
+  .acland .fs-md-xl,
+  * .fs-md-xl {
     font-size: var(--font-size-xl) !important;
   }
-  .acland .fs-xl-08,
-  * .fs-xl-08 {
+  .acland .fs-md-08,
+  * .fs-md-08 {
     font-size: 0.8rem !important;
   }
-  .acland .fs-xl-100,
-  * .fs-xl-100 {
+  .acland .fs-md-100,
+  * .fs-md-100 {
     font-size: 1rem !important;
   }
-  .acland .fs-xl-125,
-  * .fs-xl-125 {
+  .acland .fs-md-125,
+  * .fs-md-125 {
     font-size: 1.25rem !important;
   }
-  .acland .fs-xl-150,
-  * .fs-xl-150 {
+  .acland .fs-md-150,
+  * .fs-md-150 {
     font-size: 1.5rem !important;
   }
-  .acland .fs-xl-175,
-  * .fs-xl-175 {
+  .acland .fs-md-175,
+  * .fs-md-175 {
     font-size: 1.75rem !important;
   }
-  .acland .fs-xl-200,
-  * .fs-xl-200 {
+  .acland .fs-md-200,
+  * .fs-md-200 {
     font-size: 2rem !important;
   }
-  .acland .fs-xl-225,
-  * .fs-xl-225 {
+  .acland .fs-md-225,
+  * .fs-md-225 {
     font-size: 2.25rem !important;
   }
-  .acland .fs-xl-250,
-  * .fs-xl-250 {
+  .acland .fs-md-250,
+  * .fs-md-250 {
     font-size: 2.5rem !important;
   }
-  .acland .fs-xl-275,
-  * .fs-xl-275 {
+  .acland .fs-md-275,
+  * .fs-md-275 {
     font-size: 2.75rem !important;
   }
-  .acland .fs-xl-300,
-  * .fs-xl-300 {
+  .acland .fs-md-300,
+  * .fs-md-300 {
     font-size: 3rem !important;
   }
-  .acland .fs-xl-400,
-  * .fs-xl-400 {
+  .acland .fs-md-400,
+  * .fs-md-400 {
     font-size: 4rem !important;
   }
-  .acland .fs-xl-500,
-  * .fs-xl-500 {
+  .acland .fs-md-500,
+  * .fs-md-500 {
+    font-size: 5rem !important;
+  }
+}
+@media (max-width: 567px) {
+  .acland .fs-sm-1,
+  * .fs-sm-1 {
+    font-size: var(--font-size-1) !important;
+  }
+  .acland .fs-sm-2,
+  * .fs-sm-2 {
+    font-size: var(--font-size-2) !important;
+  }
+  .acland .fs-sm-3,
+  * .fs-sm-3 {
+    font-size: var(--font-size-3) !important;
+  }
+  .acland .fs-sm-4,
+  * .fs-sm-4 {
+    font-size: var(--font-size-4) !important;
+  }
+  .acland .fs-sm-5,
+  * .fs-sm-5 {
+    font-size: var(--font-size-5) !important;
+  }
+  .acland .fs-sm-6,
+  * .fs-sm-6 {
+    font-size: var(--font-size-6) !important;
+  }
+  .acland .fs-sm-base, .acland .fs-sm-bs,
+  * .fs-sm-base,
+  * .fs-sm-bs {
+    font-size: var(--font-size-bs) !important;
+  }
+  .acland .fs-sm-small, .acland .fs-sm-sm,
+  * .fs-sm-small,
+  * .fs-sm-sm {
+    font-size: var(--font-size-small) !important;
+  }
+  .acland .fs-sm-xs,
+  * .fs-sm-xs {
+    font-size: var(--font-size-minor) !important;
+  }
+  .acland .fs-sm-lg,
+  * .fs-sm-lg {
+    font-size: var(--font-size-lg) !important;
+  }
+  .acland .fs-sm-xl,
+  * .fs-sm-xl {
+    font-size: var(--font-size-xl) !important;
+  }
+  .acland .fs-sm-08,
+  * .fs-sm-08 {
+    font-size: 0.8rem !important;
+  }
+  .acland .fs-sm-100,
+  * .fs-sm-100 {
+    font-size: 1rem !important;
+  }
+  .acland .fs-sm-125,
+  * .fs-sm-125 {
+    font-size: 1.25rem !important;
+  }
+  .acland .fs-sm-150,
+  * .fs-sm-150 {
+    font-size: 1.5rem !important;
+  }
+  .acland .fs-sm-175,
+  * .fs-sm-175 {
+    font-size: 1.75rem !important;
+  }
+  .acland .fs-sm-200,
+  * .fs-sm-200 {
+    font-size: 2rem !important;
+  }
+  .acland .fs-sm-225,
+  * .fs-sm-225 {
+    font-size: 2.25rem !important;
+  }
+  .acland .fs-sm-250,
+  * .fs-sm-250 {
+    font-size: 2.5rem !important;
+  }
+  .acland .fs-sm-275,
+  * .fs-sm-275 {
+    font-size: 2.75rem !important;
+  }
+  .acland .fs-sm-300,
+  * .fs-sm-300 {
+    font-size: 3rem !important;
+  }
+  .acland .fs-sm-400,
+  * .fs-sm-400 {
+    font-size: 4rem !important;
+  }
+  .acland .fs-sm-500,
+  * .fs-sm-500 {
     font-size: 5rem !important;
   }
 }

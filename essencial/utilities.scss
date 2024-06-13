@@ -1605,19 +1605,19 @@
   .lh {
 
     &-1 {
-      line-height: 100% !important;
+      line-height: var(--line-height-1) !important;
     }
 
     &-2 {
-      line-height: 120% !important;
+      line-height: var(--line-height-2) !important;
     }
 
     &-3 {
-      line-height: 150% !important;
+      line-height: var(--line-height-3) !important;
     }
 
     &-4 {
-      line-height: 200% !important;
+      line-height: var(--line-height-4) !important;
     }
 
   }

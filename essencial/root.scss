@@ -1,11 +1,5 @@
 :root {
 
-  --turq-200: #00E0CA;
-  --turq-300: #00CCB8;
-  --turq: #00ae9d;
-  --turq-500: #00A091;
-  --turq-600: #009285;
-
   --turq-200: var(--color-function-primary-lightest);
   --turq-300: var(--color-function-primary-active);
   --turq: var(--color-function-primary-action);
@@ -88,8 +82,8 @@
   --color-function-disabled-text: #818181;
   --color-function-disabled-border: #a4a4a4;
 
-  --color-function-primary-darkest: #0a655e;
-  --color-function-primary-action: #00ae9d;
+  --color-function-primary-darkest: var(--persian-green-800);
+  --color-function-primary-action: var(--persian-green-600);
   --color-function-primary-default: #058075;
   --color-function-primary-active: #04c8b0;
   --color-function-primary-lightest: #effefb;
@@ -111,7 +105,7 @@
   --color-surface-text-default-high: #002A33;
   --color-surface-text-highlight-low: #f7f7f7;
   --color-surface-text-highlight-medium: #005566;
-  --color-surface-text-highlight-high: #00ae9d;
+  --color-surface-text-highlight-high: var(--persian-green-600);
 
   --color-surface-background-low: #FFFFFF;
   --color-surface-background-medium: #ebedf1;
@@ -331,7 +325,10 @@
   --font-sans: 'Sicoob sans', 'Asap', sans-serif;
   --font-script: 'Sicoob script', 'Pacifico', cursive;
 
-
+  --line-height-1: 100%;
+  --line-height-2: 120%;
+  --line-height-3: 150%;
+  --line-height-4: 200%;
 
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);

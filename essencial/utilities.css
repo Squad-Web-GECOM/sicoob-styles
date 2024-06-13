@@ -1564,19 +1564,19 @@
 }
 .acland .lh-1,
 * .lh-1 {
-  line-height: 100% !important;
+  line-height: var(--line-height-1) !important;
 }
 .acland .lh-2,
 * .lh-2 {
-  line-height: 120% !important;
+  line-height: var(--line-height-2) !important;
 }
 .acland .lh-3,
 * .lh-3 {
-  line-height: 150% !important;
+  line-height: var(--line-height-3) !important;
 }
 .acland .lh-4,
 * .lh-4 {
-  line-height: 200% !important;
+  line-height: var(--line-height-4) !important;
 }
 .acland .center-s,
 * .center-s {

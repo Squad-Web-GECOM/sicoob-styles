@@ -41,4 +41,7 @@
 .acland .small {
   color: var(--cor-apoio);
   font-size: var(--font-size-sm) !important;
+}
+.acland button:focus {
+  outline: 1px auto var(--turq);
 }/*# sourceMappingURL=acland.css.map */

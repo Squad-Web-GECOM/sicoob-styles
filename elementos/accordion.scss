@@ -8,6 +8,7 @@
       background: transparent;
       border-radius: $size-2 !important;
       border: $size-0 !important;
+      box-shadow: none;
 
       .card-header {
         border: 0 !important;
@@ -25,11 +26,16 @@
         font-size: $font-size-base;
         width: 100%;
         color: $branco;
+        text-align: left;
         text-decoration: none !important;
         outline: $size-0 !important;
         box-shadow: none !important;
         position: relative;
         padding: 1rem 2.25rem 1rem 1.25rem !important;
+
+        &:hover{
+          color: $branco;
+        }
 
         &:after,
         &:before {

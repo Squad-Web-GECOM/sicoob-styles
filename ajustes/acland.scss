@@ -66,4 +66,8 @@
         //line-height: var(--font-size-small);
     }
 
+    button:focus{
+        outline: 1px auto var(--turq);
+    }
+
 }

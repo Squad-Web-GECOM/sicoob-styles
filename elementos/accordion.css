@@ -30,8 +30,9 @@
   position: relative;
   padding: 1rem 2.25rem 1rem 1.25rem !important;
 }
-.acland.accordion .card .btn:hover,
-.acland .accordion .card .btn:hover {
+.acland.accordion .card .btn:hover, .acland.accordion .card .btn:focus,
+.acland .accordion .card .btn:hover,
+.acland .accordion .card .btn:focus {
   color: var(--branco);
 }
 .acland.accordion .card .btn:after, .acland.accordion .card .btn:before,

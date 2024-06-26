@@ -33,7 +33,7 @@
         position: relative;
         padding: 1rem 2.25rem 1rem 1.25rem !important;
 
-        &:hover{
+        &:hover, &:focus{
           color: $branco;
         }
 

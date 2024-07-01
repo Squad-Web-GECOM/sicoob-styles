@@ -2181,7 +2181,7 @@ a:focus {
 * .fs-500 {
   font-size: 5rem !important;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .acland .fs-xl-1,
   * .fs-xl-1 {
     font-size: var(--font-size-1) !important;
@@ -2277,7 +2277,7 @@ a:focus {
     font-size: 5rem !important;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .acland .fs-lg-1,
   * .fs-lg-1 {
     font-size: var(--font-size-1) !important;
@@ -2373,7 +2373,7 @@ a:focus {
     font-size: 5rem !important;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .acland .fs-md-1,
   * .fs-md-1 {
     font-size: var(--font-size-1) !important;
@@ -2469,7 +2469,7 @@ a:focus {
     font-size: 5rem !important;
   }
 }
-@media (max-width: 567px) {
+@media (min-width: 567px) {
   .acland .fs-sm-1,
   * .fs-sm-1 {
     font-size: var(--font-size-1) !important;

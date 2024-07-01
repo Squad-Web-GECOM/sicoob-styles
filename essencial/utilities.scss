@@ -1209,7 +1209,7 @@
     }
 
     &-xl {
-      @media (max-width:1200px) {
+      @media (min-width:1200px) {
         &-1 {
           font-size: var(--font-size-1) !important;
         }
@@ -1307,7 +1307,7 @@
     }
 
     &-lg {
-      @media (max-width:992px) {
+      @media (min-width:992px) {
         &-1 {
           font-size: var(--font-size-1) !important;
         }
@@ -1405,7 +1405,7 @@
     }
 
     &-md {
-      @media (max-width:767px) {
+      @media (min-width:767px) {
         &-1 {
           font-size: var(--font-size-1) !important;
         }
@@ -1503,7 +1503,7 @@
     }
 
     &-sm {
-      @media (max-width:567px) {
+      @media (min-width:567px) {
         &-1 {
           font-size: var(--font-size-1) !important;
         }

@@ -96,6 +96,10 @@ a{
   }
 }
 
+img{
+  max-width: 100%;
+}
+
 footer .col-xs-6 {
   @media (max-width: 550px) {
     max-width: 100%;

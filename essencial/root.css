@@ -298,8 +298,7 @@
   --box-shadow-sm: 0 2px 8px rgba(128, 128, 128, 0.2);
 }
 
-body, body.para-voce,
-body .para-voce,
+body,
 body .tema-turq {
   --cor-perfil-200: var(--turq-200);
   --cor-perfil-300: var(--turq-300);
@@ -322,8 +321,6 @@ body .tema-turq {
   --cor-base-500: var(--cinza-500);
   --cor-base-600: var(--cinza-600);
 }
-body.para-empresa,
-body .para-empresa,
 body .tema-verdee {
   --cor-perfil-200: var(--verdee-200);
   --cor-perfil-300: var(--verdee-300);
@@ -336,8 +333,6 @@ body .tema-verdee {
   --cor-destaque-500: var(--turq-500);
   --cor-destaque-600: var(--turq-600);
 }
-body.para-agronegocio,
-body .para-agronegocio,
 body .tema-verdem {
   --cor-perfil-200: var(--verdem-200);
   --cor-perfil-300: var(--verdem-300);

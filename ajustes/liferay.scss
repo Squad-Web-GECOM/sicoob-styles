@@ -12,46 +12,39 @@ body #content,
   padding: 0 !important;
 }
 
-.acland{
+.acland {
   .portlet-column-content.empty {
     padding: 0 !important;
   }
 }
 
-h,
-.h {
-  &1 {
-    color: $cor-perfil;
-  }
+body {
 
-  &2 {
-    color: $cor-perfil;
-  }
+  &, &.acland,
+  .acland {
 
-  &3 {
-    color: $cor-perfil;
-  }
+    &, &.para-campo, &.para-agronegocio, &.para-empresa, &.para-voce{
 
-  &4 {
-    color: $cor-perfil;
-  }
-
-  &5 {
-    color: $cor-perfil;
-  }
-
-  &6 {
-    color: $cor-perfil;
+      h,
+      .h {
+        &1, &2, &3, &4, &5, &6{
+          color: $cor-perfil;
+        }
+      }
+    }
   }
 }
 
-a{
+
+a {
   color: $cor-perfil;
-  &:hover{
+
+  &:hover {
     color: $cor-perfil-600;
   }
-  &:focus{
-    box-shadow: none!important;
+
+  &:focus {
+    box-shadow: none !important;
   }
 }
 

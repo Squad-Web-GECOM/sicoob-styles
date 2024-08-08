@@ -346,8 +346,8 @@
 body {
 
   &,
-  &.para-voce,
-  .para-voce,
+  // &.para-voce,
+  // .para-voce,
   .tema-turq {
     --cor-perfil-200: var(--turq-200);
     --cor-perfil-300: var(--turq-300);
@@ -374,8 +374,8 @@ body {
     --cor-base-600: var(--cinza-600);
   }
 
-  &.para-empresa,
-  .para-empresa,
+  // &.para-empresa,
+  // .para-empresa,
   .tema-verdee {
     --cor-perfil-200: var(--verdee-200);
     --cor-perfil-300: var(--verdee-300);
@@ -390,8 +390,8 @@ body {
     --cor-destaque-600: var(--turq-600);
   }
 
-  &.para-agronegocio,
-  .para-agronegocio,
+  // &.para-agronegocio,
+  // .para-agronegocio,
   .tema-verdem {
     --cor-perfil-200: var(--verdem-200);
     --cor-perfil-300: var(--verdem-300);

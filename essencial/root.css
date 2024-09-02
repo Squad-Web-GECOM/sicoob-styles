@@ -70,7 +70,7 @@
   --color-function-disabled-border: #a4a4a4;
   --color-function-primary-darkest: var(--persian-green-800);
   --color-function-primary-action: var(--persian-green-600);
-  --color-function-primary-default: #058075;
+  --color-function-primary-default: var(--persian-green-700);
   --color-function-primary-active: #04c8b0;
   --color-function-primary-lightest: #effefb;
   --color-function-secondary-darkest: #47438a;

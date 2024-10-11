@@ -13,21 +13,40 @@ body #content,
 }
 
 .acland {
+
   .portlet-column-content.empty {
     padding: 0 !important;
+  }
+
+  [data-title="Informações"],
+  .add-comment,
+  .navbar-toggler,
+  .portlet-topper-toolbar>[data-qa-id="addButton"] {
+    display: none !important;
   }
 }
 
 body {
 
-  &, &.acland,
+  &,
+  &.acland,
   .acland {
 
-    &, &.para-campo, &.para-agronegocio, &.para-empresa, &.para-voce{
+    &,
+    &.para-campo,
+    &.para-agronegocio,
+    &.para-empresa,
+    &.para-voce {
 
       h,
       .h {
-        &1, &2, &3, &4, &5, &6{
+
+        &1,
+        &2,
+        &3,
+        &4,
+        &5,
+        &6 {
           color: $cor-perfil;
         }
       }
@@ -48,16 +67,17 @@ a {
   }
 }
 
+
 .whatsapp.wpp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 100;
   -webkit-animation: all 1s ease-in-out;
   animation: all 1s ease-in-out;
 
   img {
-    width: 70px;
+    width: 50px;
     height: auto;
   }
 
@@ -68,5 +88,40 @@ a {
   .btn:focus {
     transform: scale(0.9, 0.9);
     box-shadow: none !important;
+  }
+}
+
+footer {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .portlet-title-text {
+    overflow: visible !important;
+  }
+
+  @media (max-width: 550px) {
+    .text-truncate {
+      white-space: nowrap;
+    }
+
+    .col-xs-6 {
+      max-width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.acland, *{
+
+  #onetrust-pc-sdk{
+  
+    h2{
+      font-size: 1.37em!important;
+    }
+    h2{
+      font-size: 1.37em!important;
+      font-size: .875em;
+    }
   }
 }

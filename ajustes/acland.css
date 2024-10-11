@@ -2,45 +2,45 @@
 .acland .h1 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-1) !important;
+  font-size: var(--font-size-1);
 }
 .acland h2,
 .acland .h2 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-2) !important;
+  font-size: var(--font-size-2);
 }
 .acland h3,
 .acland .h3 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-3) !important;
+  font-size: var(--font-size-3);
 }
 .acland h4,
 .acland .h4 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-4) !important;
+  font-size: var(--font-size-4);
 }
 .acland h5,
 .acland .h5 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-5) !important;
+  font-size: var(--font-size-5);
 }
 .acland h6,
 .acland .h6 {
   color: var(--cor-perfil);
   font-weight: bold;
-  font-size: var(--font-size-6) !important;
+  font-size: var(--font-size-6);
 }
 .acland p {
   color: var(--cor-apoio);
-  font-size: var(--font-size-bs) !important;
+  font-size: var(--font-size-bs);
 }
 .acland .small {
   color: var(--cor-apoio);
-  font-size: var(--font-size-sm) !important;
+  font-size: var(--font-size-sm);
 }
 .acland button:focus {
   outline: 1px auto var(--turq);

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -11,6 +12,12 @@ body #content,
 
 .acland .portlet-column-content.empty {
   padding: 0 !important;
+}
+.acland [data-title=Informações],
+.acland .add-comment,
+.acland .navbar-toggler,
+.acland .portlet-topper-toolbar > [data-qa-id=addButton] {
+  display: none !important;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6,
@@ -149,13 +156,13 @@ a:focus {
 
 .whatsapp.wpp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 100;
   animation: all 1s ease-in-out;
 }
 .whatsapp.wpp img {
-  width: 70px;
+  width: 50px;
   height: auto;
 }
 .whatsapp.wpp:hover {
@@ -164,4 +171,28 @@ a:focus {
 .whatsapp.wpp .btn:focus {
   transform: scale(0.9, 0.9);
   box-shadow: none !important;
+}
+
+footer .navbar-nav {
+  flex-direction: column;
+}
+footer .portlet-title-text {
+  overflow: visible !important;
+}
+@media (max-width: 550px) {
+  footer .text-truncate {
+    white-space: nowrap;
+  }
+  footer .col-xs-6 {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+.acland #onetrust-pc-sdk h2, * #onetrust-pc-sdk h2 {
+  font-size: 1.37em !important;
+}
+.acland #onetrust-pc-sdk h2, * #onetrust-pc-sdk h2 {
+  font-size: 1.37em !important;
+  font-size: 0.875em;
 }/*# sourceMappingURL=liferay.css.map */

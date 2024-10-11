@@ -5,64 +5,64 @@
     .h {
         &1 {
             color: $cor-perfil;
-            //font-size: 3.125rem!important;
+            //font-size: 3.125rem;
             font-weight:bold;
-            font-size: var(--font-size-1) !important;
+            font-size: var(--font-size-1) ;
             //line-height: var(--font-size-1);
         }
 
         &2 {
             color: $cor-perfil;
-            //font-size: 2.5rem!important;
+            //font-size: 2.5rem;
             font-weight:bold;
-            font-size: var(--font-size-2) !important;
+            font-size: var(--font-size-2) ;
             //line-height: var(--font-size-2);
         }
 
         &3 {
             color: $cor-perfil;
-            //font-size: 2.1875rem!important;
+            //font-size: 2.1875rem;
             font-weight:bold;
-            font-size: var(--font-size-3) !important;
+            font-size: var(--font-size-3) ;
             //line-height: var(--font-size-3);
         }
 
         &4 {
             color: $cor-perfil;
-            //font-size: 1.75rem!important;
+            //font-size: 1.75rem;
             font-weight:bold;
-            font-size: var(--font-size-4) !important;
+            font-size: var(--font-size-4) ;
             //line-height: var(--font-size-4);
         }
 
         &5 {
             color: $cor-perfil;
-            //font-size: 1.5rem!important;
+            //font-size: 1.5rem;
             font-weight:bold;
-            font-size: var(--font-size-5) !important;
+            font-size: var(--font-size-5) ;
             //line-height: var(--font-size-5);
         }
 
         &6 {
             color: $cor-perfil;
-            //font-size: 1rem!important;
+            //font-size: 1rem;
             font-weight:bold;
-            font-size: var(--font-size-6) !important;
+            font-size: var(--font-size-6) ;
             //line-height: var(--font-size-6);
         }
     }
 
     p {
         color: $cor-apoio;
-        //font-size: 1rem!important;
-        font-size: var(--font-size-bs) !important;
+        //font-size: 1rem;
+        font-size: var(--font-size-bs) ;
         //line-height: var(--font-size-base);
     }
 
     .small {
         color: $cor-apoio;
-        //font-size: .875rem!important;
-        font-size: var(--font-size-sm) !important;
+        //font-size: .875rem;
+        font-size: var(--font-size-sm) ;
         //line-height: var(--font-size-small);
     }
 

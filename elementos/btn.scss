@@ -11,8 +11,12 @@
   
   outline: $size-0 !important;
   transition: $transition-2;
+  &:focus{
+    box-shadow: none !important;
+  }
 
-  &-primary {
+
+  &-primary, &-default {
 
     border-color: var(--btn-bg)!important;
     background-color: var(--btn-bg)!important;

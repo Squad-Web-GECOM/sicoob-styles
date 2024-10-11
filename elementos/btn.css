@@ -8,23 +8,26 @@
   outline: var(--size-0) !important;
   transition: var(--transition-2);
 }
-.btn-primary {
+.btn:focus {
+  box-shadow: none !important;
+}
+.btn-primary, .btn-default {
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
   fill: var(--btn-text) !important;
   font-weight: bold;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover, .btn-default:not(:disabled):not(.disabled).active, .btn-default:not(:disabled):not(.disabled):active, .show > .btn-default.dropdown-toggle, .btn-default:hover {
   background-color: var(--btn-bg-hover) !important;
   border-color: var(--btn-bg-hover) !important;
   color: var(--btn-text-hover) !important;
   fill: var(--btn-text-hover) !important;
 }
-.btn-primary:focus-visible {
+.btn-primary:focus-visible, .btn-default:focus-visible {
   outline: 0px !important;
 }
-.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus, .btn-default.focus, .btn-default:focus, .btn-default:not(:disabled):not(.disabled).active:focus, .btn-default:not(:disabled):not(.disabled):active:focus, .show > .btn-default.dropdown-toggle:focus {
   background-color: var(--btn-bg-hover);
   border-color: var(--btn-bg-hover);
   color: var(--btn-text-hover) !important;

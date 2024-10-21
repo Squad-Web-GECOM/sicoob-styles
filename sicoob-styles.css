@@ -1905,6 +1905,12 @@ footer .portlet-title-text {
 * .border-preto {
   border-color: var(--preto) !important;
 }
+.acland .border-left-0, .acland .border-left-none,
+* .border-left-0,
+* .border-left-none {
+  border-style: solid !important;
+  border-left-width: 0px !important;
+}
 .acland .border-left-1,
 * .border-left-1 {
   border-style: solid !important;
@@ -1929,6 +1935,12 @@ footer .portlet-title-text {
 * .border-left-5 {
   border-style: solid !important;
   border-left-width: 5px !important;
+}
+.acland .border-right-0, .acland .border-right-none,
+* .border-right-0,
+* .border-right-none {
+  border-style: solid !important;
+  border-right-width: 0px !important;
 }
 .acland .border-right-1,
 * .border-right-1 {
@@ -1955,6 +1967,12 @@ footer .portlet-title-text {
   border-style: solid !important;
   border-right-width: 5px !important;
 }
+.acland .border-top-0, .acland .border-top-none,
+* .border-top-0,
+* .border-top-none {
+  border-style: solid !important;
+  border-top-width: 0px !important;
+}
 .acland .border-top-1,
 * .border-top-1 {
   border-style: solid !important;
@@ -1980,6 +1998,12 @@ footer .portlet-title-text {
   border-style: solid !important;
   border-top-width: 5px !important;
 }
+.acland .border-bottom-0, .acland .border-bottom-none,
+* .border-bottom-0,
+* .border-bottom-none {
+  border-style: solid !important;
+  border-bottom-width: 0px !important;
+}
 .acland .border-bottom-1,
 * .border-bottom-1 {
   border-style: solid !important;
@@ -2004,6 +2028,12 @@ footer .portlet-title-text {
 * .border-bottom-5 {
   border-style: solid !important;
   border-bottom-width: 5px !important;
+}
+.acland .border-0, .acland .border-none,
+* .border-0,
+* .border-none {
+  border-style: solid !important;
+  border-width: 0px !important;
 }
 .acland .border-1,
 * .border-1 {
@@ -2092,6 +2122,14 @@ footer .portlet-title-text {
   border-top-left-radius: var(--size-3);
   border-top-right-radius: var(--size-3);
 }
+.acland .border-radius-t-0, .acland .border-radius-t-none, .acland .border-radius-top-0, .acland .border-radius-top-none,
+* .border-radius-t-0,
+* .border-radius-t-none,
+* .border-radius-top-0,
+* .border-radius-top-none {
+  border-top-left-radius: var(--size-0);
+  border-top-right-radius: var(--size-0);
+}
 .acland .border-radius-t-1, .acland .border-radius-top-1,
 * .border-radius-t-1,
 * .border-radius-top-1 {
@@ -2127,6 +2165,14 @@ footer .portlet-title-text {
 * .border-radius-bottom {
   border-bottom-left-radius: var(--size-3);
   border-bottom-right-radius: var(--size-3);
+}
+.acland .border-radius-b-0, .acland .border-radius-b-none, .acland .border-radius-bottom-0, .acland .border-radius-bottom-none,
+* .border-radius-b-0,
+* .border-radius-b-none,
+* .border-radius-bottom-0,
+* .border-radius-bottom-none {
+  border-bottom-left-radius: var(--size-0);
+  border-bottom-right-radius: var(--size-0);
 }
 .acland .border-radius-b-1, .acland .border-radius-bottom-1,
 * .border-radius-b-1,
@@ -2164,6 +2210,14 @@ footer .portlet-title-text {
   border-top-left-radius: var(--size-3);
   border-bottom-left-radius: var(--size-3);
 }
+.acland .border-radius-l-0, .acland .border-radius-l-none, .acland .border-radius-left-0, .acland .border-radius-left-none,
+* .border-radius-l-0,
+* .border-radius-l-none,
+* .border-radius-left-0,
+* .border-radius-left-none {
+  border-top-left-radius: var(--size-0);
+  border-bottom-left-radius: var(--size-0);
+}
 .acland .border-radius-l-1, .acland .border-radius-left-1,
 * .border-radius-l-1,
 * .border-radius-left-1 {
@@ -2200,6 +2254,14 @@ footer .portlet-title-text {
   border-top-right-radius: var(--size-3);
   border-bottom-right-radius: var(--size-3);
 }
+.acland .border-radius-r-0, .acland .border-radius-r-none, .acland .border-radius-right-0, .acland .border-radius-right-none,
+* .border-radius-r-0,
+* .border-radius-r-none,
+* .border-radius-right-0,
+* .border-radius-right-none {
+  border-top-right-radius: var(--size-0);
+  border-bottom-right-radius: var(--size-0);
+}
 .acland .border-radius-r-1, .acland .border-radius-right-1,
 * .border-radius-r-1,
 * .border-radius-right-1 {
@@ -2235,6 +2297,13 @@ footer .portlet-title-text {
 * .border-radius-top-left {
   border-top-left-radius: var(--size-3);
 }
+.acland .border-radius-tl-0, .acland .border-radius-tl-none, .acland .border-radius-top-left-0, .acland .border-radius-top-left-none,
+* .border-radius-tl-0,
+* .border-radius-tl-none,
+* .border-radius-top-left-0,
+* .border-radius-top-left-none {
+  border-top-left-radius: var(--size-0);
+}
 .acland .border-radius-tl-1, .acland .border-radius-top-left-1,
 * .border-radius-tl-1,
 * .border-radius-top-left-1 {
@@ -2264,6 +2333,13 @@ footer .portlet-title-text {
 * .border-radius-tr,
 * .border-radius-top-right {
   border-top-right-radius: var(--size-3);
+}
+.acland .border-radius-tr-0, .acland .border-radius-tr-none, .acland .border-radius-top-right-0, .acland .border-radius-top-right-none,
+* .border-radius-tr-0,
+* .border-radius-tr-none,
+* .border-radius-top-right-0,
+* .border-radius-top-right-none {
+  border-top-right-radius: var(--size-0);
 }
 .acland .border-radius-tr-1, .acland .border-radius-top-right-1,
 * .border-radius-tr-1,
@@ -2295,6 +2371,13 @@ footer .portlet-title-text {
 * .border-radius-bottom-left {
   border-bottom-left-radius: var(--size-3);
 }
+.acland .border-radius-bl-0, .acland .border-radius-bl-none, .acland .border-radius-bottom-left-0, .acland .border-radius-bottom-left-none,
+* .border-radius-bl-0,
+* .border-radius-bl-none,
+* .border-radius-bottom-left-0,
+* .border-radius-bottom-left-none {
+  border-bottom-left-radius: var(--size-0);
+}
 .acland .border-radius-bl-1, .acland .border-radius-bottom-left-1,
 * .border-radius-bl-1,
 * .border-radius-bottom-left-1 {
@@ -2324,6 +2407,13 @@ footer .portlet-title-text {
 * .border-radius-br,
 * .border-radius-bottom-right {
   border-bottom-right-radius: var(--size-3);
+}
+.acland .border-radius-br-0, .acland .border-radius-br-none, .acland .border-radius-bottom-right-0, .acland .border-radius-bottom-right-none,
+* .border-radius-br-0,
+* .border-radius-br-none,
+* .border-radius-bottom-right-0,
+* .border-radius-bottom-right-none {
+  border-bottom-right-radius: var(--size-0);
 }
 .acland .border-radius-br-1, .acland .border-radius-bottom-right-1,
 * .border-radius-br-1,

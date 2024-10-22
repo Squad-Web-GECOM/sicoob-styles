@@ -129,34 +129,34 @@
   --btn-bg-hover: var(--cinza-300);
 }
 .btn-bg-h-perfil {
-  --btn-bg-hover: var(--cor-perfil-500);
+  --btn-bg-hover: var(--cor-perfil);
 }
 .btn-bg-h-apoio {
-  --btn-bg-hover: var(--cor-apoio-500);
+  --btn-bg-hover: var(--cor-apoio);
 }
 .btn-bg-h-base {
-  --btn-bg-hover: var(--cor-base-500);
+  --btn-bg-hover: var(--cor-base);
+}
+.btn-bg-h-turq {
+  --btn-bg-hover: var(--turq);
 }
 .btn-bg-h-verdee {
-  --btn-bg-hover: var(--verdee-500);
-}
-.btn-bg-h-verdee {
-  --btn-bg-hover: var(--verdee-500);
+  --btn-bg-hover: var(--verdee);
 }
 .btn-bg-h-verdem {
-  --btn-bg-hover: var(--verdem-500);
+  --btn-bg-hover: var(--verdem);
 }
 .btn-bg-h-verdec {
-  --btn-bg-hover: var(--verdec-500);
+  --btn-bg-hover: var(--verdec);
 }
 .btn-bg-h-roxo {
-  --btn-bg-hover: var(--roxo-500);
+  --btn-bg-hover: var(--roxo);
 }
 .btn-bg-h-preto {
-  --btn-bg-hover: var(--preto-500);
+  --btn-bg-hover: var(--preto);
 }
 .btn-bg-h-branco {
-  --btn-bg-hover: var(--branco-300);
+  --btn-bg-hover: var(--branco);
 }
 .btn-text-perfil {
   --btn-text: var(--cor-perfil);
@@ -199,34 +199,34 @@
   --btn-text-hover: var(--cinza-200);
 }
 .btn-text-h-perfil {
-  --btn-text-hover: var(--cor-perfil-300);
+  --btn-text-hover: var(--cor-perfil);
 }
 .btn-text-h-apoio {
-  --btn-text-hover: var(--cor-apoio-300);
+  --btn-text-hover: var(--cor-apoio);
 }
 .btn-text-h-base {
-  --btn-text-hover: var(--cor-base-300);
+  --btn-text-hover: var(--cor-base);
 }
 .btn-text-h-turq {
-  --btn-text-hover: var(--turq-300);
+  --btn-text-hover: var(--turq);
 }
 .btn-text-h-verdee {
-  --btn-text-hover: var(--verdee-300);
+  --btn-text-hover: var(--verdee);
 }
 .btn-text-h-verdem {
-  --btn-text-hover: var(--verdem-300);
+  --btn-text-hover: var(--verdem);
 }
 .btn-text-h-verdec {
-  --btn-text-hover: var(--verdec-300);
+  --btn-text-hover: var(--verdec);
 }
 .btn-text-h-roxo {
-  --btn-text-hover: var(--roxo-300);
+  --btn-text-hover: var(--roxo);
 }
 .btn-text-h-preto {
-  --btn-text-hover: var(--preto-300);
+  --btn-text-hover: var(--preto);
 }
 .btn-text-h-branco {
-  --btn-text-hover: var(--cinza-200);
+  --btn-text-hover: var(--cinza);
 }
 
 .acland .btn {

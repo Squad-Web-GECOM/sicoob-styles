@@ -15,7 +15,6 @@ body #content,
 }
 .acland [data-title=Informações],
 .acland .add-comment,
-.acland .navbar-toggler,
 .acland .portlet-topper-toolbar > [data-qa-id=addButton] {
   display: none !important;
 }

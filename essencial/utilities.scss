@@ -2224,6 +2224,12 @@
     }
   }
 
+  .overflow{
+
+    &-hidden{
+      overflow: hidden;
+    }
+  }
 
   .text {
     &-balance {
@@ -2237,6 +2243,13 @@
 
   .nowrap {
     white-space: nowrap;
+  }
+
+  .cursor{
+
+    &-pointer{
+      cursor: pointer;
+    }
   }
 
   .bg-mais {

@@ -81,7 +81,7 @@ a:focus {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1248px;
+    max-width: 1248px !important;
   }
 }
 

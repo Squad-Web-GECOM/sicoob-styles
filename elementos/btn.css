@@ -226,7 +226,7 @@
   --btn-text-hover: var(--preto);
 }
 .btn-text-h-branco {
-  --btn-text-hover: var(--cinza);
+  --btn-text-hover: var(--branco);
 }
 
 .acland .btn {

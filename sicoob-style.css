@@ -187,12 +187,15 @@
   --color-background-low: var(--mine-shaft-50);
   --color-background-medium: var(--athens-gray-100);
   --color-background-high: var(--cyprus-800);
+  --color-background-elevation-1: #fff;
+  --color-background-elevation-2: #f6f7f9;
+  --color-background-elevation-3: #fff;
   --color-stroke-low: var(--mine-shaft-100);
   --color-stroke-medium: var(--athens-gray-200);
   --color-stroke-high: var(--athens-gray-300);
   --color-support-1-low: var(--mine-shaft-100);
   --color-support-1-medium: var(--cyprus-700);
-  --color-support-1-high: var(--cyprus-800);
+  --color-support-1-high: var(--cyprus-950);
   --color-support-2-low: var(--athens-gray-50);
   --color-support-2-medium: var(--athens-gray-400);
   --color-support-2-high: var(--athens-gray-900);
@@ -351,6 +354,40 @@
   --size-3: 1rem;
   --size-4: 1.5rem;
   --size-5: 3rem;
+  --spacing-none: 0;
+  --spacing-quarck: 4px;
+  --spacing-nano: 8px;
+  --spacing-xxxs: 16px;
+  --spacing-xxs: 24px;
+  --spacing-xs: 32px;
+  --spacing-sm: 40px;
+  --spacing-md: 48px;
+  --spacing-lg: 56px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 80px;
+  --spacing-xxxl: 120px;
+  --spacing-huge: 160px;
+  --spacing-giant: 200px;
+  --spacing-base: 8px;
+  --border-width-none: 0;
+  --border-width-hairline: 1px;
+  --border-width-thin: 2px;
+  --border-width-thick: 4px;
+  --border-width-heavy: 8px;
+  --border-width-base: 8px;
+  --border-radius-none: 0;
+  --border-radius-xs: 6px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-pill: 1000px;
+  --border-radius-circular: 50%;
+  --opacity-semi-opaque: 0.8;
+  --opacity-intense: 0.64;
+  --opacity-medium: 0.32;
+  --opacity-light: 0.16;
+  --opacity-semi-transparent: 0.08;
+  --opacity-base: 8;
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.18,1240,18,1.22285,8,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   /* Step Xsmall: 11.6px → 13px */
   --font-size-xs: clamp(0.725rem, 0.70rem + 0.06vw, 0.8125rem);
@@ -578,7 +615,7 @@ a:focus {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1248px;
+    max-width: 1248px !important;
   }
 }
 
@@ -720,26 +757,46 @@ footer .content {
 .acland .accordion .card p {
   color: var(--cor-apoio);
 }
-.acland.accordion-line .card,
-.acland .accordion-line .card {
+
+.accordion-line .card {
   border: 2px solid var(--cor-perfil) !important;
 }
-.acland.accordion-line .card .card-header,
-.acland .accordion-line .card .card-header {
+.accordion-line .card .card-header {
   background: transparent !important;
 }
-.acland.accordion-line .card .card-header:hover,
-.acland .accordion-line .card .card-header:hover {
+.accordion-line .card .card-header:hover {
   background: transparent !important;
 }
-.acland.accordion-line .card .card-header .btn-link,
-.acland .accordion-line .card .card-header .btn-link {
+.accordion-line .card .card-header .btn-link {
   color: var(--verdee) !important;
 }
-.acland.accordion-line .card .card-header .btn-link:after, .acland.accordion-line .card .card-header .btn-link:before,
-.acland .accordion-line .card .card-header .btn-link:after,
-.acland .accordion-line .card .card-header .btn-link:before {
+.accordion-line .card .card-header .btn-link:after, .accordion-line .card .card-header .btn-link:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M1,8.39v-2.78h12v2.78H1Z' fill='%23003641'/%3E%3C/svg%3E");
+}
+
+.accordion-dark .card {
+  border: 1px solid var(--turq-300) !important;
+  background: linear-gradient(230deg, var(--color-surface-support-1-medium) -10%, var(--color-function-tertiary-darkest) 70%);
+}
+.accordion-dark .card .card-header {
+  background: transparent !important;
+}
+.accordion-dark .card .card-header:hover {
+  background: transparent !important;
+}
+.accordion-dark .card .card-header .btn-link {
+  color: var(--turq-300) !important;
+  border: 0 !important;
+}
+.accordion-dark .card .card-body {
+  background: transparent !important;
+  color: var(--branco) !important;
+}
+.accordion-dark .card .card-body:hover {
+  background: transparent !important;
+}
+.accordion-dark .card .card-body p {
+  color: var(--branco) !important;
 }
 
 .acland .box {
@@ -984,7 +1041,7 @@ footer .content {
   --btn-text-hover: var(--preto);
 }
 .btn-text-h-branco {
-  --btn-text-hover: var(--cinza);
+  --btn-text-hover: var(--branco);
 }
 
 .acland .btn {
@@ -1819,125 +1876,125 @@ footer .content {
 .acland .border-left-0, .acland .border-left-none,
 * .border-left-0,
 * .border-left-none {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 0px !important;
 }
 .acland .border-left-1,
 * .border-left-1 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 1px !important;
 }
 .acland .border-left-2,
 * .border-left-2 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 2px !important;
 }
 .acland .border-left-3,
 * .border-left-3 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 3px !important;
 }
 .acland .border-left-4,
 * .border-left-4 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 4px !important;
 }
 .acland .border-left-5,
 * .border-left-5 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 5px !important;
 }
 .acland .border-right-0, .acland .border-right-none,
 * .border-right-0,
 * .border-right-none {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 0px !important;
 }
 .acland .border-right-1,
 * .border-right-1 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 1px !important;
 }
 .acland .border-right-2,
 * .border-right-2 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 2px !important;
 }
 .acland .border-right-3,
 * .border-right-3 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 3px !important;
 }
 .acland .border-right-4,
 * .border-right-4 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 4px !important;
 }
 .acland .border-right-5,
 * .border-right-5 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 5px !important;
 }
 .acland .border-top-0, .acland .border-top-none,
 * .border-top-0,
 * .border-top-none {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 0px !important;
 }
 .acland .border-top-1,
 * .border-top-1 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 1px !important;
 }
 .acland .border-top-2,
 * .border-top-2 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 2px !important;
 }
 .acland .border-top-3,
 * .border-top-3 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 3px !important;
 }
 .acland .border-top-4,
 * .border-top-4 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 4px !important;
 }
 .acland .border-top-5,
 * .border-top-5 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 5px !important;
 }
 .acland .border-bottom-0, .acland .border-bottom-none,
 * .border-bottom-0,
 * .border-bottom-none {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 0px !important;
 }
 .acland .border-bottom-1,
 * .border-bottom-1 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
 }
 .acland .border-bottom-2,
 * .border-bottom-2 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 2px !important;
 }
 .acland .border-bottom-3,
 * .border-bottom-3 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 3px !important;
 }
 .acland .border-bottom-4,
 * .border-bottom-4 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 4px !important;
 }
 .acland .border-bottom-5,
 * .border-bottom-5 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 5px !important;
 }
 .acland .border-0, .acland .border-none,
@@ -3340,6 +3397,10 @@ footer .content {
 * .opacity-1 {
   opacity: 1;
 }
+.acland .overflow-hidden,
+* .overflow-hidden {
+  overflow: hidden;
+}
 .acland .text-balance,
 * .text-balance {
   text-wrap: balance;
@@ -3351,6 +3412,10 @@ footer .content {
 .acland .nowrap,
 * .nowrap {
   white-space: nowrap;
+}
+.acland .cursor-pointer,
+* .cursor-pointer {
+  cursor: pointer;
 }
 .acland .bg-mais,
 * .bg-mais {

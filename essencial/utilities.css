@@ -698,125 +698,125 @@
 .acland .border-left-0, .acland .border-left-none,
 * .border-left-0,
 * .border-left-none {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 0px !important;
 }
 .acland .border-left-1,
 * .border-left-1 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 1px !important;
 }
 .acland .border-left-2,
 * .border-left-2 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 2px !important;
 }
 .acland .border-left-3,
 * .border-left-3 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 3px !important;
 }
 .acland .border-left-4,
 * .border-left-4 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 4px !important;
 }
 .acland .border-left-5,
 * .border-left-5 {
-  border-style: solid !important;
+  border-left-style: solid !important;
   border-left-width: 5px !important;
 }
 .acland .border-right-0, .acland .border-right-none,
 * .border-right-0,
 * .border-right-none {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 0px !important;
 }
 .acland .border-right-1,
 * .border-right-1 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 1px !important;
 }
 .acland .border-right-2,
 * .border-right-2 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 2px !important;
 }
 .acland .border-right-3,
 * .border-right-3 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 3px !important;
 }
 .acland .border-right-4,
 * .border-right-4 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 4px !important;
 }
 .acland .border-right-5,
 * .border-right-5 {
-  border-style: solid !important;
+  border-right-style: solid !important;
   border-right-width: 5px !important;
 }
 .acland .border-top-0, .acland .border-top-none,
 * .border-top-0,
 * .border-top-none {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 0px !important;
 }
 .acland .border-top-1,
 * .border-top-1 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 1px !important;
 }
 .acland .border-top-2,
 * .border-top-2 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 2px !important;
 }
 .acland .border-top-3,
 * .border-top-3 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 3px !important;
 }
 .acland .border-top-4,
 * .border-top-4 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 4px !important;
 }
 .acland .border-top-5,
 * .border-top-5 {
-  border-style: solid !important;
+  border-top-style: solid !important;
   border-top-width: 5px !important;
 }
 .acland .border-bottom-0, .acland .border-bottom-none,
 * .border-bottom-0,
 * .border-bottom-none {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 0px !important;
 }
 .acland .border-bottom-1,
 * .border-bottom-1 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
 }
 .acland .border-bottom-2,
 * .border-bottom-2 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 2px !important;
 }
 .acland .border-bottom-3,
 * .border-bottom-3 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 3px !important;
 }
 .acland .border-bottom-4,
 * .border-bottom-4 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 4px !important;
 }
 .acland .border-bottom-5,
 * .border-bottom-5 {
-  border-style: solid !important;
+  border-bottom-style: solid !important;
   border-bottom-width: 5px !important;
 }
 .acland .border-0, .acland .border-none,
@@ -2219,6 +2219,10 @@
 * .opacity-1 {
   opacity: 1;
 }
+.acland .overflow-hidden,
+* .overflow-hidden {
+  overflow: hidden;
+}
 .acland .text-balance,
 * .text-balance {
   text-wrap: balance;
@@ -2230,6 +2234,10 @@
 .acland .nowrap,
 * .nowrap {
   white-space: nowrap;
+}
+.acland .cursor-pointer,
+* .cursor-pointer {
+  cursor: pointer;
 }
 .acland .bg-mais,
 * .bg-mais {

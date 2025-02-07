@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /* BOTÕES */
 .btn {
-  --btn-bg: var(--cor-perfil);
-  --btn-bg-hover: var(--cor-perfil-500);
-  --btn-text: var(--cor-base);
-  --btn-text-hover: var(--cor-base-300);
+  --btn-bg: var(--color-function-primary-action);
+  --btn-text: var(--color-surface-text-highlight-low);
+  --btn-bg-hover: var(--color-function-primary-default);
+  --btn-text-hover: var(--color-surface-text-highlight-low);
+  --btn-bg-active: var(--color-function-primary-darkest);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-function-primary-action);
   outline: var(--size-0) !important;
   transition: var(--transition-2);
 }
@@ -18,43 +21,91 @@
   fill: var(--btn-text) !important;
   font-weight: bold;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover, .btn-default:not(:disabled):not(.disabled).active, .btn-default:not(:disabled):not(.disabled):active, .show > .btn-default.dropdown-toggle, .btn-default:hover {
+.btn-primary:hover, .btn-default:hover {
   background-color: var(--btn-bg-hover) !important;
   border-color: var(--btn-bg-hover) !important;
   color: var(--btn-text-hover) !important;
   fill: var(--btn-text-hover) !important;
 }
-.btn-primary:focus-visible, .btn-default:focus-visible {
-  outline: 0px !important;
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-default:not(:disabled):not(.disabled).active, .btn-default:not(:disabled):not(.disabled):active, .show > .btn-default.dropdown-toggle {
+  background-color: var(--btn-bg-active) !important;
+  border-color: var(--btn-bg-active) !important;
+  color: var(--btn-text-active) !important;
+  fill: var(--btn-text-active) !important;
 }
-.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus, .btn-default.focus, .btn-default:focus, .btn-default:not(:disabled):not(.disabled).active:focus, .btn-default:not(:disabled):not(.disabled):active:focus, .show > .btn-default.dropdown-toggle:focus {
-  background-color: var(--btn-bg-hover);
-  border-color: var(--btn-bg-hover);
-  color: var(--btn-text-hover) !important;
-  fill: var(--btn-text-hover) !important;
-  box-shadow: none !important;
+.btn-primary:focus-visible, .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus, .btn-default:focus-visible, .btn-default.focus, .btn-default:focus, .btn-default:not(:disabled):not(.disabled).active:focus, .btn-default:not(:disabled):not(.disabled):active:focus, .show > .btn-default.dropdown-toggle:focus {
+  box-shadow: 0px 0px var(--size-2) 0px var(--btn-focus);
+  box-shadow: 0px 0px var(--size-2) 0px color-mix(in srgb, var(--btn-focus) 80%, transparent);
+  outline: 0px !important;
 }
 .btn-secondary {
-  --btn-text:var(--cor-perfil);
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
-  color: var(--btn-text) !important;
-  fill: var(--btn-text) !important;
+  color: var(--btn-bg) !important;
+  fill: var(--btn-bg) !important;
   font-weight: bold;
 }
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
+.btn-secondary:hover {
   background-color: var(--btn-bg) !important;
   border-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  fill: var(--btn-text) !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  background-color: var(--btn-bg-hover) !important;
+  border-color: var(--btn-bg-hover) !important;
   color: var(--btn-text-hover) !important;
   fill: var(--btn-text-hover) !important;
 }
-.btn-secondary:focus-visible {
+.btn-secondary:focus-visible, .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0px 0px var(--size-2) 0px var(--btn-focus);
+  box-shadow: 0px 0px var(--size-2) 0px color-mix(in srgb, var(--btn-focus) 80%, transparent);
   outline: 0px !important;
 }
-.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  background-color: var(--btn-bg);
-  border-color: var(--btn-bg);
-  box-shadow: none !important;
+.btn.btn-light, .btn.btn-branco {
+  --btn-bg: var(--color-surface-background-low);
+  --btn-text: var(--color-surface-support-1-medium);
+  --btn-bg-hover: var(--color-surface-background-medium);
+  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-bg-active: var(--color-function-primary-lightest);
+  --btn-text-active: var(--color-surface-support-1-medium);
+  --btn-focus: var(--color-surface-background-low);
+}
+.btn.btn-dark, .btn.btn-verdee {
+  --btn-bg: var(--color-surface-support-1-medium);
+  --btn-text: var(--color-surface-text-highlight-low);
+  --btn-bg-hover: var(--color-function-tertiary-darkest);
+  --btn-text-hover: var(--color-surface-text-highlight-low);
+  --btn-bg-active: var(--color-function-tertiary-default);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-surface-support-1-medium);
+}
+.btn.btn-verdec {
+  --btn-bg: var(--color-brand-complementary);
+  --btn-text: var(--color-surface-support-1-medium);
+  --btn-bg-hover: var(--color-surface-support-5-medium);
+  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-bg-active: var(--color-surface-support-5-high);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-brand-complementary);
+}
+.btn.btn-verdem {
+  --btn-bg: var(--color-brand-supplementary);
+  --btn-text: var(--color-surface-support-1-medium);
+  --btn-bg-hover: var(--color-surface-support-6-medium);
+  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-bg-active: var(--color-surface-support-6-high);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-brand-supplementary);
+}
+.btn.btn-roxo {
+  --btn-bg: var(--color-function-secondary-default);
+  --btn-text: var(--color-surface-support-1-medium);
+  --btn-bg-hover: var(--color-function-secondary-darkest);
+  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-bg-active: var(--color-surface-support-7-high);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-function-secondary-default);
 }
 .btn-click {
   transition: var(--transition-2);
@@ -104,25 +155,21 @@
   --btn-bg: var(--verdee);
   --btn-bg-hover: var(--verdee-500);
 }
-.btn-bg-verdee {
-  --btn-bg: var(--verdee);
-  --btn-bg-hover: var(--verdee-500);
-}
 .btn-bg-verdem {
   --btn-bg: var(--verdem);
   --btn-bg-hover: var(--verdem-500);
 }
 .btn-bg-verdec {
   --btn-bg: var(--verdec);
-  --btn-bg-hover: var(--verdec-500);
+  --btn-bg-hover: var(--verdec-300);
 }
 .btn-bg-roxo {
   --btn-bg: var(--roxo);
-  --btn-bg-hover: var(--roxo-500);
+  --btn-bg-hover: var(--roxo-300);
 }
 .btn-bg-preto {
-  --btn-bg: var(--preto);
-  --btn-bg-hover: var(--preto-500);
+  --btn-bg: var(--cinza-900);
+  --btn-bg-hover: var(--preto);
 }
 .btn-bg-branco {
   --btn-bg: var(--branco);
@@ -164,7 +211,7 @@
 }
 .btn-text-apoio {
   --btn-text: var(--cor-apoio);
-  --btn-text-hover: var(--cor-apoio-300);
+  --btn-text-hover: var(--cor-apoio-500);
 }
 .btn-text-base {
   --btn-text: var(--cor-base);
@@ -176,7 +223,7 @@
 }
 .btn-text-verdee {
   --btn-text: var(--verdee);
-  --btn-text-hover: var(--verdee-300);
+  --btn-text-hover: var(--verdee-500);
 }
 .btn-text-verdem {
   --btn-text: var(--verdem);
@@ -191,8 +238,8 @@
   --btn-text-hover: var(--roxo-300);
 }
 .btn-text-preto {
-  --btn-text: var(--preto);
-  --btn-text-hover: var(--preto-300);
+  --btn-text: var(--cinza-900);
+  --btn-text-hover: var(--preto);
 }
 .btn-text-branco {
   --btn-text: var(--branco);

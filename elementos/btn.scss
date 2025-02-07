@@ -3,88 +3,149 @@
 /* BOTÕES */
 
 .btn {
-  --btn-bg: var(--cor-perfil);
-  --btn-bg-hover: var(--cor-perfil-500);
-  --btn-text: var(--cor-base);
-  --btn-text-hover: var(--cor-base-300);
+  --btn-bg: #{ $primary-action };
+  --btn-text: #{ $text-highlight-low };
+  --btn-bg-hover: #{ $primary-default };
+  --btn-text-hover: #{ $text-highlight-low };
+  --btn-bg-active: #{ $primary-darkest };
+  --btn-text-active: #{ $text-highlight-low };
+  --btn-focus: #{ $primary-action };
 
-  
   outline: $size-0 !important;
   transition: $transition-2;
-  &:focus{
+
+  &:focus {
     box-shadow: none !important;
   }
 
 
-  &-primary, &-default {
-
-    border-color: var(--btn-bg)!important;
-    background-color: var(--btn-bg)!important;
-    color: var(--btn-text)!important;
-    fill: var(--btn-text)!important;
-    font-weight: bold;
-
-
-    &:not(:disabled):not(.disabled).active,
-    &:not(:disabled):not(.disabled):active,
-    .show>&.dropdown-toggle,
-    &:hover {
-      background-color: var(--btn-bg-hover)!important;
-      border-color: var(--btn-bg-hover)!important;
-      color: var(--btn-text-hover)!important;
-      fill: var(--btn-text-hover)!important;
-    }
-
-    &:focus-visible {
-      outline: 0px !important;
-    }
-
-    &.focus,
-    &:focus,
-    &:not(:disabled):not(.disabled).active:focus,
-    &:not(:disabled):not(.disabled):active:focus,
-    .show>&.dropdown-toggle:focus {
-      background-color: var(--btn-bg-hover);
-      border-color: var(--btn-bg-hover);
-      color: var(--btn-text-hover)!important;
-      fill: var(--btn-text-hover)!important;
-      box-shadow: none !important;
-    }
-  }
-
-  &-secondary {
-    --btn-text:var(--cor-perfil);
+  &-primary,
+  &-default {
 
     border-color: var(--btn-bg) !important;
-    background-color: $transparente !important;
+    background-color: var(--btn-bg) !important;
     color: var(--btn-text) !important;
     fill: var(--btn-text) !important;
     font-weight: bold;
 
+    &:hover {
+      background-color: var(--btn-bg-hover) !important;
+      border-color: var(--btn-bg-hover) !important;
+      color: var(--btn-text-hover) !important;
+      fill: var(--btn-text-hover) !important;
+    }
+
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled):active,
-    .show>&.dropdown-toggle,
-    &:hover {
-      background-color: var(--btn-bg) !important;
-      border-color: var(--btn-bg)!important;
-      color: var(--btn-text-hover)!important;
-      fill: var(--btn-text-hover)!important;
+    .show>&.dropdown-toggle {
+      background-color: var(--btn-bg-active) !important;
+      border-color: var(--btn-bg-active) !important;
+      color: var(--btn-text-active) !important;
+      fill: var(--btn-text-active) !important;
     }
 
-    &:focus-visible {
-      outline: 0px !important;
-    }
-
+    &:focus-visible,
     &.focus,
     &:focus,
     &:not(:disabled):not(.disabled).active:focus,
     &:not(:disabled):not(.disabled):active:focus,
     .show>&.dropdown-toggle:focus {
-      background-color: var(--btn-bg);
-      border-color: var(--btn-bg);
-      box-shadow: none !important;
+      box-shadow: 0px 0px $size-2 0px var(--btn-focus);
+      box-shadow: 0px 0px $size-2 0px color-mix(in srgb, var(--btn-focus) 80%, transparent);
+      outline: 0px !important;
+    }
+
+  }
+
+  &-secondary {
+
+    border-color: var(--btn-bg) !important;
+    background-color: $transparente !important;
+    color: var(--btn-bg) !important;
+    fill: var(--btn-bg) !important;
+    font-weight: bold;
+
+
+    &:hover {
+      background-color: var(--btn-bg) !important;
+      border-color: var(--btn-bg) !important;
+      color: var(--btn-text) !important;
+      fill: var(--btn-text) !important;
+    }
+
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show>&.dropdown-toggle {
+      background-color: var(--btn-bg-hover) !important;
+      border-color: var(--btn-bg-hover) !important;
+      color: var(--btn-text-hover) !important;
+      fill: var(--btn-text-hover) !important;
+    }
+
+    &:focus-visible,
+    &.focus,
+    &:focus,
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show>&.dropdown-toggle:focus {
+      box-shadow: 0px 0px $size-2 0px var(--btn-focus);
+      box-shadow: 0px 0px $size-2 0px color-mix(in srgb, var(--btn-focus) 80%, transparent);
+      outline: 0px !important;
     }
   }
+
+  &.btn-light,
+  &.btn-branco {
+    --btn-bg: #{ $background-low };
+    --btn-text: #{ $support-1-medium };
+    --btn-bg-hover: #{ $background-medium };
+    --btn-text-hover: #{ $support-1-medium };
+    --btn-bg-active: #{ $primary-lightest };
+    --btn-text-active: #{ $support-1-medium };
+    --btn-focus: #{ $background-low };
+  }
+
+  &.btn-dark,
+  &.btn-verdee {
+    --btn-bg: #{ $support-1-medium };
+    --btn-text: #{ $text-highlight-low };
+    --btn-bg-hover: #{ $tertiary-darkest };
+    --btn-text-hover: #{ $text-highlight-low };
+    --btn-bg-active: #{ $tertiary-default };
+    --btn-text-active: #{ $text-highlight-low };
+    --btn-focus: #{ $support-1-medium };
+  }
+
+  &.btn-verdec {
+    --btn-bg: #{ $brand-complementary };
+    --btn-text: #{ $support-1-medium };
+    --btn-bg-hover: #{ $support-5-medium };
+    --btn-text-hover: #{ $support-1-medium };
+    --btn-bg-active: #{ $support-5-high };
+    --btn-text-active: #{ $text-highlight-low };
+    --btn-focus: #{ $brand-complementary };
+  }
+
+  &.btn-verdem {
+    --btn-bg: #{ $brand-supplementary };
+    --btn-text: #{ $support-1-medium };
+    --btn-bg-hover: #{ $support-6-medium };
+    --btn-text-hover: #{ $support-1-medium };
+    --btn-bg-active: #{ $support-6-high };
+    --btn-text-active: #{ $text-highlight-low };
+    --btn-focus: #{ $brand-supplementary };
+  }
+
+  &.btn-roxo {
+    --btn-bg: #{ $secondary-default };
+    --btn-text: #{ $support-1-medium };
+    --btn-bg-hover: #{ $secondary-darkest };
+    --btn-text-hover: #{ $support-1-medium };
+    --btn-bg-active: #{ $support-7-high };
+    --btn-text-active: #{ $text-highlight-low };
+    --btn-focus: #{ $secondary-default };
+  }
+  
 
   &-click {
     transition: $transition-2;
@@ -134,11 +195,13 @@
       --btn-bg: var(--cor-perfil);
       --btn-bg-hover: var(--cor-perfil-500);
     }
+
     &-apoio {
       --btn-bg: var(--corapoio);
       --btn-bg-hover: var(--cor-apoio-500);
 
     }
+
     &-base {
       --btn-bg: var(--cor-base);
       --btn-bg-hover: var(--cor-base-500);
@@ -148,60 +211,69 @@
       --btn-bg: var(--verdee);
       --btn-bg-hover: var(--verdee-500);
     }
-    &-verdee {
-      --btn-bg: var(--verdee);
-      --btn-bg-hover: var(--verdee-500);
-    }
+
     &-verdem {
       --btn-bg: var(--verdem);
       --btn-bg-hover: var(--verdem-500);
     }
+
     &-verdec {
       --btn-bg: var(--verdec);
-      --btn-bg-hover: var(--verdec-500);
+      --btn-bg-hover: var(--verdec-300);
     }
+
     &-roxo {
       --btn-bg: var(--roxo);
-      --btn-bg-hover: var(--roxo-500);
+      --btn-bg-hover: var(--roxo-300);
     }
+
     &-preto {
-      --btn-bg: var(--preto);
-      --btn-bg-hover: var(--preto-500);
+      --btn-bg: var(--cinza-900);
+      --btn-bg-hover: var(--preto);
     }
+
     &-branco {
       --btn-bg: var(--branco);
       --btn-bg-hover: var(--cinza-300);
     }
 
-    &-h{
+    &-h {
       &-perfil {
         --btn-bg-hover: var(--cor-perfil);
       }
+
       &-apoio {
         --btn-bg-hover: var(--cor-apoio);
       }
+
       &-base {
         --btn-bg-hover: var(--cor-base);
       }
-  
+
       &-turq {
         --btn-bg-hover: var(--turq);
       }
+
       &-verdee {
         --btn-bg-hover: var(--verdee);
       }
+
       &-verdem {
         --btn-bg-hover: var(--verdem);
       }
+
       &-verdec {
         --btn-bg-hover: var(--verdec);
       }
+
       &-roxo {
         --btn-bg-hover: var(--roxo);
       }
+
       &-preto {
         --btn-bg-hover: var(--preto);
       }
+
       &-branco {
         --btn-bg-hover: var(--branco);
       }
@@ -212,82 +284,98 @@
 
     &-perfil {
       --btn-text: var(--cor-perfil);
-      --btn-text-hover:  var(--cor-perfil-300);
+      --btn-text-hover: var(--cor-perfil-300);
     }
+
     &-apoio {
       --btn-text: var(--cor-apoio);
-      --btn-text-hover:  var(--cor-apoio-300);
+      --btn-text-hover: var(--cor-apoio-500);
     }
+
     &-base {
       --btn-text: var(--cor-base);
-      --btn-text-hover:  var(--cor-base-300);
+      --btn-text-hover: var(--cor-base-300);
     }
 
     &-turq {
       --btn-text: var(--turq);
-      --btn-text-hover:  var(--turq-300);
-    }
-    &-verdee {
-      --btn-text: var(--verdee);
-      --btn-text-hover:  var(--verdee-300);
-    }
-    &-verdem {
-      --btn-text: var(--verdem);
-      --btn-text-hover:  var(--verdem-300);
-    }
-    &-verdec {
-      --btn-text: var(--verdec);
-      --btn-text-hover:  var(--verdec-300);
-    }
-    &-roxo {
-      --btn-text: var(--roxo);
-      --btn-text-hover:  var(--roxo-300);
-    }
-    &-preto {
-      --btn-text: var(--preto);
-      --btn-text-hover:  var(--preto-300);
-    }
-    &-branco {
-      --btn-text: var(--branco);
-      --btn-text-hover:  var(--cinza-200);
+      --btn-text-hover: var(--turq-300);
     }
 
-    &-h{
+    &-verdee {
+      --btn-text: var(--verdee);
+      --btn-text-hover: var(--verdee-500);
+    }
+
+    &-verdem {
+      --btn-text: var(--verdem);
+      --btn-text-hover: var(--verdem-300);
+    }
+
+    &-verdec {
+      --btn-text: var(--verdec);
+      --btn-text-hover: var(--verdec-300);
+    }
+
+    &-roxo {
+      --btn-text: var(--roxo);
+      --btn-text-hover: var(--roxo-300);
+    }
+
+    &-preto {
+      --btn-text: var(--cinza-900);
+      --btn-text-hover: var(--preto);
+    }
+
+    &-branco {
+      --btn-text: var(--branco);
+      --btn-text-hover: var(--cinza-200);
+    }
+
+    &-h {
       &-perfil {
         --btn-text-hover: var(--cor-perfil);
       }
+
       &-apoio {
         --btn-text-hover: var(--cor-apoio);
       }
+
       &-base {
         --btn-text-hover: var(--cor-base);
       }
-  
+
       &-turq {
         --btn-text-hover: var(--turq);
       }
+
       &-verdee {
         --btn-text-hover: var(--verdee);
       }
+
       &-verdem {
         --btn-text-hover: var(--verdem);
       }
+
       &-verdec {
         --btn-text-hover: var(--verdec);
       }
+
       &-roxo {
         --btn-text-hover: var(--roxo);
       }
+
       &-preto {
         --btn-text-hover: var(--preto);
       }
+
       &-branco {
         --btn-text-hover: var(--branco);
       }
     }
 
   }
-  
+
 }
 
 .acland {

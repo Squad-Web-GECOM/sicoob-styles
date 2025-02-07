@@ -102,104 +102,123 @@ $box-shadow-4:var(--box-shadow-4);
 
 
 
-$main: var(--color-brand-main);
-$opposite: var(--color-brand-opposite);
-$complementary: var(--color-brand-complementary);
-$supplementary: var(--color-brand-supplementary);
-$dusky: var(--color-brand-dusky);
+$brand-main: var(--color-brand-main);
+$brand-opposite: var(--color-brand-opposite);
+$brand-complementary: var(--color-brand-complementary);
+$brand-supplementary: var(--color-brand-supplementary);
+$brand-dusky: var(--color-brand-dusky);
 
-$success-dark: var(--color-denotative-success-darkest);
-$success-actn: var(--color-denotative-success-action);
-$success-def: var(--color-denotative-success-default);
-$success-actv: var(--color-denotative-success-active);
-$success-light: var(--color-denotative-success-lightest);
 
-$info-dark: var(--color-denotative-info-darkest);
-$info-actn: var(--color-denotative-info-action);
-$info-def: var(--color-denotative-info-default);
-$info-actv: var(--color-denotative-info-active);
-$info-light: var(--color-denotative-info-lightest);
+// Success Colors
+$success-darkest: var(--color-denotative-success-darkest);
+$success-action: var(--color-denotative-success-action);
+$success-default: var(--color-denotative-success-default);
+$success-active: var(--color-denotative-success-active);
+$success-lightest: var(--color-denotative-success-lightest);
 
-$warning-dark: var(--color-denotative-warning-darkest);
-$warning-actn: var(--color-denotative-warning-action);
-$warning-def: var(--color-denotative-warning-default);
-$warning-actv: var(--color-denotative-warning-active);
-$warning-light: var(--color-denotative-warning-lightest);
+// Info Colors
+$info-darkest: var(--color-denotative-info-darkest);
+$info-action: var(--color-denotative-info-action);
+$info-default: var(--color-denotative-info-default);
+$info-active: var(--color-denotative-info-active);
+$info-lightest: var(--color-denotative-info-lightest);
 
-$error-dark: var(--color-denotative-error-darkest);
-$error-actn: var(--color-denotative-error-action);
-$error-def: var(--color-denotative-error-default);
-$error-actv: var(--color-denotative-error-active);
-$error-light: var(--color-denotative-error-lightest);
+// Warning Colors
+$warning-darkest: var(--color-denotative-warning-darkest);
+$warning-action: var(--color-denotative-warning-action);
+$warning-default: var(--color-denotative-warning-default);
+$warning-active: var(--color-denotative-warning-active);
+$warning-lightest: var(--color-denotative-warning-lightest);
 
-$disabled-bg: var(--color-function-disabled-background);
-$disabled-txt: var(--color-function-disabled-text);
-$disabled-bd: var(--color-function-disabled-border);
+// Error Colors
+$error-darkest: var(--color-denotative-error-darkest);
+$error-action: var(--color-denotative-error-action);
+$error-default: var(--color-denotative-error-default);
+$error-active: var(--color-denotative-error-active);
+$error-lightest: var(--color-denotative-error-lightest);
 
-$primary-dark: var(--color-function-primary-darkest);
-$primary-actn: var(--color-function-primary-action);
-$primary-def: var(--color-function-primary-default);
-$primary-actv: var(--color-function-primary-active);
-$primary-light: var(--color-function-primary-lightest);
+// Disabled Colors
+$disabled-background: var(--color-function-disabled-background);
+$disabled-text: var(--color-function-disabled-text);
+$disabled-border: var(--color-function-disabled-border);
 
-$secondary-dark: var(--color-function-secondary-darkest);
-$secondary-actn: var(--color-function-secondary-action);
-$secondary-def: var(--color-function-secondary-default);
-$secondary-actv: var(--color-function-secondary-active);
-$secondary-light: var(--color-function-secondary-lightest);
+// Primary Colors
+$primary-darkest: var(--color-function-primary-darkest);
+$primary-action: var(--color-function-primary-action);
+$primary-default: var(--color-function-primary-default);
+$primary-active: var(--color-function-primary-active);
+$primary-lightest: var(--color-function-primary-lightest);
 
-$tertiary-dark: var(--color-function-tertiary-darkest);
-$tertiary-actn: var(--color-function-tertiary-action);
-$tertiary-def: var(--color-function-tertiary-default);
-$tertiary-actv: var(--color-function-tertiary-active);
-$tertiary-light: var(--color-function-tertiary-lightest);
+// Secondary Colors
+$secondary-darkest: var(--color-function-secondary-darkest);
+$secondary-action: var(--color-function-secondary-action);
+$secondary-default: var(--color-function-secondary-default);
+$secondary-active: var(--color-function-secondary-active);
+$secondary-lightest: var(--color-function-secondary-lightest);
 
-$text-default-lw: var(--color-surface-text-default-low);
-$text-default-md: var(--color-surface-text-default-medium);
-$text-default-hg: var(--color-surface-text-default-high);
+// Tertiary Colors
+$tertiary-darkest: var(--color-function-tertiary-darkest);
+$tertiary-action: var(--color-function-tertiary-action);
+$tertiary-default: var(--color-function-tertiary-default);
+$tertiary-active: var(--color-function-tertiary-active);
+$tertiary-lightest: var(--color-function-tertiary-lightest);
 
-$text-highlight-lw: var(--color-surface-text-highlight-low);
-$text-highlight-md: var(--color-surface-text-highlight-medium);
-$text-highlight-hg: var(--color-surface-text-highlight-high);
+// Text Colors
+$text-default-low: var(--color-surface-text-default-low);
+$text-default-medium: var(--color-surface-text-default-medium);
+$text-default-high: var(--color-surface-text-default-high);
 
-$background-lw: var(--color-surface-background-low);
-$background-md: var(--color-surface-background-medium);
-$background-hg: var(--color-surface-background-high);
+$text-highlight-low: var(--color-surface-text-highlight-low);
+$text-highlight-medium: var(--color-surface-text-highlight-medium);
+$text-highlight-high: var(--color-surface-text-highlight-high);
 
-$stroke-lw: var(--color-surface-stroke-low);
-$stroke-md: var(--color-surface-stroke-medium);
-$stroke-hg: var(--color-surface-stroke-high);
+// Background Colors
+$background-low: var(--color-surface-background-low);
+$background-medium: var(--color-surface-background-medium);
+$background-high: var(--color-surface-background-high);
 
-$support-1-lw: var(--color-surface-support-1-low);
-$support-1-md: var(--color-surface-support-1-medium);
-$support-1-hg: var(--color-surface-support-1-high);
+// Stroke Colors
+$stroke-low: var(--color-surface-stroke-low);
+$stroke-medium: var(--color-surface-stroke-medium);
+$stroke-high: var(--color-surface-stroke-high);
 
-$support-2-lw: var(--color-surface-support-2-low);
-$support-2-md: var(--color-surface-support-2-medium);
-$support-2-hg: var(--color-surface-support-2-high);
+// Support Colors 1
+$support-1-low: var(--color-surface-support-1-low);
+$support-1-medium: var(--color-surface-support-1-medium);
+$support-1-high: var(--color-surface-support-1-high);
 
-$support-3-lw: var(--color-surface-support-3-low);
-$support-3-md: var(--color-surface-support-3-medium);
-$support-3-hg: var(--color-surface-support-3-high);
+// Support Colors 2
+$support-2-low: var(--color-surface-support-2-low);
+$support-2-medium: var(--color-surface-support-2-medium);
+$support-2-high: var(--color-surface-support-2-high);
 
-$support-4-lw: var(--color-surface-support-4-low);
-$support-4-md: var(--color-surface-support-4-medium);
-$support-4-hg: var(--color-surface-support-4-high);
+// Support Colors 3
+$support-3-low: var(--color-surface-support-3-low);
+$support-3-medium: var(--color-surface-support-3-medium);
+$support-3-high: var(--color-surface-support-3-high);
 
-$support-5-lw: var(--color-surface-support-5-low);
-$support-5-md: var(--color-surface-support-5-medium);
-$support-5-hg: var(--color-surface-support-5-high);
+// Support Colors 4
+$support-4-low: var(--color-surface-support-4-low);
+$support-4-medium: var(--color-surface-support-4-medium);
+$support-4-high: var(--color-surface-support-4-high);
 
-$support-6-lw: var(--color-surface-support-6-low);
-$support-6-md: var(--color-surface-support-6-medium);
-$support-6-hg: var(--color-surface-support-6-high);
+// Support Colors 5
+$support-5-low: var(--color-surface-support-5-low);
+$support-5-medium: var(--color-surface-support-5-medium);
+$support-5-high: var(--color-surface-support-5-high);
 
-$support-7-lw: var(--color-surface-support-7-low);
-$support-7-md: var(--color-surface-support-7-medium);
-$support-7-hg: var(--color-surface-support-7-high);
+// Support Colors 6
+$support-6-low: var(--color-surface-support-6-low);
+$support-6-medium: var(--color-surface-support-6-medium);
+$support-6-high: var(--color-surface-support-6-high);
+// Support Colors 7
+$support-7-low: var(--color-surface-support-7-low);
+$support-7-medium: var(--color-surface-support-7-medium);
+$support-7-high: var(--color-surface-support-7-high);
 
-$balance-income-lw: var(--color-surface-balance-income-low);
-$balance-income-md: var(--color-surface-balance-income-medium);
+// Balance Colors
+$balance-income-low: var(--color-surface-balance-income-low);
+$balance-income-medium: var(--color-surface-balance-income-medium);
 
-$balance-debit-lw: var(--color-surface-balance-debit-low);
-$balance-debit-md: var(--color-surface-balance-debit-medium);
+$balance-debit-low: var(--color-surface-balance-debit-low);
+$balance-debit-medium: var(--color-surface-balance-debit-medium);

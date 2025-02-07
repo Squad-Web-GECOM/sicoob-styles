@@ -109,9 +109,9 @@
   &.btn-verdee {
     --btn-bg: #{ $support-1-medium };
     --btn-text: #{ $text-highlight-low };
-    --btn-bg-hover: #{ $tertiary-default };
+    --btn-bg-hover: #{ $tertiary-darkest };
     --btn-text-hover: #{ $text-highlight-low };
-    --btn-bg-active: #{ $tertiary-darkest };
+    --btn-bg-active: #{ $tertiary-default };
     --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $support-1-medium };
   }

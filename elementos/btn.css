@@ -74,9 +74,9 @@
 .btn.btn-dark, .btn.btn-verdee {
   --btn-bg: var(--color-surface-support-1-medium);
   --btn-text: var(--color-surface-text-highlight-low);
-  --btn-bg-hover: var(--color-function-tertiary-default);
+  --btn-bg-hover: var(--color-function-tertiary-darkest);
   --btn-text-hover: var(--color-surface-text-highlight-low);
-  --btn-bg-active: var(--color-function-tertiary-darkest);
+  --btn-bg-active: var(--color-function-tertiary-default);
   --btn-text-active: var(--color-surface-text-highlight-low);
   --btn-focus: var(--color-surface-support-1-medium);
 }

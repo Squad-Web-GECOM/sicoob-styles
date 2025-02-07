@@ -98,8 +98,8 @@
   &.btn-branco {
     --btn-bg: #{ $background-low };
     --btn-text: #{ $support-1-medium };
-    --btn-bg-hover: #{ $background-medium };
-    --btn-text-hover: #{ $stroke-low };
+    --btn-bg-hover: #{ $stroke-low };
+    --btn-text-hover: #{ $support-1-medium };
     --btn-bg-active: #{ $text-default-low };
     --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $background-low };
@@ -139,7 +139,7 @@
   &.btn-roxo {
     --btn-bg: #{ $secondary-default };
     --btn-text: #{ $text-highlight-low };
-    --btn-bg-hover: #{ $secondary-darkest };
+    --btn-bg-hover: #{ $secondary-active };
     --btn-text-hover: #{ $text-highlight-low };
     --btn-bg-active: #{ $support-7-high };
     --btn-text-active: #{ $text-highlight-low };

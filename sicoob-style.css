@@ -807,15 +807,15 @@ footer .content {
   --btn-bg: var(--color-surface-background-low);
   --btn-text: var(--color-surface-support-1-medium);
   --btn-bg-hover: var(--color-surface-background-medium);
-  --btn-text-hover: var(--color-surface-support-1-medium);
-  --btn-bg-active: var(--color-function-primary-lightest);
-  --btn-text-active: var(--color-surface-support-1-medium);
+  --btn-text-hover: var(--color-surface-stroke-low);
+  --btn-bg-active: var(--color-surface-text-default-low);
+  --btn-text-active: var(--color-surface-text-highlight-low);
   --btn-focus: var(--color-surface-background-low);
 }
 .btn.btn-dark, .btn.btn-verdee {
   --btn-bg: var(--color-surface-support-1-medium);
   --btn-text: var(--color-surface-text-highlight-low);
-  --btn-bg-hover: var(--color-function-tertiary-darkest);
+  --btn-bg-hover: var(--color-surface-text-highlight-medium);
   --btn-text-hover: var(--color-surface-text-highlight-low);
   --btn-bg-active: var(--color-function-tertiary-default);
   --btn-text-active: var(--color-surface-text-highlight-low);

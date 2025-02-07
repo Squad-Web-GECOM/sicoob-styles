@@ -99,9 +99,9 @@
     --btn-bg: #{ $background-low };
     --btn-text: #{ $support-1-medium };
     --btn-bg-hover: #{ $background-medium };
-    --btn-text-hover: #{ $support-1-medium };
-    --btn-bg-active: #{ $primary-lightest };
-    --btn-text-active: #{ $support-1-medium };
+    --btn-text-hover: #{ $stroke-low };
+    --btn-bg-active: #{ $text-default-low };
+    --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $background-low };
   }
 
@@ -109,7 +109,7 @@
   &.btn-verdee {
     --btn-bg: #{ $support-1-medium };
     --btn-text: #{ $text-highlight-low };
-    --btn-bg-hover: #{ $tertiary-darkest };
+    --btn-bg-hover: #{ $text-highlight-medium };
     --btn-text-hover: #{ $text-highlight-low };
     --btn-bg-active: #{ $tertiary-default };
     --btn-text-active: #{ $text-highlight-low };

@@ -74,9 +74,9 @@
 .btn.btn-dark, .btn.btn-verdee {
   --btn-bg: var(--color-surface-support-1-medium);
   --btn-text: var(--color-surface-text-highlight-low);
-  --btn-bg-hover: var(--color-function-tertiary-darkest);
+  --btn-bg-hover: var(--color-function-tertiary-default);
   --btn-text-hover: var(--color-surface-text-highlight-low);
-  --btn-bg-active: var(--color-function-tertiary-default);
+  --btn-bg-active: var(--color-function-tertiary-darkest);
   --btn-text-active: var(--color-surface-text-highlight-low);
   --btn-focus: var(--color-surface-support-1-medium);
 }
@@ -100,9 +100,9 @@
 }
 .btn.btn-roxo {
   --btn-bg: var(--color-function-secondary-default);
-  --btn-text: var(--color-surface-support-1-medium);
+  --btn-text: var(--color-surface-text-highlight-low);
   --btn-bg-hover: var(--color-function-secondary-darkest);
-  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-text-hover: var(--color-surface-text-highlight-low);
   --btn-bg-active: var(--color-surface-support-7-high);
   --btn-text-active: var(--color-surface-text-highlight-low);
   --btn-focus: var(--color-function-secondary-default);

@@ -109,9 +109,9 @@
   &.btn-verdee {
     --btn-bg: #{ $support-1-medium };
     --btn-text: #{ $text-highlight-low };
-    --btn-bg-hover: #{ $tertiary-darkest };
+    --btn-bg-hover: #{ $tertiary-default };
     --btn-text-hover: #{ $text-highlight-low };
-    --btn-bg-active: #{ $tertiary-default };
+    --btn-bg-active: #{ $tertiary-darkest };
     --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $support-1-medium };
   }
@@ -138,9 +138,9 @@
 
   &.btn-roxo {
     --btn-bg: #{ $secondary-default };
-    --btn-text: #{ $support-1-medium };
+    --btn-text: #{ $text-highlight-low };
     --btn-bg-hover: #{ $secondary-darkest };
-    --btn-text-hover: #{ $support-1-medium };
+    --btn-text-hover: #{ $text-highlight-low };
     --btn-bg-active: #{ $support-7-high };
     --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $secondary-default };

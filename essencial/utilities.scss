@@ -86,7 +86,7 @@
     }
 
 
-    &-turq {
+    &-turq, &-primary {
       color: $turq !important;
 
       &-200 {
@@ -106,7 +106,7 @@
       }
     }
 
-    &-verdee {
+    &-verdee, &-dark {
       color: $verdee !important;
 
       &-200 {
@@ -220,7 +220,7 @@
       }
     }
 
-    &-branco {
+    &-branco, &-light {
       color: $branco !important;
     }
 
@@ -312,7 +312,7 @@
     }
 
 
-    &-turq {
+    &-turq, &-primary {
       background-color: $turq !important;
 
       &-200 {
@@ -332,7 +332,7 @@
       }
     }
 
-    &-verdee {
+    &-verdee, &-dark {
       background-color: $verdee !important;
 
       &-200 {
@@ -446,7 +446,7 @@
       }
     }
 
-    &-branco {
+    &-branco, &-light {
       background-color: $branco !important;
     }
 
@@ -455,7 +455,7 @@
     }
 
     &-gradient {
-      &-turq {
+      &-turq, &-primary {
         background-color: $turq;
         background-image: $gradient-turq;
 
@@ -465,7 +465,7 @@
         }
       }
 
-      &-verdee {
+      &-verdee, &-dark {
         background-color: $verdee;
         background-image: $gradient-verdee;
 
@@ -560,7 +560,7 @@
     }
 
 
-    &-turq {
+    &-turq, &-primary {
       border-color: $turq !important;
 
       &-200 {
@@ -580,7 +580,7 @@
       }
     }
 
-    &-verdee {
+    &-verdee, &-dark {
       border-color: $verdee !important;
 
       &-200 {
@@ -695,7 +695,7 @@
 
     }
 
-    &-branco {
+    &-branco, &-light {
       border-color: $branco !important;
     }
 
@@ -1902,7 +1902,7 @@
       }
     }
 
-    &-turq {
+    &-turq, &-primary {
       fill: $turq !important;
 
       &-200 {
@@ -1922,7 +1922,7 @@
       }
     }
 
-    &-verdee {
+    &-verdee, &-dark {
       fill: $verdee !important;
 
       &-200 {
@@ -2036,7 +2036,7 @@
       }
     }
 
-    &-branco {
+    &-branco, &-light {
       fill: $branco !important;
     }
 

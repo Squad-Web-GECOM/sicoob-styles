@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: var(--size-2);
 }
 .acland-cards * {
   transition: var(--transition-2);
@@ -12,11 +12,32 @@
 .acland .card {
   border-radius: var(--size-3);
   overflow: hidden;
-  border: 1px solid var(--cinza-400);
+  border: 1px solid var(--color-surface-stroke-medium);
   transition: var(--transition-1);
+  --icon-size: $size-5;
+  --title-size: $size-5;
 }
 .acland .card:hover {
   border-color: var(--turq);
+}
+.acland .card-top {
+  display: flex;
+  place-items: center;
+}
+.acland .card-top-icon {
+  flex: 0 0 var(--icon-size);
+  margin-right: var(--size-3);
+}
+.acland .card-top-icon svg {
+  width: 100%;
+  max-height: var(--icon-size);
+  margin: auto;
+}
+.acland .card-top-title {
+  height: var(--title-size);
+}
+.acland .card-top-title * {
+  margin: 0px !important;
 }
 .acland .card-footer, .acland .card-header {
   background: transparent;

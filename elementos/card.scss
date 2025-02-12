@@ -16,6 +16,9 @@
     }
 
     .card {
+
+
+        height: 100%;
         border-radius: $size-3;
         overflow: hidden;
         border: 1px solid $stroke-medium;
@@ -27,15 +30,13 @@
         }
       
         &-top {
-          --icon-size: 50px;
-          --title-size: 60px;
-          --description-size: 81px;
       
           display: flex;
           place-items: center;
           width: 100%;
       
           &-icon {
+            --icon-size: 50px;
       
             flex: 0 0 var(--icon-size);
             margin-right: $size-3;
@@ -48,6 +49,122 @@
           }
       
           &-title {
+            --title-lines: 2;
+            --font-size: #{ $font-size-5 };
+            --title-size: calc(var(--font-size) * var(--title-lines) * 1.1);
+      
+      
+            &-lg{
+              --font-size: #{ $font-size-3 };
+            }
+            &-md{
+              --font-size: #{ $font-size-5 };
+            }
+            &-sm{
+              --font-size: #{ $font-size-6 };
+            }
+            &-1{
+              --title-lines: 1;
+            }
+            &-2{
+              --title-lines: 2;
+            }
+            &-3{
+              --title-lines: 3;
+            }
+      
+            &-xl {
+              @media (min-width:1200px) {
+                &-lg{
+                  --font-size: #{ $font-size-3 };
+                }
+                &-md{
+                  --font-size: #{ $font-size-5 };
+                }
+                &-sm{
+                  --font-size: #{ $font-size-6 };
+                }
+                &-1{
+                  --title-lines: 1;
+                }
+                &-2{
+                  --title-lines: 2;
+                }
+                &-3{
+                  --title-lines: 3;
+                }
+              }
+            }
+        
+            &-lg {
+              @media (min-width:992px) {
+                &-lg{
+                  --font-size: #{ $font-size-3 };
+                }
+                &-md{
+                  --font-size: #{ $font-size-5 };
+                }
+                &-sm{
+                  --font-size: #{ $font-size-6 };
+                }
+                &-1{
+                  --title-lines: 1;
+                }
+                &-2{
+                  --title-lines: 2;
+                }
+                &-3{
+                  --title-lines: 3;
+                }
+              }
+            }
+        
+            &-md {
+              @media (min-width:767px) {
+                &-lg{
+                  --font-size: #{ $font-size-3 };
+                }
+                &-md{
+                  --font-size: #{ $font-size-5 };
+                }
+                &-sm{
+                  --font-size: #{ $font-size-6 };
+                }
+                &-1{
+                  --title-lines: 1;
+                }
+                &-2{
+                  --title-lines: 2;
+                }
+                &-3{
+                  --title-lines: 3;
+                }
+              }
+            }
+        
+            &-sm {
+              @media (min-width:567px) {
+                &-lg{
+                  --font-size: #{ $font-size-3 };
+                }
+                &-md{
+                  --font-size: #{ $font-size-5 };
+                }
+                &-sm{
+                  --font-size: #{ $font-size-6 };
+                }
+                &-1{
+                  --title-lines: 1;
+                }
+                &-2{
+                  --title-lines: 2;
+                }
+                &-3{
+                  --title-lines: 3;
+                }
+              }
+            }
+      
             display: flex;
             place-items: center;
             height: var(--title-size);
@@ -60,6 +177,12 @@
         }
       
         &-description {
+          --description-size: 81px;
+      
+          &.long {
+            --description-size: 161px;
+          }
+      
           height: var(--description-size);
           min-height: var(--description-size);
         }

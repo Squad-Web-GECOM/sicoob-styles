@@ -501,6 +501,30 @@
   background-color: var(--verdee);
   background-image: var(--gradient-verdee-line);
 }
+.acland .bg-gradient.bg-moviment,
+* .bg-gradient.bg-moviment {
+  background-size: 250% 250%;
+  animation: bg-moviment 10s ease-in-out infinite;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+@keyframes bg-moviment {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
 .acland .border-perfil,
 * .border-perfil {
   border-color: var(--cor-perfil) !important;

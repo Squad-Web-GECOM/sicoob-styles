@@ -1123,6 +1123,7 @@ footer .portlet-title-text {
   transition: var(--transition-2);
 }
 .acland .card {
+  height: 100%;
   border-radius: var(--size-3);
   overflow: hidden;
   border: 1px solid var(--color-surface-stroke-medium);
@@ -1132,14 +1133,12 @@ footer .portlet-title-text {
   border-color: var(--turq);
 }
 .acland .card-top {
-  --icon-size: 50px;
-  --title-size: 60px;
-  --description-size: 81px;
   display: flex;
   place-items: center;
   width: 100%;
 }
 .acland .card-top-icon {
+  --icon-size: 50px;
   flex: 0 0 var(--icon-size);
   margin-right: var(--size-3);
 }
@@ -1149,17 +1148,122 @@ footer .portlet-title-text {
   margin: auto;
 }
 .acland .card-top-title {
+  --title-lines: 2;
+  --font-size: var(--font-size-5);
+  --title-size: calc(var(--font-size) * var(--title-lines) * 1.1);
   display: flex;
   place-items: center;
   height: var(--title-size);
   min-height: var(--title-size);
 }
+.acland .card-top-title-lg {
+  --font-size: var(--font-size-3);
+}
+.acland .card-top-title-md {
+  --font-size: var(--font-size-5);
+}
+.acland .card-top-title-sm {
+  --font-size: var(--font-size-6);
+}
+.acland .card-top-title-1 {
+  --title-lines: 1;
+}
+.acland .card-top-title-2 {
+  --title-lines: 2;
+}
+.acland .card-top-title-3 {
+  --title-lines: 3;
+}
+@media (min-width: 1200px) {
+  .acland .card-top-title-xl-lg {
+    --font-size: var(--font-size-3);
+  }
+  .acland .card-top-title-xl-md {
+    --font-size: var(--font-size-5);
+  }
+  .acland .card-top-title-xl-sm {
+    --font-size: var(--font-size-6);
+  }
+  .acland .card-top-title-xl-1 {
+    --title-lines: 1;
+  }
+  .acland .card-top-title-xl-2 {
+    --title-lines: 2;
+  }
+  .acland .card-top-title-xl-3 {
+    --title-lines: 3;
+  }
+}
+@media (min-width: 992px) {
+  .acland .card-top-title-lg-lg {
+    --font-size: var(--font-size-3);
+  }
+  .acland .card-top-title-lg-md {
+    --font-size: var(--font-size-5);
+  }
+  .acland .card-top-title-lg-sm {
+    --font-size: var(--font-size-6);
+  }
+  .acland .card-top-title-lg-1 {
+    --title-lines: 1;
+  }
+  .acland .card-top-title-lg-2 {
+    --title-lines: 2;
+  }
+  .acland .card-top-title-lg-3 {
+    --title-lines: 3;
+  }
+}
+@media (min-width: 767px) {
+  .acland .card-top-title-md-lg {
+    --font-size: var(--font-size-3);
+  }
+  .acland .card-top-title-md-md {
+    --font-size: var(--font-size-5);
+  }
+  .acland .card-top-title-md-sm {
+    --font-size: var(--font-size-6);
+  }
+  .acland .card-top-title-md-1 {
+    --title-lines: 1;
+  }
+  .acland .card-top-title-md-2 {
+    --title-lines: 2;
+  }
+  .acland .card-top-title-md-3 {
+    --title-lines: 3;
+  }
+}
+@media (min-width: 567px) {
+  .acland .card-top-title-sm-lg {
+    --font-size: var(--font-size-3);
+  }
+  .acland .card-top-title-sm-md {
+    --font-size: var(--font-size-5);
+  }
+  .acland .card-top-title-sm-sm {
+    --font-size: var(--font-size-6);
+  }
+  .acland .card-top-title-sm-1 {
+    --title-lines: 1;
+  }
+  .acland .card-top-title-sm-2 {
+    --title-lines: 2;
+  }
+  .acland .card-top-title-sm-3 {
+    --title-lines: 3;
+  }
+}
 .acland .card-top-title * {
   margin: 0px !important;
 }
 .acland .card-description {
+  --description-size: 81px;
   height: var(--description-size);
   min-height: var(--description-size);
+}
+.acland .card-description.long {
+  --description-size: 161px;
 }
 .acland .card-footer, .acland .card-header {
   background: transparent;
@@ -1769,6 +1873,30 @@ footer .portlet-title-text {
 * .bg-gradient-dark-line {
   background-color: var(--verdee);
   background-image: var(--gradient-verdee-line);
+}
+.acland .bg-gradient.bg-moviment,
+* .bg-gradient.bg-moviment {
+  background-size: 250% 250%;
+  animation: bg-moviment 10s ease-in-out infinite;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+@keyframes bg-moviment {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
 }
 .acland .border-perfil,
 * .border-perfil {

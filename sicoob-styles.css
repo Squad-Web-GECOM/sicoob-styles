@@ -727,7 +727,7 @@ footer .portlet-title-text {
 .acland .accordion .card .card-header .btn-link {
   font-size: var(--font-size-base);
   width: 100%;
-  color: var(--branco);
+  color: var(--branco) !important;
   text-align: left;
   text-decoration: none !important;
   outline: var(--size-0) !important;
@@ -1127,7 +1127,9 @@ footer .portlet-title-text {
   border-radius: var(--size-3);
   overflow: hidden;
   border: 1px solid var(--color-surface-stroke-medium);
+  box-shadow: var(--box-shadow-2);
   transition: var(--transition-1);
+  margin: 0;
 }
 .acland .card:hover {
   border-color: var(--turq);

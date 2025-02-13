@@ -22,7 +22,7 @@
 .acland .accordion .card .card-header .btn-link {
   font-size: var(--font-size-base);
   width: 100%;
-  color: var(--branco);
+  color: var(--branco) !important;
   text-align: left;
   text-decoration: none !important;
   outline: var(--size-0) !important;

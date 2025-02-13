@@ -16,14 +16,13 @@
     }
 
     .card {
-
-
         height: 100%;
         border-radius: $size-3;
         overflow: hidden;
         border: 1px solid $stroke-medium;
+        box-shadow: $box-shadow-2;
         transition: $transition-1;
-      
+        margin: 0;
       
         &:hover {
           border-color: $turq;

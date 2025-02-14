@@ -484,31 +484,31 @@
         }
       }
 
-      &.bg-moviment {
-        background-size: 250% 250%;
-        animation: bg-moviment 10s ease-in-out infinite;
-        backdrop-filter: blur(100px);
+    }
+    &-moviment {
+      background-size: 250% 250%;
+      animation: bg-moviment 10s ease-in-out infinite;
+      backdrop-filter: blur(100px);
 
-        @keyframes bg-moviment {
-          0% {
-            background-position: left top;
-          }
-        
-          25% {
-            background-position: right bottom;
-          }
-        
-          50% {
-            background-position: left bottom;
-          }
-        
-          75% {
-            background-position: right top;
-          }
-        
-          100% {
-            background-position: left top;
-          }
+      @keyframes bg-moviment {
+        0% {
+          background-position: left top;
+        }
+      
+        25% {
+          background-position: right bottom;
+        }
+      
+        50% {
+          background-position: left bottom;
+        }
+      
+        75% {
+          background-position: right top;
+        }
+      
+        100% {
+          background-position: left top;
         }
       }
     }

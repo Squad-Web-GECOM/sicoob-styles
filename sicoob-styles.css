@@ -660,36 +660,42 @@ footer .portlet-title-text {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-1);
+  margin-bottom: var(--size-3);
 }
 .acland h2,
 .acland .h2 {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-2);
+  margin-bottom: var(--size-3);
 }
 .acland h3,
 .acland .h3 {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-3);
+  margin-bottom: var(--size-3);
 }
 .acland h4,
 .acland .h4 {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-4);
+  margin-bottom: var(--size-3);
 }
 .acland h5,
 .acland .h5 {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-5);
+  margin-bottom: var(--size-3);
 }
 .acland h6,
 .acland .h6 {
   color: var(--cor-perfil);
   font-weight: bold;
   font-size: var(--font-size-6);
+  margin-bottom: var(--size-3);
 }
 .acland p {
   color: var(--cor-apoio);
@@ -1876,8 +1882,8 @@ footer .portlet-title-text {
   background-color: var(--verdee);
   background-image: var(--gradient-verdee-line);
 }
-.acland .bg-gradient.bg-moviment,
-* .bg-gradient.bg-moviment {
+.acland .bg-moviment,
+* .bg-moviment {
   background-size: 250% 250%;
   animation: bg-moviment 10s ease-in-out infinite;
   -webkit-backdrop-filter: blur(100px);

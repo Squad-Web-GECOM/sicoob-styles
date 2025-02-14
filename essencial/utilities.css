@@ -501,8 +501,8 @@
   background-color: var(--verdee);
   background-image: var(--gradient-verdee-line);
 }
-.acland .bg-gradient.bg-moviment,
-* .bg-gradient.bg-moviment {
+.acland .bg-moviment,
+* .bg-moviment {
   background-size: 250% 250%;
   animation: bg-moviment 10s ease-in-out infinite;
   -webkit-backdrop-filter: blur(100px);

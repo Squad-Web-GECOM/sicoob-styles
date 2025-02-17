@@ -84,7 +84,7 @@
   --color-function-disabled-text: #818181;
   --color-function-disabled-border: #a4a4a4;
   --color-function-primary-darkest: #0a655e;
-  --color-function-primary-action: #00ae9d;
+  --color-function-primary-action: rgb(0, 174, 157);
   --color-function-primary-default: #058075;
   --color-function-primary-active: #04c8b0;
   --color-function-primary-lightest: #effefb;
@@ -850,6 +850,9 @@ footer .portlet-title-text {
   box-shadow: none !important;
 }
 .btn-primary, .btn-default {
+  min-height: var(--size-5);
+  display: inline-flex;
+  align-items: center;
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
@@ -874,6 +877,9 @@ footer .portlet-title-text {
   outline: 0px !important;
 }
 .btn-secondary {
+  min-height: var(--size-5);
+  display: inline-flex;
+  align-items: center;
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
   color: var(--btn-bg) !important;

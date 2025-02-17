@@ -21,6 +21,9 @@
 
   &-primary,
   &-default {
+    min-height: $size-5;
+    display: inline-flex;
+    align-items: center;
 
     border-color: var(--btn-bg) !important;
     background-color: var(--btn-bg) !important;
@@ -58,7 +61,10 @@
   }
 
   &-secondary {
-
+    min-height: $size-5;
+    display: inline-flex;
+    align-items: center;
+    
     border-color: var(--btn-bg) !important;
     background-color: $transparente !important;
     color: var(--btn-bg) !important;

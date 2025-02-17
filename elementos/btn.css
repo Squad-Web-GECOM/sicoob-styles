@@ -18,6 +18,7 @@
   min-height: var(--size-5);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
@@ -45,6 +46,7 @@
   min-height: var(--size-5);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
   color: var(--btn-bg) !important;

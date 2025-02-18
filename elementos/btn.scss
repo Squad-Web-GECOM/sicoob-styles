@@ -382,8 +382,13 @@
 
 .acland {
   .btn {
-    padding: 0.725em 1em;
+    padding: 0.65em 1em;
     border-radius: $size-2;
-    font-size: var(--font-size-base);
+    font-size: $font-size-base;
+
+    @media (max-width: 768px) {
+      padding: 0.725em 1em;
+    }
+    
   }
 }

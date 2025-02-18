@@ -850,7 +850,6 @@ footer .portlet-title-text {
   box-shadow: none !important;
 }
 .btn-primary, .btn-default {
-  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
@@ -875,7 +874,6 @@ footer .portlet-title-text {
   outline: 0px !important;
 }
 .btn-secondary {
-  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
   color: var(--btn-bg) !important;
@@ -1114,7 +1112,7 @@ footer .portlet-title-text {
 }
 
 .acland .btn {
-  padding: 0.375em 1em;
+  padding: 0.725em 1em;
   border-radius: var(--size-2);
   font-size: var(--font-size-base);
 }

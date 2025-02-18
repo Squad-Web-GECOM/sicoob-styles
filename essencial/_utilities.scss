@@ -485,6 +485,7 @@
       }
 
     }
+
     &-moviment {
       background-size: 250% 250%;
       animation: bg-moviment 10s ease-in-out infinite;
@@ -494,19 +495,19 @@
         0% {
           background-position: left top;
         }
-      
+
         25% {
           background-position: right bottom;
         }
-      
+
         50% {
           background-position: left bottom;
         }
-      
+
         75% {
           background-position: right top;
         }
-      
+
         100% {
           background-position: left top;
         }
@@ -1286,6 +1287,39 @@
 
   }
 
+  @each $name,
+  $color in $colors {
+    .c-#{$name} {
+      color: $color !important;
+
+      &-hover {
+        &:hover {
+          color: $color !important;
+        }
+      }
+    }
+
+    .bg-#{$name} {
+      background-color: $color !important;
+
+      &-hover {
+        &:hover {
+          background-color: $color !important;
+        }
+      }
+    }
+
+    .border-#{$name} {
+      border-color: $color !important;
+
+      &-hover {
+        &:hover {
+          border-color: $color !important;
+        }
+      }
+    }
+  }
+
   /* PESO DAS FONTES */
   .fw {
 
@@ -1335,506 +1369,29 @@
   }
 
   /* TAMANHO DAS FONTES */
-  .fs {
 
-    &-1 {
-      //font-size: 3.125rem!important;
-      font-size: var(--font-size-1) !important;
+  // Gerando as classes padrão (sem media query)
+  @each $name,
+  $size in $font-sizes {
+    .fs-#{$name} {
+      font-size: $size !important;
     }
-
-    &-2 {
-      //font-size: 2.5rem!important;
-      font-size: var(--font-size-2) !important;
-    }
-
-    &-3 {
-      //font-size: 2.1875rem!important;
-      font-size: var(--font-size-3) !important;
-    }
-
-    &-4 {
-      //font-size: 1.75rem!important;
-      font-size: var(--font-size-4) !important;
-    }
-
-    &-5 {
-      //font-size: 1.5rem!important;
-      font-size: var(--font-size-5) !important;
-    }
-
-    &-6 {
-      //font-size: 1rem!important;
-      font-size: var(--font-size-6) !important;
-    }
-
-    &-base,
-    &-bs {
-      //font-size: 1rem!important;
-      font-size: var(--font-size-bs) !important;
-    }
-
-    &-small,
-    &-sm {
-      //font-size: .875rem!important;
-      font-size: var(--font-size-small) !important;
-    }
-
-    &-xs {
-      //font-size: .875rem!important;
-      font-size: var(--font-size-minor) !important;
-    }
-
-    &-lg {
-      //font-size: .875rem!important;
-      font-size: var(--font-size-lg) !important;
-    }
-
-    &-xl {
-      //font-size: .875rem!important;
-      font-size: var(--font-size-xl) !important;
-    }
-
-    &-08 {
-      font-size: .8rem !important;
-    }
-
-    &-100 {
-      font-size: 1rem !important;
-    }
-
-    &-125 {
-      font-size: 1.25rem !important;
-    }
-
-    &-150 {
-      font-size: 1.5rem !important;
-    }
-
-    &-175 {
-      font-size: 1.75rem !important;
-    }
-
-    &-200 {
-      font-size: 2rem !important;
-    }
-
-    &-225 {
-      font-size: 2.25rem !important;
-    }
-
-    &-250 {
-      font-size: 2.5rem !important;
-    }
-
-    &-275 {
-      font-size: 2.75rem !important;
-    }
-
-    &-300 {
-      font-size: 3rem !important;
-    }
-
-    &-400 {
-      font-size: 4rem !important;
-    }
-
-    &-500 {
-      font-size: 5rem !important;
-    }
-
-    &-xl {
-      @media (min-width:1200px) {
-        &-1 {
-          font-size: var(--font-size-1) !important;
-        }
-
-        &-2 {
-          font-size: var(--font-size-2) !important;
-        }
-
-        &-3 {
-          font-size: var(--font-size-3) !important;
-        }
-
-        &-4 {
-          font-size: var(--font-size-4) !important;
-        }
-
-        &-5 {
-          font-size: var(--font-size-5) !important;
-        }
-
-        &-6 {
-          font-size: var(--font-size-6) !important;
-        }
-
-        &-base,
-        &-bs {
-          font-size: var(--font-size-bs) !important;
-        }
-
-        &-small,
-        &-sm {
-          font-size: var(--font-size-small) !important;
-        }
-
-        &-xs {
-          font-size: var(--font-size-minor) !important;
-        }
-
-        &-lg {
-          font-size: var(--font-size-lg) !important;
-        }
-
-        &-xl {
-          font-size: var(--font-size-xl) !important;
-        }
-
-        &-08 {
-          font-size: .8rem !important;
-        }
-
-        &-100 {
-          font-size: 1rem !important;
-        }
-
-        &-125 {
-          font-size: 1.25rem !important;
-        }
-
-        &-150 {
-          font-size: 1.5rem !important;
-        }
-
-        &-175 {
-          font-size: 1.75rem !important;
-        }
-
-        &-200 {
-          font-size: 2rem !important;
-        }
-
-        &-225 {
-          font-size: 2.25rem !important;
-        }
-
-        &-250 {
-          font-size: 2.5rem !important;
-        }
-
-        &-275 {
-          font-size: 2.75rem !important;
-        }
-
-        &-300 {
-          font-size: 3rem !important;
-        }
-
-        &-400 {
-          font-size: 4rem !important;
-        }
-
-        &-500 {
-          font-size: 5rem !important;
-        }
-      }
-    }
-
-    &-lg {
-      @media (min-width:992px) {
-        &-1 {
-          font-size: var(--font-size-1) !important;
-        }
-
-        &-2 {
-          font-size: var(--font-size-2) !important;
-        }
-
-        &-3 {
-          font-size: var(--font-size-3) !important;
-        }
-
-        &-4 {
-          font-size: var(--font-size-4) !important;
-        }
-
-        &-5 {
-          font-size: var(--font-size-5) !important;
-        }
-
-        &-6 {
-          font-size: var(--font-size-6) !important;
-        }
-
-        &-base,
-        &-bs {
-          font-size: var(--font-size-bs) !important;
-        }
-
-        &-small,
-        &-sm {
-          font-size: var(--font-size-small) !important;
-        }
-
-        &-xs {
-          font-size: var(--font-size-minor) !important;
-        }
-
-        &-lg {
-          font-size: var(--font-size-lg) !important;
-        }
-
-        &-xl {
-          font-size: var(--font-size-xl) !important;
-        }
-
-        &-08 {
-          font-size: .8rem !important;
-        }
-
-        &-100 {
-          font-size: 1rem !important;
-        }
-
-        &-125 {
-          font-size: 1.25rem !important;
-        }
-
-        &-150 {
-          font-size: 1.5rem !important;
-        }
-
-        &-175 {
-          font-size: 1.75rem !important;
-        }
-
-        &-200 {
-          font-size: 2rem !important;
-        }
-
-        &-225 {
-          font-size: 2.25rem !important;
-        }
-
-        &-250 {
-          font-size: 2.5rem !important;
-        }
-
-        &-275 {
-          font-size: 2.75rem !important;
-        }
-
-        &-300 {
-          font-size: 3rem !important;
-        }
-
-        &-400 {
-          font-size: 4rem !important;
-        }
-
-        &-500 {
-          font-size: 5rem !important;
-        }
-      }
-    }
-
-    &-md {
-      @media (min-width:767px) {
-        &-1 {
-          font-size: var(--font-size-1) !important;
-        }
-
-        &-2 {
-          font-size: var(--font-size-2) !important;
-        }
-
-        &-3 {
-          font-size: var(--font-size-3) !important;
-        }
-
-        &-4 {
-          font-size: var(--font-size-4) !important;
-        }
-
-        &-5 {
-          font-size: var(--font-size-5) !important;
-        }
-
-        &-6 {
-          font-size: var(--font-size-6) !important;
-        }
-
-        &-base,
-        &-bs {
-          font-size: var(--font-size-bs) !important;
-        }
-
-        &-small,
-        &-sm {
-          font-size: var(--font-size-small) !important;
-        }
-
-        &-xs {
-          font-size: var(--font-size-minor) !important;
-        }
-
-        &-lg {
-          font-size: var(--font-size-lg) !important;
-        }
-
-        &-xl {
-          font-size: var(--font-size-xl) !important;
-        }
-
-        &-08 {
-          font-size: .8rem !important;
-        }
-
-        &-100 {
-          font-size: 1rem !important;
-        }
-
-        &-125 {
-          font-size: 1.25rem !important;
-        }
-
-        &-150 {
-          font-size: 1.5rem !important;
-        }
-
-        &-175 {
-          font-size: 1.75rem !important;
-        }
-
-        &-200 {
-          font-size: 2rem !important;
-        }
-
-        &-225 {
-          font-size: 2.25rem !important;
-        }
-
-        &-250 {
-          font-size: 2.5rem !important;
-        }
-
-        &-275 {
-          font-size: 2.75rem !important;
-        }
-
-        &-300 {
-          font-size: 3rem !important;
-        }
-
-        &-400 {
-          font-size: 4rem !important;
-        }
-
-        &-500 {
-          font-size: 5rem !important;
-        }
-      }
-    }
-
-    &-sm {
-      @media (min-width:567px) {
-        &-1 {
-          font-size: var(--font-size-1) !important;
-        }
-
-        &-2 {
-          font-size: var(--font-size-2) !important;
-        }
-
-        &-3 {
-          font-size: var(--font-size-3) !important;
-        }
-
-        &-4 {
-          font-size: var(--font-size-4) !important;
-        }
-
-        &-5 {
-          font-size: var(--font-size-5) !important;
-        }
-
-        &-6 {
-          font-size: var(--font-size-6) !important;
-        }
-
-        &-base,
-        &-bs {
-          font-size: var(--font-size-bs) !important;
-        }
-
-        &-small,
-        &-sm {
-          font-size: var(--font-size-small) !important;
-        }
-
-        &-xs {
-          font-size: var(--font-size-minor) !important;
-        }
-
-        &-lg {
-          font-size: var(--font-size-lg) !important;
-        }
-
-        &-xl {
-          font-size: var(--font-size-xl) !important;
-        }
-
-        &-08 {
-          font-size: .8rem !important;
-        }
-
-        &-100 {
-          font-size: 1rem !important;
-        }
-
-        &-125 {
-          font-size: 1.25rem !important;
-        }
-
-        &-150 {
-          font-size: 1.5rem !important;
-        }
-
-        &-175 {
-          font-size: 1.75rem !important;
-        }
-
-        &-200 {
-          font-size: 2rem !important;
-        }
-
-        &-225 {
-          font-size: 2.25rem !important;
-        }
-
-        &-250 {
-          font-size: 2.5rem !important;
-        }
-
-        &-275 {
-          font-size: 2.75rem !important;
-        }
-
-        &-300 {
-          font-size: 3rem !important;
-        }
-
-        &-400 {
-          font-size: 4rem !important;
-        }
-
-        &-500 {
-          font-size: 5rem !important;
-        }
-      }
-    }
-
   }
+
+  // Gerando classes responsivas para cada breakpoint
+  @each $bp,
+  $width in $breakpoints {
+    @media (min-width: #{$width}) {
+
+      @each $name,
+      $size in $font-sizes {
+        .fs-#{$bp}-#{$name} {
+          font-size: $size !important;
+        }
+      }
+    }
+  }
+
 
   /* ALTURA DA LINHA - LINE HEIGHT */
   .lh {
@@ -2322,10 +1879,10 @@
       cursor: pointer;
     }
 
-    &-default{
+    &-default {
       cursor: default;
     }
-    
+
   }
 
   .bg-mais {

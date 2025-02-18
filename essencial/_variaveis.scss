@@ -1,4 +1,6 @@
 
+// Cores
+
 $turq-200:var(--turq-200);
 $turq-300:var(--turq-300);
 $turq:var(--turq);
@@ -70,45 +72,12 @@ $cor-base: var(--cor-base);
 $cor-base-500: var(--cor-base-500);
 $cor-base-600: var(--cor-base-600);
 
-$size-0:var(--size-0);
-$size-1:var(--size-1);
-$size-2:var(--size-2);
-$size-3:var(--size-3);
-$size-4:var(--size-4);
-$size-5:var(--size-5);
-
-$font-size-xs:var(--font-size-xs);
-$font-size-sm:var(--font-size-sm);
-$font-size-base:var(--font-size-base);
-$font-size-6:var(--font-size-6);
-$font-size-5:var(--font-size-5);
-$font-size-4:var(--font-size-4);
-$font-size-3:var(--font-size-3);
-$font-size-2:var(--font-size-2);
-$font-size-1:var(--font-size-1);
-$font-size-sm:var(--font-size-lg);
-$font-size-xs:var(--font-size-xl);
-
-$font-sans:var(--font-sans);
-$font-script:var(--font-script);
-
-$transition-1:var(--transition-1);
-$transition-2:var(--transition-2);
-
-$box-shadow-1:var(--box-shadow-1);
-$box-shadow-2:var(--box-shadow-2);
-$box-shadow-3:var(--box-shadow-3);
-$box-shadow-4:var(--box-shadow-4);
-
-$box-shadow-xs:var(--box-shadow-xs);
-$box-shadow-sm:var(--box-shadow-sm);
-
+// Brand Colors
 $brand-main: var(--color-brand-main);
 $brand-opposite: var(--color-brand-opposite);
 $brand-complementary: var(--color-brand-complementary);
 $brand-supplementary: var(--color-brand-supplementary);
 $brand-dusky: var(--color-brand-dusky);
-
 
 // Success Colors
 $success-darkest: var(--color-denotative-success-darkest);
@@ -232,3 +201,247 @@ $shadow-default-high: var(--color-surface-shadow-default-high);
 $shadow-highlight-low: var(--color-surface-shadow-highlight-low);
 $shadow-highlight-medium: var(--color-surface-shadow-highlight-medium);
 $shadow-highlight-high: var(--color-surface-shadow-highlight-high);
+
+
+
+$size-0:var(--size-0);
+$size-1:var(--size-1);
+$size-2:var(--size-2);
+$size-3:var(--size-3);
+$size-4:var(--size-4);
+$size-5:var(--size-5);
+
+$size-none: var(--spacing-none);
+$size-quarck: var(--spacing-quarck);
+$size-nano: var(--spacing-nano);
+$size-xxxs: var(--spacing-xxxs);
+$size-xxs: var(--spacing-xxs);
+$size-xs: var(--spacing-xs);
+$size-sm: var(--spacing-sm);
+$size-md: var(--spacing-md);
+$size-lg: var(--spacing-lg);
+$size-xl: var(--spacing-xl);
+$size-xxl: var(--spacing-xxl);
+$size-xxxl: var(--spacing-xxxl);
+$size-huge: var(--spacing-huge);
+$size-giant: var(--spacing-giant);
+$size-base: var(--spacing-base);
+
+$border-width-none: var(--border-width-none);
+$border-width-hairline: var(--border-width-hairline);
+$border-width-thin: var(--border-width-thin);
+$border-width-thick: var(--border-width-thick);
+$border-width-heavy: var(--border-width-heavy);
+$border-width-base: var(--border-width-base);
+
+$border-radius-none: var(--border-radius-none);
+$border-radius-xs: var(--border-radius-xs);
+$border-radius-sm: var(--border-radius-sm);
+$border-radius-md: var(--border-radius-md);
+$border-radius-lg: var(--border-radius-lg);
+$border-radius-pill: var(--border-radius-pill);
+$border-radius-circular: var(--border-radius-circular);
+
+$opacity-semi-opaque: var(--opacity-semi-opaque);
+$opacity-intense: var(--opacity-intense);
+$opacity-medium: var(--opacity-medium);
+$opacity-light: var(--opacity-light);
+$opacity-semi-transparent: var(--opacity-semi-transparent);
+$opacity-base: var(--opacity-base);
+
+$font-size-xs:var(--font-size-xs);
+$font-size-sm:var(--font-size-sm);
+$font-size-base:var(--font-size-base);
+$font-size-6:var(--font-size-6);
+$font-size-5:var(--font-size-5);
+$font-size-4:var(--font-size-4);
+$font-size-3:var(--font-size-3);
+$font-size-2:var(--font-size-2);
+$font-size-1:var(--font-size-1);
+$font-size-sm:var(--font-size-lg);
+$font-size-xs:var(--font-size-xl);
+
+$font-sans:var(--font-sans);
+$font-script:var(--font-script);
+
+$transition-1:var(--transition-1);
+$transition-2:var(--transition-2);
+
+$box-shadow-1:var(--box-shadow-1);
+$box-shadow-2:var(--box-shadow-2);
+$box-shadow-3:var(--box-shadow-3);
+$box-shadow-4:var(--box-shadow-4);
+
+$box-shadow-xs:var(--box-shadow-xs);
+$box-shadow-sm:var(--box-shadow-sm);
+
+
+$colors: (
+  // Brand Colors
+  "brand-main": $brand-main,
+  "brand-opposite": $brand-opposite,
+  "brand-complementary": $brand-complementary,
+  "brand-supplementary": $brand-supplementary,
+  "brand-dusky": $brand-dusky,
+
+  // Success Colors
+  "success-darkest": $success-darkest,
+  "success-action": $success-action,
+  "success-default": $success-default,
+  "success-active": $success-active,
+  "success-lightest": $success-lightest,
+
+  // Info Colors
+  "info-darkest": $info-darkest,
+  "info-action": $info-action,
+  "info-default": $info-default,
+  "info-active": $info-active,
+  "info-lightest": $info-lightest,
+
+  // Warning Colors
+  "warning-darkest": $warning-darkest,
+  "warning-action": $warning-action,
+  "warning-default": $warning-default,
+  "warning-active": $warning-active,
+  "warning-lightest": $warning-lightest,
+
+  // Error Colors
+  "error-darkest": $error-darkest,
+  "error-action": $error-action,
+  "error-default": $error-default,
+  "error-active": $error-active,
+  "error-lightest": $error-lightest,
+
+  // Disabled Colors
+  "disabled-background": $disabled-background,
+  "disabled-text": $disabled-text,
+  "disabled-border": $disabled-border,
+
+  // Primary Colors
+  "primary-darkest": $primary-darkest,
+  "primary-action": $primary-action,
+  "primary-default": $primary-default,
+  "primary-active": $primary-active,
+  "primary-lightest": $primary-lightest,
+
+  // Secondary Colors
+  "secondary-darkest": $secondary-darkest,
+  "secondary-action": $secondary-action,
+  "secondary-default": $secondary-default,
+  "secondary-active": $secondary-active,
+  "secondary-lightest": $secondary-lightest,
+
+  // Tertiary Colors
+  "tertiary-darkest": $tertiary-darkest,
+  "tertiary-action": $tertiary-action,
+  "tertiary-default": $tertiary-default,
+  "tertiary-active": $tertiary-active,
+  "tertiary-lightest": $tertiary-lightest,
+
+  // Text Colors
+  "text-default-low": $text-default-low,
+  "text-default-medium": $text-default-medium,
+  "text-default-high": $text-default-high,
+
+  "text-highlight-low": $text-highlight-low,
+  "text-highlight-medium": $text-highlight-medium,
+  "text-highlight-high": $text-highlight-high,
+
+  // Background Colors
+  "background-low": $background-low,
+  "background-medium": $background-medium,
+  "background-high": $background-high,
+
+  // Stroke Colors
+  "stroke-low": $stroke-low,
+  "stroke-medium": $stroke-medium,
+  "stroke-high": $stroke-high,
+
+  // Support Colors 1
+  "support-1-low": $support-1-low,
+  "support-1-medium": $support-1-medium,
+  "support-1-high": $support-1-high,
+
+  // Support Colors 2
+  "support-2-low": $support-2-low,
+  "support-2-medium": $support-2-medium,
+  "support-2-high": $support-2-high,
+
+  // Support Colors 3
+  "support-3-low": $support-3-low,
+  "support-3-medium": $support-3-medium,
+  "support-3-high": $support-3-high,
+
+  // Support Colors 4
+  "support-4-low": $support-4-low,
+  "support-4-medium": $support-4-medium,
+  "support-4-high": $support-4-high,
+
+  // Support Colors 5
+  "support-5-low": $support-5-low,
+  "support-5-medium": $support-5-medium,
+  "support-5-high": $support-5-high,
+
+  // Support Colors 6
+  "support-6-low": $support-6-low,
+  "support-6-medium": $support-6-medium,
+  "support-6-high": $support-6-high,
+
+  // Support Colors 7
+  "support-7-low": $support-7-low,
+  "support-7-medium": $support-7-medium,
+  "support-7-high": $support-7-high,
+
+  // Balance Colors
+  "balance-income-low": $balance-income-low,
+  "balance-income-medium": $balance-income-medium,
+
+  "balance-debit-low": $balance-debit-low,
+  "balance-debit-medium": $balance-debit-medium,
+
+  // Shadow Colors
+  "shadow-default-low": $shadow-default-low,
+  "shadow-default-medium": $shadow-default-medium,
+  "shadow-default-high": $shadow-default-high,
+
+  "shadow-highlight-low": $shadow-highlight-low,
+  "shadow-highlight-medium": $shadow-highlight-medium,
+  "shadow-highlight-high": $shadow-highlight-high
+);
+
+// Mapa com os tamanhos de fonte
+$font-sizes: (
+  "1": var(--font-size-1),
+  "2": var(--font-size-2),
+  "3": var(--font-size-3),
+  "4": var(--font-size-4),
+  "5": var(--font-size-5),
+  "6": var(--font-size-6),
+  "base": var(--font-size-bs),
+  "bs": var(--font-size-bs),
+  "small": var(--font-size-small),
+  "sm": var(--font-size-small),
+  "xs": var(--font-size-minor),
+  "lg": var(--font-size-lg),
+  "xl": var(--font-size-xl),
+  "08": 0.8rem,
+  "100": 1rem,
+  "125": 1.25rem,
+  "150": 1.5rem,
+  "175": 1.75rem,
+  "200": 2rem,
+  "225": 2.25rem,
+  "250": 2.5rem,
+  "275": 2.75rem,
+  "300": 3rem,
+  "400": 4rem,
+  "500": 5rem
+);
+
+// Mapa com os breakpoints
+$breakpoints: (
+  "sm": 567px,
+  "md": 767px,
+  "lg": 992px,
+  "xl": 1200px
+);

@@ -2311,6 +2311,10 @@
 * .cursor-pointer {
   cursor: pointer;
 }
+.acland .cursor-default,
+* .cursor-default {
+  cursor: default;
+}
 .acland .bg-mais,
 * .bg-mais {
   --plus-size: 24px;

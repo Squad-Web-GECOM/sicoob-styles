@@ -15,10 +15,7 @@
   box-shadow: none !important;
 }
 .btn-primary, .btn-default {
-  min-height: var(--size-5);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
@@ -43,10 +40,7 @@
   outline: 0px !important;
 }
 .btn-secondary {
-  min-height: var(--size-5);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
   color: var(--btn-bg) !important;

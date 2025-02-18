@@ -762,10 +762,7 @@ footer .content {
   box-shadow: none !important;
 }
 .btn-primary, .btn-default {
-  min-height: var(--size-5);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
@@ -790,10 +787,7 @@ footer .content {
   outline: 0px !important;
 }
 .btn-secondary {
-  min-height: var(--size-5);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.725em 1em;
   border-color: var(--btn-bg) !important;
   background-color: var(--transparente) !important;
   color: var(--btn-bg) !important;
@@ -1060,17 +1054,37 @@ footer .content {
 .acland .card:hover {
   border-color: var(--turq);
 }
+.acland .card-img-top {
+  aspect-ratio: 13/8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .acland .card-top {
   display: flex;
   place-items: center;
   width: 100%;
 }
+.acland .card-top.flex-column .card-top-icon {
+  margin-right: 0;
+  margin-bottom: var(--size-3);
+}
 .acland .card-top-icon {
-  --icon-size: 50px;
+  --icon-size: 48px;
   flex: 0 0 var(--icon-size);
   margin-right: var(--size-3);
 }
-.acland .card-top-icon svg {
+.acland .card-top-icon-big {
+  --icon-size: 80px;
+}
+.acland .card-top-icon-normal {
+  --icon-size: 42px;
+}
+.acland .card-top-icon-small {
+  --icon-size: 32px;
+}
+.acland .card-top-icon svg,
+.acland .card-top-icon img {
   width: 100%;
   max-height: var(--icon-size);
   margin: auto;
@@ -1084,13 +1098,13 @@ footer .content {
   height: var(--title-size);
   min-height: var(--title-size);
 }
-.acland .card-top-title-lg {
+.acland .card-top-title-big {
   --font-size: var(--font-size-3);
 }
-.acland .card-top-title-md {
+.acland .card-top-title-normal {
   --font-size: var(--font-size-5);
 }
-.acland .card-top-title-sm {
+.acland .card-top-title-small {
   --font-size: var(--font-size-6);
 }
 .acland .card-top-title-1 {
@@ -1103,13 +1117,13 @@ footer .content {
   --title-lines: 3;
 }
 @media (min-width: 1200px) {
-  .acland .card-top-title-xl-lg {
+  .acland .card-top-title-xl-big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-xl-md {
+  .acland .card-top-title-xl-normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-xl-sm {
+  .acland .card-top-title-xl-small {
     --font-size: var(--font-size-6);
   }
   .acland .card-top-title-xl-1 {
@@ -1123,75 +1137,80 @@ footer .content {
   }
 }
 @media (min-width: 992px) {
-  .acland .card-top-title-lg-lg {
+  .acland .card-top-title-lg--big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-lg-md {
+  .acland .card-top-title-lg--normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-lg-sm {
+  .acland .card-top-title-lg--small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-lg-1 {
+  .acland .card-top-title-lg--1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-lg-2 {
+  .acland .card-top-title-lg--2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-lg-3 {
+  .acland .card-top-title-lg--3 {
     --title-lines: 3;
   }
 }
 @media (min-width: 767px) {
-  .acland .card-top-title-md-lg {
+  .acland .card-top-title-md--big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-md-md {
+  .acland .card-top-title-md--normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-md-sm {
+  .acland .card-top-title-md--small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-md-1 {
+  .acland .card-top-title-md--1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-md-2 {
+  .acland .card-top-title-md--2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-md-3 {
+  .acland .card-top-title-md--3 {
     --title-lines: 3;
   }
 }
 @media (min-width: 567px) {
-  .acland .card-top-title-sm-lg {
+  .acland .card-top-title-sm--big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-sm-md {
+  .acland .card-top-title-sm--normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-sm-sm {
+  .acland .card-top-title-sm--small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-sm-1 {
+  .acland .card-top-title-sm--1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-sm-2 {
+  .acland .card-top-title-sm--2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-sm-3 {
+  .acland .card-top-title-sm--3 {
     --title-lines: 3;
   }
 }
 .acland .card-top-title * {
   margin: 0px !important;
+  font-size: var(--font-size) !important;
 }
 .acland .card-description {
   --description-size: 81px;
   height: var(--description-size);
   min-height: var(--description-size);
 }
-.acland .card-description.long {
+.acland .card-description-long {
   --description-size: 161px;
+}
+.acland .card-description-fit {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 .acland .card-footer, .acland .card-header {
   background: transparent;
@@ -3611,6 +3630,10 @@ footer .content {
 .acland .cursor-pointer,
 * .cursor-pointer {
   cursor: pointer;
+}
+.acland .cursor-default,
+* .cursor-default {
+  cursor: default;
 }
 .acland .bg-mais,
 * .bg-mais {

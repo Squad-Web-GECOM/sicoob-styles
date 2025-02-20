@@ -1,0 +1,104 @@
+@import "../essencial/variaveis.scss";
+
+
+@mixin seta-swiper {
+  height: 25%;
+  width: 30px;
+  translate: 0 -50%;
+  transition: $transition-1;
+
+  &:hover{
+    backdrop-filter: blur(10px);
+    opacity: 0.75;
+    border-radius: $size-2;
+  }
+
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper {
+  &-side-mask{
+    mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+  // Estilos comuns para ambos os botões
+  [class*="swiper-button"] {
+    // Seletor mais genérico
+    @include seta-swiper;
+  }
+
+  // Estilos específicos para cada botão e tema
+  &-button {
+    &-next {
+      background: $seta-next-primary;
+
+      &.swiper-button-next-light {
+        background: $seta-next-light;
+      }
+
+      &.swiper-button-next-dark {
+        background: $seta-next-dark;
+      }
+
+    }
+
+    &-prev {
+      background: $seta-prev-primary;
+
+      &.swiper-button-prev-light {
+        background: $seta-prev-light;
+      }
+
+      &.swiper-button-prev-dark {
+        background: $seta-prev-dark;
+      }
+
+    }
+  }
+
+  &-pagination {
+    position: relative!important;
+    display: flex;
+    justify-content: center;
+    gap: $size-2;
+    padding: $size-3;
+
+    &-bullet {
+      --swiper-pagination-bullet-size: #{ $size-3};
+      --swiper-pagination-bullet-inactive-opacity:1;
+      --swiper-pagination-bullet-border-radius: #{ $size-3};
+      
+      background-color: $stroke-medium !important;
+      box-shadow: $box-shadow-1;
+      transition: var(--transition-1);
+      margin: 0 !important;
+
+      &-active {
+        --swiper-pagination-bullet-width: calc(#{ $size-3} * 2);
+        width: calc($size-3* 2);
+        background-color: $primary-action !important;
+      }
+    }
+
+    &-dark{
+      .swiper-pagination-bullet{
+        background-color: $support-1-low !important;
+        &-active {
+          background-color: $support-1-medium !important;
+        }
+      }
+    }
+
+    &-light{
+      .swiper-pagination-bullet{
+        // background-color: $support-1-low !important;
+        &-active {
+          background-color: $background-low !important;
+          border:1px solid $primary-action;
+        }
+      }
+    }
+  }
+}

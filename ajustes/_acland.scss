@@ -77,3 +77,16 @@
     }
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans)!important;
+  }
+  
+  .escrita, .script, .cursive, .cursiva, .pacifico{
+    font-family: var(--font-script)!important;
+    font-weight: 700;
+  }

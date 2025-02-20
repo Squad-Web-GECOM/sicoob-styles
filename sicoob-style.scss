@@ -7,29 +7,9 @@ GERAIS
 --------------------------------
 */
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans)!important;
-  color: var(--cor-apoio);
-  background: var(--cor-base);
-}
-
-.escrita, .script, .cursive, .cursiva, .pacifico{
-  font-family: var(--font-script)!important;
-  font-weight: 700;
-}
-
 @import 'ajustes/liferay-lp.scss';
 @import 'ajustes/acland.scss';
 
-@import 'elementos/accordion.scss';
-@import 'elementos/box.scss';
-@import 'elementos/btn.scss';
-@import 'elementos/card.scss';
-@import 'elementos/iconlist.scss';
-@import 'elementos/tabs.scss';
+@import 'elementos/0-elementos.scss';
 
 @import 'essencial/utilities.scss';

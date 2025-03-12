@@ -111,22 +111,32 @@ footer {
 
 }
 
-.acland, *{
+.acland,
+* {
 
-  #onetrust-pc-sdk{
-  
-    h2{
-      font-size: 1.37em!important;
+  #onetrust-pc-sdk {
+
+    h2 {
+      font-size: 1.37em !important;
     }
-    h2{
-      font-size: 1.37em!important;
+
+    h2 {
+      font-size: 1.37em !important;
       font-size: .875em;
     }
   }
 }
 
-.portlet-topper-none{
-  .portlet-topper{
+.portlet-topper-none {
+  .portlet-topper {
     display: none;
   }
+}
+
+.homol {
+  display: none;
+}
+
+body.signed-in .homol {
+  display: block;
 }

@@ -632,16 +632,26 @@ footer .portlet-title-text {
   }
 }
 
-.acland #onetrust-pc-sdk h2, * #onetrust-pc-sdk h2 {
+.acland #onetrust-pc-sdk h2,
+* #onetrust-pc-sdk h2 {
   font-size: 1.37em !important;
 }
-.acland #onetrust-pc-sdk h2, * #onetrust-pc-sdk h2 {
+.acland #onetrust-pc-sdk h2,
+* #onetrust-pc-sdk h2 {
   font-size: 1.37em !important;
   font-size: 0.875em;
 }
 
 .portlet-topper-none .portlet-topper {
   display: none;
+}
+
+.homol {
+  display: none;
+}
+
+body.signed-in .homol {
+  display: block;
 }
 
 .acland h1,

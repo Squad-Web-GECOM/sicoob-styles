@@ -640,6 +640,10 @@ footer .portlet-title-text {
   font-size: 0.875em;
 }
 
+.portlet-topper-none .portlet-topper {
+  display: none;
+}
+
 .acland h1,
 .acland .h1 {
   color: var(--cor-perfil);
@@ -1453,7 +1457,7 @@ body {
 }
 .swiper-pagination-bullet {
   --swiper-pagination-bullet-size: var(--size-3);
-  --swiper-pagination-bullet-inactive-opacity:1;
+  --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-border-radius: var(--size-3);
   background-color: var(--color-surface-stroke-medium) !important;
   box-shadow: var(--box-shadow-1);

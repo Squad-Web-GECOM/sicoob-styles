@@ -7,7 +7,7 @@
   translate: 0 -50%;
   transition: $transition-1;
 
-  &:hover{
+  &:hover {
     backdrop-filter: blur(10px);
     opacity: 0.75;
     border-radius: $size-2;
@@ -20,9 +20,10 @@
 }
 
 .swiper {
-  &-side-mask{
-    mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  &-side-mask {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
   }
+
   // Estilos comuns para ambos os botões
   [class*="swiper-button"] {
     // Seletor mais genérico
@@ -59,7 +60,7 @@
   }
 
   &-pagination {
-    position: relative!important;
+    position: relative !important;
     display: flex;
     justify-content: center;
     gap: $size-2;
@@ -67,9 +68,9 @@
 
     &-bullet {
       --swiper-pagination-bullet-size: #{ $size-3};
-      --swiper-pagination-bullet-inactive-opacity:1;
+      --swiper-pagination-bullet-inactive-opacity: 1;
       --swiper-pagination-bullet-border-radius: #{ $size-3};
-      
+
       background-color: $stroke-medium !important;
       box-shadow: $box-shadow-1;
       transition: var(--transition-1);
@@ -82,21 +83,23 @@
       }
     }
 
-    &-dark{
-      .swiper-pagination-bullet{
+    &-dark {
+      .swiper-pagination-bullet {
         background-color: $support-1-low !important;
+
         &-active {
           background-color: $support-1-medium !important;
         }
       }
     }
 
-    &-light{
-      .swiper-pagination-bullet{
+    &-light {
+      .swiper-pagination-bullet {
+
         // background-color: $support-1-low !important;
         &-active {
           background-color: $background-low !important;
-          border:1px solid $primary-action;
+          border: 1px solid $primary-action;
         }
       }
     }

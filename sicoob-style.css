@@ -702,6 +702,7 @@ body {
 .acland.accordion-line .card .card-header .btn-link,
 .acland .accordion-line .card .card-header .btn-link {
   color: var(--verdee) !important;
+  border: 0 !important;
 }
 .acland.accordion-line .card .card-header .btn-link:after, .acland.accordion-line .card .card-header .btn-link:before,
 .acland .accordion-line .card .card-header .btn-link:after,

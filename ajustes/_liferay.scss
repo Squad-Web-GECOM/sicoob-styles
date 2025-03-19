@@ -133,10 +133,12 @@ footer {
   }
 }
 
-.homol {
+.homol,
+section[id*='-homol'] {
   display: none;
 }
 
-body.signed-in .homol {
+body.signed-in .homol,
+body.signed-in section[id*='-homol'] {
   display: block;
 }

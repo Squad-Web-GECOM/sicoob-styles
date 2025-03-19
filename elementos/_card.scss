@@ -245,6 +245,10 @@
         min-height: var(--description-size);
       }
   
+      &-footer{
+        padding: var(--size-3);
+        height: auto !important;
+      }
       &-footer,
       &-header {
         background: transparent;

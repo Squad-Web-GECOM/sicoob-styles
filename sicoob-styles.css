@@ -646,11 +646,13 @@ footer .portlet-title-text {
   display: none;
 }
 
-.homol {
+.homol,
+section[id*=-homol] {
   display: none;
 }
 
-body.signed-in .homol {
+body.signed-in .homol,
+body.signed-in section[id*=-homol] {
   display: block;
 }
 
@@ -1319,6 +1321,10 @@ body {
 .acland .card-description-fit {
   height: -moz-fit-content !important;
   height: fit-content !important;
+}
+.acland .card-footer {
+  padding: var(--size-3);
+  height: auto !important;
 }
 .acland .card-footer, .acland .card-header {
   background: transparent;
@@ -5837,6 +5843,91 @@ body {
 * .gap-col-5 {
   -moz-column-gap: var(--size-5) !important;
        column-gap: var(--size-5) !important;
+}
+.acland .-mt-1,
+* .-mt-1 {
+  margin-top: calc(-1 * var(--size-1)) !important;
+}
+.acland .-mt-2,
+* .-mt-2 {
+  margin-top: calc(-1 * var(--size-2)) !important;
+}
+.acland .-mt-3,
+* .-mt-3 {
+  margin-top: calc(-1 * var(--size-3)) !important;
+}
+.acland .-mt-4,
+* .-mt-4 {
+  margin-top: calc(-1 * var(--size-4)) !important;
+}
+.acland .-mt-5,
+* .-mt-5 {
+  margin-top: calc(-1 * var(--size-5)) !important;
+}
+.acland .-mb-1,
+* .-mb-1 {
+  margin-bottom: calc(-1 * var(--size-1)) !important;
+}
+.acland .-mb-2,
+* .-mb-2 {
+  margin-bottom: calc(-1 * var(--size-2)) !important;
+}
+.acland .-mb-3,
+* .-mb-3 {
+  margin-bottom: calc(-1 * var(--size-3)) !important;
+}
+.acland .-mb-4,
+* .-mb-4 {
+  margin-bottom: calc(-1 * var(--size-4)) !important;
+}
+.acland .-mb-5,
+* .-mb-5 {
+  margin-bottom: calc(-1 * var(--size-5)) !important;
+}
+.acland .-ml-1,
+* .-ml-1 {
+  margin-left: calc(-1 * var(--size-1)) !important;
+}
+.acland .-ml-2,
+* .-ml-2 {
+  margin-left: calc(-1 * var(--size-2)) !important;
+}
+.acland .-ml-3,
+* .-ml-3 {
+  margin-left: calc(-1 * var(--size-3)) !important;
+}
+.acland .-ml-4,
+* .-ml-4 {
+  margin-left: calc(-1 * var(--size-4)) !important;
+}
+.acland .-ml-5,
+* .-ml-5 {
+  margin-left: calc(-1 * var(--size-5)) !important;
+}
+.acland .-mr-1,
+* .-mr-1 {
+  margin-right: calc(-1 * var(--size-1)) !important;
+}
+.acland .-mr-2,
+* .-mr-2 {
+  margin-right: calc(-1 * var(--size-2)) !important;
+}
+.acland .-mr-3,
+* .-mr-3 {
+  margin-right: calc(-1 * var(--size-3)) !important;
+}
+.acland .-mr-4,
+* .-mr-4 {
+  margin-right: calc(-1 * var(--size-4)) !important;
+}
+.acland .-mr-5,
+* .-mr-5 {
+  margin-right: calc(-1 * var(--size-5)) !important;
+}
+.acland .box-shadow-none, .acland .box-shadow-0,
+* .box-shadow-none,
+* .box-shadow-0 {
+  box-shadow: none;
 }
 .acland .box-shadow-1,
 * .box-shadow-1 {

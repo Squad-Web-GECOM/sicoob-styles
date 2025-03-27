@@ -484,11 +484,22 @@
         }
       }
 
+      &-branco,
+      &-light{
+        background-color: $branco;
+        background-image: $gradient-branco;
+
+        &-line {
+          background-color: $branco;
+          background-image: $gradient-branco-line;
+        }
+      }
+
     }
 
     &-moviment {
       background-size: 250% 250%;
-      animation: bg-moviment 10s ease-in-out infinite;
+      animation: bg-moviment 20s ease-in-out infinite;
       backdrop-filter: blur(100px);
 
       @keyframes bg-moviment {

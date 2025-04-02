@@ -1061,7 +1061,6 @@ body {
   border: 1px solid var(--color-surface-stroke-medium);
   box-shadow: var(--box-shadow-2);
   transition: var(--transition-1);
-  margin: 0;
 }
 .acland .card-lg {
   width: 360px;
@@ -1161,62 +1160,62 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .acland .card-top-title-lg--big {
+  .acland .card-top-title-lg-big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-lg--normal {
+  .acland .card-top-title-lg-normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-lg--small {
+  .acland .card-top-title-lg-small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-lg--1 {
+  .acland .card-top-title-lg-1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-lg--2 {
+  .acland .card-top-title-lg-2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-lg--3 {
+  .acland .card-top-title-lg-3 {
     --title-lines: 3;
   }
 }
 @media (min-width: 767px) {
-  .acland .card-top-title-md--big {
+  .acland .card-top-title-md-big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-md--normal {
+  .acland .card-top-title-md-normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-md--small {
+  .acland .card-top-title-md-small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-md--1 {
+  .acland .card-top-title-md-1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-md--2 {
+  .acland .card-top-title-md-2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-md--3 {
+  .acland .card-top-title-md-3 {
     --title-lines: 3;
   }
 }
 @media (min-width: 567px) {
-  .acland .card-top-title-sm--big {
+  .acland .card-top-title-sm-big {
     --font-size: var(--font-size-3);
   }
-  .acland .card-top-title-sm--normal {
+  .acland .card-top-title-sm-normal {
     --font-size: var(--font-size-5);
   }
-  .acland .card-top-title-sm--small {
+  .acland .card-top-title-sm-small {
     --font-size: var(--font-size-6);
   }
-  .acland .card-top-title-sm--1 {
+  .acland .card-top-title-sm-1 {
     --title-lines: 1;
   }
-  .acland .card-top-title-sm--2 {
+  .acland .card-top-title-sm-2 {
     --title-lines: 2;
   }
-  .acland .card-top-title-sm--3 {
+  .acland .card-top-title-sm-3 {
     --title-lines: 3;
   }
 }

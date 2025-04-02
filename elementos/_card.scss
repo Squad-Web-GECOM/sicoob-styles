@@ -22,7 +22,7 @@
       border: 1px solid $stroke-medium;
       box-shadow: $box-shadow-2;
       transition: $transition-1;
-      margin: 0;
+      // margin: 0;
 
       &-lg{
         width: 360px;
@@ -147,7 +147,7 @@
             }
           }
   
-          &-lg- {
+          &-lg {
             @media (min-width:992px) {
               &-big {
                 --font-size: #{ $font-size-3 };
@@ -175,7 +175,7 @@
             }
           }
   
-          &-md- {
+          &-md {
             @media (min-width:767px) {
               &-big {
                 --font-size: #{ $font-size-3 };
@@ -203,7 +203,7 @@
             }
           }
   
-          &-sm- {
+          &-sm {
             @media (min-width:567px) {
               &-big {
                 --font-size: #{ $font-size-3 };

@@ -1113,8 +1113,8 @@ body {
 }
 .acland .card-top-icon svg,
 .acland .card-top-icon img {
-  width: 100%;
-  max-height: var(--icon-size);
+  width: var(--icon-size);
+  height: var(--icon-size);
   margin: auto;
 }
 .acland .card-top-title {

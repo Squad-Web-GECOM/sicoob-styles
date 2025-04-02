@@ -23,6 +23,19 @@
       box-shadow: $box-shadow-2;
       transition: $transition-1;
       margin: 0;
+
+      &-lg{
+        width: 360px;
+      }
+      &-md{
+        width: 320px;
+      }
+      &-sm{
+        width: 290px;
+      }
+      &-xs{
+        width: 235px;
+      }
   
       &:hover {
         border-color: $turq;

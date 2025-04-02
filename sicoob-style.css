@@ -350,7 +350,7 @@
   --line-height-4: 200%;
   --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
   --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
-  --box-shadow-1: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --box-shadow-1: 0 4px 8px rgba(0, 0, 0, 0.1);
   --box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.2);
   --box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.2);
   --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.2);
@@ -526,6 +526,10 @@ a:focus {
   box-shadow: none !important;
 }
 
+.container {
+  padding-right: 12px;
+  padding-left: 12px;
+}
 @media (min-width: 1280px) {
   .container {
     max-width: 1248px !important;
@@ -1058,6 +1062,18 @@ body {
   box-shadow: var(--box-shadow-2);
   transition: var(--transition-1);
   margin: 0;
+}
+.acland .card-lg {
+  width: 360px;
+}
+.acland .card-md {
+  width: 320px;
+}
+.acland .card-sm {
+  width: 290px;
+}
+.acland .card-xs {
+  width: 235px;
 }
 .acland .card:hover {
   border-color: var(--turq);

@@ -34,16 +34,16 @@
       &-size{
 
         &-lg{
-          --card-width: 360px;
+          --card-width: 360px!important;
         }
         &-md{
-          --card-width: 320px;
+          --card-width: 320px!important;
         }
         &-sm{
-          --card-width: 290px;
+          --card-width: 290px!important;
         }
         &-xs{
-          --card-width: 235px;
+          --card-width: 235px!important;
         }
       }
 

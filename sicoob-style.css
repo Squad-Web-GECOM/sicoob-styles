@@ -1068,16 +1068,16 @@ body {
   flex: 0 0 var(--card-width) !important;
 }
 .acland .card-size-lg {
-  --card-width: 360px;
+  --card-width: 360px!important;
 }
 .acland .card-size-md {
-  --card-width: 320px;
+  --card-width: 320px!important;
 }
 .acland .card-size-sm {
-  --card-width: 290px;
+  --card-width: 290px!important;
 }
 .acland .card-size-xs {
-  --card-width: 235px;
+  --card-width: 235px!important;
 }
 .acland .card:hover {
   border-color: var(--turq);

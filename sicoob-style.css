@@ -1062,17 +1062,22 @@ body {
   box-shadow: var(--box-shadow-2);
   transition: var(--transition-1);
 }
-.acland .card-lg {
-  width: 360px;
+.acland .card [class*=card-size] {
+  --card-width: 100%;
+  width: var(--card-width);
+  flex: 0 0 var(--card-width);
 }
-.acland .card-md {
-  width: 320px;
+.acland .card-size-lg {
+  --card-width: 360px;
 }
-.acland .card-sm {
-  width: 290px;
+.acland .card-size-md {
+  --card-width: 320px;
 }
-.acland .card-xs {
-  width: 235px;
+.acland .card-size-sm {
+  --card-width: 290px;
+}
+.acland .card-size-xs {
+  --card-width: 235px;
 }
 .acland .card:hover {
   border-color: var(--turq);

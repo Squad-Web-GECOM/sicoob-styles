@@ -16,6 +16,7 @@
     }
 
     .card {
+      
       height: 100%;
       border-radius: $size-3;
       overflow: hidden;
@@ -23,19 +24,29 @@
       box-shadow: $box-shadow-2;
       transition: $transition-1;
       // margin: 0;
+      
+      [class*="card-size"] {
+        --card-width: 100%;
+        width: var(--card-width);
+        flex: 0 0 var(--card-width);
+      }
 
-      &-lg{
-        width: 360px;
+      &-size{
+
+        &-lg{
+          --card-width: 360px;
+        }
+        &-md{
+          --card-width: 320px;
+        }
+        &-sm{
+          --card-width: 290px;
+        }
+        &-xs{
+          --card-width: 235px;
+        }
       }
-      &-md{
-        width: 320px;
-      }
-      &-sm{
-        width: 290px;
-      }
-      &-xs{
-        width: 235px;
-      }
+
   
       &:hover {
         border-color: $turq;

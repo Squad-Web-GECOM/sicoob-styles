@@ -1062,10 +1062,10 @@ body {
   box-shadow: var(--box-shadow-2);
   transition: var(--transition-1);
 }
-.acland .card [class*=card-size] {
+.acland .card[class*=card-size] {
   --card-width: 100%;
   width: var(--card-width);
-  flex: 0 0 var(--card-width);
+  flex: 0 0 var(--card-width) !important;
 }
 .acland .card-size-lg {
   --card-width: 360px;

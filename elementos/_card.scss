@@ -25,10 +25,10 @@
       transition: $transition-1;
       // margin: 0;
       
-      [class*="card-size"] {
+      &[class*="card-size"] {
         --card-width: 100%;
         width: var(--card-width);
-        flex: 0 0 var(--card-width);
+        flex: 0 0 var(--card-width)!important;
       }
 
       &-size{

@@ -891,6 +891,16 @@
       }
     }
 
+    &-dashed{
+      border-style: dashed !important;
+    }
+    &-solid{
+      border-style: solid !important;
+    }
+    &-dotted{
+      border-style: dotted !important;
+    }
+
     &-0,
     &-none {
       border-style: solid !important;

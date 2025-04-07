@@ -2313,6 +2313,18 @@ body {
   border-bottom-style: solid !important;
   border-bottom-width: 5px !important;
 }
+.acland .border-dashed,
+* .border-dashed {
+  border-style: dashed !important;
+}
+.acland .border-solid,
+* .border-solid {
+  border-style: solid !important;
+}
+.acland .border-dotted,
+* .border-dotted {
+  border-style: dotted !important;
+}
 .acland .border-0, .acland .border-none,
 * .border-0,
 * .border-none {

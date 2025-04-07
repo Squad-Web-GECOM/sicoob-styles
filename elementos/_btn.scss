@@ -119,16 +119,6 @@
   }
 
   &.btn-verdec {
-    --btn-bg: #{ $brand-complementary };
-    --btn-text: #{ $support-1-medium };
-    --btn-bg-hover: #{ $support-5-medium };
-    --btn-text-hover: #{ $support-1-medium };
-    --btn-bg-active: #{ $support-5-high };
-    --btn-text-active: #{ $text-highlight-low };
-    --btn-focus: #{ $brand-complementary };
-  }
-
-  &.btn-verdem {
     --btn-bg: #{ $brand-supplementary };
     --btn-text: #{ $support-1-medium };
     --btn-bg-hover: #{ $support-6-medium };
@@ -136,6 +126,17 @@
     --btn-bg-active: #{ $support-6-high };
     --btn-text-active: #{ $text-highlight-low };
     --btn-focus: #{ $brand-supplementary };
+  }
+
+  &.btn-verdem {
+    
+    --btn-bg: #{ $brand-complementary };
+    --btn-text: #{ $support-1-medium };
+    --btn-bg-hover: #{ $support-5-medium };
+    --btn-text-hover: #{ $support-1-medium };
+    --btn-bg-active: #{ $support-5-high };
+    --btn-text-active: #{ $text-highlight-low };
+    --btn-focus: #{ $brand-complementary };
   }
 
   &.btn-roxo {

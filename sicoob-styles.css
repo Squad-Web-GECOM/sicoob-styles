@@ -937,15 +937,6 @@ body {
   --btn-focus: var(--color-surface-support-1-medium);
 }
 .btn.btn-verdec {
-  --btn-bg: var(--color-brand-complementary);
-  --btn-text: var(--color-surface-support-1-medium);
-  --btn-bg-hover: var(--color-surface-support-5-medium);
-  --btn-text-hover: var(--color-surface-support-1-medium);
-  --btn-bg-active: var(--color-surface-support-5-high);
-  --btn-text-active: var(--color-surface-text-highlight-low);
-  --btn-focus: var(--color-brand-complementary);
-}
-.btn.btn-verdem {
   --btn-bg: var(--color-brand-supplementary);
   --btn-text: var(--color-surface-support-1-medium);
   --btn-bg-hover: var(--color-surface-support-6-medium);
@@ -953,6 +944,15 @@ body {
   --btn-bg-active: var(--color-surface-support-6-high);
   --btn-text-active: var(--color-surface-text-highlight-low);
   --btn-focus: var(--color-brand-supplementary);
+}
+.btn.btn-verdem {
+  --btn-bg: var(--color-brand-complementary);
+  --btn-text: var(--color-surface-support-1-medium);
+  --btn-bg-hover: var(--color-surface-support-5-medium);
+  --btn-text-hover: var(--color-surface-support-1-medium);
+  --btn-bg-active: var(--color-surface-support-5-high);
+  --btn-text-active: var(--color-surface-text-highlight-low);
+  --btn-focus: var(--color-brand-complementary);
 }
 .btn.btn-roxo {
   --btn-bg: var(--color-function-secondary-default);

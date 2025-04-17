@@ -1457,6 +1457,83 @@
       display: flex !important;
       justify-content: center !important;
     }
+
+    &-xl{
+      @media (min-width: 1200px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-lg{
+      @media (min-width: 992px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-md{
+      @media (min-width: 756px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-sm{
+      @media (min-width: 567px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
   }
 
   .place {

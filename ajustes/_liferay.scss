@@ -1,4 +1,5 @@
 @import "../essencial/variaveis.scss";
+@import 'liferay-components.scss';
 
 // AJUSTES LP LIFERAY
 .row {
@@ -142,3 +143,6 @@ body.signed-in .homol,
 body.signed-in section[id*='-homol'] {
   display: block;
 }
+
+// Documentos e Mídias
+

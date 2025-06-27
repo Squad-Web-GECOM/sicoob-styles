@@ -15,6 +15,9 @@
   font-style: normal;
 }
 :root {
+  --primary: var(--turq);
+  --dark: var(--verdee);
+  --light: var(--branco);
   --turq-200: var(--color-function-primary-lightest);
   --turq-300: var(--color-function-primary-active);
   --turq: var(--color-function-primary-action);
@@ -445,6 +448,206 @@ body .tema-dark {
 GERAIS
 --------------------------------
 */
+.acland-docs .management-bar .navbar-nav,
+.acland-docs .bulk-status-container,
+.acland-docs .info-panel.sidenav-menu-slider,
+.acland-docs .dropdown-menu-left-side li {
+  display: none !important;
+}
+.acland-docs .management-bar {
+  display: block !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+  margin-bottom: var(--size-2);
+}
+.acland-docs .management-bar .navbar-form {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  padding: var(--size-0) !important;
+}
+.acland-docs .management-bar .navbar-form .input-group-item input {
+  height: 100%;
+  border-top-left-radius: var(--size-2);
+  border-bottom-left-radius: var(--size-2);
+  border: 1px solid var(--verdee);
+  border-right: 0px;
+  color: var(--verdee);
+}
+.acland-docs .management-bar .navbar-form .input-group-item span {
+  background: var(--turq);
+  border: 1px solid var(--verdee);
+  border-left: 0px;
+  border-top-right-radius: var(--size-2);
+  border-bottom-right-radius: var(--size-2);
+  padding: 0;
+}
+.acland-docs .management-bar .navbar-form .input-group-item span button {
+  padding: var(--size-3) var(--size-4) !important;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.acland-docs .subnav-tbar-primary {
+  background-color: var(--turq-200);
+  padding: var(--size-2) var(--size-1);
+  font-size: var(--font-size-sm);
+  border-radius: var(--size-2);
+  margin-bottom: var(--size-4);
+  margin-top: 0;
+}
+.acland-docs .search-info {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  margin-top: var(--size-0);
+}
+.acland-docs .search-info .btn-secondary {
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+}
+.acland-docs .dropdown-menu-left-side li:nth-child(1) {
+  display: list-item !important;
+}
+.acland-docs .taglib-header .header-title {
+  font-size: var(--font-size-5);
+}
+.acland-docs .main-content-body {
+  margin-top: var(--size-4);
+}
+.acland-docs .list-group {
+  background: var(--branco);
+  padding: var(--size-3) calc(var(--size-2) + var(--size-1));
+  box-shadow: 0px 0px 80px 0px rgba(0, 53, 62, 0.1) !important;
+  border-radius: var(--size-3) !important;
+  border: 1px solid var(--verdee) !important;
+}
+.acland-docs .list-group-header {
+  background: var(--branco);
+  border: none;
+}
+.acland-docs .list-group-item {
+  padding: var(--size-0) var(--size-3) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: relative;
+  min-height: 50px;
+}
+.acland-docs .list-group-item .autofit-col {
+  justify-content: center !important;
+}
+.acland-docs .list-group-item .autofit-col:nth-child(1) {
+  display: none;
+}
+.acland-docs .list-group-item .autofit-col:nth-child(2) .sticker {
+  background-image: url(https://www.sicoob.com.br/documents/20128/275218605/pasta.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: var(--size-4) !important;
+}
+.acland-docs .list-group-item .autofit-col:nth-child(2) .sticker.aspect-ratio-bg-cover, .acland-docs .list-group-item .autofit-col:nth-child(2) .sticker.file-icon-color-2 {
+  background-image: url(https://www.sicoob.com.br/documents/20128/275218605/arquivo.svg) !important;
+  background-size: 20px !important;
+}
+.acland-docs .list-group-item .autofit-col:nth-child(2) span,
+.acland-docs .list-group-item .autofit-col:nth-child(2) svg {
+  display: none;
+}
+.acland-docs .list-group-item .autofit-col:nth-child(3) span {
+  display: none;
+}
+.acland-docs .list-group-item h2 a {
+  color: var(--verdee) !important;
+  display: block;
+  padding: calc(var(--size-2) + var(--size-1)) var(--size-0);
+  font-size: var(--font-size-bs);
+}
+.acland-docs .list-group-item:hover {
+  background-color: var(--turq) !important;
+  border-radius: var(--size-1);
+}
+.acland-docs .list-group-item:hover .autofit-col:nth-child(2) .sticker {
+  background-image: url(https://www.sicoob.com.br/documents/20128/275218605/pasta-branca.svg) !important;
+}
+.acland-docs .list-group-item:hover .autofit-col:nth-child(2) .sticker.aspect-ratio-bg-cover, .acland-docs .list-group-item:hover .autofit-col:nth-child(2) .sticker.file-icon-color-2 {
+  background-image: url(https://www.sicoob.com.br/documents/20128/275218605/arquivo-branco.svg) !important;
+}
+.acland-docs .list-group-item:hover h2 a {
+  color: var(--branco) !important;
+  text-decoration: none !important;
+  font-size: var(--font-size-bs) !important;
+}
+.acland-docs .list-group-item:hover h2 .dropdown-menu > li > a:focus {
+  box-shadow: inset 0 0 0 0.125rem var(--turq), inset 0 0 0 0.25rem var(--branco);
+}
+.acland-docs .list-group-item:hover h2 .dropdown-menu > li > a:active {
+  background-color: var(--turq-200);
+}
+@media (max-width: 992px) {
+  .acland-docs .lfr-description-column {
+    display: none !important;
+  }
+}
+.acland-docs .entry-selector,
+.acland-docs .lfr-checkbox-column,
+.acland-docs thead {
+  display: none;
+}
+.acland-docs span {
+  white-space: normal !important;
+}
+.acland-docs .sticker {
+  background: transparent !important;
+}
+.acland-docs .lexicon-icon {
+  fill: var(--verdee);
+}
+.acland-docs button .lexicon-icon {
+  fill: var(--branco);
+}
+.acland-docs .pagination-bar {
+  margin: var(--size-4) var(--size-0);
+}
+.acland-docs .pagination-bar .pagination-results {
+  margin-bottom: 0;
+  font-size: var(--font-size-sm) !important;
+}
+.acland-docs .pagination-bar .pagination li:first-child > a:after {
+  margin-left: 3px;
+}
+.acland-docs .pagination-bar .pagination li:last-child .lfr-portal-tooltip {
+  position: absolute;
+  right: -6px;
+  top: -1px;
+}
+
+.breadcrumb-link {
+  color: var(--verdee);
+  font-weight: bold;
+  transition: var(--transition-2);
+}
+.breadcrumb-link:hover {
+  color: var(--verdee);
+  padding-left: 15px;
+  text-decoration: none !important;
+}
+.breadcrumb-link-link > .breadcrumb-text-truncate:hover, .breadcrumb-link-link > .breadcrumb-text-truncate:focus {
+  text-decoration: none !important;
+}
+.breadcrumb-item {
+  font-size: var(--font-size-sm);
+}
+.breadcrumb-item:last-child {
+  width: 100%;
+  font-size: var(--font-size-6);
+  color: var(--verdee);
+  font-weight: bold;
+}
+.breadcrumb-item-item + .breadcrumb-item::before {
+  background-image: url('data:image/svg+xml;utf8,<svg id="chavron" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.35 16.01" height="16px" width="16px"><path class="cls-1" d="M4.61,16a1.33,1.33,0,0,1-.94-2.27L9.4,8,3.67,2.27A1.33,1.33,0,0,1,5.56.39l6.67,6.67a1.33,1.33,0,0,1,0,1.88L5.56,15.62A1.33,1.33,0,0,1,4.61,16Z" fill="%2300353e"/></svg>');
+}
+.breadcrumb-text-truncate {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;

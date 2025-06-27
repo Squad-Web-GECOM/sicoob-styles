@@ -1,5 +1,9 @@
 :root {
 
+  --primary: var(--turq);
+  --dark: var(--verdee);
+  --light: var(--branco);
+
   --turq-200: var(--color-function-primary-lightest);
   --turq-300: var(--color-function-primary-active);
   --turq: var(--color-function-primary-action);

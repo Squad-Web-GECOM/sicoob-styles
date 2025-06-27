@@ -264,8 +264,8 @@ $font-size-4:var(--font-size-4);
 $font-size-3:var(--font-size-3);
 $font-size-2:var(--font-size-2);
 $font-size-1:var(--font-size-1);
-$font-size-sm:var(--font-size-lg);
-$font-size-xs:var(--font-size-xl);
+$font-size-lg:var(--font-size-lg);
+$font-size-xl:var(--font-size-xl);
 
 $font-sans:var(--font-sans);
 $font-script:var(--font-script);
@@ -435,8 +435,8 @@ $font-sizes: (
   "base": var(--font-size-bs),
   "bs": var(--font-size-bs),
   "small": var(--font-size-small),
-  "sm": var(--font-size-small),
-  "xs": var(--font-size-minor),
+  "sm": var(--font-size-sm),
+  "xs": var(--font-size-xs),
   "lg": var(--font-size-lg),
   "xl": var(--font-size-xl),
   "08": 0.8rem,

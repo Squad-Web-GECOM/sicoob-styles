@@ -1385,6 +1385,9 @@ body {
 .acland .card:hover {
   border-color: var(--turq);
 }
+.acland .card-body {
+  padding: var(--size-4);
+}
 .acland .card-img-top {
   aspect-ratio: 13/8;
   background-size: cover;
@@ -1542,6 +1545,8 @@ body {
 .acland .card-description-fit {
   height: -moz-fit-content !important;
   height: fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
 }
 .acland .card-footer {
   padding: var(--size-3);

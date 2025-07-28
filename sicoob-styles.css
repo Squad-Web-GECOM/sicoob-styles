@@ -18,6 +18,8 @@
   --primary: var(--turq);
   --dark: var(--verdee);
   --light: var(--branco);
+  --secondary: var(--verdec);
+  --tertiary: var(--verdem);
   --turq-200: var(--color-function-primary-lightest);
   --turq-300: var(--color-function-primary-active);
   --turq: var(--color-function-primary-action);
@@ -789,7 +791,7 @@ body .acland.para-voce .h3,
 body .acland.para-voce .h4,
 body .acland.para-voce .h5,
 body .acland.para-voce .h6 {
-  color: var(--cor-perfil);
+  color: var(--primary);
 }
 
 a {
@@ -827,24 +829,17 @@ footer .navbar-nav {
 footer .portlet-title-text {
   overflow: visible !important;
 }
-@media (max-width: 550px) {
+@media (max-width: 576px) {
   footer .text-truncate {
     white-space: nowrap;
   }
   footer .col-xs-6 {
     max-width: 100%;
-    padding-bottom: 30px;
+    flex: 0 0 100%;
   }
-}
-
-.acland #onetrust-pc-sdk h2,
-* #onetrust-pc-sdk h2 {
-  font-size: 1.37em !important;
-}
-.acland #onetrust-pc-sdk h2,
-* #onetrust-pc-sdk h2 {
-  font-size: 1.37em !important;
-  font-size: 0.875em;
+  footer .col-xs-6:last-child {
+    margin-top: 40px;
+  }
 }
 
 .portlet-topper-none .portlet-topper {
@@ -861,50 +856,60 @@ body.signed-in section[id*=-homol] {
   display: block;
 }
 
+.acland #onetrust-pc-sdk h2,
+* #onetrust-pc-sdk h2 {
+  font-size: 1.37em !important;
+}
+.acland #onetrust-pc-sdk h2,
+* #onetrust-pc-sdk h2 {
+  font-size: 1.37em !important;
+  font-size: 0.875em;
+}
+
 .acland h1,
 .acland .h1 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-1);
   margin-bottom: var(--size-3);
 }
 .acland h2,
 .acland .h2 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-2);
   margin-bottom: var(--size-3);
 }
 .acland h3,
 .acland .h3 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-3);
   margin-bottom: var(--size-3);
 }
 .acland h4,
 .acland .h4 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-4);
   margin-bottom: var(--size-3);
 }
 .acland h5,
 .acland .h5 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-5);
   margin-bottom: var(--size-3);
 }
 .acland h6,
 .acland .h6 {
-  color: var(--cor-perfil);
+  color: var(--primary);
   font-weight: bold;
   font-size: var(--font-size-6);
   margin-bottom: var(--size-3);
 }
 .acland p {
-  color: var(--cor-apoio);
+  color: var(--dark);
   font-size: var(--font-size-bs);
 }
 .acland .small {
@@ -952,7 +957,7 @@ body {
 .acland .accordion .card .card-header .btn-link {
   font-size: var(--font-size-base);
   width: 100%;
-  color: var(--branco) !important;
+  color: var(--light) !important;
   text-align: left;
   text-decoration: none !important;
   outline: var(--size-0) !important;
@@ -963,7 +968,7 @@ body {
 .acland.accordion .card .card-header .btn-link:hover, .acland.accordion .card .card-header .btn-link:focus,
 .acland .accordion .card .card-header .btn-link:hover,
 .acland .accordion .card .card-header .btn-link:focus {
-  color: var(--branco);
+  color: var(--light);
 }
 .acland.accordion .card .card-header .btn-link:after, .acland.accordion .card .card-header .btn-link:before,
 .acland .accordion .card .card-header .btn-link:after,
@@ -994,7 +999,7 @@ body {
 }
 .acland.accordion .card p,
 .acland .accordion .card p {
-  color: var(--cor-apoio);
+  color: var(--dark);
 }
 .acland.accordion-line .card,
 .acland .accordion-line .card {
@@ -1047,7 +1052,7 @@ body {
   border-radius: var(--size-2);
   padding: var(--size-4);
   margin-bottom: var(--size-3);
-  border: 1px solid var(--cor-perfil);
+  border: 1px solid var(--primary);
   background: var(--transparente);
 }
 .acland .box-bg {
@@ -1787,11 +1792,11 @@ body {
   /* COR DAS FONTES */
   /* COR DOS FUNDOS */
   /* COR, PESO E RADIUS DA BORDA */
+  /* FILL */
   /* PESO DAS FONTES */
   /* TAMANHO DAS FONTES */
   /* ALTURA DA LINHA - LINE HEIGHT */
   /* ALINHAMENTO */
-  /* FILL */
   /* WIDTH */
   /* HEIGTH */
   /* GAP */
@@ -1929,44 +1934,54 @@ body {
 * .c-dark-600 {
   color: var(--verdee-600) !important;
 }
-.acland .c-verdem,
-* .c-verdem {
+.acland .c-verdem, .acland .c-tertiary,
+* .c-verdem,
+* .c-tertiary {
   color: var(--verdem) !important;
 }
-.acland .c-verdem-200,
-* .c-verdem-200 {
+.acland .c-verdem-200, .acland .c-tertiary-200,
+* .c-verdem-200,
+* .c-tertiary-200 {
   color: var(--verdem-200) !important;
 }
-.acland .c-verdem-300,
-* .c-verdem-300 {
+.acland .c-verdem-300, .acland .c-tertiary-300,
+* .c-verdem-300,
+* .c-tertiary-300 {
   color: var(--verdem-300) !important;
 }
-.acland .c-verdem-500,
-* .c-verdem-500 {
+.acland .c-verdem-500, .acland .c-tertiary-500,
+* .c-verdem-500,
+* .c-tertiary-500 {
   color: var(--verdem-500) !important;
 }
-.acland .c-verdem-600,
-* .c-verdem-600 {
+.acland .c-verdem-600, .acland .c-tertiary-600,
+* .c-verdem-600,
+* .c-tertiary-600 {
   color: var(--verdem-600) !important;
 }
-.acland .c-verdec,
-* .c-verdec {
+.acland .c-verdec, .acland .c-secondary,
+* .c-verdec,
+* .c-secondary {
   color: var(--verdec) !important;
 }
-.acland .c-verdec-200,
-* .c-verdec-200 {
+.acland .c-verdec-200, .acland .c-secondary-200,
+* .c-verdec-200,
+* .c-secondary-200 {
   color: var(--verdec-200) !important;
 }
-.acland .c-verdec-300,
-* .c-verdec-300 {
+.acland .c-verdec-300, .acland .c-secondary-300,
+* .c-verdec-300,
+* .c-secondary-300 {
   color: var(--verdec-300) !important;
 }
-.acland .c-verdec-500,
-* .c-verdec-500 {
+.acland .c-verdec-500, .acland .c-secondary-500,
+* .c-verdec-500,
+* .c-secondary-500 {
   color: var(--verdec-500) !important;
 }
-.acland .c-verdec-600,
-* .c-verdec-600 {
+.acland .c-verdec-600, .acland .c-secondary-600,
+* .c-verdec-600,
+* .c-secondary-600 {
   color: var(--verdec-600) !important;
 }
 .acland .c-roxo,
@@ -2160,44 +2175,54 @@ body {
 * .bg-dark-600 {
   background-color: var(--verdee-600) !important;
 }
-.acland .bg-verdem,
-* .bg-verdem {
+.acland .bg-verdem, .acland .bg-tertiary,
+* .bg-verdem,
+* .bg-tertiary {
   background-color: var(--verdem) !important;
 }
-.acland .bg-verdem-200,
-* .bg-verdem-200 {
+.acland .bg-verdem-200, .acland .bg-tertiary-200,
+* .bg-verdem-200,
+* .bg-tertiary-200 {
   background-color: var(--verdem-200) !important;
 }
-.acland .bg-verdem-300,
-* .bg-verdem-300 {
+.acland .bg-verdem-300, .acland .bg-tertiary-300,
+* .bg-verdem-300,
+* .bg-tertiary-300 {
   background-color: var(--verdem-300) !important;
 }
-.acland .bg-verdem-500,
-* .bg-verdem-500 {
+.acland .bg-verdem-500, .acland .bg-tertiary-500,
+* .bg-verdem-500,
+* .bg-tertiary-500 {
   background-color: var(--verdem-500) !important;
 }
-.acland .bg-verdem-600,
-* .bg-verdem-600 {
+.acland .bg-verdem-600, .acland .bg-tertiary-600,
+* .bg-verdem-600,
+* .bg-tertiary-600 {
   background-color: var(--verdem-600) !important;
 }
-.acland .bg-verdec,
-* .bg-verdec {
+.acland .bg-verdec, .acland .bg-secondary,
+* .bg-verdec,
+* .bg-secondary {
   background-color: var(--verdec) !important;
 }
-.acland .bg-verdec-200,
-* .bg-verdec-200 {
+.acland .bg-verdec-200, .acland .bg-secondary-200,
+* .bg-verdec-200,
+* .bg-secondary-200 {
   background-color: var(--verdec-200) !important;
 }
-.acland .bg-verdec-300,
-* .bg-verdec-300 {
+.acland .bg-verdec-300, .acland .bg-secondary-300,
+* .bg-verdec-300,
+* .bg-secondary-300 {
   background-color: var(--verdec-300) !important;
 }
-.acland .bg-verdec-500,
-* .bg-verdec-500 {
+.acland .bg-verdec-500, .acland .bg-secondary-500,
+* .bg-verdec-500,
+* .bg-secondary-500 {
   background-color: var(--verdec-500) !important;
 }
-.acland .bg-verdec-600,
-* .bg-verdec-600 {
+.acland .bg-verdec-600, .acland .bg-secondary-600,
+* .bg-verdec-600,
+* .bg-secondary-600 {
   background-color: var(--verdec-600) !important;
 }
 .acland .bg-roxo,
@@ -2451,44 +2476,54 @@ body {
 * .border-dark-600 {
   border-color: var(--verdee-600) !important;
 }
-.acland .border-verdem,
-* .border-verdem {
+.acland .border-verdem, .acland .border-tertiary,
+* .border-verdem,
+* .border-tertiary {
   border-color: var(--verdem) !important;
 }
-.acland .border-verdem-200,
-* .border-verdem-200 {
+.acland .border-verdem-200, .acland .border-tertiary-200,
+* .border-verdem-200,
+* .border-tertiary-200 {
   border-color: var(--verdem-200) !important;
 }
-.acland .border-verdem-300,
-* .border-verdem-300 {
+.acland .border-verdem-300, .acland .border-tertiary-300,
+* .border-verdem-300,
+* .border-tertiary-300 {
   border-color: var(--verdem-300) !important;
 }
-.acland .border-verdem-500,
-* .border-verdem-500 {
+.acland .border-verdem-500, .acland .border-tertiary-500,
+* .border-verdem-500,
+* .border-tertiary-500 {
   border-color: var(--verdem-500) !important;
 }
-.acland .border-verdem-600,
-* .border-verdem-600 {
+.acland .border-verdem-600, .acland .border-tertiary-600,
+* .border-verdem-600,
+* .border-tertiary-600 {
   border-color: var(--verdem-600) !important;
 }
-.acland .border-verdec,
-* .border-verdec {
+.acland .border-verdec, .acland .border-secondary,
+* .border-verdec,
+* .border-secondary {
   border-color: var(--verdec) !important;
 }
-.acland .border-verdec-200,
-* .border-verdec-200 {
+.acland .border-verdec-200, .acland .border-secondary-200,
+* .border-verdec-200,
+* .border-secondary-200 {
   border-color: var(--verdec-200) !important;
 }
-.acland .border-verdec-300,
-* .border-verdec-300 {
+.acland .border-verdec-300, .acland .border-secondary-300,
+* .border-verdec-300,
+* .border-secondary-300 {
   border-color: var(--verdec-300) !important;
 }
-.acland .border-verdec-500,
-* .border-verdec-500 {
+.acland .border-verdec-500, .acland .border-secondary-500,
+* .border-verdec-500,
+* .border-secondary-500 {
   border-color: var(--verdec-500) !important;
 }
-.acland .border-verdec-600,
-* .border-verdec-600 {
+.acland .border-verdec-600, .acland .border-secondary-600,
+* .border-verdec-600,
+* .border-secondary-600 {
   border-color: var(--verdec-600) !important;
 }
 .acland .border-roxo,
@@ -3147,6 +3182,247 @@ body {
 * .border-radius-alternate-inverse-5 {
   border-radius: var(--size-5) 0 var(--size-1) 0;
 }
+.acland .fill-perfil,
+* .fill-perfil {
+  fill: var(--cor-perfil) !important;
+}
+.acland .fill-perfil-200,
+* .fill-perfil-200 {
+  fill: var(--cor-perfil-200) !important;
+}
+.acland .fill-perfil-300,
+* .fill-perfil-300 {
+  fill: var(--cor-perfil-300) !important;
+}
+.acland .fill-perfil-500,
+* .fill-perfil-500 {
+  fill: var(--cor-perfil-500) !important;
+}
+.acland .fill-perfil-600,
+* .fill-perfil-600 {
+  fill: var(--cor-perfil-600) !important;
+}
+.acland .fill-apoio,
+* .fill-apoio {
+  fill: var(--cor-apoio) !important;
+}
+.acland .fill-apoio-200,
+* .fill-apoio-200 {
+  fill: var(--cor-apoio-200) !important;
+}
+.acland .fill-apoio-300,
+* .fill-apoio-300 {
+  fill: var(--cor-apoio-300) !important;
+}
+.acland .fill-apoio-500,
+* .fill-apoio-500 {
+  fill: var(--cor-apoio-500) !important;
+}
+.acland .fill-apoio-600,
+* .fill-apoio-600 {
+  fill: var(--cor-apoio-600) !important;
+}
+.acland .fill-destaque,
+* .fill-destaque {
+  fill: var(--cor-destaque) !important;
+}
+.acland .fill-destaque-200,
+* .fill-destaque-200 {
+  fill: var(--cor-destaque-200) !important;
+}
+.acland .fill-destaque-300,
+* .fill-destaque-300 {
+  fill: var(--cor-destaque-300) !important;
+}
+.acland .fill-destaque-500,
+* .fill-destaque-500 {
+  fill: var(--cor-destaque-500) !important;
+}
+.acland .fill-destaque-600,
+* .fill-destaque-600 {
+  fill: var(--cor-destaque-600) !important;
+}
+.acland .fill-base,
+* .fill-base {
+  fill: var(--cor-base) !important;
+}
+.acland .fill-base-200,
+* .fill-base-200 {
+  fill: var(--cor-base-200) !important;
+}
+.acland .fill-base-300,
+* .fill-base-300 {
+  fill: var(--cor-base-300) !important;
+}
+.acland .fill-base-500,
+* .fill-base-500 {
+  fill: var(--cor-base-500) !important;
+}
+.acland .fill-base-600,
+* .fill-base-600 {
+  fill: var(--cor-base-600) !important;
+}
+.acland .fill-turq, .acland .fill-primary,
+* .fill-turq,
+* .fill-primary {
+  fill: var(--turq) !important;
+}
+.acland .fill-turq-200, .acland .fill-primary-200,
+* .fill-turq-200,
+* .fill-primary-200 {
+  fill: var(--turq-200) !important;
+}
+.acland .fill-turq-300, .acland .fill-primary-300,
+* .fill-turq-300,
+* .fill-primary-300 {
+  fill: var(--turq-300) !important;
+}
+.acland .fill-turq-500, .acland .fill-primary-500,
+* .fill-turq-500,
+* .fill-primary-500 {
+  fill: var(--turq-500) !important;
+}
+.acland .fill-turq-600, .acland .fill-primary-600,
+* .fill-turq-600,
+* .fill-primary-600 {
+  fill: var(--turq-600) !important;
+}
+.acland .fill-verdee, .acland .fill-dark,
+* .fill-verdee,
+* .fill-dark {
+  fill: var(--verdee) !important;
+}
+.acland .fill-verdee-200, .acland .fill-dark-200,
+* .fill-verdee-200,
+* .fill-dark-200 {
+  fill: var(--verdee-200) !important;
+}
+.acland .fill-verdee-300, .acland .fill-dark-300,
+* .fill-verdee-300,
+* .fill-dark-300 {
+  fill: var(--verdee-300) !important;
+}
+.acland .fill-verdee-500, .acland .fill-dark-500,
+* .fill-verdee-500,
+* .fill-dark-500 {
+  fill: var(--verdee-500) !important;
+}
+.acland .fill-verdee-600, .acland .fill-dark-600,
+* .fill-verdee-600,
+* .fill-dark-600 {
+  fill: var(--verdee-600) !important;
+}
+.acland .fill-verdem, .acland .fill-tertiary,
+* .fill-verdem,
+* .fill-tertiary {
+  fill: var(--verdem) !important;
+}
+.acland .fill-verdem-200, .acland .fill-tertiary-200,
+* .fill-verdem-200,
+* .fill-tertiary-200 {
+  fill: var(--verdem-200) !important;
+}
+.acland .fill-verdem-300, .acland .fill-tertiary-300,
+* .fill-verdem-300,
+* .fill-tertiary-300 {
+  fill: var(--verdem-300) !important;
+}
+.acland .fill-verdem-500, .acland .fill-tertiary-500,
+* .fill-verdem-500,
+* .fill-tertiary-500 {
+  fill: var(--verdem-500) !important;
+}
+.acland .fill-verdem-600, .acland .fill-tertiary-600,
+* .fill-verdem-600,
+* .fill-tertiary-600 {
+  fill: var(--verdem-600) !important;
+}
+.acland .fill-verdec, .acland .fill-secondary,
+* .fill-verdec,
+* .fill-secondary {
+  fill: var(--verdec) !important;
+}
+.acland .fill-verdec-200, .acland .fill-secondary-200,
+* .fill-verdec-200,
+* .fill-secondary-200 {
+  fill: var(--verdec-200) !important;
+}
+.acland .fill-verdec-300, .acland .fill-secondary-300,
+* .fill-verdec-300,
+* .fill-secondary-300 {
+  fill: var(--verdec-300) !important;
+}
+.acland .fill-verdec-500, .acland .fill-secondary-500,
+* .fill-verdec-500,
+* .fill-secondary-500 {
+  fill: var(--verdec-500) !important;
+}
+.acland .fill-verdec-600, .acland .fill-secondary-600,
+* .fill-verdec-600,
+* .fill-secondary-600 {
+  fill: var(--verdec-600) !important;
+}
+.acland .fill-roxo,
+* .fill-roxo {
+  fill: var(--roxo) !important;
+}
+.acland .fill-roxo-200,
+* .fill-roxo-200 {
+  fill: var(--roxo-200) !important;
+}
+.acland .fill-roxo-300,
+* .fill-roxo-300 {
+  fill: var(--roxo-300) !important;
+}
+.acland .fill-roxo-500,
+* .fill-roxo-500 {
+  fill: var(--roxo-500) !important;
+}
+.acland .fill-roxo-600,
+* .fill-roxo-600 {
+  fill: var(--roxo-600) !important;
+}
+.acland .fill-cinza-200,
+* .fill-cinza-200 {
+  fill: var(--cinza-200) !important;
+}
+.acland .fill-cinza-300,
+* .fill-cinza-300 {
+  fill: var(--cinza-300) !important;
+}
+.acland .fill-cinza-400,
+* .fill-cinza-400 {
+  fill: var(--cinza-400) !important;
+}
+.acland .fill-cinza-500,
+* .fill-cinza-500 {
+  fill: var(--cinza-500) !important;
+}
+.acland .fill-cinza-600,
+* .fill-cinza-600 {
+  fill: var(--cinza-600) !important;
+}
+.acland .fill-cinza-700,
+* .fill-cinza-700 {
+  fill: var(--cinza-700) !important;
+}
+.acland .fill-cinza-800,
+* .fill-cinza-800 {
+  fill: var(--cinza-800) !important;
+}
+.acland .fill-cinza-900,
+* .fill-cinza-900 {
+  fill: var(--cinza-900) !important;
+}
+.acland .fill-branco, .acland .fill-light,
+* .fill-branco,
+* .fill-light {
+  fill: var(--branco) !important;
+}
+.acland .fill-preto,
+* .fill-preto {
+  fill: var(--preto) !important;
+}
 .acland .c-brand-main,
 * .c-brand-main {
   color: var(--color-brand-main) !important;
@@ -3170,6 +3446,14 @@ body {
 .acland .border-brand-main-hover:hover,
 * .border-brand-main-hover:hover {
   border-color: var(--color-brand-main) !important;
+}
+.acland .fill-brand-main,
+* .fill-brand-main {
+  fill: var(--color-brand-main) !important;
+}
+.acland .fill-brand-main-hover:hover,
+* .fill-brand-main-hover:hover {
+  fill: var(--color-brand-main) !important;
 }
 .acland .c-brand-opposite,
 * .c-brand-opposite {
@@ -3195,6 +3479,14 @@ body {
 * .border-brand-opposite-hover:hover {
   border-color: var(--color-brand-opposite) !important;
 }
+.acland .fill-brand-opposite,
+* .fill-brand-opposite {
+  fill: var(--color-brand-opposite) !important;
+}
+.acland .fill-brand-opposite-hover:hover,
+* .fill-brand-opposite-hover:hover {
+  fill: var(--color-brand-opposite) !important;
+}
 .acland .c-brand-complementary,
 * .c-brand-complementary {
   color: var(--color-brand-complementary) !important;
@@ -3218,6 +3510,14 @@ body {
 .acland .border-brand-complementary-hover:hover,
 * .border-brand-complementary-hover:hover {
   border-color: var(--color-brand-complementary) !important;
+}
+.acland .fill-brand-complementary,
+* .fill-brand-complementary {
+  fill: var(--color-brand-complementary) !important;
+}
+.acland .fill-brand-complementary-hover:hover,
+* .fill-brand-complementary-hover:hover {
+  fill: var(--color-brand-complementary) !important;
 }
 .acland .c-brand-supplementary,
 * .c-brand-supplementary {
@@ -3243,6 +3543,14 @@ body {
 * .border-brand-supplementary-hover:hover {
   border-color: var(--color-brand-supplementary) !important;
 }
+.acland .fill-brand-supplementary,
+* .fill-brand-supplementary {
+  fill: var(--color-brand-supplementary) !important;
+}
+.acland .fill-brand-supplementary-hover:hover,
+* .fill-brand-supplementary-hover:hover {
+  fill: var(--color-brand-supplementary) !important;
+}
 .acland .c-brand-dusky,
 * .c-brand-dusky {
   color: var(--color-brand-dusky) !important;
@@ -3266,6 +3574,14 @@ body {
 .acland .border-brand-dusky-hover:hover,
 * .border-brand-dusky-hover:hover {
   border-color: var(--color-brand-dusky) !important;
+}
+.acland .fill-brand-dusky,
+* .fill-brand-dusky {
+  fill: var(--color-brand-dusky) !important;
+}
+.acland .fill-brand-dusky-hover:hover,
+* .fill-brand-dusky-hover:hover {
+  fill: var(--color-brand-dusky) !important;
 }
 .acland .c-success-darkest,
 * .c-success-darkest {
@@ -3291,6 +3607,14 @@ body {
 * .border-success-darkest-hover:hover {
   border-color: var(--color-denotative-success-darkest) !important;
 }
+.acland .fill-success-darkest,
+* .fill-success-darkest {
+  fill: var(--color-denotative-success-darkest) !important;
+}
+.acland .fill-success-darkest-hover:hover,
+* .fill-success-darkest-hover:hover {
+  fill: var(--color-denotative-success-darkest) !important;
+}
 .acland .c-success-action,
 * .c-success-action {
   color: var(--color-denotative-success-action) !important;
@@ -3314,6 +3638,14 @@ body {
 .acland .border-success-action-hover:hover,
 * .border-success-action-hover:hover {
   border-color: var(--color-denotative-success-action) !important;
+}
+.acland .fill-success-action,
+* .fill-success-action {
+  fill: var(--color-denotative-success-action) !important;
+}
+.acland .fill-success-action-hover:hover,
+* .fill-success-action-hover:hover {
+  fill: var(--color-denotative-success-action) !important;
 }
 .acland .c-success-default,
 * .c-success-default {
@@ -3339,6 +3671,14 @@ body {
 * .border-success-default-hover:hover {
   border-color: var(--color-denotative-success-default) !important;
 }
+.acland .fill-success-default,
+* .fill-success-default {
+  fill: var(--color-denotative-success-default) !important;
+}
+.acland .fill-success-default-hover:hover,
+* .fill-success-default-hover:hover {
+  fill: var(--color-denotative-success-default) !important;
+}
 .acland .c-success-active,
 * .c-success-active {
   color: var(--color-denotative-success-active) !important;
@@ -3362,6 +3702,14 @@ body {
 .acland .border-success-active-hover:hover,
 * .border-success-active-hover:hover {
   border-color: var(--color-denotative-success-active) !important;
+}
+.acland .fill-success-active,
+* .fill-success-active {
+  fill: var(--color-denotative-success-active) !important;
+}
+.acland .fill-success-active-hover:hover,
+* .fill-success-active-hover:hover {
+  fill: var(--color-denotative-success-active) !important;
 }
 .acland .c-success-lightest,
 * .c-success-lightest {
@@ -3387,6 +3735,14 @@ body {
 * .border-success-lightest-hover:hover {
   border-color: var(--color-denotative-success-lightest) !important;
 }
+.acland .fill-success-lightest,
+* .fill-success-lightest {
+  fill: var(--color-denotative-success-lightest) !important;
+}
+.acland .fill-success-lightest-hover:hover,
+* .fill-success-lightest-hover:hover {
+  fill: var(--color-denotative-success-lightest) !important;
+}
 .acland .c-info-darkest,
 * .c-info-darkest {
   color: var(--color-denotative-info-darkest) !important;
@@ -3410,6 +3766,14 @@ body {
 .acland .border-info-darkest-hover:hover,
 * .border-info-darkest-hover:hover {
   border-color: var(--color-denotative-info-darkest) !important;
+}
+.acland .fill-info-darkest,
+* .fill-info-darkest {
+  fill: var(--color-denotative-info-darkest) !important;
+}
+.acland .fill-info-darkest-hover:hover,
+* .fill-info-darkest-hover:hover {
+  fill: var(--color-denotative-info-darkest) !important;
 }
 .acland .c-info-action,
 * .c-info-action {
@@ -3435,6 +3799,14 @@ body {
 * .border-info-action-hover:hover {
   border-color: var(--color-denotative-info-action) !important;
 }
+.acland .fill-info-action,
+* .fill-info-action {
+  fill: var(--color-denotative-info-action) !important;
+}
+.acland .fill-info-action-hover:hover,
+* .fill-info-action-hover:hover {
+  fill: var(--color-denotative-info-action) !important;
+}
 .acland .c-info-default,
 * .c-info-default {
   color: var(--color-denotative-info-default) !important;
@@ -3458,6 +3830,14 @@ body {
 .acland .border-info-default-hover:hover,
 * .border-info-default-hover:hover {
   border-color: var(--color-denotative-info-default) !important;
+}
+.acland .fill-info-default,
+* .fill-info-default {
+  fill: var(--color-denotative-info-default) !important;
+}
+.acland .fill-info-default-hover:hover,
+* .fill-info-default-hover:hover {
+  fill: var(--color-denotative-info-default) !important;
 }
 .acland .c-info-active,
 * .c-info-active {
@@ -3483,6 +3863,14 @@ body {
 * .border-info-active-hover:hover {
   border-color: var(--color-denotative-info-active) !important;
 }
+.acland .fill-info-active,
+* .fill-info-active {
+  fill: var(--color-denotative-info-active) !important;
+}
+.acland .fill-info-active-hover:hover,
+* .fill-info-active-hover:hover {
+  fill: var(--color-denotative-info-active) !important;
+}
 .acland .c-info-lightest,
 * .c-info-lightest {
   color: var(--color-denotative-info-lightest) !important;
@@ -3506,6 +3894,14 @@ body {
 .acland .border-info-lightest-hover:hover,
 * .border-info-lightest-hover:hover {
   border-color: var(--color-denotative-info-lightest) !important;
+}
+.acland .fill-info-lightest,
+* .fill-info-lightest {
+  fill: var(--color-denotative-info-lightest) !important;
+}
+.acland .fill-info-lightest-hover:hover,
+* .fill-info-lightest-hover:hover {
+  fill: var(--color-denotative-info-lightest) !important;
 }
 .acland .c-warning-darkest,
 * .c-warning-darkest {
@@ -3531,6 +3927,14 @@ body {
 * .border-warning-darkest-hover:hover {
   border-color: var(--color-denotative-warning-darkest) !important;
 }
+.acland .fill-warning-darkest,
+* .fill-warning-darkest {
+  fill: var(--color-denotative-warning-darkest) !important;
+}
+.acland .fill-warning-darkest-hover:hover,
+* .fill-warning-darkest-hover:hover {
+  fill: var(--color-denotative-warning-darkest) !important;
+}
 .acland .c-warning-action,
 * .c-warning-action {
   color: var(--color-denotative-warning-action) !important;
@@ -3554,6 +3958,14 @@ body {
 .acland .border-warning-action-hover:hover,
 * .border-warning-action-hover:hover {
   border-color: var(--color-denotative-warning-action) !important;
+}
+.acland .fill-warning-action,
+* .fill-warning-action {
+  fill: var(--color-denotative-warning-action) !important;
+}
+.acland .fill-warning-action-hover:hover,
+* .fill-warning-action-hover:hover {
+  fill: var(--color-denotative-warning-action) !important;
 }
 .acland .c-warning-default,
 * .c-warning-default {
@@ -3579,6 +3991,14 @@ body {
 * .border-warning-default-hover:hover {
   border-color: var(--color-denotative-warning-default) !important;
 }
+.acland .fill-warning-default,
+* .fill-warning-default {
+  fill: var(--color-denotative-warning-default) !important;
+}
+.acland .fill-warning-default-hover:hover,
+* .fill-warning-default-hover:hover {
+  fill: var(--color-denotative-warning-default) !important;
+}
 .acland .c-warning-active,
 * .c-warning-active {
   color: var(--color-denotative-warning-active) !important;
@@ -3602,6 +4022,14 @@ body {
 .acland .border-warning-active-hover:hover,
 * .border-warning-active-hover:hover {
   border-color: var(--color-denotative-warning-active) !important;
+}
+.acland .fill-warning-active,
+* .fill-warning-active {
+  fill: var(--color-denotative-warning-active) !important;
+}
+.acland .fill-warning-active-hover:hover,
+* .fill-warning-active-hover:hover {
+  fill: var(--color-denotative-warning-active) !important;
 }
 .acland .c-warning-lightest,
 * .c-warning-lightest {
@@ -3627,6 +4055,14 @@ body {
 * .border-warning-lightest-hover:hover {
   border-color: var(--color-denotative-warning-lightest) !important;
 }
+.acland .fill-warning-lightest,
+* .fill-warning-lightest {
+  fill: var(--color-denotative-warning-lightest) !important;
+}
+.acland .fill-warning-lightest-hover:hover,
+* .fill-warning-lightest-hover:hover {
+  fill: var(--color-denotative-warning-lightest) !important;
+}
 .acland .c-error-darkest,
 * .c-error-darkest {
   color: var(--color-denotative-error-darkest) !important;
@@ -3650,6 +4086,14 @@ body {
 .acland .border-error-darkest-hover:hover,
 * .border-error-darkest-hover:hover {
   border-color: var(--color-denotative-error-darkest) !important;
+}
+.acland .fill-error-darkest,
+* .fill-error-darkest {
+  fill: var(--color-denotative-error-darkest) !important;
+}
+.acland .fill-error-darkest-hover:hover,
+* .fill-error-darkest-hover:hover {
+  fill: var(--color-denotative-error-darkest) !important;
 }
 .acland .c-error-action,
 * .c-error-action {
@@ -3675,6 +4119,14 @@ body {
 * .border-error-action-hover:hover {
   border-color: var(--color-denotative-error-action) !important;
 }
+.acland .fill-error-action,
+* .fill-error-action {
+  fill: var(--color-denotative-error-action) !important;
+}
+.acland .fill-error-action-hover:hover,
+* .fill-error-action-hover:hover {
+  fill: var(--color-denotative-error-action) !important;
+}
 .acland .c-error-default,
 * .c-error-default {
   color: var(--color-denotative-error-default) !important;
@@ -3698,6 +4150,14 @@ body {
 .acland .border-error-default-hover:hover,
 * .border-error-default-hover:hover {
   border-color: var(--color-denotative-error-default) !important;
+}
+.acland .fill-error-default,
+* .fill-error-default {
+  fill: var(--color-denotative-error-default) !important;
+}
+.acland .fill-error-default-hover:hover,
+* .fill-error-default-hover:hover {
+  fill: var(--color-denotative-error-default) !important;
 }
 .acland .c-error-active,
 * .c-error-active {
@@ -3723,6 +4183,14 @@ body {
 * .border-error-active-hover:hover {
   border-color: var(--color-denotative-error-active) !important;
 }
+.acland .fill-error-active,
+* .fill-error-active {
+  fill: var(--color-denotative-error-active) !important;
+}
+.acland .fill-error-active-hover:hover,
+* .fill-error-active-hover:hover {
+  fill: var(--color-denotative-error-active) !important;
+}
 .acland .c-error-lightest,
 * .c-error-lightest {
   color: var(--color-denotative-error-lightest) !important;
@@ -3746,6 +4214,14 @@ body {
 .acland .border-error-lightest-hover:hover,
 * .border-error-lightest-hover:hover {
   border-color: var(--color-denotative-error-lightest) !important;
+}
+.acland .fill-error-lightest,
+* .fill-error-lightest {
+  fill: var(--color-denotative-error-lightest) !important;
+}
+.acland .fill-error-lightest-hover:hover,
+* .fill-error-lightest-hover:hover {
+  fill: var(--color-denotative-error-lightest) !important;
 }
 .acland .c-disabled-background,
 * .c-disabled-background {
@@ -3771,6 +4247,14 @@ body {
 * .border-disabled-background-hover:hover {
   border-color: var(--color-function-disabled-background) !important;
 }
+.acland .fill-disabled-background,
+* .fill-disabled-background {
+  fill: var(--color-function-disabled-background) !important;
+}
+.acland .fill-disabled-background-hover:hover,
+* .fill-disabled-background-hover:hover {
+  fill: var(--color-function-disabled-background) !important;
+}
 .acland .c-disabled-text,
 * .c-disabled-text {
   color: var(--color-function-disabled-text) !important;
@@ -3794,6 +4278,14 @@ body {
 .acland .border-disabled-text-hover:hover,
 * .border-disabled-text-hover:hover {
   border-color: var(--color-function-disabled-text) !important;
+}
+.acland .fill-disabled-text,
+* .fill-disabled-text {
+  fill: var(--color-function-disabled-text) !important;
+}
+.acland .fill-disabled-text-hover:hover,
+* .fill-disabled-text-hover:hover {
+  fill: var(--color-function-disabled-text) !important;
 }
 .acland .c-disabled-border,
 * .c-disabled-border {
@@ -3819,6 +4311,14 @@ body {
 * .border-disabled-border-hover:hover {
   border-color: var(--color-function-disabled-border) !important;
 }
+.acland .fill-disabled-border,
+* .fill-disabled-border {
+  fill: var(--color-function-disabled-border) !important;
+}
+.acland .fill-disabled-border-hover:hover,
+* .fill-disabled-border-hover:hover {
+  fill: var(--color-function-disabled-border) !important;
+}
 .acland .c-primary-darkest,
 * .c-primary-darkest {
   color: var(--color-function-primary-darkest) !important;
@@ -3842,6 +4342,14 @@ body {
 .acland .border-primary-darkest-hover:hover,
 * .border-primary-darkest-hover:hover {
   border-color: var(--color-function-primary-darkest) !important;
+}
+.acland .fill-primary-darkest,
+* .fill-primary-darkest {
+  fill: var(--color-function-primary-darkest) !important;
+}
+.acland .fill-primary-darkest-hover:hover,
+* .fill-primary-darkest-hover:hover {
+  fill: var(--color-function-primary-darkest) !important;
 }
 .acland .c-primary-action,
 * .c-primary-action {
@@ -3867,6 +4375,14 @@ body {
 * .border-primary-action-hover:hover {
   border-color: var(--color-function-primary-action) !important;
 }
+.acland .fill-primary-action,
+* .fill-primary-action {
+  fill: var(--color-function-primary-action) !important;
+}
+.acland .fill-primary-action-hover:hover,
+* .fill-primary-action-hover:hover {
+  fill: var(--color-function-primary-action) !important;
+}
 .acland .c-primary-default,
 * .c-primary-default {
   color: var(--color-function-primary-default) !important;
@@ -3890,6 +4406,14 @@ body {
 .acland .border-primary-default-hover:hover,
 * .border-primary-default-hover:hover {
   border-color: var(--color-function-primary-default) !important;
+}
+.acland .fill-primary-default,
+* .fill-primary-default {
+  fill: var(--color-function-primary-default) !important;
+}
+.acland .fill-primary-default-hover:hover,
+* .fill-primary-default-hover:hover {
+  fill: var(--color-function-primary-default) !important;
 }
 .acland .c-primary-active,
 * .c-primary-active {
@@ -3915,6 +4439,14 @@ body {
 * .border-primary-active-hover:hover {
   border-color: var(--color-function-primary-active) !important;
 }
+.acland .fill-primary-active,
+* .fill-primary-active {
+  fill: var(--color-function-primary-active) !important;
+}
+.acland .fill-primary-active-hover:hover,
+* .fill-primary-active-hover:hover {
+  fill: var(--color-function-primary-active) !important;
+}
 .acland .c-primary-lightest,
 * .c-primary-lightest {
   color: var(--color-function-primary-lightest) !important;
@@ -3938,6 +4470,14 @@ body {
 .acland .border-primary-lightest-hover:hover,
 * .border-primary-lightest-hover:hover {
   border-color: var(--color-function-primary-lightest) !important;
+}
+.acland .fill-primary-lightest,
+* .fill-primary-lightest {
+  fill: var(--color-function-primary-lightest) !important;
+}
+.acland .fill-primary-lightest-hover:hover,
+* .fill-primary-lightest-hover:hover {
+  fill: var(--color-function-primary-lightest) !important;
 }
 .acland .c-secondary-darkest,
 * .c-secondary-darkest {
@@ -3963,6 +4503,14 @@ body {
 * .border-secondary-darkest-hover:hover {
   border-color: var(--color-function-secondary-darkest) !important;
 }
+.acland .fill-secondary-darkest,
+* .fill-secondary-darkest {
+  fill: var(--color-function-secondary-darkest) !important;
+}
+.acland .fill-secondary-darkest-hover:hover,
+* .fill-secondary-darkest-hover:hover {
+  fill: var(--color-function-secondary-darkest) !important;
+}
 .acland .c-secondary-action,
 * .c-secondary-action {
   color: var(--color-function-secondary-action) !important;
@@ -3986,6 +4534,14 @@ body {
 .acland .border-secondary-action-hover:hover,
 * .border-secondary-action-hover:hover {
   border-color: var(--color-function-secondary-action) !important;
+}
+.acland .fill-secondary-action,
+* .fill-secondary-action {
+  fill: var(--color-function-secondary-action) !important;
+}
+.acland .fill-secondary-action-hover:hover,
+* .fill-secondary-action-hover:hover {
+  fill: var(--color-function-secondary-action) !important;
 }
 .acland .c-secondary-default,
 * .c-secondary-default {
@@ -4011,6 +4567,14 @@ body {
 * .border-secondary-default-hover:hover {
   border-color: var(--color-function-secondary-default) !important;
 }
+.acland .fill-secondary-default,
+* .fill-secondary-default {
+  fill: var(--color-function-secondary-default) !important;
+}
+.acland .fill-secondary-default-hover:hover,
+* .fill-secondary-default-hover:hover {
+  fill: var(--color-function-secondary-default) !important;
+}
 .acland .c-secondary-active,
 * .c-secondary-active {
   color: var(--color-function-secondary-active) !important;
@@ -4034,6 +4598,14 @@ body {
 .acland .border-secondary-active-hover:hover,
 * .border-secondary-active-hover:hover {
   border-color: var(--color-function-secondary-active) !important;
+}
+.acland .fill-secondary-active,
+* .fill-secondary-active {
+  fill: var(--color-function-secondary-active) !important;
+}
+.acland .fill-secondary-active-hover:hover,
+* .fill-secondary-active-hover:hover {
+  fill: var(--color-function-secondary-active) !important;
 }
 .acland .c-secondary-lightest,
 * .c-secondary-lightest {
@@ -4059,6 +4631,14 @@ body {
 * .border-secondary-lightest-hover:hover {
   border-color: var(--color-function-secondary-lightest) !important;
 }
+.acland .fill-secondary-lightest,
+* .fill-secondary-lightest {
+  fill: var(--color-function-secondary-lightest) !important;
+}
+.acland .fill-secondary-lightest-hover:hover,
+* .fill-secondary-lightest-hover:hover {
+  fill: var(--color-function-secondary-lightest) !important;
+}
 .acland .c-tertiary-darkest,
 * .c-tertiary-darkest {
   color: var(--color-function-tertiary-darkest) !important;
@@ -4082,6 +4662,14 @@ body {
 .acland .border-tertiary-darkest-hover:hover,
 * .border-tertiary-darkest-hover:hover {
   border-color: var(--color-function-tertiary-darkest) !important;
+}
+.acland .fill-tertiary-darkest,
+* .fill-tertiary-darkest {
+  fill: var(--color-function-tertiary-darkest) !important;
+}
+.acland .fill-tertiary-darkest-hover:hover,
+* .fill-tertiary-darkest-hover:hover {
+  fill: var(--color-function-tertiary-darkest) !important;
 }
 .acland .c-tertiary-action,
 * .c-tertiary-action {
@@ -4107,6 +4695,14 @@ body {
 * .border-tertiary-action-hover:hover {
   border-color: var(--color-function-tertiary-action) !important;
 }
+.acland .fill-tertiary-action,
+* .fill-tertiary-action {
+  fill: var(--color-function-tertiary-action) !important;
+}
+.acland .fill-tertiary-action-hover:hover,
+* .fill-tertiary-action-hover:hover {
+  fill: var(--color-function-tertiary-action) !important;
+}
 .acland .c-tertiary-default,
 * .c-tertiary-default {
   color: var(--color-function-tertiary-default) !important;
@@ -4130,6 +4726,14 @@ body {
 .acland .border-tertiary-default-hover:hover,
 * .border-tertiary-default-hover:hover {
   border-color: var(--color-function-tertiary-default) !important;
+}
+.acland .fill-tertiary-default,
+* .fill-tertiary-default {
+  fill: var(--color-function-tertiary-default) !important;
+}
+.acland .fill-tertiary-default-hover:hover,
+* .fill-tertiary-default-hover:hover {
+  fill: var(--color-function-tertiary-default) !important;
 }
 .acland .c-tertiary-active,
 * .c-tertiary-active {
@@ -4155,6 +4759,14 @@ body {
 * .border-tertiary-active-hover:hover {
   border-color: var(--color-function-tertiary-active) !important;
 }
+.acland .fill-tertiary-active,
+* .fill-tertiary-active {
+  fill: var(--color-function-tertiary-active) !important;
+}
+.acland .fill-tertiary-active-hover:hover,
+* .fill-tertiary-active-hover:hover {
+  fill: var(--color-function-tertiary-active) !important;
+}
 .acland .c-tertiary-lightest,
 * .c-tertiary-lightest {
   color: var(--color-function-tertiary-lightest) !important;
@@ -4178,6 +4790,14 @@ body {
 .acland .border-tertiary-lightest-hover:hover,
 * .border-tertiary-lightest-hover:hover {
   border-color: var(--color-function-tertiary-lightest) !important;
+}
+.acland .fill-tertiary-lightest,
+* .fill-tertiary-lightest {
+  fill: var(--color-function-tertiary-lightest) !important;
+}
+.acland .fill-tertiary-lightest-hover:hover,
+* .fill-tertiary-lightest-hover:hover {
+  fill: var(--color-function-tertiary-lightest) !important;
 }
 .acland .c-text-default-low,
 * .c-text-default-low {
@@ -4203,6 +4823,14 @@ body {
 * .border-text-default-low-hover:hover {
   border-color: var(--color-surface-text-default-low) !important;
 }
+.acland .fill-text-default-low,
+* .fill-text-default-low {
+  fill: var(--color-surface-text-default-low) !important;
+}
+.acland .fill-text-default-low-hover:hover,
+* .fill-text-default-low-hover:hover {
+  fill: var(--color-surface-text-default-low) !important;
+}
 .acland .c-text-default-medium,
 * .c-text-default-medium {
   color: var(--color-surface-text-default-medium) !important;
@@ -4226,6 +4854,14 @@ body {
 .acland .border-text-default-medium-hover:hover,
 * .border-text-default-medium-hover:hover {
   border-color: var(--color-surface-text-default-medium) !important;
+}
+.acland .fill-text-default-medium,
+* .fill-text-default-medium {
+  fill: var(--color-surface-text-default-medium) !important;
+}
+.acland .fill-text-default-medium-hover:hover,
+* .fill-text-default-medium-hover:hover {
+  fill: var(--color-surface-text-default-medium) !important;
 }
 .acland .c-text-default-high,
 * .c-text-default-high {
@@ -4251,6 +4887,14 @@ body {
 * .border-text-default-high-hover:hover {
   border-color: var(--color-surface-text-default-high) !important;
 }
+.acland .fill-text-default-high,
+* .fill-text-default-high {
+  fill: var(--color-surface-text-default-high) !important;
+}
+.acland .fill-text-default-high-hover:hover,
+* .fill-text-default-high-hover:hover {
+  fill: var(--color-surface-text-default-high) !important;
+}
 .acland .c-text-highlight-low,
 * .c-text-highlight-low {
   color: var(--color-surface-text-highlight-low) !important;
@@ -4274,6 +4918,14 @@ body {
 .acland .border-text-highlight-low-hover:hover,
 * .border-text-highlight-low-hover:hover {
   border-color: var(--color-surface-text-highlight-low) !important;
+}
+.acland .fill-text-highlight-low,
+* .fill-text-highlight-low {
+  fill: var(--color-surface-text-highlight-low) !important;
+}
+.acland .fill-text-highlight-low-hover:hover,
+* .fill-text-highlight-low-hover:hover {
+  fill: var(--color-surface-text-highlight-low) !important;
 }
 .acland .c-text-highlight-medium,
 * .c-text-highlight-medium {
@@ -4299,6 +4951,14 @@ body {
 * .border-text-highlight-medium-hover:hover {
   border-color: var(--color-surface-text-highlight-medium) !important;
 }
+.acland .fill-text-highlight-medium,
+* .fill-text-highlight-medium {
+  fill: var(--color-surface-text-highlight-medium) !important;
+}
+.acland .fill-text-highlight-medium-hover:hover,
+* .fill-text-highlight-medium-hover:hover {
+  fill: var(--color-surface-text-highlight-medium) !important;
+}
 .acland .c-text-highlight-high,
 * .c-text-highlight-high {
   color: var(--color-surface-text-highlight-high) !important;
@@ -4322,6 +4982,14 @@ body {
 .acland .border-text-highlight-high-hover:hover,
 * .border-text-highlight-high-hover:hover {
   border-color: var(--color-surface-text-highlight-high) !important;
+}
+.acland .fill-text-highlight-high,
+* .fill-text-highlight-high {
+  fill: var(--color-surface-text-highlight-high) !important;
+}
+.acland .fill-text-highlight-high-hover:hover,
+* .fill-text-highlight-high-hover:hover {
+  fill: var(--color-surface-text-highlight-high) !important;
 }
 .acland .c-background-low,
 * .c-background-low {
@@ -4347,6 +5015,14 @@ body {
 * .border-background-low-hover:hover {
   border-color: var(--color-surface-background-low) !important;
 }
+.acland .fill-background-low,
+* .fill-background-low {
+  fill: var(--color-surface-background-low) !important;
+}
+.acland .fill-background-low-hover:hover,
+* .fill-background-low-hover:hover {
+  fill: var(--color-surface-background-low) !important;
+}
 .acland .c-background-medium,
 * .c-background-medium {
   color: var(--color-surface-background-medium) !important;
@@ -4370,6 +5046,14 @@ body {
 .acland .border-background-medium-hover:hover,
 * .border-background-medium-hover:hover {
   border-color: var(--color-surface-background-medium) !important;
+}
+.acland .fill-background-medium,
+* .fill-background-medium {
+  fill: var(--color-surface-background-medium) !important;
+}
+.acland .fill-background-medium-hover:hover,
+* .fill-background-medium-hover:hover {
+  fill: var(--color-surface-background-medium) !important;
 }
 .acland .c-background-high,
 * .c-background-high {
@@ -4395,6 +5079,14 @@ body {
 * .border-background-high-hover:hover {
   border-color: var(--color-surface-background-high) !important;
 }
+.acland .fill-background-high,
+* .fill-background-high {
+  fill: var(--color-surface-background-high) !important;
+}
+.acland .fill-background-high-hover:hover,
+* .fill-background-high-hover:hover {
+  fill: var(--color-surface-background-high) !important;
+}
 .acland .c-stroke-low,
 * .c-stroke-low {
   color: var(--color-surface-stroke-low) !important;
@@ -4418,6 +5110,14 @@ body {
 .acland .border-stroke-low-hover:hover,
 * .border-stroke-low-hover:hover {
   border-color: var(--color-surface-stroke-low) !important;
+}
+.acland .fill-stroke-low,
+* .fill-stroke-low {
+  fill: var(--color-surface-stroke-low) !important;
+}
+.acland .fill-stroke-low-hover:hover,
+* .fill-stroke-low-hover:hover {
+  fill: var(--color-surface-stroke-low) !important;
 }
 .acland .c-stroke-medium,
 * .c-stroke-medium {
@@ -4443,6 +5143,14 @@ body {
 * .border-stroke-medium-hover:hover {
   border-color: var(--color-surface-stroke-medium) !important;
 }
+.acland .fill-stroke-medium,
+* .fill-stroke-medium {
+  fill: var(--color-surface-stroke-medium) !important;
+}
+.acland .fill-stroke-medium-hover:hover,
+* .fill-stroke-medium-hover:hover {
+  fill: var(--color-surface-stroke-medium) !important;
+}
 .acland .c-stroke-high,
 * .c-stroke-high {
   color: var(--color-surface-stroke-high) !important;
@@ -4466,6 +5174,14 @@ body {
 .acland .border-stroke-high-hover:hover,
 * .border-stroke-high-hover:hover {
   border-color: var(--color-surface-stroke-high) !important;
+}
+.acland .fill-stroke-high,
+* .fill-stroke-high {
+  fill: var(--color-surface-stroke-high) !important;
+}
+.acland .fill-stroke-high-hover:hover,
+* .fill-stroke-high-hover:hover {
+  fill: var(--color-surface-stroke-high) !important;
 }
 .acland .c-support-1-low,
 * .c-support-1-low {
@@ -4491,6 +5207,14 @@ body {
 * .border-support-1-low-hover:hover {
   border-color: var(--color-surface-support-1-low) !important;
 }
+.acland .fill-support-1-low,
+* .fill-support-1-low {
+  fill: var(--color-surface-support-1-low) !important;
+}
+.acland .fill-support-1-low-hover:hover,
+* .fill-support-1-low-hover:hover {
+  fill: var(--color-surface-support-1-low) !important;
+}
 .acland .c-support-1-medium,
 * .c-support-1-medium {
   color: var(--color-surface-support-1-medium) !important;
@@ -4514,6 +5238,14 @@ body {
 .acland .border-support-1-medium-hover:hover,
 * .border-support-1-medium-hover:hover {
   border-color: var(--color-surface-support-1-medium) !important;
+}
+.acland .fill-support-1-medium,
+* .fill-support-1-medium {
+  fill: var(--color-surface-support-1-medium) !important;
+}
+.acland .fill-support-1-medium-hover:hover,
+* .fill-support-1-medium-hover:hover {
+  fill: var(--color-surface-support-1-medium) !important;
 }
 .acland .c-support-1-high,
 * .c-support-1-high {
@@ -4539,6 +5271,14 @@ body {
 * .border-support-1-high-hover:hover {
   border-color: var(--color-surface-support-1-high) !important;
 }
+.acland .fill-support-1-high,
+* .fill-support-1-high {
+  fill: var(--color-surface-support-1-high) !important;
+}
+.acland .fill-support-1-high-hover:hover,
+* .fill-support-1-high-hover:hover {
+  fill: var(--color-surface-support-1-high) !important;
+}
 .acland .c-support-2-low,
 * .c-support-2-low {
   color: var(--color-surface-support-2-low) !important;
@@ -4562,6 +5302,14 @@ body {
 .acland .border-support-2-low-hover:hover,
 * .border-support-2-low-hover:hover {
   border-color: var(--color-surface-support-2-low) !important;
+}
+.acland .fill-support-2-low,
+* .fill-support-2-low {
+  fill: var(--color-surface-support-2-low) !important;
+}
+.acland .fill-support-2-low-hover:hover,
+* .fill-support-2-low-hover:hover {
+  fill: var(--color-surface-support-2-low) !important;
 }
 .acland .c-support-2-medium,
 * .c-support-2-medium {
@@ -4587,6 +5335,14 @@ body {
 * .border-support-2-medium-hover:hover {
   border-color: var(--color-surface-support-2-medium) !important;
 }
+.acland .fill-support-2-medium,
+* .fill-support-2-medium {
+  fill: var(--color-surface-support-2-medium) !important;
+}
+.acland .fill-support-2-medium-hover:hover,
+* .fill-support-2-medium-hover:hover {
+  fill: var(--color-surface-support-2-medium) !important;
+}
 .acland .c-support-2-high,
 * .c-support-2-high {
   color: var(--color-surface-support-2-high) !important;
@@ -4610,6 +5366,14 @@ body {
 .acland .border-support-2-high-hover:hover,
 * .border-support-2-high-hover:hover {
   border-color: var(--color-surface-support-2-high) !important;
+}
+.acland .fill-support-2-high,
+* .fill-support-2-high {
+  fill: var(--color-surface-support-2-high) !important;
+}
+.acland .fill-support-2-high-hover:hover,
+* .fill-support-2-high-hover:hover {
+  fill: var(--color-surface-support-2-high) !important;
 }
 .acland .c-support-3-low,
 * .c-support-3-low {
@@ -4635,6 +5399,14 @@ body {
 * .border-support-3-low-hover:hover {
   border-color: var(--color-surface-support-3-low) !important;
 }
+.acland .fill-support-3-low,
+* .fill-support-3-low {
+  fill: var(--color-surface-support-3-low) !important;
+}
+.acland .fill-support-3-low-hover:hover,
+* .fill-support-3-low-hover:hover {
+  fill: var(--color-surface-support-3-low) !important;
+}
 .acland .c-support-3-medium,
 * .c-support-3-medium {
   color: var(--color-surface-support-3-medium) !important;
@@ -4658,6 +5430,14 @@ body {
 .acland .border-support-3-medium-hover:hover,
 * .border-support-3-medium-hover:hover {
   border-color: var(--color-surface-support-3-medium) !important;
+}
+.acland .fill-support-3-medium,
+* .fill-support-3-medium {
+  fill: var(--color-surface-support-3-medium) !important;
+}
+.acland .fill-support-3-medium-hover:hover,
+* .fill-support-3-medium-hover:hover {
+  fill: var(--color-surface-support-3-medium) !important;
 }
 .acland .c-support-3-high,
 * .c-support-3-high {
@@ -4683,6 +5463,14 @@ body {
 * .border-support-3-high-hover:hover {
   border-color: var(--color-surface-support-3-high) !important;
 }
+.acland .fill-support-3-high,
+* .fill-support-3-high {
+  fill: var(--color-surface-support-3-high) !important;
+}
+.acland .fill-support-3-high-hover:hover,
+* .fill-support-3-high-hover:hover {
+  fill: var(--color-surface-support-3-high) !important;
+}
 .acland .c-support-4-low,
 * .c-support-4-low {
   color: var(--color-surface-support-4-low) !important;
@@ -4706,6 +5494,14 @@ body {
 .acland .border-support-4-low-hover:hover,
 * .border-support-4-low-hover:hover {
   border-color: var(--color-surface-support-4-low) !important;
+}
+.acland .fill-support-4-low,
+* .fill-support-4-low {
+  fill: var(--color-surface-support-4-low) !important;
+}
+.acland .fill-support-4-low-hover:hover,
+* .fill-support-4-low-hover:hover {
+  fill: var(--color-surface-support-4-low) !important;
 }
 .acland .c-support-4-medium,
 * .c-support-4-medium {
@@ -4731,6 +5527,14 @@ body {
 * .border-support-4-medium-hover:hover {
   border-color: var(--color-surface-support-4-medium) !important;
 }
+.acland .fill-support-4-medium,
+* .fill-support-4-medium {
+  fill: var(--color-surface-support-4-medium) !important;
+}
+.acland .fill-support-4-medium-hover:hover,
+* .fill-support-4-medium-hover:hover {
+  fill: var(--color-surface-support-4-medium) !important;
+}
 .acland .c-support-4-high,
 * .c-support-4-high {
   color: var(--color-surface-support-4-high) !important;
@@ -4754,6 +5558,14 @@ body {
 .acland .border-support-4-high-hover:hover,
 * .border-support-4-high-hover:hover {
   border-color: var(--color-surface-support-4-high) !important;
+}
+.acland .fill-support-4-high,
+* .fill-support-4-high {
+  fill: var(--color-surface-support-4-high) !important;
+}
+.acland .fill-support-4-high-hover:hover,
+* .fill-support-4-high-hover:hover {
+  fill: var(--color-surface-support-4-high) !important;
 }
 .acland .c-support-5-low,
 * .c-support-5-low {
@@ -4779,6 +5591,14 @@ body {
 * .border-support-5-low-hover:hover {
   border-color: var(--color-surface-support-5-low) !important;
 }
+.acland .fill-support-5-low,
+* .fill-support-5-low {
+  fill: var(--color-surface-support-5-low) !important;
+}
+.acland .fill-support-5-low-hover:hover,
+* .fill-support-5-low-hover:hover {
+  fill: var(--color-surface-support-5-low) !important;
+}
 .acland .c-support-5-medium,
 * .c-support-5-medium {
   color: var(--color-surface-support-5-medium) !important;
@@ -4802,6 +5622,14 @@ body {
 .acland .border-support-5-medium-hover:hover,
 * .border-support-5-medium-hover:hover {
   border-color: var(--color-surface-support-5-medium) !important;
+}
+.acland .fill-support-5-medium,
+* .fill-support-5-medium {
+  fill: var(--color-surface-support-5-medium) !important;
+}
+.acland .fill-support-5-medium-hover:hover,
+* .fill-support-5-medium-hover:hover {
+  fill: var(--color-surface-support-5-medium) !important;
 }
 .acland .c-support-5-high,
 * .c-support-5-high {
@@ -4827,6 +5655,14 @@ body {
 * .border-support-5-high-hover:hover {
   border-color: var(--color-surface-support-5-high) !important;
 }
+.acland .fill-support-5-high,
+* .fill-support-5-high {
+  fill: var(--color-surface-support-5-high) !important;
+}
+.acland .fill-support-5-high-hover:hover,
+* .fill-support-5-high-hover:hover {
+  fill: var(--color-surface-support-5-high) !important;
+}
 .acland .c-support-6-low,
 * .c-support-6-low {
   color: var(--color-surface-support-6-low) !important;
@@ -4850,6 +5686,14 @@ body {
 .acland .border-support-6-low-hover:hover,
 * .border-support-6-low-hover:hover {
   border-color: var(--color-surface-support-6-low) !important;
+}
+.acland .fill-support-6-low,
+* .fill-support-6-low {
+  fill: var(--color-surface-support-6-low) !important;
+}
+.acland .fill-support-6-low-hover:hover,
+* .fill-support-6-low-hover:hover {
+  fill: var(--color-surface-support-6-low) !important;
 }
 .acland .c-support-6-medium,
 * .c-support-6-medium {
@@ -4875,6 +5719,14 @@ body {
 * .border-support-6-medium-hover:hover {
   border-color: var(--color-surface-support-6-medium) !important;
 }
+.acland .fill-support-6-medium,
+* .fill-support-6-medium {
+  fill: var(--color-surface-support-6-medium) !important;
+}
+.acland .fill-support-6-medium-hover:hover,
+* .fill-support-6-medium-hover:hover {
+  fill: var(--color-surface-support-6-medium) !important;
+}
 .acland .c-support-6-high,
 * .c-support-6-high {
   color: var(--color-surface-support-6-high) !important;
@@ -4898,6 +5750,14 @@ body {
 .acland .border-support-6-high-hover:hover,
 * .border-support-6-high-hover:hover {
   border-color: var(--color-surface-support-6-high) !important;
+}
+.acland .fill-support-6-high,
+* .fill-support-6-high {
+  fill: var(--color-surface-support-6-high) !important;
+}
+.acland .fill-support-6-high-hover:hover,
+* .fill-support-6-high-hover:hover {
+  fill: var(--color-surface-support-6-high) !important;
 }
 .acland .c-support-7-low,
 * .c-support-7-low {
@@ -4923,6 +5783,14 @@ body {
 * .border-support-7-low-hover:hover {
   border-color: var(--color-surface-support-7-low) !important;
 }
+.acland .fill-support-7-low,
+* .fill-support-7-low {
+  fill: var(--color-surface-support-7-low) !important;
+}
+.acland .fill-support-7-low-hover:hover,
+* .fill-support-7-low-hover:hover {
+  fill: var(--color-surface-support-7-low) !important;
+}
 .acland .c-support-7-medium,
 * .c-support-7-medium {
   color: var(--color-surface-support-7-medium) !important;
@@ -4946,6 +5814,14 @@ body {
 .acland .border-support-7-medium-hover:hover,
 * .border-support-7-medium-hover:hover {
   border-color: var(--color-surface-support-7-medium) !important;
+}
+.acland .fill-support-7-medium,
+* .fill-support-7-medium {
+  fill: var(--color-surface-support-7-medium) !important;
+}
+.acland .fill-support-7-medium-hover:hover,
+* .fill-support-7-medium-hover:hover {
+  fill: var(--color-surface-support-7-medium) !important;
 }
 .acland .c-support-7-high,
 * .c-support-7-high {
@@ -4971,6 +5847,14 @@ body {
 * .border-support-7-high-hover:hover {
   border-color: var(--color-surface-support-7-high) !important;
 }
+.acland .fill-support-7-high,
+* .fill-support-7-high {
+  fill: var(--color-surface-support-7-high) !important;
+}
+.acland .fill-support-7-high-hover:hover,
+* .fill-support-7-high-hover:hover {
+  fill: var(--color-surface-support-7-high) !important;
+}
 .acland .c-balance-income-low,
 * .c-balance-income-low {
   color: var(--color-surface-balance-income-low) !important;
@@ -4994,6 +5878,14 @@ body {
 .acland .border-balance-income-low-hover:hover,
 * .border-balance-income-low-hover:hover {
   border-color: var(--color-surface-balance-income-low) !important;
+}
+.acland .fill-balance-income-low,
+* .fill-balance-income-low {
+  fill: var(--color-surface-balance-income-low) !important;
+}
+.acland .fill-balance-income-low-hover:hover,
+* .fill-balance-income-low-hover:hover {
+  fill: var(--color-surface-balance-income-low) !important;
 }
 .acland .c-balance-income-medium,
 * .c-balance-income-medium {
@@ -5019,6 +5911,14 @@ body {
 * .border-balance-income-medium-hover:hover {
   border-color: var(--color-surface-balance-income-medium) !important;
 }
+.acland .fill-balance-income-medium,
+* .fill-balance-income-medium {
+  fill: var(--color-surface-balance-income-medium) !important;
+}
+.acland .fill-balance-income-medium-hover:hover,
+* .fill-balance-income-medium-hover:hover {
+  fill: var(--color-surface-balance-income-medium) !important;
+}
 .acland .c-balance-debit-low,
 * .c-balance-debit-low {
   color: var(--color-surface-balance-debit-low) !important;
@@ -5042,6 +5942,14 @@ body {
 .acland .border-balance-debit-low-hover:hover,
 * .border-balance-debit-low-hover:hover {
   border-color: var(--color-surface-balance-debit-low) !important;
+}
+.acland .fill-balance-debit-low,
+* .fill-balance-debit-low {
+  fill: var(--color-surface-balance-debit-low) !important;
+}
+.acland .fill-balance-debit-low-hover:hover,
+* .fill-balance-debit-low-hover:hover {
+  fill: var(--color-surface-balance-debit-low) !important;
 }
 .acland .c-balance-debit-medium,
 * .c-balance-debit-medium {
@@ -5067,6 +5975,14 @@ body {
 * .border-balance-debit-medium-hover:hover {
   border-color: var(--color-surface-balance-debit-medium) !important;
 }
+.acland .fill-balance-debit-medium,
+* .fill-balance-debit-medium {
+  fill: var(--color-surface-balance-debit-medium) !important;
+}
+.acland .fill-balance-debit-medium-hover:hover,
+* .fill-balance-debit-medium-hover:hover {
+  fill: var(--color-surface-balance-debit-medium) !important;
+}
 .acland .c-shadow-default-low,
 * .c-shadow-default-low {
   color: var(--color-surface-shadow-default-low) !important;
@@ -5090,6 +6006,14 @@ body {
 .acland .border-shadow-default-low-hover:hover,
 * .border-shadow-default-low-hover:hover {
   border-color: var(--color-surface-shadow-default-low) !important;
+}
+.acland .fill-shadow-default-low,
+* .fill-shadow-default-low {
+  fill: var(--color-surface-shadow-default-low) !important;
+}
+.acland .fill-shadow-default-low-hover:hover,
+* .fill-shadow-default-low-hover:hover {
+  fill: var(--color-surface-shadow-default-low) !important;
 }
 .acland .c-shadow-default-medium,
 * .c-shadow-default-medium {
@@ -5115,6 +6039,14 @@ body {
 * .border-shadow-default-medium-hover:hover {
   border-color: var(--color-surface-shadow-default-medium) !important;
 }
+.acland .fill-shadow-default-medium,
+* .fill-shadow-default-medium {
+  fill: var(--color-surface-shadow-default-medium) !important;
+}
+.acland .fill-shadow-default-medium-hover:hover,
+* .fill-shadow-default-medium-hover:hover {
+  fill: var(--color-surface-shadow-default-medium) !important;
+}
 .acland .c-shadow-default-high,
 * .c-shadow-default-high {
   color: var(--color-surface-shadow-default-high) !important;
@@ -5138,6 +6070,14 @@ body {
 .acland .border-shadow-default-high-hover:hover,
 * .border-shadow-default-high-hover:hover {
   border-color: var(--color-surface-shadow-default-high) !important;
+}
+.acland .fill-shadow-default-high,
+* .fill-shadow-default-high {
+  fill: var(--color-surface-shadow-default-high) !important;
+}
+.acland .fill-shadow-default-high-hover:hover,
+* .fill-shadow-default-high-hover:hover {
+  fill: var(--color-surface-shadow-default-high) !important;
 }
 .acland .c-shadow-highlight-low,
 * .c-shadow-highlight-low {
@@ -5163,6 +6103,14 @@ body {
 * .border-shadow-highlight-low-hover:hover {
   border-color: var(--color-surface-shadow-highlight-low) !important;
 }
+.acland .fill-shadow-highlight-low,
+* .fill-shadow-highlight-low {
+  fill: var(--color-surface-shadow-highlight-low) !important;
+}
+.acland .fill-shadow-highlight-low-hover:hover,
+* .fill-shadow-highlight-low-hover:hover {
+  fill: var(--color-surface-shadow-highlight-low) !important;
+}
 .acland .c-shadow-highlight-medium,
 * .c-shadow-highlight-medium {
   color: var(--color-surface-shadow-highlight-medium) !important;
@@ -5187,6 +6135,14 @@ body {
 * .border-shadow-highlight-medium-hover:hover {
   border-color: var(--color-surface-shadow-highlight-medium) !important;
 }
+.acland .fill-shadow-highlight-medium,
+* .fill-shadow-highlight-medium {
+  fill: var(--color-surface-shadow-highlight-medium) !important;
+}
+.acland .fill-shadow-highlight-medium-hover:hover,
+* .fill-shadow-highlight-medium-hover:hover {
+  fill: var(--color-surface-shadow-highlight-medium) !important;
+}
 .acland .c-shadow-highlight-high,
 * .c-shadow-highlight-high {
   color: var(--color-surface-shadow-highlight-high) !important;
@@ -5210,6 +6166,14 @@ body {
 .acland .border-shadow-highlight-high-hover:hover,
 * .border-shadow-highlight-high-hover:hover {
   border-color: var(--color-surface-shadow-highlight-high) !important;
+}
+.acland .fill-shadow-highlight-high,
+* .fill-shadow-highlight-high {
+  fill: var(--color-surface-shadow-highlight-high) !important;
+}
+.acland .fill-shadow-highlight-high-hover:hover,
+* .fill-shadow-highlight-high-hover:hover {
+  fill: var(--color-surface-shadow-highlight-high) !important;
 }
 .acland .fw-100,
 * .fw-100 {
@@ -5870,237 +6834,6 @@ body {
 .acland .place-center,
 * .place-center {
   place-content: center;
-}
-.acland .fill-perfil,
-* .fill-perfil {
-  fill: var(--cor-perfil) !important;
-}
-.acland .fill-perfil-200,
-* .fill-perfil-200 {
-  fill: var(--cor-perfil-200) !important;
-}
-.acland .fill-perfil-300,
-* .fill-perfil-300 {
-  fill: var(--cor-perfil-300) !important;
-}
-.acland .fill-perfil-500,
-* .fill-perfil-500 {
-  fill: var(--cor-perfil-500) !important;
-}
-.acland .fill-perfil-600,
-* .fill-perfil-600 {
-  fill: var(--cor-perfil-600) !important;
-}
-.acland .fill-apoio,
-* .fill-apoio {
-  fill: var(--cor-apoio) !important;
-}
-.acland .fill-apoio-200,
-* .fill-apoio-200 {
-  fill: var(--cor-apoio-200) !important;
-}
-.acland .fill-apoio-300,
-* .fill-apoio-300 {
-  fill: var(--cor-apoio-300) !important;
-}
-.acland .fill-apoio-500,
-* .fill-apoio-500 {
-  fill: var(--cor-apoio-500) !important;
-}
-.acland .fill-apoio-600,
-* .fill-apoio-600 {
-  fill: var(--cor-apoio-600) !important;
-}
-.acland .fill-destaque,
-* .fill-destaque {
-  fill: var(--cor-destaque) !important;
-}
-.acland .fill-destaque-200,
-* .fill-destaque-200 {
-  fill: var(--cor-destaque-200) !important;
-}
-.acland .fill-destaque-300,
-* .fill-destaque-300 {
-  fill: var(--cor-destaque-300) !important;
-}
-.acland .fill-destaque-500,
-* .fill-destaque-500 {
-  fill: var(--cor-destaque-500) !important;
-}
-.acland .fill-destaque-600,
-* .fill-destaque-600 {
-  fill: var(--cor-destaque-600) !important;
-}
-.acland .fill-base,
-* .fill-base {
-  fill: var(--cor-base) !important;
-}
-.acland .fill-base-200,
-* .fill-base-200 {
-  fill: var(--cor-base-200) !important;
-}
-.acland .fill-base-300,
-* .fill-base-300 {
-  fill: var(--cor-base-300) !important;
-}
-.acland .fill-base-500,
-* .fill-base-500 {
-  fill: var(--cor-base-500) !important;
-}
-.acland .fill-base-600,
-* .fill-base-600 {
-  fill: var(--cor-base-600) !important;
-}
-.acland .fill-turq, .acland .fill-primary,
-* .fill-turq,
-* .fill-primary {
-  fill: var(--turq) !important;
-}
-.acland .fill-turq-200, .acland .fill-primary-200,
-* .fill-turq-200,
-* .fill-primary-200 {
-  fill: var(--turq-200) !important;
-}
-.acland .fill-turq-300, .acland .fill-primary-300,
-* .fill-turq-300,
-* .fill-primary-300 {
-  fill: var(--turq-300) !important;
-}
-.acland .fill-turq-500, .acland .fill-primary-500,
-* .fill-turq-500,
-* .fill-primary-500 {
-  fill: var(--turq-500) !important;
-}
-.acland .fill-turq-600, .acland .fill-primary-600,
-* .fill-turq-600,
-* .fill-primary-600 {
-  fill: var(--turq-600) !important;
-}
-.acland .fill-verdee, .acland .fill-dark,
-* .fill-verdee,
-* .fill-dark {
-  fill: var(--verdee) !important;
-}
-.acland .fill-verdee-200, .acland .fill-dark-200,
-* .fill-verdee-200,
-* .fill-dark-200 {
-  fill: var(--verdee-200) !important;
-}
-.acland .fill-verdee-300, .acland .fill-dark-300,
-* .fill-verdee-300,
-* .fill-dark-300 {
-  fill: var(--verdee-300) !important;
-}
-.acland .fill-verdee-500, .acland .fill-dark-500,
-* .fill-verdee-500,
-* .fill-dark-500 {
-  fill: var(--verdee-500) !important;
-}
-.acland .fill-verdee-600, .acland .fill-dark-600,
-* .fill-verdee-600,
-* .fill-dark-600 {
-  fill: var(--verdee-600) !important;
-}
-.acland .fill-verdem,
-* .fill-verdem {
-  fill: var(--verdem) !important;
-}
-.acland .fill-verdem-200,
-* .fill-verdem-200 {
-  fill: var(--verdem-200) !important;
-}
-.acland .fill-verdem-300,
-* .fill-verdem-300 {
-  fill: var(--verdem-300) !important;
-}
-.acland .fill-verdem-500,
-* .fill-verdem-500 {
-  fill: var(--verdem-500) !important;
-}
-.acland .fill-verdem-600,
-* .fill-verdem-600 {
-  fill: var(--verdem-600) !important;
-}
-.acland .fill-verdec,
-* .fill-verdec {
-  fill: var(--verdec) !important;
-}
-.acland .fill-verdec-200,
-* .fill-verdec-200 {
-  fill: var(--verdec-200) !important;
-}
-.acland .fill-verdec-300,
-* .fill-verdec-300 {
-  fill: var(--verdec-300) !important;
-}
-.acland .fill-verdec-500,
-* .fill-verdec-500 {
-  fill: var(--verdec-500) !important;
-}
-.acland .fill-verdec-600,
-* .fill-verdec-600 {
-  fill: var(--verdec-600) !important;
-}
-.acland .fill-roxo,
-* .fill-roxo {
-  fill: var(--roxo) !important;
-}
-.acland .fill-roxo-200,
-* .fill-roxo-200 {
-  fill: var(--roxo-200) !important;
-}
-.acland .fill-roxo-300,
-* .fill-roxo-300 {
-  fill: var(--roxo-300) !important;
-}
-.acland .fill-roxo-500,
-* .fill-roxo-500 {
-  fill: var(--roxo-500) !important;
-}
-.acland .fill-roxo-600,
-* .fill-roxo-600 {
-  fill: var(--roxo-600) !important;
-}
-.acland .fill-cinza-200,
-* .fill-cinza-200 {
-  fill: var(--cinza-200) !important;
-}
-.acland .fill-cinza-300,
-* .fill-cinza-300 {
-  fill: var(--cinza-300) !important;
-}
-.acland .fill-cinza-400,
-* .fill-cinza-400 {
-  fill: var(--cinza-400) !important;
-}
-.acland .fill-cinza-500,
-* .fill-cinza-500 {
-  fill: var(--cinza-500) !important;
-}
-.acland .fill-cinza-600,
-* .fill-cinza-600 {
-  fill: var(--cinza-600) !important;
-}
-.acland .fill-cinza-700,
-* .fill-cinza-700 {
-  fill: var(--cinza-700) !important;
-}
-.acland .fill-cinza-800,
-* .fill-cinza-800 {
-  fill: var(--cinza-800) !important;
-}
-.acland .fill-cinza-900,
-* .fill-cinza-900 {
-  fill: var(--cinza-900) !important;
-}
-.acland .fill-branco, .acland .fill-light,
-* .fill-branco,
-* .fill-light {
-  fill: var(--branco) !important;
-}
-.acland .fill-preto,
-* .fill-preto {
-  fill: var(--preto) !important;
 }
 .acland .w,
 * .w {

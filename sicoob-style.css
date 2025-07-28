@@ -18,6 +18,8 @@
   --primary: var(--turq);
   --dark: var(--verdee);
   --light: var(--branco);
+  --secondary: var(--verdec);
+  --tertiary: var(--verdem);
   --turq-200: var(--color-function-primary-lightest);
   --turq-300: var(--color-function-primary-active);
   --turq: var(--color-function-primary-action);
@@ -747,7 +749,7 @@ body {
   border-radius: var(--size-2);
   padding: var(--size-4);
   margin-bottom: var(--size-3);
-  border: 1px solid var(--cor-perfil);
+  border: 1px solid var(--primary);
   background: var(--transparente);
 }
 .acland .box-bg {
@@ -1629,44 +1631,54 @@ body {
 * .c-dark-600 {
   color: var(--verdee-600) !important;
 }
-.acland .c-verdem,
-* .c-verdem {
+.acland .c-verdem, .acland .c-tertiary,
+* .c-verdem,
+* .c-tertiary {
   color: var(--verdem) !important;
 }
-.acland .c-verdem-200,
-* .c-verdem-200 {
+.acland .c-verdem-200, .acland .c-tertiary-200,
+* .c-verdem-200,
+* .c-tertiary-200 {
   color: var(--verdem-200) !important;
 }
-.acland .c-verdem-300,
-* .c-verdem-300 {
+.acland .c-verdem-300, .acland .c-tertiary-300,
+* .c-verdem-300,
+* .c-tertiary-300 {
   color: var(--verdem-300) !important;
 }
-.acland .c-verdem-500,
-* .c-verdem-500 {
+.acland .c-verdem-500, .acland .c-tertiary-500,
+* .c-verdem-500,
+* .c-tertiary-500 {
   color: var(--verdem-500) !important;
 }
-.acland .c-verdem-600,
-* .c-verdem-600 {
+.acland .c-verdem-600, .acland .c-tertiary-600,
+* .c-verdem-600,
+* .c-tertiary-600 {
   color: var(--verdem-600) !important;
 }
-.acland .c-verdec,
-* .c-verdec {
+.acland .c-verdec, .acland .c-secondary,
+* .c-verdec,
+* .c-secondary {
   color: var(--verdec) !important;
 }
-.acland .c-verdec-200,
-* .c-verdec-200 {
+.acland .c-verdec-200, .acland .c-secondary-200,
+* .c-verdec-200,
+* .c-secondary-200 {
   color: var(--verdec-200) !important;
 }
-.acland .c-verdec-300,
-* .c-verdec-300 {
+.acland .c-verdec-300, .acland .c-secondary-300,
+* .c-verdec-300,
+* .c-secondary-300 {
   color: var(--verdec-300) !important;
 }
-.acland .c-verdec-500,
-* .c-verdec-500 {
+.acland .c-verdec-500, .acland .c-secondary-500,
+* .c-verdec-500,
+* .c-secondary-500 {
   color: var(--verdec-500) !important;
 }
-.acland .c-verdec-600,
-* .c-verdec-600 {
+.acland .c-verdec-600, .acland .c-secondary-600,
+* .c-verdec-600,
+* .c-secondary-600 {
   color: var(--verdec-600) !important;
 }
 .acland .c-roxo,
@@ -1860,44 +1872,54 @@ body {
 * .bg-dark-600 {
   background-color: var(--verdee-600) !important;
 }
-.acland .bg-verdem,
-* .bg-verdem {
+.acland .bg-verdem, .acland .bg-tertiary,
+* .bg-verdem,
+* .bg-tertiary {
   background-color: var(--verdem) !important;
 }
-.acland .bg-verdem-200,
-* .bg-verdem-200 {
+.acland .bg-verdem-200, .acland .bg-tertiary-200,
+* .bg-verdem-200,
+* .bg-tertiary-200 {
   background-color: var(--verdem-200) !important;
 }
-.acland .bg-verdem-300,
-* .bg-verdem-300 {
+.acland .bg-verdem-300, .acland .bg-tertiary-300,
+* .bg-verdem-300,
+* .bg-tertiary-300 {
   background-color: var(--verdem-300) !important;
 }
-.acland .bg-verdem-500,
-* .bg-verdem-500 {
+.acland .bg-verdem-500, .acland .bg-tertiary-500,
+* .bg-verdem-500,
+* .bg-tertiary-500 {
   background-color: var(--verdem-500) !important;
 }
-.acland .bg-verdem-600,
-* .bg-verdem-600 {
+.acland .bg-verdem-600, .acland .bg-tertiary-600,
+* .bg-verdem-600,
+* .bg-tertiary-600 {
   background-color: var(--verdem-600) !important;
 }
-.acland .bg-verdec,
-* .bg-verdec {
+.acland .bg-verdec, .acland .bg-secondary,
+* .bg-verdec,
+* .bg-secondary {
   background-color: var(--verdec) !important;
 }
-.acland .bg-verdec-200,
-* .bg-verdec-200 {
+.acland .bg-verdec-200, .acland .bg-secondary-200,
+* .bg-verdec-200,
+* .bg-secondary-200 {
   background-color: var(--verdec-200) !important;
 }
-.acland .bg-verdec-300,
-* .bg-verdec-300 {
+.acland .bg-verdec-300, .acland .bg-secondary-300,
+* .bg-verdec-300,
+* .bg-secondary-300 {
   background-color: var(--verdec-300) !important;
 }
-.acland .bg-verdec-500,
-* .bg-verdec-500 {
+.acland .bg-verdec-500, .acland .bg-secondary-500,
+* .bg-verdec-500,
+* .bg-secondary-500 {
   background-color: var(--verdec-500) !important;
 }
-.acland .bg-verdec-600,
-* .bg-verdec-600 {
+.acland .bg-verdec-600, .acland .bg-secondary-600,
+* .bg-verdec-600,
+* .bg-secondary-600 {
   background-color: var(--verdec-600) !important;
 }
 .acland .bg-roxo,
@@ -2151,44 +2173,54 @@ body {
 * .border-dark-600 {
   border-color: var(--verdee-600) !important;
 }
-.acland .border-verdem,
-* .border-verdem {
+.acland .border-verdem, .acland .border-tertiary,
+* .border-verdem,
+* .border-tertiary {
   border-color: var(--verdem) !important;
 }
-.acland .border-verdem-200,
-* .border-verdem-200 {
+.acland .border-verdem-200, .acland .border-tertiary-200,
+* .border-verdem-200,
+* .border-tertiary-200 {
   border-color: var(--verdem-200) !important;
 }
-.acland .border-verdem-300,
-* .border-verdem-300 {
+.acland .border-verdem-300, .acland .border-tertiary-300,
+* .border-verdem-300,
+* .border-tertiary-300 {
   border-color: var(--verdem-300) !important;
 }
-.acland .border-verdem-500,
-* .border-verdem-500 {
+.acland .border-verdem-500, .acland .border-tertiary-500,
+* .border-verdem-500,
+* .border-tertiary-500 {
   border-color: var(--verdem-500) !important;
 }
-.acland .border-verdem-600,
-* .border-verdem-600 {
+.acland .border-verdem-600, .acland .border-tertiary-600,
+* .border-verdem-600,
+* .border-tertiary-600 {
   border-color: var(--verdem-600) !important;
 }
-.acland .border-verdec,
-* .border-verdec {
+.acland .border-verdec, .acland .border-secondary,
+* .border-verdec,
+* .border-secondary {
   border-color: var(--verdec) !important;
 }
-.acland .border-verdec-200,
-* .border-verdec-200 {
+.acland .border-verdec-200, .acland .border-secondary-200,
+* .border-verdec-200,
+* .border-secondary-200 {
   border-color: var(--verdec-200) !important;
 }
-.acland .border-verdec-300,
-* .border-verdec-300 {
+.acland .border-verdec-300, .acland .border-secondary-300,
+* .border-verdec-300,
+* .border-secondary-300 {
   border-color: var(--verdec-300) !important;
 }
-.acland .border-verdec-500,
-* .border-verdec-500 {
+.acland .border-verdec-500, .acland .border-secondary-500,
+* .border-verdec-500,
+* .border-secondary-500 {
   border-color: var(--verdec-500) !important;
 }
-.acland .border-verdec-600,
-* .border-verdec-600 {
+.acland .border-verdec-600, .acland .border-secondary-600,
+* .border-verdec-600,
+* .border-secondary-600 {
   border-color: var(--verdec-600) !important;
 }
 .acland .border-roxo,
@@ -2977,44 +3009,54 @@ body {
 * .fill-dark-600 {
   fill: var(--verdee-600) !important;
 }
-.acland .fill-verdem,
-* .fill-verdem {
+.acland .fill-verdem, .acland .fill-tertiary,
+* .fill-verdem,
+* .fill-tertiary {
   fill: var(--verdem) !important;
 }
-.acland .fill-verdem-200,
-* .fill-verdem-200 {
+.acland .fill-verdem-200, .acland .fill-tertiary-200,
+* .fill-verdem-200,
+* .fill-tertiary-200 {
   fill: var(--verdem-200) !important;
 }
-.acland .fill-verdem-300,
-* .fill-verdem-300 {
+.acland .fill-verdem-300, .acland .fill-tertiary-300,
+* .fill-verdem-300,
+* .fill-tertiary-300 {
   fill: var(--verdem-300) !important;
 }
-.acland .fill-verdem-500,
-* .fill-verdem-500 {
+.acland .fill-verdem-500, .acland .fill-tertiary-500,
+* .fill-verdem-500,
+* .fill-tertiary-500 {
   fill: var(--verdem-500) !important;
 }
-.acland .fill-verdem-600,
-* .fill-verdem-600 {
+.acland .fill-verdem-600, .acland .fill-tertiary-600,
+* .fill-verdem-600,
+* .fill-tertiary-600 {
   fill: var(--verdem-600) !important;
 }
-.acland .fill-verdec,
-* .fill-verdec {
+.acland .fill-verdec, .acland .fill-secondary,
+* .fill-verdec,
+* .fill-secondary {
   fill: var(--verdec) !important;
 }
-.acland .fill-verdec-200,
-* .fill-verdec-200 {
+.acland .fill-verdec-200, .acland .fill-secondary-200,
+* .fill-verdec-200,
+* .fill-secondary-200 {
   fill: var(--verdec-200) !important;
 }
-.acland .fill-verdec-300,
-* .fill-verdec-300 {
+.acland .fill-verdec-300, .acland .fill-secondary-300,
+* .fill-verdec-300,
+* .fill-secondary-300 {
   fill: var(--verdec-300) !important;
 }
-.acland .fill-verdec-500,
-* .fill-verdec-500 {
+.acland .fill-verdec-500, .acland .fill-secondary-500,
+* .fill-verdec-500,
+* .fill-secondary-500 {
   fill: var(--verdec-500) !important;
 }
-.acland .fill-verdec-600,
-* .fill-verdec-600 {
+.acland .fill-verdec-600, .acland .fill-secondary-600,
+* .fill-verdec-600,
+* .fill-secondary-600 {
   fill: var(--verdec-600) !important;
 }
 .acland .fill-roxo,

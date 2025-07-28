@@ -128,7 +128,8 @@
       }
     }
 
-    &-verdem {
+    &-verdem,
+    &-tertiary {
       color: $verdem !important;
 
       &-200 {
@@ -148,7 +149,8 @@
       }
     }
 
-    &-verdec {
+    &-verdec,
+    &-secondary {
       color: $verdec !important;
 
       &-200 {
@@ -357,7 +359,8 @@
       }
     }
 
-    &-verdem {
+    &-verdem,
+    &-tertiary {
       background-color: $verdem !important;
 
       &-200 {
@@ -377,7 +380,8 @@
       }
     }
 
-    &-verdec {
+    &-verdec,
+    &-secondary {
       background-color: $verdec !important;
 
       &-200 {
@@ -485,7 +489,7 @@
       }
 
       &-branco,
-      &-light{
+      &-light {
         background-color: $branco;
         background-image: $gradient-branco;
 
@@ -651,7 +655,8 @@
       }
     }
 
-    &-verdem {
+    &-verdem,
+    &-tertiary {
       border-color: $verdem !important;
 
       &-200 {
@@ -671,7 +676,8 @@
       }
     }
 
-    &-verdec {
+    &-verdec,
+    &-secondary {
       border-color: $verdec !important;
 
       &-200 {
@@ -891,7 +897,7 @@
       }
     }
 
-    
+
 
     &-0,
     &-none {
@@ -924,13 +930,15 @@
       border-width: 5px !important;
     }
 
-    &-dashed{
+    &-dashed {
       border-style: dashed !important;
     }
-    &-solid{
+
+    &-solid {
       border-style: solid !important;
     }
-    &-dotted{
+
+    &-dotted {
       border-style: dotted !important;
     }
 
@@ -1308,7 +1316,7 @@
       }
     }
 
-    
+
 
   }
 
@@ -1437,7 +1445,8 @@
       }
     }
 
-    &-verdem {
+    &-verdem,
+    &-tertiary {
       fill: $verdem !important;
 
       &-200 {
@@ -1457,7 +1466,8 @@
       }
     }
 
-    &-verdec {
+    &-verdec,
+    &-secondary {
       fill: $verdec !important;
 
       &-200 {
@@ -1696,76 +1706,79 @@
       justify-content: center !important;
     }
 
-    &-xl{
+    &-xl {
       @media (min-width: 1200px) {
         &-s {
           display: flex !important;
           justify-content: center !important;
           align-items: center !important;
         }
-    
+
         &-v {
           display: flex !important;
           align-items: center !important;
         }
-    
+
         &-h {
           display: flex !important;
           justify-content: center !important;
         }
       }
     }
-    &-lg{
+
+    &-lg {
       @media (min-width: 992px) {
         &-s {
           display: flex !important;
           justify-content: center !important;
           align-items: center !important;
         }
-    
+
         &-v {
           display: flex !important;
           align-items: center !important;
         }
-    
+
         &-h {
           display: flex !important;
           justify-content: center !important;
         }
       }
     }
-    &-md{
+
+    &-md {
       @media (min-width: 756px) {
         &-s {
           display: flex !important;
           justify-content: center !important;
           align-items: center !important;
         }
-    
+
         &-v {
           display: flex !important;
           align-items: center !important;
         }
-    
+
         &-h {
           display: flex !important;
           justify-content: center !important;
         }
       }
     }
-    &-sm{
+
+    &-sm {
       @media (min-width: 567px) {
         &-s {
           display: flex !important;
           justify-content: center !important;
           align-items: center !important;
         }
-    
+
         &-v {
           display: flex !important;
           align-items: center !important;
         }
-    
+
         &-h {
           display: flex !important;
           justify-content: center !important;
@@ -1909,72 +1922,91 @@
     }
   }
 
-  .-m{
-    &t{
-      &-1{
+  .-m {
+    &t {
+      &-1 {
         margin-top: calc(-1 * var(--size-1)) !important;
       }
-      &-2{
+
+      &-2 {
         margin-top: calc(-1 * var(--size-2)) !important;
       }
-      &-3{
+
+      &-3 {
         margin-top: calc(-1 * var(--size-3)) !important;
       }
-      &-4{
+
+      &-4 {
         margin-top: calc(-1 * var(--size-4)) !important;
       }
-      &-5{
+
+      &-5 {
         margin-top: calc(-1 * var(--size-5)) !important;
       }
     }
-    &b{
-      &-1{
+
+    &b {
+      &-1 {
         margin-bottom: calc(-1 * var(--size-1)) !important;
       }
-      &-2{
+
+      &-2 {
         margin-bottom: calc(-1 * var(--size-2)) !important;
       }
-      &-3{
+
+      &-3 {
         margin-bottom: calc(-1 * var(--size-3)) !important;
       }
-      &-4{
+
+      &-4 {
         margin-bottom: calc(-1 * var(--size-4)) !important;
       }
-      &-5{
+
+      &-5 {
         margin-bottom: calc(-1 * var(--size-5)) !important;
       }
     }
-    &l{
-      &-1{
+
+    &l {
+      &-1 {
         margin-left: calc(-1 * var(--size-1)) !important;
       }
-      &-2{
+
+      &-2 {
         margin-left: calc(-1 * var(--size-2)) !important;
       }
-      &-3{
+
+      &-3 {
         margin-left: calc(-1 * var(--size-3)) !important;
       }
-      &-4{
+
+      &-4 {
         margin-left: calc(-1 * var(--size-4)) !important;
       }
-      &-5{
+
+      &-5 {
         margin-left: calc(-1 * var(--size-5)) !important;
       }
     }
-    &r{
-      &-1{
+
+    &r {
+      &-1 {
         margin-right: calc(-1 * var(--size-1)) !important;
       }
-      &-2{
+
+      &-2 {
         margin-right: calc(-1 * var(--size-2)) !important;
       }
-      &-3{
+
+      &-3 {
         margin-right: calc(-1 * var(--size-3)) !important;
       }
-      &-4{
+
+      &-4 {
         margin-right: calc(-1 * var(--size-4)) !important;
       }
-      &-5{
+
+      &-5 {
         margin-right: calc(-1 * var(--size-5)) !important;
       }
     }
@@ -1982,9 +2014,12 @@
 
   /* BOX SHADOW */
   .box-shadow {
-    &-none, &-0{
+
+    &-none,
+    &-0 {
       box-shadow: none;
     }
+
     &-1 {
       box-shadow: var(--box-shadow-1);
     }
@@ -2069,29 +2104,36 @@
 
   }
 
-  .z-index{
-    &-1{
+  .z-index {
+    &-1 {
       z-index: 1;
     }
-    &-2{
+
+    &-2 {
       z-index: 2;
     }
-    &-3{
+
+    &-3 {
       z-index: 3;
     }
-    &-4{
+
+    &-4 {
       z-index: 4;
     }
-    &-5{
+
+    &-5 {
       z-index: 5;
     }
-    &-99{
+
+    &-99 {
       z-index: 99;
     }
-    &-999{
+
+    &-999 {
       z-index: 999;
     }
-    &-9999{
+
+    &-9999 {
       z-index: 9999;
     }
   }

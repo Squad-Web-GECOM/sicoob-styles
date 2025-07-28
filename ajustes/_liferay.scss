@@ -26,33 +26,33 @@ body #content,
   }
 }
 
-body {
+// body {
 
-  &,
-  &.acland,
-  .acland {
+//   &,
+//   &.acland,
+//   .acland {
 
-    &,
-    &.para-campo,
-    &.para-agronegocio,
-    &.para-empresa,
-    &.para-voce {
+//     &,
+//     &.para-campo,
+//     &.para-agronegocio,
+//     &.para-empresa,
+//     &.para-voce {
 
-      h,
-      .h {
+//       h,
+//       .h {
 
-        &1,
-        &2,
-        &3,
-        &4,
-        &5,
-        &6 {
-          color: $primary;
-        }
-      }
-    }
-  }
-}
+//         &1,
+//         &2,
+//         &3,
+//         &4,
+//         &5,
+//         &6 {
+//           color: $primary;
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 a {
@@ -106,6 +106,7 @@ footer {
 
     .col-xs-6 {
       max-width: 100%;
+      flex: 0 0 100%;
       padding-bottom: 30px;
     }
   }
@@ -139,9 +140,11 @@ section[id*='-homol'] {
   display: none;
 }
 
-body.signed-in .homol,
-body.signed-in section[id*='-homol'] {
-  display: block;
+body.signed-in{
+  .homol,
+  section[id*='-homol'] {
+    display: block;
+  }
 }
 
 // Documentos e Mídias

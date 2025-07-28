@@ -7,18 +7,18 @@
       margin-block: 1rem;
       bottom: -48px;
       li {
-        height: var(--size-3);
-        width: var(--size-3);
-        background-color: var(--cinza-400) !important;
-        margin-right: var(--size-1);
-        margin-left: var(--size-1);
-        transition: var(--transition-1);
-        border-radius: var(--size-3);
+        height: $size-3;
+        width: $size-3;
+        background-color: $cinza-400 !important;
+        margin-right: $size-1;
+        margin-left: $size-1;
+        transition: $transition-1;
+        border-radius: $size-3;
         opacity: 1;
         border: 0px !important;
         &.active {
-          width: calc(var(--size-3) * 2);
-          background-color: var(--turq) !important;
+          width: calc($size-3 * 2);
+          background-color: $primary !important;
         }
       }
     }
@@ -29,8 +29,8 @@
       translate: 0 -50%;
       height: 50px;
       width: 50px;
-      border-radius: var(--size-5);
-      transition: var(--transition-1);
+      border-radius: $size-5;
+      transition: $transition-1;
       opacity: 1;
       font-size: 1.5rem;
       outline: none!important;

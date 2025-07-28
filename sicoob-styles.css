@@ -1665,7 +1665,7 @@ body {
 }
 .acland .carousel .carousel-indicators li.active {
   width: calc(var(--size-3) * 2);
-  background-color: var(--turq) !important;
+  background-color: var(--primary) !important;
 }
 .acland .carousel .carousel-control-prev, .acland .carousel .carousel-control-next {
   position: absolute;

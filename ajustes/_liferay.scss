@@ -26,33 +26,34 @@ body #content,
   }
 }
 
-// body {
+// RETIRAR PARA O THEMA
+body {
 
-//   &,
-//   &.acland,
-//   .acland {
+  &,
+  &.acland,
+  .acland {
 
-//     &,
-//     &.para-campo,
-//     &.para-agronegocio,
-//     &.para-empresa,
-//     &.para-voce {
+    &,
+    &.para-campo,
+    &.para-agronegocio,
+    &.para-empresa,
+    &.para-voce {
 
-//       h,
-//       .h {
+      h,
+      .h {
 
-//         &1,
-//         &2,
-//         &3,
-//         &4,
-//         &5,
-//         &6 {
-//           color: $primary;
-//         }
-//       }
-//     }
-//   }
-// }
+        &1,
+        &2,
+        &3,
+        &4,
+        &5,
+        &6 {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
 
 
 a {
@@ -90,6 +91,7 @@ a {
   }
 }
 
+// RETIRAR PARA O THEMA
 footer {
   .navbar-nav {
     flex-direction: column;
@@ -99,7 +101,7 @@ footer {
     overflow: visible !important;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 576px) {
     .text-truncate {
       white-space: nowrap;
     }
@@ -107,11 +109,35 @@ footer {
     .col-xs-6 {
       max-width: 100%;
       flex: 0 0 100%;
-      padding-bottom: 30px;
+
+      &:last-child {
+        margin-top: 40px;
+      }
     }
   }
 
 }
+
+.portlet-topper-none {
+  .portlet-topper {
+    display: none;
+  }
+}
+
+.homol,
+section[id*='-homol'] {
+  display: none;
+}
+
+body.signed-in {
+
+  .homol,
+  section[id*='-homol'] {
+    display: block;
+  }
+}
+
+// Documentos e Mídias
 
 .acland,
 * {
@@ -128,24 +154,3 @@ footer {
     }
   }
 }
-
-.portlet-topper-none {
-  .portlet-topper {
-    display: none;
-  }
-}
-
-.homol,
-section[id*='-homol'] {
-  display: none;
-}
-
-body.signed-in{
-  .homol,
-  section[id*='-homol'] {
-    display: block;
-  }
-}
-
-// Documentos e Mídias
-

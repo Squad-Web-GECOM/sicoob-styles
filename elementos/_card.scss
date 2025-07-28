@@ -14,7 +14,6 @@
             transition: $transition-2;
         }
     }
-    
     .deck{
       &:hover .card:not(:hover){
         transform: scale(0.95);
@@ -60,7 +59,7 @@
       }
   
       &:hover {
-        border-color: $turq;
+        border-color: $primary;
       }
 
       &-body{
@@ -311,7 +310,7 @@
         }
   
         &:hover {
-          border-color: $cor-perfil;
+          border-color: $primary;
           box-shadow: $box-shadow-2;
           transform: translateY(-2px);
           text-decoration: none !important;
@@ -325,13 +324,13 @@
           gap: 0.5rem;
   
           svg {
-            fill: $cor-perfil;
+            fill: $primary;
             transition: none;
           }
   
           &:hover {
             svg {
-              fill: $branco;
+              fill: $light;
             }
           }
         }
@@ -352,7 +351,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background: $verdee;
+          background: $dark;
           padding: .75rem;
           border-radius: 8px;
           width: 75px;
@@ -373,7 +372,7 @@
         }
   
         &-title {
-          color: $cor-perfil !important;
+          color: $primary !important;
           font-weight: 700;
           font-size: 35px !important;
           line-height: 35px !important;

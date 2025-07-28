@@ -73,7 +73,7 @@
 
       background-color: $stroke-medium !important;
       box-shadow: $box-shadow-1;
-      transition: var(--transition-1);
+      transition: $transition-1;
       margin: 0 !important;
 
       &-active {

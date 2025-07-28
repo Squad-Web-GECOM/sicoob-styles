@@ -58,9 +58,9 @@ h,
 }
 
 a{
-  color: var(--turq);
+  color: $primary;
   &:hover{
-    color: var(--turq-600);
+    color: $turq-600;
   }
   &:focus{
     box-shadow: none!important;
@@ -81,11 +81,11 @@ a{
   }
 
   &:hover {
-    transform: scale(0.95, 0.95);
+    transform: scale(0.95);
   }
 
   .btn:focus {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.9);
     box-shadow: none !important;
   }
 }

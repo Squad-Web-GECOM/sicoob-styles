@@ -14,6 +14,18 @@
             transition: $transition-2;
         }
     }
+    
+    .deck{
+      &:hover .card:not(:hover){
+        transform: scale(0.95);
+        img{
+          filter: grayscale(1);
+        }
+      }
+      .card{
+        transform: scale(1.025);
+      }
+    }
 
     .card {
       

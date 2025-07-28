@@ -1,1 +1,140 @@
 @import "../essencial/variaveis.scss";
+
+.acland {
+
+  .nav-pills {
+
+    .nav-item {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+
+      .nav-link {
+        color: $dark;
+        background: transparent;
+        width: 100%;
+        padding: $size-3;
+        font-size: $font-size-6;
+        border-radius: 0 !important;
+        border: 0 !important;
+        border-bottom: 2px solid $stroke-high !important;
+        outline: none !important;
+        transition: $transition-1;
+
+        &:hover {
+          border-bottom: 2px solid $dark !important;
+        }
+
+        &.active {
+          color: $primary;
+          font-weight: bold;
+          border-bottom: 2px solid $primary !important;
+        }
+      }
+    }
+
+    &.nav-pills-sm {
+      .nav-link {
+        padding: $size-2;
+        font-size: $font-size-base;
+      }
+    }
+
+
+    &[class*='column'] {
+      .nav-link {
+        color: $dark;
+        background: transparent;
+        width: 100%;
+        padding: $size-2 $size-3;
+        font-size: $font-size-6;
+        border-radius: 0 !important;
+        border: 0 !important;
+        border-right: 2px solid $stroke-high !important;
+        outline: none !important;
+        transition: $transition-1;
+
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+
+        &:hover {
+          border-right: 2px solid $dark !important;
+        }
+
+        &.active {
+          color: $primary;
+          font-weight: bold;
+          border-right: 2px solid $primary !important;
+        }
+      }
+    }
+
+    &[class*='sm-column'] {
+
+      @media (max-width: 576px) {
+        margin-bottom: $size-3;
+
+        .nav-link {
+          border-right: 0px !important;
+          border-bottom: 2px solid $stroke-high !important;
+
+          &:hover {
+            border-right: 0px !important;
+            border-bottom: 2px solid $dark !important;
+          }
+
+          &.active {
+            border-right: 0px !important;
+            border-bottom: 2px solid $primary !important;
+          }
+        }
+      }
+
+    }
+
+    &[class*='md-column'] {
+
+      @media (max-width: 768px) {
+        margin-bottom: $size-3;
+
+        .nav-link {
+          border-right: 0px !important;
+          border-bottom: 2px solid $stroke-high !important;
+
+          &:hover {
+            border-right: 0px !important;
+            border-bottom: 2px solid $dark !important;
+          }
+
+          &.active {
+            border-right: 0px !important;
+            border-bottom: 2px solid $primary !important;
+          }
+        }
+      }
+    }
+
+    &[class*='lg-column'] {
+      @media (max-width: 992px) {
+        margin-bottom: $size-3;
+
+        .nav-link {
+          border-right: 0px !important;
+          border-bottom: 2px solid $stroke-high !important;
+
+          &:hover {
+            border-right: 0px !important;
+            border-bottom: 2px solid $dark !important;
+          }
+
+          &.active {
+            border-right: 0px !important;
+            border-bottom: 2px solid $primary !important;
+          }
+        }
+      }
+    }
+
+  }
+}

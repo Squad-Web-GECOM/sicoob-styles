@@ -1,79 +1,78 @@
-@import "../essencial/variaveis.scss";
 .acland {
 
     h,
     .h {
         &1 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 3.125rem;
             font-weight:bold;
-            font-size: var(--font-size-1) ;
+            font-size: $font-size-1;
             //line-height: var(--font-size-1);
             margin-bottom: $size-3;
         }
 
         &2 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 2.5rem;
             font-weight:bold;
-            font-size: var(--font-size-2) ;
+            font-size: $font-size-2;
             //line-height: var(--font-size-2);
             margin-bottom: $size-3;
         }
 
         &3 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 2.1875rem;
             font-weight:bold;
-            font-size: var(--font-size-3) ;
+            font-size: $font-size-3;
             //line-height: var(--font-size-3);
             margin-bottom: $size-3;
         }
 
         &4 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1.75rem;
             font-weight:bold;
-            font-size: var(--font-size-4) ;
+            font-size: $font-size-4;
             //line-height: var(--font-size-4);
             margin-bottom: $size-3;
         }
 
         &5 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1.5rem;
             font-weight:bold;
-            font-size: var(--font-size-5) ;
+            font-size: $font-size-5;
             //line-height: var(--font-size-5);
             margin-bottom: $size-3;
         }
 
         &6 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1rem;
             font-weight:bold;
-            font-size: var(--font-size-6) ;
+            font-size: $font-size-6;
             //line-height: var(--font-size-6);
             margin-bottom: $size-3;
         }
     }
 
     p {
-        color: $cor-apoio;
+        color: $dark;
         //font-size: 1rem;
-        font-size: var(--font-size-bs) ;
+        font-size: $font-size-base;
         //line-height: var(--font-size-base);
     }
 
     .small {
-        color: $cor-apoio;
+        color: $dark;
         //font-size: .875rem;
-        font-size: var(--font-size-sm) ;
+        font-size: $font-size-sm;
         //line-height: var(--font-size-small);
     }
 
     button:focus{
-        outline: 1px auto var(--turq);
+        outline: 1px auto $primary;
     }
 
 }

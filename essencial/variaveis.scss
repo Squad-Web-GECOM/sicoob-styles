@@ -1,4 +1,3 @@
-
 // Cores
 
 $primary: var(--primary);
@@ -54,17 +53,17 @@ $gradient-verdee-line: var(--gradient-verdee-line);
 $gradient-branco: var(--gradient-branco);
 $gradient-branco-line: var(--gradient-branco-line);
 
-$cor-perfil-200: var(--cor-perfil-200);
-$cor-perfil-300: var(--cor-perfil-300);
-$cor-perfil: var(--cor-perfil);
-$cor-perfil-500: var(--cor-perfil-500);
-$cor-perfil-600: var(--cor-perfil-600);
+$cor-perfil-200: $turq-200;
+$cor-perfil-300: $turq-300;
+$cor-perfil: $primary;
+$cor-perfil-500: $turq-500;
+$cor-perfil-600: $turq-600;
 
-$cor-apoio-200: var(--cor-apoio-200);
-$cor-apoio-300: var(--cor-apoio-300);
-$cor-apoio: var(--cor-apoio);
-$cor-apoio-500: var(--cor-apoio-500);
-$cor-apoio-600: var(--cor-apoio-600);
+$cor-apoio-200: $verdee-200;
+$cor-apoio-300: $verdee-300;
+$cor-apoio: $dark;
+$cor-apoio-500: $verdee-500;
+$cor-apoio-600: $verdee-600;
 
 $cor-destaque-200: var(--cor-destaque-200);
 $cor-destaque-300: var(--cor-destaque-300);
@@ -72,11 +71,11 @@ $cor-destaque: var(--cor-destaque);
 $cor-destaque-500: var(--cor-destaque-500);
 $cor-destaque-600: var(--cor-destaque-600);
 
-$cor-base-200: var(--cor-base-200);
-$cor-base-300: var(--cor-base-300);
-$cor-base: var(--cor-base);
-$cor-base-500: var(--cor-base-500);
-$cor-base-600: var(--cor-base-600);
+$cor-base-200: $cinza-200;
+$cor-base-300: $cinza-300;
+$cor-base: $light;
+$cor-base-500: $cinza-500;
+$cor-base-600: $cinza-600;
 
 // Brand Colors
 $brand-main: var(--color-brand-main);
@@ -210,76 +209,76 @@ $shadow-highlight-high: var(--color-surface-shadow-highlight-high);
 
 
 
-$size-0:var(--size-0);
-$size-1:var(--size-1);
-$size-2:var(--size-2);
-$size-3:var(--size-3);
-$size-4:var(--size-4);
-$size-5:var(--size-5);
+$size-0: 0rem;
+$size-1: 0.25rem;
+$size-2: 0.5rem;
+$size-3: 1rem;
+$size-4: 1.5rem;
+$size-5: 3rem;
 
-$size-none: var(--spacing-none);
-$size-quarck: var(--spacing-quarck);
-$size-nano: var(--spacing-nano);
-$size-xxxs: var(--spacing-xxxs);
-$size-xxs: var(--spacing-xxs);
-$size-xs: var(--spacing-xs);
-$size-sm: var(--spacing-sm);
-$size-md: var(--spacing-md);
-$size-lg: var(--spacing-lg);
-$size-xl: var(--spacing-xl);
-$size-xxl: var(--spacing-xxl);
-$size-xxxl: var(--spacing-xxxl);
-$size-huge: var(--spacing-huge);
-$size-giant: var(--spacing-giant);
-$size-base: var(--spacing-base);
+$size-none: 0;
+$size-quarck: 4px;
+$size-nano: 8px;
+$size-xxxs: 16px;
+$size-xxs: 24px;
+$size-xs: 32px;
+$size-sm: 40px;
+$size-md: 48px;
+$size-lg: 56px;
+$size-xl: 64px;
+$size-xxl: 80px;
+$size-xxxl: 120px;
+$size-huge: 160px;
+$size-giant: 200px;
+$size-base: 8px;
 
-$border-width-none: var(--border-width-none);
-$border-width-hairline: var(--border-width-hairline);
-$border-width-thin: var(--border-width-thin);
-$border-width-thick: var(--border-width-thick);
-$border-width-heavy: var(--border-width-heavy);
-$border-width-base: var(--border-width-base);
+$border-width-none: 0;
+$border-width-hairline: 1px;
+$border-width-thin: 2px;
+$border-width-thick: 4px;
+$border-width-heavy: 8px;
+$border-width-base: 8px;
 
-$border-radius-none: var(--border-radius-none);
-$border-radius-xs: var(--border-radius-xs);
-$border-radius-sm: var(--border-radius-sm);
-$border-radius-md: var(--border-radius-md);
-$border-radius-lg: var(--border-radius-lg);
-$border-radius-pill: var(--border-radius-pill);
-$border-radius-circular: var(--border-radius-circular);
+$border-radius-none: 0;
+$border-radius-xs: 6px;
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 24px;
+$border-radius-pill: 1000px;
+$border-radius-circular: 50%;
 
-$opacity-semi-opaque: var(--opacity-semi-opaque);
-$opacity-intense: var(--opacity-intense);
-$opacity-medium: var(--opacity-medium);
-$opacity-light: var(--opacity-light);
-$opacity-semi-transparent: var(--opacity-semi-transparent);
-$opacity-base: var(--opacity-base);
+$opacity-semi-opaque: 0.8;
+$opacity-intense: 0.64;
+$opacity-medium: 0.32;
+$opacity-light: 0.16;
+$opacity-semi-transparent: 0.08;
+$opacity-base: 8;
 
-$font-size-xs:var(--font-size-xs);
-$font-size-sm:var(--font-size-sm);
-$font-size-base:var(--font-size-base);
-$font-size-6:var(--font-size-6);
-$font-size-5:var(--font-size-5);
-$font-size-4:var(--font-size-4);
-$font-size-3:var(--font-size-3);
-$font-size-2:var(--font-size-2);
-$font-size-1:var(--font-size-1);
-$font-size-lg:var(--font-size-lg);
-$font-size-xl:var(--font-size-xl);
+$font-size-xs: clamp(0.725rem, 0.7rem + 0.06vw, 0.8125rem);
+$font-size-sm: clamp(0.8125rem, 0.82rem + 0.13vw, 0.9375rem);
+$font-size-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+$font-size-6: clamp(1.18rem, 1.1875rem + 0.34vw, 1.375rem);
+$font-size-5: clamp(1.4375rem, 1.3rem + 0.5vw, 1.6875rem);
+$font-size-4: clamp(1.6875rem, 1.5rem + 0.72vw, 2.0625rem);
+$font-size-3: clamp(2rem, 1.74rem + 1vw, 2.5rem);
+$font-size-2: clamp(2.3125rem, 2rem + 1.37vw, 3.125rem);
+$font-size-1: clamp(2.8125rem, 2.3rem + 1.85vw, 3.75rem);
+$font-size-lg: clamp(3.25rem, 2.7rem + 2.46vw, 4.6875rem);
+$font-size-xl: clamp(3.75rem, 3.1rem + 3.25vw, 5.625rem);
 
-$font-sans:var(--font-sans);
-$font-script:var(--font-script);
+$font-sans: 'Sicoob sans', 'Asap', sans-serif;
+$font-script: 'Sicoob script', 'Pacifico', cursive;
 
-$transition-1:var(--transition-1);
-$transition-2:var(--transition-2);
+$transition-1: all 0.3s cubic-bezier(0.6, -0.1, 0.4, 1.1);
+$transition-2: all 0.5s cubic-bezier(0.6, -0.1, 0.4, 1.1);
 
-$box-shadow-1:var(--box-shadow-1);
-$box-shadow-2:var(--box-shadow-2);
-$box-shadow-3:var(--box-shadow-3);
-$box-shadow-4:var(--box-shadow-4);
+$box-shadow-1: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.2);
+$box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.2);
+$box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.2);
 
-$box-shadow-xs:var(--box-shadow-xs);
-$box-shadow-sm:var(--box-shadow-sm);
+$box-shadow-xs: 0 2px 4px rgba(128, 128, 128, 0.2);
+$box-shadow-sm: 0 2px 8px rgba(128, 128, 128, 0.2);
 
 // SVGs
 $seta-next-primary: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ae9d' viewBox='0 0 20 20' width='18' height='18'%3e%3cpath d='M5.7,17.6c-0.5-0.5-0.5-1.3,0-1.8l5.8-5.8L5.7,4.2c-0.5-0.5-0.5-1.3,0-1.8c0.5-0.5,1.3-0.5,1.8,0l6.7,6.7c0.5,0.5,0.5,1.3,0,1.8l-6.7,6.7C7,18.1,6.2,18.1,5.7,17.6z'/%3e%3c/svg%3e") center center no-repeat;
@@ -401,7 +400,6 @@ $colors: (
   "support-6-low": $support-6-low,
   "support-6-medium": $support-6-medium,
   "support-6-high": $support-6-high,
-
   // Support Colors 7
   "support-7-low": $support-7-low,
   "support-7-medium": $support-7-medium,
@@ -426,19 +424,19 @@ $colors: (
 
 // Mapa com os tamanhos de fonte
 $font-sizes: (
-  "1": var(--font-size-1),
-  "2": var(--font-size-2),
-  "3": var(--font-size-3),
-  "4": var(--font-size-4),
-  "5": var(--font-size-5),
-  "6": var(--font-size-6),
-  "base": var(--font-size-bs),
-  "bs": var(--font-size-bs),
-  "small": var(--font-size-small),
-  "sm": var(--font-size-sm),
-  "xs": var(--font-size-xs),
-  "lg": var(--font-size-lg),
-  "xl": var(--font-size-xl),
+  "1": $font-size-1,
+  "2": $font-size-2,
+  "3": $font-size-3,
+  "4": $font-size-4,
+  "5": $font-size-5,
+  "6": $font-size-6,
+  "base": $font-size-base,
+  "bs": $font-size-base,
+  "small": $font-size-sm,
+  "sm": $font-size-sm,
+  "xs": $font-size-xs,
+  "lg": $font-size-lg,
+  "xl": $font-size-xl,
   "08": 0.8rem,
   "100": 1rem,
   "125": 1.25rem,

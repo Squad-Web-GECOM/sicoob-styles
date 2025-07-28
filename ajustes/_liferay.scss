@@ -1,4 +1,3 @@
-@import "../essencial/variaveis.scss";
 @import 'liferay-components.scss';
 
 // AJUSTES LP LIFERAY
@@ -47,7 +46,7 @@ body {
         &4,
         &5,
         &6 {
-          color: $cor-perfil;
+          color: $primary;
         }
       }
     }
@@ -56,7 +55,7 @@ body {
 
 
 a {
-  color: $cor-perfil;
+  color: $primary;
 
   &:hover {
     color: $cor-perfil-600;
@@ -145,4 +144,3 @@ body.signed-in section[id*='-homol'] {
 }
 
 // Documentos e Mídias
-

@@ -10,33 +10,33 @@
   .management-bar {
     display: block !important;
     min-height: fit-content !important;
-    margin-bottom: var(--size-2);
+    margin-bottom: $size-2;
 
     .navbar-form {
       height: fit-content !important;
-      padding: var(--size-0) !important;
+      padding: $size-0 !important;
 
       .input-group-item {
 
         input {
           height: 100%;
-          border-top-left-radius: var(--size-2);
-          border-bottom-left-radius: var(--size-2);
-          border: 1px solid var(--verdee);
+          border-top-left-radius: $size-2;
+          border-bottom-left-radius: $size-2;
+          border: 1px solid $dark;
           border-right: 0px;
-          color: var(--verdee);
+          color: $dark;
         }
 
         span {
-          background: var(--turq);
-          border: 1px solid var(--verdee);
+          background: $primary;
+          border: 1px solid $dark;
           border-left: 0px;
-          border-top-right-radius: var(--size-2);
-          border-bottom-right-radius: var(--size-2);
+          border-top-right-radius: $size-2;
+          border-bottom-right-radius: $size-2;
           padding: 0;
 
           button {
-            padding: var(--size-3) var(--size-4) !important;
+            padding: $size-3 $size-4 !important;
             height: fit-content;
           }
         }
@@ -48,18 +48,18 @@
   }
 
   .subnav-tbar-primary {
-    background-color: var(--turq-200);
-    padding: var(--size-2) var(--size-1);
-    font-size: var(--font-size-sm);
-    border-radius: var(--size-2);
-    margin-bottom: var(--size-4);
+    background-color: $turq-200;
+    padding: $size-2 $size-1;
+    font-size: $font-size-sm;
+    border-radius: $size-2;
+    margin-bottom: $size-4;
     margin-top: 0;
   }
 
   .search-info {
-    font-size: var(--font-size-sm);
+    font-size: $font-size-sm;
     font-weight: 700;
-    margin-top: var(--size-0);
+    margin-top: $size-0;
 
     .btn-secondary {
       max-width: fit-content !important;
@@ -71,27 +71,27 @@
   }
 
   .taglib-header .header-title {
-    font-size: var(--font-size-5);
+    font-size: $font-size-5;
   }
 
   .main-content-body {
-    margin-top: var(--size-4);
+    margin-top: $size-4;
   }
 
   .list-group {
-    background: var(--branco);
-    padding: var(--size-3) calc(var(--size-2) + var(--size-1));
+    background: $light;
+    padding: $size-3 calc($size-2 + $size-1);
     box-shadow: 0px 0px 80px 0px rgba(0, 53, 62, 0.1) !important;
-    border-radius: var(--size-3) !important;
-    border: 1px solid var(--verdee) !important;
+    border-radius: $size-3 !important;
+    border: 1px solid $dark !important;
 
     &-header {
-      background: var(--branco);
+      background: $light;
       border: none;
     }
 
     &-item {
-      padding: var(--size-0) var(--size-3) !important;
+      padding: $size-0 $size-3 !important;
       background-color: transparent !important;
       box-shadow: none !important;
 
@@ -111,7 +111,7 @@
             background-image: url(https://www.sicoob.com.br/documents/20128/275218605/pasta.svg) !important;
             background-repeat: no-repeat !important;
             background-position: center !important;
-            background-size: var(--size-4) !important;
+            background-size: $size-4 !important;
 
             &.aspect-ratio-bg-cover,
             &.file-icon-color-2 {
@@ -132,15 +132,15 @@
       }
 
       h2 a {
-        color: var(--verdee) !important;
+        color: $dark !important;
         display: block;
-        padding: calc(var(--size-2) + var(--size-1)) var(--size-0);
-        font-size: var(--font-size-bs);
+        padding: calc($size-2 + $size-1) $size-0;
+        font-size: $font-size-base;
       }
 
       &:hover {
-        background-color: var(--turq) !important;
-        border-radius: var(--size-1);
+        background-color: $primary !important;
+        border-radius: $size-1;
 
         .autofit-col:nth-child(2) .sticker {
           background-image: url(https://www.sicoob.com.br/documents/20128/275218605/pasta-branca.svg) !important;
@@ -153,18 +153,18 @@
 
         h2 {
           a {
-            color: var(--branco) !important;
+            color: $light !important;
             text-decoration: none !important;
-            font-size: var(--font-size-bs) !important;
+            font-size: $font-size-base !important;
           }
 
           .dropdown-menu>li>a {
             &:focus {
-              box-shadow: inset 0 0 0 0.125rem var(--turq), inset 0 0 0 0.25rem var(--branco);
+              box-shadow: inset 0 0 0 0.125rem $primary, inset 0 0 0 0.25rem $light;
             }
 
             &:active {
-              background-color: var(--turq-200);
+              background-color: $turq-200;
             }
           }
         }
@@ -193,19 +193,19 @@
   }
 
   .lexicon-icon {
-    fill: var(--verdee);
+    fill: $dark;
   }
 
   button .lexicon-icon {
-    fill: var(--branco);
+    fill: $light;
   }
 
   .pagination-bar {
-    margin: var(--size-4) var(--size-0);
+    margin: $size-4 $size-0;
 
     .pagination-results {
       margin-bottom: 0;
-      font-size: var(--font-size-sm) !important;
+      font-size: $font-size-sm !important;
     }
 
     .pagination li:first-child>a:after {
@@ -225,12 +225,12 @@
 .breadcrumb {
 
   &-link {
-    color: var(--verdee);
+    color: $dark;
     font-weight: bold;
-    transition: var(--transition-2);
+    transition: $transition-2;
 
     &:hover {
-      color: var(--verdee);
+      color: $dark;
       padding-left: 15px;
       text-decoration: none !important;
     }
@@ -242,12 +242,12 @@
   }
 
   &-item {
-    font-size: var(--font-size-sm);
+    font-size: $font-size-sm;
 
     &:last-child {
       width: 100%;
-      font-size: var(--font-size-6);
-      color: var(--verdee);
+      font-size: $font-size-6;
+      color: $dark;
       font-weight: bold;
     }
 

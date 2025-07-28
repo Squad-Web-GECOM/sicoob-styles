@@ -1312,240 +1312,6 @@
 
   }
 
-  @each $name,
-  $color in $colors {
-    .c-#{$name} {
-      color: $color !important;
-
-      &-hover {
-        &:hover {
-          color: $color !important;
-        }
-      }
-    }
-
-    .bg-#{$name} {
-      background-color: $color !important;
-
-      &-hover {
-        &:hover {
-          background-color: $color !important;
-        }
-      }
-    }
-
-    .border-#{$name} {
-      border-color: $color !important;
-
-      &-hover {
-        &:hover {
-          border-color: $color !important;
-        }
-      }
-    }
-  }
-
-  /* PESO DAS FONTES */
-  .fw {
-
-    &-100 {
-      font-weight: 100 !important;
-    }
-
-    &-200 {
-      font-weight: 200 !important;
-    }
-
-    &-300 {
-      font-weight: 300 !important;
-    }
-
-    &-400 {
-      font-weight: 400 !important;
-    }
-
-    &-500 {
-      font-weight: 500 !important;
-    }
-
-    &-600 {
-      font-weight: 600 !important;
-    }
-
-    &-700 {
-      font-weight: 700 !important;
-    }
-
-    &-800 {
-      font-weight: 800 !important;
-    }
-
-    &-900 {
-      font-weight: 900 !important;
-    }
-
-    &-normal {
-      font-weight: 400 !important;
-    }
-
-    &-bold {
-      font-weight: 700 !important;
-    }
-  }
-
-  /* TAMANHO DAS FONTES */
-
-  // Gerando as classes padrão (sem media query)
-  @each $name,
-  $size in $font-sizes {
-    .fs-#{$name} {
-      font-size: $size !important;
-    }
-  }
-
-  // Gerando classes responsivas para cada breakpoint
-  @each $bp,
-  $width in $breakpoints {
-    @media (min-width: #{$width}) {
-
-      @each $name,
-      $size in $font-sizes {
-        .fs-#{$bp}-#{$name} {
-          font-size: $size !important;
-        }
-      }
-    }
-  }
-
-
-  /* ALTURA DA LINHA - LINE HEIGHT */
-  .lh {
-
-    &-1 {
-      line-height: var(--line-height-1) !important;
-    }
-
-    &-2 {
-      line-height: var(--line-height-2) !important;
-    }
-
-    &-3 {
-      line-height: var(--line-height-3) !important;
-    }
-
-    &-4 {
-      line-height: var(--line-height-4) !important;
-    }
-
-  }
-
-  /* ALINHAMENTO */
-  .center {
-
-    &-s {
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-    }
-
-    &-v {
-      display: flex !important;
-      align-items: center !important;
-    }
-
-    &-h {
-      display: flex !important;
-      justify-content: center !important;
-    }
-
-    &-xl{
-      @media (min-width: 1200px) {
-        &-s {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-    
-        &-v {
-          display: flex !important;
-          align-items: center !important;
-        }
-    
-        &-h {
-          display: flex !important;
-          justify-content: center !important;
-        }
-      }
-    }
-    &-lg{
-      @media (min-width: 992px) {
-        &-s {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-    
-        &-v {
-          display: flex !important;
-          align-items: center !important;
-        }
-    
-        &-h {
-          display: flex !important;
-          justify-content: center !important;
-        }
-      }
-    }
-    &-md{
-      @media (min-width: 756px) {
-        &-s {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-    
-        &-v {
-          display: flex !important;
-          align-items: center !important;
-        }
-    
-        &-h {
-          display: flex !important;
-          justify-content: center !important;
-        }
-      }
-    }
-    &-sm{
-      @media (min-width: 567px) {
-        &-s {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-    
-        &-v {
-          display: flex !important;
-          align-items: center !important;
-        }
-    
-        &-h {
-          display: flex !important;
-          justify-content: center !important;
-        }
-      }
-    }
-  }
-
-  .place {
-
-    &-center {
-      place-content: center;
-    }
-
-
-  }
-
-
   /* FILL */
 
   .fill {
@@ -1773,6 +1539,248 @@
     &-preto {
       fill: $preto !important;
     }
+  }
+
+  @each $name,
+  $color in $colors {
+    .c-#{$name} {
+      color: $color !important;
+
+      &-hover {
+        &:hover {
+          color: $color !important;
+        }
+      }
+    }
+
+    .bg-#{$name} {
+      background-color: $color !important;
+
+      &-hover {
+        &:hover {
+          background-color: $color !important;
+        }
+      }
+    }
+
+    .border-#{$name} {
+      border-color: $color !important;
+
+      &-hover {
+        &:hover {
+          border-color: $color !important;
+        }
+      }
+    }
+
+    .fill-#{$name} {
+      fill: $color !important;
+
+      &-hover {
+        &:hover {
+          fill: $color !important;
+        }
+      }
+    }
+  }
+
+  /* PESO DAS FONTES */
+  .fw {
+
+    &-100 {
+      font-weight: 100 !important;
+    }
+
+    &-200 {
+      font-weight: 200 !important;
+    }
+
+    &-300 {
+      font-weight: 300 !important;
+    }
+
+    &-400 {
+      font-weight: 400 !important;
+    }
+
+    &-500 {
+      font-weight: 500 !important;
+    }
+
+    &-600 {
+      font-weight: 600 !important;
+    }
+
+    &-700 {
+      font-weight: 700 !important;
+    }
+
+    &-800 {
+      font-weight: 800 !important;
+    }
+
+    &-900 {
+      font-weight: 900 !important;
+    }
+
+    &-normal {
+      font-weight: 400 !important;
+    }
+
+    &-bold {
+      font-weight: 700 !important;
+    }
+  }
+
+  /* TAMANHO DAS FONTES */
+
+  // Gerando as classes padrão (sem media query)
+  @each $name,
+  $size in $font-sizes {
+    .fs-#{$name} {
+      font-size: $size !important;
+    }
+  }
+
+  // Gerando classes responsivas para cada breakpoint
+  @each $bp,
+  $width in $breakpoints {
+    @media (min-width: #{$width}) {
+
+      @each $name,
+      $size in $font-sizes {
+        .fs-#{$bp}-#{$name} {
+          font-size: $size !important;
+        }
+      }
+    }
+  }
+
+  /* ALTURA DA LINHA - LINE HEIGHT */
+  .lh {
+
+    &-1 {
+      line-height: var(--line-height-1) !important;
+    }
+
+    &-2 {
+      line-height: var(--line-height-2) !important;
+    }
+
+    &-3 {
+      line-height: var(--line-height-3) !important;
+    }
+
+    &-4 {
+      line-height: var(--line-height-4) !important;
+    }
+
+  }
+
+  /* ALINHAMENTO */
+  .center {
+
+    &-s {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    &-v {
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    &-h {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    &-xl{
+      @media (min-width: 1200px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-lg{
+      @media (min-width: 992px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-md{
+      @media (min-width: 756px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    &-sm{
+      @media (min-width: 567px) {
+        &-s {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+    
+        &-v {
+          display: flex !important;
+          align-items: center !important;
+        }
+    
+        &-h {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+
+  .place {
+
+    &-center {
+      place-content: center;
+    }
+
+
   }
 
   /* WIDTH */

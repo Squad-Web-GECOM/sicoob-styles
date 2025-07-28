@@ -4,7 +4,7 @@
     h,
     .h {
         &1 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 3.125rem;
             font-weight:bold;
             font-size: var(--font-size-1) ;
@@ -13,7 +13,7 @@
         }
 
         &2 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 2.5rem;
             font-weight:bold;
             font-size: var(--font-size-2) ;
@@ -22,7 +22,7 @@
         }
 
         &3 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 2.1875rem;
             font-weight:bold;
             font-size: var(--font-size-3) ;
@@ -31,7 +31,7 @@
         }
 
         &4 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1.75rem;
             font-weight:bold;
             font-size: var(--font-size-4) ;
@@ -40,7 +40,7 @@
         }
 
         &5 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1.5rem;
             font-weight:bold;
             font-size: var(--font-size-5) ;
@@ -49,7 +49,7 @@
         }
 
         &6 {
-            color: $cor-perfil;
+            color: $primary;
             //font-size: 1rem;
             font-weight:bold;
             font-size: var(--font-size-6) ;
@@ -59,7 +59,7 @@
     }
 
     p {
-        color: $cor-apoio;
+        color: $dark;
         //font-size: 1rem;
         font-size: var(--font-size-bs) ;
         //line-height: var(--font-size-base);

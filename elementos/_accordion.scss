@@ -25,7 +25,7 @@
         .btn-link {
           font-size: $font-size-base;
           width: 100%;
-          color: $branco!important;
+          color: $light!important;
           text-align: left;
           text-decoration: none !important;
           outline: $size-0 !important;
@@ -35,7 +35,7 @@
 
           &:hover,
           &:focus {
-            color: $branco;
+            color: $light;
           }
 
           &:after,
@@ -71,7 +71,7 @@
 
 
       p {
-        color: $cor-apoio;
+        color: $dark;
       }
     }
   }

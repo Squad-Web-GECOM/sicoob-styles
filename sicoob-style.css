@@ -363,88 +363,6 @@
   --box-shadow-sm: 0 2px 8px rgba(128, 128, 128, 0.2);
 }
 
-body,
-body .tema-turq {
-  --cor-perfil-200: var(--turq-200);
-  --cor-perfil-300: var(--turq-300);
-  --cor-perfil: var(--turq);
-  --cor-perfil-500: var(--turq-500);
-  --cor-perfil-600: var(--turq-600);
-  --cor-apoio-200: var(--verdee-200);
-  --cor-apoio-300: var(--verdee-300);
-  --cor-apoio: var(--verdee);
-  --cor-apoio-500: var(--verdee-500);
-  --cor-apoio-600: var(--verdee-600);
-  --cor-destaque-200: var(--verdec-200);
-  --cor-destaque-300: var(--verdec-300);
-  --cor-destaque: var(--verdec);
-  --cor-destaque-500: var(--verdec-500);
-  --cor-destaque-600: var(--verdec-600);
-  --cor-base-200: var(--cinza-200);
-  --cor-base-300: var(--cinza-300);
-  --cor-base: var(--branco);
-  --cor-base-500: var(--cinza-500);
-  --cor-base-600: var(--cinza-600);
-}
-body .tema-verdee {
-  --cor-perfil-200: var(--verdee-200);
-  --cor-perfil-300: var(--verdee-300);
-  --cor-perfil: var(--verdee);
-  --cor-perfil-500: var(--verdee-500);
-  --cor-perfil-600: var(--verdee-600);
-  --cor-destaque-200: var(--turq-200);
-  --cor-destaque-300: var(--turq-300);
-  --cor-destaque: var(--turq);
-  --cor-destaque-500: var(--turq-500);
-  --cor-destaque-600: var(--turq-600);
-}
-body .tema-verdem {
-  --cor-perfil-200: var(--verdem-200);
-  --cor-perfil-300: var(--verdem-300);
-  --cor-perfil: var(--verdem);
-  --cor-perfil-500: var(--verdem-500);
-  --cor-perfil-600: var(--verdem-600);
-  --cor-destaque-200: var(--turq-200);
-  --cor-destaque-300: var(--turq-300);
-  --cor-destaque: var(--turq);
-  --cor-destaque-500: var(--turq-500);
-  --cor-destaque-600: var(--turq-600);
-}
-body .tema-verdec {
-  --cor-perfil-200: var(--verdec-200);
-  --cor-perfil-300: var(--verdec-300);
-  --cor-perfil: var(--verdec);
-  --cor-perfil-500: var(--verdec-500);
-  --cor-perfil-600: var(--verdec-600);
-  --cor-destaque-200: var(--turq-200);
-  --cor-destaque-300: var(--turq-300);
-  --cor-destaque: var(--turq);
-  --cor-destaque-500: var(--turq-500);
-  --cor-destaque-600: var(--turq-600);
-}
-body .tema-dark {
-  --cor-perfil-200: var(--turq-600);
-  --cor-perfil-300: var(--turq-500);
-  --cor-perfil: var(--turq);
-  --cor-perfil-500: var(--turq-300);
-  --cor-perfil-600: var(--turq-200);
-  --cor-apoio-200: var(--cinza-600);
-  --cor-apoio-300: var(--cinza-500);
-  --cor-apoio: var(--branco);
-  --cor-apoio-500: var(--cinza-300);
-  --cor-apoio-600: var(--cinza-200);
-  --cor-destaque-200: var(--verdec-600);
-  --cor-destaque-300: var(--verdec-500);
-  --cor-destaque: var(--verdec);
-  --cor-destaque-500: var(--verdec-300);
-  --cor-destaque-600: var(--verdec-200);
-  --cor-base-200: var(--verdee-600);
-  --cor-base-300: var(--verdee-500);
-  --cor-base: var(--verdee);
-  --cor-base-500: var(--verdee-300);
-  --cor-base-600: var(--verdee-200);
-}
-
 /* 
 --------------------------------
 GERAIS
@@ -563,51 +481,9 @@ footer .content {
   content: "\f167";
 }
 
-.acland h1,
-.acland .h1 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-1);
-  margin-bottom: var(--size-3);
-}
-.acland h2,
-.acland .h2 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-2);
-  margin-bottom: var(--size-3);
-}
-.acland h3,
-.acland .h3 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-3);
-  margin-bottom: var(--size-3);
-}
-.acland h4,
-.acland .h4 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-4);
-  margin-bottom: var(--size-3);
-}
-.acland h5,
-.acland .h5 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-5);
-  margin-bottom: var(--size-3);
-}
-.acland h6,
-.acland .h6 {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: var(--font-size-6);
-  margin-bottom: var(--size-3);
-}
 .acland p {
   color: var(--dark);
-  font-size: var(--font-size-bs);
+  font-size: var(--font-size-base);
 }
 .acland .small {
   color: var(--dark);
@@ -619,10 +495,6 @@ footer .content {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans) !important;
 }
 
 .escrita, .script, .cursive, .cursiva, .pacifico {

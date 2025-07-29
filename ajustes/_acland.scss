@@ -1,75 +1,12 @@
-@import "../essencial/variaveis.scss";
 .acland {
-
-    h,
-    .h {
-        &1 {
-            color: $primary;
-            //font-size: 3.125rem;
-            font-weight:bold;
-            font-size: $font-size-1 ;
-            //line-height: $font-size-1;
-            margin-bottom: $size-3;
-        }
-
-        &2 {
-            color: $primary;
-            //font-size: 2.5rem;
-            font-weight:bold;
-            font-size: $font-size-2 ;
-            //line-height: $font-size-2;
-            margin-bottom: $size-3;
-        }
-
-        &3 {
-            color: $primary;
-            //font-size: 2.1875rem;
-            font-weight:bold;
-            font-size: $font-size-3 ;
-            //line-height: $font-size-3;
-            margin-bottom: $size-3;
-        }
-
-        &4 {
-            color: $primary;
-            //font-size: 1.75rem;
-            font-weight:bold;
-            font-size: $font-size-4 ;
-            //line-height: $font-size-4;
-            margin-bottom: $size-3;
-        }
-
-        &5 {
-            color: $primary;
-            //font-size: 1.5rem;
-            font-weight:bold;
-            font-size: $font-size-5 ;
-            //line-height: $font-size-5;
-            margin-bottom: $size-3;
-        }
-
-        &6 {
-            color: $primary;
-            //font-size: 1rem;
-            font-weight:bold;
-            font-size: $font-size-6 ;
-            //line-height: $font-size-6;
-            margin-bottom: $size-3;
-        }
-    }
-
     p {
         color: $dark;
-        //font-size: 1rem;
-        font-size: $font-size-bs;
-        //line-height: $font-size-base;
+        font-size: $font-size-base;
     }
 
     .small {
         color: $dark;
-        //font-size: .875rem;
-        font-size: $font-size-sm ;
-        //line-height: $font-size-small;
+        font-size: $font-size-sm;
     }
 
     button:focus{
@@ -82,11 +19,7 @@ html {
     scroll-behavior: smooth;
   }
   
-  body {
-    font-family: $font-sans!important;
-  }
-  
   .escrita, .script, .cursive, .cursiva, .pacifico{
-    font-family: $font-script!important;
+    font-family: var(--font-script)!important;
     font-weight: 700;
   }

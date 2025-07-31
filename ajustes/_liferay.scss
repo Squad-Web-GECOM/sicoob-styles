@@ -3,8 +3,8 @@
 
 // AJUSTES LP LIFERAY
 .row {
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
 body #content,
@@ -62,33 +62,6 @@ a {
   }
 }
 
-// RETIRAR PARA O THEMA
-footer {
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .portlet-title-text {
-    overflow: visible !important;
-  }
-
-  @media (max-width: 576px) {
-      padding: 2.0625rem 0 0 0;
-
-    .text-truncate {
-      white-space: nowrap;
-    }
-
-    .row{
-      .col-xs-6 {
-        max-width: 100%;
-        flex: 0 0 100%;
-        margin-top: 40px;
-      }
-    }
-  }
-
-}
 
 .portlet-topper-none {
   .portlet-topper {
@@ -109,7 +82,7 @@ body.signed-in {
   }
 }
 
-// One trust Cookies
+// Documentos e Mídias
 
 .acland,
 * {

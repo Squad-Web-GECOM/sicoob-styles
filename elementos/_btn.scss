@@ -194,90 +194,90 @@
   &-bg {
 
     &-perfil {
-      --btn-bg: $primary;
-      --btn-bg-hover: $cor-perfil-500;
+      --btn-bg: #{ $primary };
+      --btn-bg-hover: #{ $cor-perfil-500 };
     }
 
     &-apoio {
-      --btn-bg: $dark;
-      --btn-bg-hover: $cor-apoio-500;
+      --btn-bg: #{ $dark };
+      --btn-bg-hover: #{ $cor-apoio-500 };
 
     }
 
     &-base {
-      --btn-bg: $light;
-      --btn-bg-hover: $cor-base-500;
+      --btn-bg: #{ $light };
+      --btn-bg-hover: #{ $cor-base-500 };
     }
 
     &-verdee {
-      --btn-bg: $dark;
-      --btn-bg-hover: $verdee-500;
+      --btn-bg: #{ $dark };
+      --btn-bg-hover: #{ $verdee-500 };
     }
 
     &-verdem {
-      --btn-bg: $verdem;
-      --btn-bg-hover: $verdem-500;
+      --btn-bg: #{ $verdem };
+      --btn-bg-hover: #{ $verdem-500 };
     }
 
     &-verdec {
-      --btn-bg: $verdec;
-      --btn-bg-hover: $verdec-300;
+      --btn-bg: #{ $verdec };
+      --btn-bg-hover: #{ $verdec-300 };
     }
 
     &-roxo {
-      --btn-bg: $roxo;
-      --btn-bg-hover: $roxo-300;
+      --btn-bg: #{ $roxo };
+      --btn-bg-hover: #{ $roxo-300 };
     }
 
     &-preto {
-      --btn-bg: $cinza-900;
-      --btn-bg-hover: $preto;
+      --btn-bg: #{ $cinza-900 };
+      --btn-bg-hover: #{ $preto };
     }
 
     &-branco {
-      --btn-bg: $light;
-      --btn-bg-hover: $cinza-300;
+      --btn-bg: #{ $light };
+      --btn-bg-hover: #{ $cinza-300 };
     }
 
     &-h {
       &-perfil {
-        --btn-bg-hover: $primary;
+        --btn-bg-hover: #{ $primary };
       }
 
       &-apoio {
-        --btn-bg-hover: $dark;
+        --btn-bg-hover: #{ $dark };
       }
 
       &-base {
-        --btn-bg-hover: $light;
+        --btn-bg-hover: #{ $light };
       }
 
       &-turq {
-        --btn-bg-hover: $primary;
+        --btn-bg-hover: #{ $primary };
       }
 
       &-verdee {
-        --btn-bg-hover: $dark;
+        --btn-bg-hover: #{ $dark };
       }
 
       &-verdem {
-        --btn-bg-hover: $verdem;
+        --btn-bg-hover: #{ $verdem };
       }
 
       &-verdec {
-        --btn-bg-hover: $verdec;
+        --btn-bg-hover: #{ $verdec };
       }
 
       &-roxo {
-        --btn-bg-hover: $roxo;
+        --btn-bg-hover: #{ $roxo };
       }
 
       &-preto {
-        --btn-bg-hover: $preto;
+        --btn-bg-hover: #{ $preto };
       }
 
       &-branco {
-        --btn-bg-hover: $light;
+        --btn-bg-hover: #{ $light };
       }
     }
   }
@@ -285,94 +285,94 @@
   &-text {
 
     &-perfil {
-      --btn-text: $primary;
-      --btn-text-hover: $cor-perfil-300;
+      --btn-text: #{ $primary };
+      --btn-text-hover: #{ $cor-perfil-300 };
     }
 
     &-apoio {
-      --btn-text: $dark;
-      --btn-text-hover: $cor-apoio-500;
+      --btn-text: #{ $dark };
+      --btn-text-hover: #{ $cor-apoio-500 };
     }
 
     &-base {
-      --btn-text: $light;
-      --btn-text-hover: $cor-base-300;
+      --btn-text: #{ $light };
+      --btn-text-hover: #{ $cor-base-300 };
     }
 
     &-turq {
-      --btn-text: $primary;
-      --btn-text-hover: $turq-300;
+      --btn-text: #{ $primary };
+      --btn-text-hover: #{ $turq-300 };
     }
 
     &-verdee {
-      --btn-text: $dark;
-      --btn-text-hover: $verdee-500;
+      --btn-text: #{ $dark };
+      --btn-text-hover: #{ $verdee-500 };
     }
 
     &-verdem {
-      --btn-text: $verdem;
-      --btn-text-hover: $verdem-300;
+      --btn-text: #{ $verdem };
+      --btn-text-hover: #{ $verdem-300 };
     }
 
     &-verdec {
-      --btn-text: $verdec;
-      --btn-text-hover: $verdec-300;
+      --btn-text: #{ $verdec };
+      --btn-text-hover: #{ $verdec-300 };
     }
 
     &-roxo {
-      --btn-text: $roxo;
-      --btn-text-hover: $roxo-300;
+      --btn-text: #{ $roxo };
+      --btn-text-hover: #{ $roxo-300 };
     }
 
     &-preto {
-      --btn-text: $cinza-900;
-      --btn-text-hover: $preto;
+      --btn-text: #{ $cinza-900 };
+      --btn-text-hover: #{ $preto };
     }
 
     &-branco {
-      --btn-text: $light;
-      --btn-text-hover: $cinza-200;
+      --btn-text: #{ $light };
+      --btn-text-hover: #{ $cinza-200 };
     }
 
     &-h {
       &-perfil {
-        --btn-text-hover: $primary;
+        --btn-text-hover: #{ $primary };
       }
 
       &-apoio {
-        --btn-text-hover: $dark;
+        --btn-text-hover: #{ $dark };
       }
 
       &-base {
-        --btn-text-hover: $light;
+        --btn-text-hover: #{ $light };
       }
 
       &-turq {
-        --btn-text-hover: $primary;
+        --btn-text-hover: #{ $primary };
       }
 
       &-verdee {
-        --btn-text-hover: $dark;
+        --btn-text-hover: #{ $dark };
       }
 
       &-verdem {
-        --btn-text-hover: $verdem;
+        --btn-text-hover: #{ $verdem };
       }
 
       &-verdec {
-        --btn-text-hover: $verdec;
+        --btn-text-hover: #{ $verdec };
       }
 
       &-roxo {
-        --btn-text-hover: $roxo;
+        --btn-text-hover: #{ $roxo };
       }
 
       &-preto {
-        --btn-text-hover: $preto;
+        --btn-text-hover: #{ $preto };
       }
 
       &-branco {
-        --btn-text-hover: $light;
+        --btn-text-hover: #{ $light };
       }
     }
 

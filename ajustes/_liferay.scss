@@ -26,35 +26,6 @@ body #content,
   }
 }
 
-// RETIRAR PARA O THEMA
-body {
-  font-family: var(--font-sans) !important;
-
-  &,
-  &.acland,
-  .acland {
-
-    &,
-    &.para-campo,
-    &.para-agronegocio,
-    &.para-empresa,
-    &.para-voce {
-
-      h,
-      .h {
-
-        &1,
-        &2,
-        &3,
-        &4,
-        &5,
-        &6 {
-          color: $primary;
-        }
-      }
-    }
-  }
-}
 
 
 a {
@@ -90,34 +61,6 @@ a {
     transform: scale(0.9, 0.9);
     box-shadow: none !important;
   }
-}
-
-// RETIRAR PARA O THEMA
-footer {
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .portlet-title-text {
-    overflow: visible !important;
-  }
-
-  @media (max-width: 576px) {
-      padding: 2.0625rem 0 0 0;
-
-    .text-truncate {
-      white-space: nowrap;
-    }
-
-    .row{
-      .col-xs-6 {
-        max-width: 100%;
-        flex: 0 0 100%;
-        margin-top: 40px;
-      }
-    }
-  }
-
 }
 
 .portlet-topper-none {

@@ -102,21 +102,3 @@ a{
 img{
   max-width: 100%;
 }
-
-footer .col-xs-6 {
-  @media (max-width: 550px) {
-    max-width: 100%;
-    padding-bottom: 30px;
-  }
-}
-
-footer {
-  padding-top: 4.0625rem;
-  .content{
-    padding: 0 0 6.25rem 0;
-  }
-}
-
-.fa-youtube-play:before {
-  content: "\f167";
-}

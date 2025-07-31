@@ -1,4 +1,32 @@
 .acland {
+
+    h,
+    .h {
+        &1 {
+            font-size: $font-size-1;
+        }
+
+        &2 {
+            font-size: $font-size-2;
+        }
+
+        &3 {
+            font-size: $font-size-3;
+        }
+
+        &4 {
+            font-size: $font-size-4;
+        }
+
+        &5 {
+            font-size: $font-size-5;
+        }
+
+        &6 {
+            font-size: $font-size-6;
+        }
+    }
+
     p {
         color: $dark;
         font-size: $font-size-base;
@@ -9,7 +37,11 @@
         font-size: $font-size-sm;
     }
 
-    button:focus{
+    .xsmall {
+        font-size: $font-size-xs;
+    }
+
+    button:focus {
         outline: 1px auto $primary;
     }
 
@@ -17,9 +49,13 @@
 
 html {
     scroll-behavior: smooth;
-  }
-  
-  .escrita, .script, .cursive, .cursiva, .pacifico{
-    font-family: var(--font-script)!important;
+}
+
+.escrita,
+.script,
+.cursive,
+.cursiva,
+.pacifico {
+    font-family: var(--font-script) !important;
     font-weight: 700;
-  }
+}

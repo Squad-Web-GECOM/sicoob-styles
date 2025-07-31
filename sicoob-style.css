@@ -1,4 +1,19 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Sicoob sans";
+  src: url("https://www.sicoob.com.br/documents/20128/190187180/SicoobSansVariable.woff2") format("woff2-variations"), url("https://www.sicoob.com.br/documents/20128/190187180/SicoobSansVariable.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 1000;
+  font-stretch: 80% 100%;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sicoob script";
+  src: url("https://www.sicoob.com.br/documents/20128/190187180/SicoobScriptVariable.woff2") format("woff2-variations"), url("https://www.sicoob.com.br/documents/20128/190187180/SicoobScriptVariable.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 1000;
+  font-style: normal;
+}
 :root {
   --primary: var(--turq);
   --dark: var(--verdee);
@@ -530,24 +545,30 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 550px) {
-  footer .col-xs-6 {
-    max-width: 100%;
-    padding-bottom: 30px;
-  }
+.acland h1,
+.acland .h1 {
+  font-size: var(--font-size-1);
 }
-
-footer {
-  padding-top: 4.0625rem;
+.acland h2,
+.acland .h2 {
+  font-size: var(--font-size-2);
 }
-footer .content {
-  padding: 0 0 6.25rem 0;
+.acland h3,
+.acland .h3 {
+  font-size: var(--font-size-3);
 }
-
-.fa-youtube-play:before {
-  content: "\f167";
+.acland h4,
+.acland .h4 {
+  font-size: var(--font-size-4);
 }
-
+.acland h5,
+.acland .h5 {
+  font-size: var(--font-size-5);
+}
+.acland h6,
+.acland .h6 {
+  font-size: var(--font-size-6);
+}
 .acland p {
   color: var(--dark);
   font-size: var(--font-size-base);
@@ -555,6 +576,9 @@ footer .content {
 .acland .small {
   color: var(--dark);
   font-size: var(--font-size-sm);
+}
+.acland .xsmall {
+  font-size: var(--font-size-xs);
 }
 .acland button:focus {
   outline: 1px auto var(--primary);
@@ -564,7 +588,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.escrita, .script, .cursive, .cursiva, .pacifico {
+.escrita,
+.script,
+.cursive,
+.cursiva,
+.pacifico {
   font-family: var(--font-script) !important;
   font-weight: 700;
 }

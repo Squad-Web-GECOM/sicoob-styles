@@ -12,7 +12,7 @@ body #content,
   padding: 0 !important;
 }
 
-.acland{
+.acland {
   .portlet-column-content.empty {
     padding: 0 !important;
   }
@@ -22,48 +22,49 @@ h,
 .h {
   &1 {
     font-size: 3.125rem;
-    font-weight: bold;
-    color: $primary;
   }
 
   &2 {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: $primary;
   }
 
   &3 {
     font-size: 2.1875rem;
-    font-weight: bold;
-    color: $primary;
   }
 
   &4 {
     font-size: 1.75rem;
-    font-weight: bold;
-    color: $primary;
   }
 
   &5 {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: $primary;
   }
 
   &6 {
     font-size: 1.125rem;
+  }
+
+  &1,
+  &2,
+  &3,
+  &4,
+  &5,
+  &6 {
     font-weight: bold;
     color: $primary;
+    margin-bottom: $size-3;
   }
 }
 
-a{
+a {
   color: $primary;
-  &:hover{
+
+  &:hover {
     color: $turq-600;
   }
-  &:focus{
-    box-shadow: none!important;
+
+  &:focus {
+    box-shadow: none !important;
   }
 }
 
@@ -94,11 +95,11 @@ a{
   padding-right: 12px;
   padding-left: 12px;
 
-  @media (min-width: 1280px){
-      max-width: 1248px!important;
+  @media (min-width: 1280px) {
+    max-width: 1248px !important;
   }
 }
 
-img{
+img {
   max-width: 100%;
 }
